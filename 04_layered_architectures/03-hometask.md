@@ -1,0 +1,1 @@
+1. Name examples of the layered architecture. Do they differ or just extend each other?
