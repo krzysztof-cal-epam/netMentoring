@@ -4,6 +4,8 @@ using LiteDB;
 
 namespace CartServiceConsoleApp.DAL.Repositories
 {
+    //todo extract some abstraction and make reposiorty testable with any db
+    //todo consider config file to make connection secure (not hardcoded)
     public class CartRepository : ICartRepository
     {
         private readonly LiteDatabase _db;

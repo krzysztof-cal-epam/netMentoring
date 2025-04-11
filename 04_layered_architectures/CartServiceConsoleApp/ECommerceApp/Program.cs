@@ -2,6 +2,8 @@
 using CartServiceConsoleApp.DAL.Repositories;
 using CartServiceConsoleApp.Entities;
 
+//todo change the project to the rest web api project
+
 var cartRepository = new CartRepository();
 var cartService = new CartService(cartRepository);
 

@@ -3,9 +3,10 @@ using CartServiceConsoleApp.Entities;
 
 namespace CartServiceConsoleAppTests.UnitTests
 {
+    //todo this is not unit test!
     public class CartRepositoryTests : IDisposable
     {
-        private readonly CartRepository _sut;
+        private readonly CartRepository _sut; // todo change name to something more meeningfull, check microsoft naming convention
 
         private readonly List<string> _cartIdsToDispose;
 

@@ -4,9 +4,10 @@ using CartServiceConsoleApp.Entities;
 
 namespace CartServiceConsoleAppTests.IntegrationTests
 {
+    //todo use mocks for db!
     public class CartServiceIntegrationTests
     {
-        private readonly CartService _sut;
+        private readonly CartService _sut; // todo change name to something more meeningfull, check microsoft naming convention
         private readonly CartRepository _cartRepository;
         private readonly string _testDbName;
 
