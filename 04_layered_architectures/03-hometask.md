@@ -4,7 +4,7 @@
 
 The list of examples of the layered architecture:
 ### 1. N-Layer Architecture 
-General/common architecture for a layered pattern. Number of layers might differ (this is why N-tier), but it's usually layers of presentation, business, persistance and database .
+General/common architecture for a layered pattern. Number of layers might differ (this is why N-tier), but it's usually layers of presentation, business, persistance and database.
 ### 2. Model-View-Controller 
 Common version of a N-tier architecture for web development. It defines layers: Model, View and Controller.
 ### 3. Model-View-ViewModel 
@@ -37,12 +37,12 @@ Describes a software that is not structured anyhow, does not follow any architec
 Same as spagetti code, but differs in scope. Big ball of Mud is usually related to the whole system architecture. I can image it as an example of a e-commerce platform, where UI layer queries database layer directly, business logic exists in each layer, etc.
 
 ### 3. God object
-Refers to the situation that sincle class is carring to many responsibilities. It violates the Single Responsibility principle. I can image this antipatern as an example of e-commerce e-shop that contains only one class i.e. "ShopManager", which is responsible for everything. That icludes order processing, payment processing, inventory management, users/customers management, notifications, etc. 
+Refers to the situation that sincle class is carring too many responsibilities. It violates the Single Responsibility principle. I can image this antipatern as an example of e-commerce e-shop that contains only one class i.e. "ShopManager", which is responsible for everything. That icludes order processing, payment processing, inventory management, users/customers management, notifications, etc. 
 
 ## 5. What do Testability, Extensibility and Scalability NFRs mean. How would you ensure you reached them? Does Clean Architecture cover these NFRs?
 
 Testability specifyes how effectively parts of the project can be tested. System with high testability can be verified easly, whether each part works correctly.
-Extensibility specifies how flexible the project is. The system with high extensibility allows to extend it by the new features without modifying existing code or witch a little of modifications.
+Extensibility specifies how flexible the project is. The system with high extensibility allows to extend it by the new features without modifying existing code or with a little of modifications.
 Scalability specifies how the system can handle increased load. System with high Scalability can be easly scaled (vertically or horizontally) to handle larger load (more requests, more users, more data, etc.).
 
 High testability can be achived with by applying the following patterns:
