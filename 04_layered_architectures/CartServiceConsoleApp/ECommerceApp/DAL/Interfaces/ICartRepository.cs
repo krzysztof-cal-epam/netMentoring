@@ -4,8 +4,9 @@ namespace CartServiceConsoleApp.DAL.Interfaces
 {
     public interface ICartRepository : IDisposable
     {
-        Cart GetCartById(string cartId);
+        Cart GetCartById(Guid cartId);
         void SaveCart(Cart cart);
-        void DeleteCart(string cartId);
+        void DeleteCart(Guid cartId);
+        IEnumerable<Cart> GetAllCarts();
     }
 }

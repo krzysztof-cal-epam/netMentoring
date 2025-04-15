@@ -2,13 +2,12 @@
 {
     public class Cart
     {
-        public Cart(string id)
+        public Cart(Guid id)
         {
             Id = id;
         }
 
-        //todo change to Guid type
-        public string Id { get; private set; }
+        public Guid Id { get; private set; }
         public List<CartItem> Items { get; set; } = new List<CartItem>();
     }
 }

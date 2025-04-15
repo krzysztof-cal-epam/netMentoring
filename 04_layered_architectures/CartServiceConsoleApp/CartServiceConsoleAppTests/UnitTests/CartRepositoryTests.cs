@@ -1,46 +1,63 @@
-﻿using CartServiceConsoleApp.DAL.Repositories;
+﻿using CartServiceConsoleApp.DAL.Interfaces;
+using CartServiceConsoleApp.DAL.Repositories;
 using CartServiceConsoleApp.Entities;
+using Moq;
 
 namespace CartServiceConsoleAppTests.UnitTests
 {
-    //todo this is not unit test!
-    public class CartRepositoryTests : IDisposable
+    public class CartRepositoryTests
     {
-        private readonly CartRepository _sut; // todo change name to something more meeningfull, check microsoft naming convention
-
-        private readonly List<string> _cartIdsToDispose;
+        private readonly Mock<ICartDatabase<Cart>> _mockDatabase;
+        private readonly CartRepository _cartRepository;
 
         public CartRepositoryTests()
         {
-            _sut = new CartRepository();
-            _cartIdsToDispose = new List<string>();
+            _mockDatabase = new Mock<ICartDatabase<Cart>>();
+            _cartRepository = new CartRepository(_mockDatabase.Object);
         }
 
         [Fact]
         public void CartRepositoryShouldSaveCart()
         {
             // Arrange
-            var givenId = Guid.NewGuid().ToString();
-            _cartIdsToDispose.Add(givenId);
+            var givenId = Guid.NewGuid();
             var cart = new Cart(givenId);
 
             // Act
-            _sut.SaveCart(cart);
+            _cartRepository.SaveCart(cart);
 
             // Assert
-            var expectedCart = _sut.GetCartById(givenId);
-            Assert.Equal(expectedCart.Id, cart.Id);
+            _mockDatabase.Verify(db => db.Upsert(It.Is<Cart>(c => c.Id == givenId)), Times.Once);
         }
 
-        void IDisposable.Dispose()
+        [Fact]
+        public void CartRepositoryShouldRetriveCart()
         {
-            // Cleanup
-            foreach (var id in _cartIdsToDispose)
-            {
-                _sut.DeleteCart(id);
-            }
+            // Arrange
+            var givenId = Guid.NewGuid();
+            var expectedCart = new Cart(givenId);
 
-            _sut.Dispose();
+            _mockDatabase.Setup(x => x.FindById(It.IsAny<Guid>()))
+                .Returns(expectedCart);
+
+            // Act
+            var cart = _cartRepository.GetCartById(givenId);
+
+            // Assert
+            _mockDatabase.Verify(x => x.FindById(givenId), Times.Once);
+        }
+
+        [Fact]
+        public void CartRepositoryShouldDeleteCart()
+        {
+            // Arrange
+            var givenId = Guid.NewGuid();
+
+            // Act
+            _cartRepository.DeleteCart(givenId);
+
+            // Assert
+            _mockDatabase.Verify(x => x.Delete(It.Is<Guid>(guid => guid == givenId)));
         }
     }
 }

@@ -1,42 +1,43 @@
 ﻿using CartServiceConsoleApp.DAL.Interfaces;
 using CartServiceConsoleApp.Entities;
-using LiteDB;
 
 namespace CartServiceConsoleApp.DAL.Repositories
 {
-    //todo extract some abstraction and make reposiorty testable with any db
-    //todo consider config file to make connection secure (not hardcoded)
     public class CartRepository : ICartRepository
     {
-        private readonly LiteDatabase _db;
+        private readonly ICartDatabase<Cart> _database;
 
-        public CartRepository(string connection = "ECommerceDb.db")
+        public CartRepository(ICartDatabase<Cart> database)
         {
-            var connectionString = new ConnectionString(connection) { Connection = ConnectionType.Shared };
-            _db = new LiteDatabase(connectionString);
+            _database = database;
         }
 
-        public void DeleteCart(string cartId)
+        public Cart GetCartById(Guid cartId)
         {
-            var collection = _db.GetCollection<Cart>("Carts");
-            collection.Delete(cartId);
-        }
-
-        public Cart GetCartById(string cartId)
-        {
-            var collection = _db.GetCollection<Cart>("Carts");
-            return collection.FindById(cartId);
+            return _database.FindById(cartId);
         }
 
         public void SaveCart(Cart cart)
         {
-            var collection = _db.GetCollection<Cart>("Carts");
-            collection.Upsert(cart);
+            _database.Upsert(cart);
+        }
+
+        public void DeleteCart(Guid cartId)
+        {
+            _database.Delete(cartId);
+        }
+
+        public IEnumerable<Cart> GetAllCarts()
+        {
+            return _database.GetAll();
         }
 
         public void Dispose()
         {
-            _db.Dispose();
+            if (_database is IDisposable disposableDb)
+            {
+                disposableDb.Dispose();
+            }
         }
     }
 }

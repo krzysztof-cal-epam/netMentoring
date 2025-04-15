@@ -13,7 +13,7 @@ namespace CartServiceConsoleApp.BLL.Services
             _cartRepository = cartRepository;
         }
 
-        public void AddItem(string cartId, CartItem cartItem)
+        public void AddItem(Guid cartId, CartItem cartItem)
         {
             var cart = _cartRepository.GetCartById(cartId) ?? new Cart(cartId);
 
@@ -31,13 +31,18 @@ namespace CartServiceConsoleApp.BLL.Services
             _cartRepository.SaveCart(cart);
         }
 
-        public List<CartItem> GetItems(string cartId)
+        public IEnumerable<Cart> GetAllCarts()
+        {
+            return _cartRepository.GetAllCarts();
+        }
+
+        public List<CartItem> GetItems(Guid cartId)
         {
             var cart = _cartRepository.GetCartById(cartId);
             return cart?.Items ?? new List<CartItem>();
         }
 
-        public void RemoveItem(string cartId, string itemId)
+        public void RemoveItem(Guid cartId, int itemId)
         {
             var cart = _cartRepository.GetCartById(cartId);
             if (cart?.Items != null)
