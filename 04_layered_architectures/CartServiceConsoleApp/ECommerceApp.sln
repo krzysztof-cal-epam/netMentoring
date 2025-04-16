@@ -11,13 +11,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CartServiceWebApi", "CartSe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CatalogService", "CatalogService", "{10A2F077-039D-4D43-8D21-74FD39502DEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogService.Domain", "CatalogService.Domain\CatalogService.Domain.csproj", "{B6F34C08-4556-4CA1-A5D2-E1AAE0DB6C46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogService.Domain", "CatalogService.Domain\CatalogService.Domain.csproj", "{B6F34C08-4556-4CA1-A5D2-E1AAE0DB6C46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogService.Application", "CatalogService.Application\CatalogService.Application.csproj", "{F6B1D882-756A-4EB5-9D23-EC40DE96ADC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogService.Application", "CatalogService.Application\CatalogService.Application.csproj", "{F6B1D882-756A-4EB5-9D23-EC40DE96ADC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogService.DataAccess", "CatalogService.DataAccess\CatalogService.DataAccess.csproj", "{04CBCEA9-F4DA-42A1-B3EF-CD0BD2062C38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogService.DataAccess", "CatalogService.DataAccess\CatalogService.DataAccess.csproj", "{04CBCEA9-F4DA-42A1-B3EF-CD0BD2062C38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogService.Api", "CatalogService.Api\CatalogService.Api.csproj", "{FBC9FBDC-4867-42BC-9C31-37E2831C8BB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogService.Api", "CatalogService.Api\CatalogService.Api.csproj", "{FBC9FBDC-4867-42BC-9C31-37E2831C8BB5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogService.Tests", "CatalogService.Tests\CatalogService.Tests.csproj", "{64E6ED8B-8E8A-4FFF-9CF0-F692AE7EACA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{FBC9FBDC-4867-42BC-9C31-37E2831C8BB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBC9FBDC-4867-42BC-9C31-37E2831C8BB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBC9FBDC-4867-42BC-9C31-37E2831C8BB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64E6ED8B-8E8A-4FFF-9CF0-F692AE7EACA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E6ED8B-8E8A-4FFF-9CF0-F692AE7EACA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64E6ED8B-8E8A-4FFF-9CF0-F692AE7EACA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64E6ED8B-8E8A-4FFF-9CF0-F692AE7EACA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +68,7 @@ Global
 		{F6B1D882-756A-4EB5-9D23-EC40DE96ADC2} = {10A2F077-039D-4D43-8D21-74FD39502DEF}
 		{04CBCEA9-F4DA-42A1-B3EF-CD0BD2062C38} = {10A2F077-039D-4D43-8D21-74FD39502DEF}
 		{FBC9FBDC-4867-42BC-9C31-37E2831C8BB5} = {10A2F077-039D-4D43-8D21-74FD39502DEF}
+		{64E6ED8B-8E8A-4FFF-9CF0-F692AE7EACA2} = {10A2F077-039D-4D43-8D21-74FD39502DEF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C11443B2-9499-4C35-82DA-AAFC466FFA68}
