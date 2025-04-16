@@ -10,7 +10,7 @@ namespace CatalogService.Domain.Entities
         [MaxLength(50)]
         public string Name { get; set; } = string.Empty;
 
-        public Uri? Image { get; set; }
+        public Uri? ImageUrl { get; set; }
 
         public int? ParentCategoryId { get; set; }
 

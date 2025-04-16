@@ -54,6 +54,9 @@ namespace CatalogService.Api.Controllers
             if (id != categoryDto.Id)
                 return BadRequest("Category ID mismatch.");
 
+            if (categoryDto.ParentCategoryId == categoryDto.Id)
+                return BadRequest("A category cannot be its own parent.");
+
             await _categoryService.UpdateAsync(categoryDto);
             return NoContent();
         }

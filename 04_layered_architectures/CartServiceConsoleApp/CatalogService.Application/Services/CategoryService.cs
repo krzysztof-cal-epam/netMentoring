@@ -19,7 +19,7 @@ namespace CatalogService.Application.Services
             var category = new Category
             {
                 Name = categoryDto.Name,
-                Image = categoryDto.Image,
+                ImageUrl = categoryDto.ImageUrl,
                 ParentCategoryId = categoryDto.ParentCategoryId
             };
 
@@ -41,7 +41,7 @@ namespace CatalogService.Application.Services
             {
                 Id = category.Id,
                 Name = category.Name,
-                Image = category.Image,
+                ImageUrl = category.ImageUrl,
                 ParentCategoryId = category.ParentCategoryId
             };
         }
@@ -53,7 +53,7 @@ namespace CatalogService.Application.Services
             {
                 Id = c.Id,
                 Name = c.Name,
-                Image = c.Image,
+                ImageUrl = c.ImageUrl,
                 ParentCategoryId = c.ParentCategoryId
             });
         }
@@ -65,7 +65,7 @@ namespace CatalogService.Application.Services
                 throw new Exception($"Category with ID {categoryDto.Id} not found.");
 
             category.Name = categoryDto.Name;
-            category.Image = categoryDto.Image;
+            category.ImageUrl = categoryDto.ImageUrl;
             category.ParentCategoryId = categoryDto.ParentCategoryId;
 
             await _categoryRepository.UpdateAsync(category);

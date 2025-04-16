@@ -26,6 +26,11 @@ namespace CatalogService.DataAccess.Data
                       .IsRequired()
                       .HasMaxLength(50);
 
+                entity.Property(p => p.ImageUrl)
+                    .HasConversion(
+                      v => v == null ? null : v.ToString(),
+                      v => v == null ? null : new Uri(v));
+
                 entity.HasOne(c => c.ParentCategory)
                     .WithMany()
                     .HasForeignKey(c => c.ParentCategoryId);
