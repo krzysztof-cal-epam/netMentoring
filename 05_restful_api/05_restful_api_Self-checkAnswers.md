@@ -34,31 +34,29 @@ Server can provide executable code (i.e. JavaScript) to the client, therefore im
 We can distunguish the following HTTP request methods:
 ### 1. GET
 
-todo
+The purpose of this is to retrieve data from the server. This method can be cached.
 
 ### 2. POST
 
-todo
+The purpose of POST is to create new resource on the server. This method cannot be cached.
 
 ### 3. PUT
 
-todo
+The purpose of PUT is to update existing data on server. This method cannot be cached.
 
 ### 4. PATCH
 
-todo
+The purpose of PATCH is to do partial update on an existing resource on the server side. This metchod cannot be cached.
 
 ### 5. DELETE
 
-todo
+The purpose of DELETE is to remove a resource from the server. This metchod cannot be cached.
 
 ### 6. HEAD
 
-todo
+The purpose of HEAD is to retrievie headers i.e. to check metadata of the resource. This methed can be cached.
 
-### 7. OPTIONS
-
-todo
+TODO rest of the question
 
 ## 3. What are the advantages of statelessness in RESTful services?
 
