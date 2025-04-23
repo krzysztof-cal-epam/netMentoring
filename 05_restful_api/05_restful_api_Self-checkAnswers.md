@@ -2,9 +2,61 @@
 
 ## 1. Explain the difference between terms: REST and RESTful. What are the six constraints?
 
-todo
+REST is an architectural style for designing web services. It describes principles and constrains that API priject should follow to be effective.
+RESTful can be used to describe system that follows REST architectural style.
+The REST constrains:
+### 1. Client-server architecture
+
+System is designet as client-server architecture, where the client is responsible for initiating requests and the server is processing requests and sending responses.
+
+### 2. Stateless
+
+Client must take care of providing all required information within one request. Therefore, REST services are easy to scale, because server is not storing any data for the client.
+
+### 3. Cacheable
+
+Cache is being used for improving system performance, reduce latency and server load. Cache allows response from the server to be stored and used by clients without invoking actual network connection.
+
+### 4. Uniform Interface
+
+Is being used for standarising interfaces for interacting between server and the client. Some example of the uniform are the identification of resource, standarised responses i.e. JSON, XML.
+
+### 5. Layered System
+
+Service can be implemented as layered service, which improves scalability and flexibility. There are many variation of layers such as security, trafic management.
+
+### 6. Code on demand
+
+Server can provide executable code (i.e. JavaScript) to the client, therefore improvinf flexibility. This constrint is optional.
 
 ## 2. HTTP Request Methods (the difference) and HTTP Response codes. What is idempotency?  Is HTTP the only protocol supported by the REST?
+
+We can distunguish the following HTTP request methods:
+### 1. GET
+
+todo
+
+### 2. POST
+
+todo
+
+### 3. PUT
+
+todo
+
+### 4. PATCH
+
+todo
+
+### 5. DELETE
+
+todo
+
+### 6. HEAD
+
+todo
+
+### 7. OPTIONS
 
 todo
 
