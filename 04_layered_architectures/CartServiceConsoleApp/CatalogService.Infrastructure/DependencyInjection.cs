@@ -1,6 +1,7 @@
 ﻿using CatalogService.Application.Interfaces;
 using CatalogService.Application.Services;
 using CatalogService.DataAccess.Data;
+using CatalogService.DataAccess.Repositories;
 using CatalogService.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -17,6 +18,7 @@ namespace CatalogService.Infrastructure
                 options.UseSqlServer(connectionString));
 
             services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
+            services.AddScoped(typeof(IProductRepository), typeof(ProductRepository));
 
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IProductService, ProductService>();

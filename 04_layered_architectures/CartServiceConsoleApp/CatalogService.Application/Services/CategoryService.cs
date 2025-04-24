@@ -14,7 +14,7 @@ namespace CatalogService.Application.Services
             _categoryRepository = categoryRepository;
         }
 
-        public async Task AddAsync(CategoryDto categoryDto)
+        public async Task<CategoryDto> AddAsync(CategoryDto categoryDto)
         {
             var category = new Category
             {
@@ -24,6 +24,14 @@ namespace CatalogService.Application.Services
             };
 
             await _categoryRepository.AddAsync(category);
+
+            return new CategoryDto
+            {
+                Id = category.Id,
+                Name = category.Name,
+                ImageUrl = category.ImageUrl,
+                ParentCategoryId = category.ParentCategoryId
+            };
         }
 
         public async Task DeleteAsync(int id)

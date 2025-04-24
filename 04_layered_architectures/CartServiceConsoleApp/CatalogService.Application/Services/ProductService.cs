@@ -7,10 +7,10 @@ namespace CatalogService.Application.Services
 {
     public class ProductService : IProductService
     {
-        private readonly IRepository<Product> _productRepository;
+        private readonly IProductRepository _productRepository;
         private readonly IRepository<Category> _categoryRepository;
 
-        public ProductService(IRepository<Product> productRepository, IRepository<Category> categoryRepository)
+        public ProductService(IProductRepository productRepository, IRepository<Category> categoryRepository)
         {
             _productRepository = productRepository;
             _categoryRepository = categoryRepository;
@@ -58,9 +58,25 @@ namespace CatalogService.Application.Services
             };
         }
 
+        public async Task<IEnumerable<ProductDto>> GetProductsAsync(int? categoryId, int page, int pageSize)
+        {
+            var products = await _productRepository.GetProductsAsync(categoryId, page, pageSize);
+
+            return products.Select(p => new ProductDto
+            {
+                Id = p.Id,
+                Name = p.Name,
+                Description = p.Description,
+                Price = p.Price,
+                Amount = p.Amount,
+                CategoryId = p.CategoryId,
+            }).ToList();
+        }
+
         public async Task<IEnumerable<ProductDto>> ListAsync()
         {
             var products = await _productRepository.ListAsync();
+
             return products.Select(p => new ProductDto
             {
                 Id = p.Id,

@@ -6,7 +6,7 @@ namespace CatalogService.Application.Interfaces
     {
         Task<CategoryDto> GetByIdAsync(int id);
         Task<IEnumerable<CategoryDto>> ListAsync();
-        Task AddAsync(CategoryDto categoryDto);
+        Task<CategoryDto> AddAsync(CategoryDto categoryDto);
         Task UpdateAsync(CategoryDto categoryDto);
         Task DeleteAsync(int id);
     }
