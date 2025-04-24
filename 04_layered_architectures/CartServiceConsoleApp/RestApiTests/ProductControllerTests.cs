@@ -40,5 +40,31 @@ namespace RestApiTests
             Assert.Equal(2, returnedProducts.Count);
             Assert.Equal("Product A", returnedProducts.FirstOrDefault()?.Name);
         }
+
+        [Fact]
+        public async Task Add_ValidProduct_ReturnsCreated()
+        {
+            // Arrange
+            var expectedProduct = new ProductDto { Id = 1, Name = "Product A", Price = 100.0m, Amount = 10, CategoryId = 1 };
+            _mockProductService
+                .Setup(service => service.AddAsync(It.IsAny<ProductDto>()))
+                .ReturnsAsync(expectedProduct);
+
+            // Act
+            var result = await _productController.Add(expectedProduct) as CreatedAtActionResult;
+
+            // Assert
+            var product = result?.Value as ProductDto;
+            Assert.NotNull(result);
+            Assert.IsType<CreatedAtActionResult>(result);
+            Assert.NotNull(product);
+            Assert.Equal(expectedProduct.Id, product.Id);
+            Assert.Equal(expectedProduct.Name, product.Name);
+            _mockProductService.Verify(service => service.AddAsync(It.IsAny<ProductDto>()), Times.Once);
+        }
+
+        //todo Update
+
+        //todo Delete
     }
 }

@@ -16,7 +16,7 @@ namespace CatalogService.Application.Services
             _categoryRepository = categoryRepository;
         }
 
-        public async Task AddAsync(ProductDto productDto)
+        public async Task<ProductDto> AddAsync(ProductDto productDto)
         {
             var category = await _categoryRepository.GetByIdAsync(productDto.CategoryId);
             if (category == null)
@@ -32,7 +32,22 @@ namespace CatalogService.Application.Services
                 CategoryId = productDto.CategoryId
             };
 
-            await _productRepository.AddAsync(product);
+            var res = await _productRepository.AddAsync(product);
+
+            if (res == null)
+            {
+                throw new Exception("Failed to save product");
+            }
+
+            return new ProductDto
+            {
+                Id = res.Id,
+                Name = res.Name,
+                Description = res.Description,
+                Price = res.Price,
+                Amount = res.Amount,
+                CategoryId = res.CategoryId
+            };
         }
 
         public async Task DeleteAsync(int id)
