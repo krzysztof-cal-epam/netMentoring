@@ -63,8 +63,40 @@ namespace RestApiTests
             _mockProductService.Verify(service => service.AddAsync(It.IsAny<ProductDto>()), Times.Once);
         }
 
-        //todo Update
+        [Fact]
+        public async Task Update_UpdatedProduct_ReturnsNoContent()
+        {
+            // Arrange
+            var expectedProduct = new ProductDto { Id = 1, Name = "Product A", Price = 100.0m, Amount = 10, CategoryId = 1 };
+            _mockProductService
+                .Setup(service => service.UpdateAsync(It.IsAny<ProductDto>()))
+                .Returns(Task.CompletedTask);
 
-        //todo Delete
+            // Act
+            var result = await _productController.Update(1, expectedProduct) as NoContentResult;
+
+            // Assert
+            Assert.NotNull(result);
+            Assert.IsType<NoContentResult>(result);
+            _mockProductService.Verify(service => service.UpdateAsync(It.IsAny<ProductDto>()), Times.Once);
+        }
+
+        [Fact]
+        public async Task Delete_DeletesProduct_ReturnsNoContent()
+        {
+            // Arrange
+            var givenProductIdToDelete = 1;
+            _mockProductService
+                .Setup(service => service.DeleteAsync(It.IsAny<int>()))
+                .Returns(Task.CompletedTask);
+
+            // Act
+            var result = await _productController.Delete(givenProductIdToDelete) as NoContentResult;
+
+            // Assert
+            Assert.NotNull(result);
+            Assert.IsType<NoContentResult>(result);
+            _mockProductService.Verify(service => service.DeleteAsync(It.Is<int>(x => x == givenProductIdToDelete)), Times.Once);
+        }
     }
 }

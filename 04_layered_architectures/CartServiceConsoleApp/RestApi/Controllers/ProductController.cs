@@ -42,5 +42,25 @@ namespace RestApi.Controllers
             var res = await _productService.AddAsync(productDto);
             return CreatedAtAction(nameof(GetById), new { id = res.Id }, res);
         }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id, [FromBody] ProductDto productDto)
+        {
+            if (id != productDto.Id)
+                return BadRequest("Product ID in the URL does not match the ID of the product.");
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            await _productService.UpdateAsync(productDto);
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            await _productService.DeleteAsync(id);
+            return NoContent();
+        }
     }
 }
