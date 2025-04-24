@@ -73,9 +73,9 @@ namespace CatalogService.Application.Services
             };
         }
 
-        public async Task<IEnumerable<ProductDto>> GetProductsAsync(int? categoryId, int page, int pageSize)
+        public async Task<IEnumerable<ProductDto>> ListAsync(int? categoryId, int page, int pageSize)
         {
-            var products = await _productRepository.GetProductsAsync(categoryId, page, pageSize);
+            var products = await _productRepository.ListAsync(categoryId, page, pageSize);
 
             return products.Select(p => new ProductDto
             {

@@ -5,6 +5,6 @@ namespace CatalogService.Application.Interfaces
 {
     public interface IProductService : IRepository<ProductDto>
     {
-        Task<IEnumerable<ProductDto>> GetProductsAsync(int? categoryId, int page, int pageSize);
+        Task<IEnumerable<ProductDto>> ListAsync(int? categoryId, int page, int pageSize);
     }
 }

@@ -14,7 +14,7 @@ namespace CatalogService.DataAccess.Repositories
             _context = context;
         }
 
-        public async Task<IEnumerable<Product>> GetProductsAsync(int? categoryId, int page, int pageSize)
+        public async Task<IEnumerable<Product>> ListAsync(int? categoryId, int page, int pageSize)
         {
             var query = _context.Set<Product>().AsQueryable();
 

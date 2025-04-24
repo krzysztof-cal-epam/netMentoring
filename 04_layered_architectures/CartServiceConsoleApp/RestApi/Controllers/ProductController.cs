@@ -45,9 +45,9 @@ namespace RestApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> ListAll([FromQuery] int? categoryId, [FromQuery] int page = 1, [FromQuery] int pageSize = 10)
+        public async Task<IActionResult> ListProductsByCategory([FromQuery] int? categoryId, [FromQuery] int page = 1, [FromQuery] int pageSize = 10)
         {
-            var products = await _productService.GetProductsAsync(categoryId, page, pageSize);
+            var products = await _productService.ListAsync(categoryId, page, pageSize);
             return Ok(products);
         }
 

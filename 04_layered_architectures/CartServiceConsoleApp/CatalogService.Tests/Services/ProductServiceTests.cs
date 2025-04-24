@@ -47,24 +47,24 @@ namespace CatalogService.Tests.Services
         }
 
         [Fact]
-        public async Task ProductService_GetProductsAsync_ShouldReturnData()
+        public async Task ProductService_ListAsync_ShouldReturnData()
         {
             // Arrange
             var mockProductRepository = new Mock<IProductRepository>();
             mockProductRepository
-                .Setup(repo => repo.GetProductsAsync(It.IsAny<int?>(), It.IsAny<int>(), It.IsAny<int>()))
+                .Setup(repo => repo.ListAsync(It.IsAny<int?>(), It.IsAny<int>(), It.IsAny<int>()))
                 .ReturnsAsync(new[] { _sampleProduct });
 
             var productService = new ProductService(mockProductRepository.Object, new Mock<IRepository<Category>>().Object);
 
             // Act
-            var result = await productService.GetProductsAsync(2, 1, 1);
+            var result = await productService.ListAsync(2, 1, 1);
 
             // Assert
             Assert.NotEmpty(result);
             Assert.True(result.Any());
             Assert.Equal(_sampleProduct.Name, result.ElementAt(0).Name);
-            mockProductRepository.Verify(x => x.GetProductsAsync(It.IsAny<int?>(), It.IsAny<int>(), It.IsAny<int>()), Times.Once);
+            mockProductRepository.Verify(x => x.ListAsync(It.IsAny<int?>(), It.IsAny<int>(), It.IsAny<int>()), Times.Once);
         }
     }
 }

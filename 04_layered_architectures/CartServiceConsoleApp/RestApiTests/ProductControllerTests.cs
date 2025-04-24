@@ -19,7 +19,7 @@ namespace RestApiTests
         }
 
         [Fact]
-        public async Task ListAll_ReturnsOK()
+        public async Task ListProductsByCategory_ReturnsOK()
         {
             // Arrange
             var productList = new List<ProductDto>
@@ -28,11 +28,11 @@ namespace RestApiTests
                 new ProductDto { Id = 2, Name = "Product B", Price = 200.0m, Amount = 5, CategoryId = 2 }
             };
             _mockProductService
-                .Setup(service => service.GetProductsAsync(It.IsAny<int?>(), It.IsAny<int>(), It.IsAny<int>()))
+                .Setup(service => service.ListAsync(It.IsAny<int?>(), It.IsAny<int>(), It.IsAny<int>()))
                 .ReturnsAsync(productList);
 
             // Act
-            var res = await _productController.ListAll(1, 1, 10) as OkObjectResult;
+            var res = await _productController.ListProductsByCategory(1, 1, 10) as OkObjectResult;
 
             // Assert
             var returnedProducts = res?.Value as List<ProductDto>;
@@ -40,7 +40,7 @@ namespace RestApiTests
             Assert.NotNull(returnedProducts);
             Assert.Equal(2, returnedProducts.Count);
             Assert.Equal("Product A", returnedProducts.FirstOrDefault()?.Name);
-            _mockProductService.Verify(x => x.GetProductsAsync(It.IsAny<int?>(), It.IsAny<int>(), It.IsAny<int>()), Times.Once);
+            _mockProductService.Verify(x => x.ListAsync(It.IsAny<int?>(), It.IsAny<int>(), It.IsAny<int>()), Times.Once);
         }
 
         [Fact]
