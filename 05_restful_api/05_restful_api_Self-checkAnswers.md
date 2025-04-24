@@ -56,7 +56,39 @@ The purpose of DELETE is to remove a resource from the server. This metchod cann
 
 The purpose of HEAD is to retrievie headers i.e. to check metadata of the resource. This methed can be cached.
 
-TODO rest of the question
+### 7. Options
+
+The purpose is to describe the communication options available for a specific URL or server. 
+
+### HTTP response codes
+We can distinguish several groups of the HTTP response codes that can be described as follows:
+#### 1xx : Information
+
+Provides information about the request that is being processed, i.e. "100 continue" - server received initial request and now expecting the client to send the body of the request.
+
+#### 2xx : Success
+
+todo
+
+#### 3xx : Redirection
+
+todo
+
+#### 4xx : Client error
+
+todo
+
+#### 5xx : Server error
+
+todo
+
+### Idempotency
+
+todo
+
+### Other protocols supported by REST
+
+todo
 
 ## 3. What are the advantages of statelessness in RESTful services?
 
