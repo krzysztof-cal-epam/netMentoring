@@ -1,6 +1,7 @@
 using CatalogService.Application.Dto;
 using CatalogService.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Routing;
 using Moq;
 using RestApi.Controllers;
 
@@ -18,7 +19,7 @@ namespace RestApiTests
         }
 
         [Fact]
-        public async Task GetAll_ReturnsOK()
+        public async Task ListAll_ReturnsOK()
         {
             // Arrange
             var productList = new List<ProductDto>
@@ -31,7 +32,7 @@ namespace RestApiTests
                 .ReturnsAsync(productList);
 
             // Act
-            var res = await _productController.GetAll(1, 1, 10) as OkObjectResult;
+            var res = await _productController.ListAll(1, 1, 10) as OkObjectResult;
 
             // Assert
             var returnedProducts = res?.Value as List<ProductDto>;
@@ -39,6 +40,7 @@ namespace RestApiTests
             Assert.NotNull(returnedProducts);
             Assert.Equal(2, returnedProducts.Count);
             Assert.Equal("Product A", returnedProducts.FirstOrDefault()?.Name);
+            _mockProductService.Verify(x => x.GetProductsAsync(It.IsAny<int?>(), It.IsAny<int>(), It.IsAny<int>()), Times.Once);
         }
 
         [Fact]
@@ -97,6 +99,47 @@ namespace RestApiTests
             Assert.NotNull(result);
             Assert.IsType<NoContentResult>(result);
             _mockProductService.Verify(service => service.DeleteAsync(It.Is<int>(x => x == givenProductIdToDelete)), Times.Once);
+        }
+
+        [Fact]
+        public async Task GetById_ReturnsOKWithLinks()
+        {
+            // Arrange
+            var expectedProduct = new ProductDto
+            {
+                Id = 1, 
+                Name = "Product A",
+                Description = "Product A description",
+                Image = new Uri("http://ecommerceapp.com/images/producta.jpg"),
+                Price = 100.0m,
+                Amount = 10,
+                CategoryId = 1 
+            };
+            _mockProductService
+                .Setup(service => service.GetByIdAsync(It.IsAny<int>()))
+                .ReturnsAsync(expectedProduct);
+
+            var mockUrlHelper = new Mock<IUrlHelper>();
+            mockUrlHelper.Setup(helper => helper.Action(It.IsAny<UrlActionContext>()))
+                .Returns((UrlActionContext context) =>
+                {
+                    var id = context.Values.GetType().GetProperty("id")?.GetValue(context.Values, null);
+
+                    return $"/api/products/{id}";
+                });
+            _productController.Url = mockUrlHelper.Object;
+
+            // Act
+            var res = await _productController.GetById(1) as OkObjectResult;
+
+            // Assert
+            Assert.IsType<OkObjectResult>(res);
+            var product = res?.Value as ProductWithLinksDto;
+            Assert.NotNull(product);
+            Assert.Equal(expectedProduct.Name, product?.Name);
+            
+            Assert.NotNull(product.Links);
+            Assert.Equal($"/api/products/1", product.Links.Self.Href);
         }
     }
 }

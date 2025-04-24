@@ -23,11 +23,29 @@ namespace RestApi.Controllers
             {
                 return NotFound();
             }
-            return Ok(product);
+
+            var productWithLinks = new ProductWithLinksDto()
+            {
+                Id = product.Id,
+                Name = product.Name,
+                Description = product.Description,
+                Image = product.Image,
+                Price = product.Price,
+                Amount = product.Amount,
+                CategoryId = product.CategoryId,
+                Links = new LinksDto
+                {
+                    Self = new LinkDto { Href = Url.Action(nameof(GetById), new { id = product.Id }), Method = "GET" },
+                    Update = new LinkDto { Href = Url.Action(nameof(Update), new { id = product.Id }), Method = "PUT" },
+                    Delete = new LinkDto { Href = Url.Action(nameof(Delete), new { id = product.Id }), Method = "DELETE" }
+                }
+            };
+
+            return Ok(productWithLinks);
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll([FromQuery] int? categoryId, [FromQuery] int page = 1, [FromQuery] int pageSize = 10)
+        public async Task<IActionResult> ListAll([FromQuery] int? categoryId, [FromQuery] int page = 1, [FromQuery] int pageSize = 10)
         {
             var products = await _productService.GetProductsAsync(categoryId, page, pageSize);
             return Ok(products);
