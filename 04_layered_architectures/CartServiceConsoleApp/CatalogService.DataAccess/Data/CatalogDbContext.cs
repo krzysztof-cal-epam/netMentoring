@@ -54,7 +54,8 @@ namespace CatalogService.DataAccess.Data
                 entity.HasOne(p => p.Category)
                     .WithMany()
                     .HasForeignKey(p => p.CategoryId)
-                    .IsRequired();
+                    .IsRequired()
+                    .OnDelete(DeleteBehavior.Cascade);
             });
         }
     }
