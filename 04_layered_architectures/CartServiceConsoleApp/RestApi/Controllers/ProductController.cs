@@ -24,7 +24,15 @@ namespace RestApi.Controllers
                 return NotFound();
             }
 
-            var productWithLinks = new ProductWithLinksDto()
+            var selfLink = Url.Action(nameof(GetById), "Product", new { id = product.Id }, Request.Scheme, Request.Host.Value);
+            var updateLink = Url.Action(nameof(Update), "Product", new { id = product.Id }, Request.Scheme, Request.Host.Value);
+            var deleteLink = Url.Action(nameof(Delete), "Product", new { id = product.Id }, Request.Scheme, Request.Host.Value);
+
+            Response.Headers.Append("Link", $"<{selfLink}>; rel=\"self\"; method=\"GET\"");
+            Response.Headers.Append("Link", $"<{updateLink}>; rel=\"update\"; method=\"PUT\"");
+            Response.Headers.Append("Link", $"<{deleteLink}>; rel=\"delete\"; method=\"DELETE\"");
+
+            var productDto = new ProductDto
             {
                 Id = product.Id,
                 Name = product.Name,
@@ -32,16 +40,10 @@ namespace RestApi.Controllers
                 Image = product.Image,
                 Price = product.Price,
                 Amount = product.Amount,
-                CategoryId = product.CategoryId,
-                Links = new LinksDto
-                {
-                    Self = new LinkDto { Href = Url.Action(nameof(GetById), new { id = product.Id }), Method = "GET" },
-                    Update = new LinkDto { Href = Url.Action(nameof(Update), new { id = product.Id }), Method = "PUT" },
-                    Delete = new LinkDto { Href = Url.Action(nameof(Delete), new { id = product.Id }), Method = "DELETE" }
-                }
+                CategoryId = product.CategoryId
             };
 
-            return Ok(productWithLinks);
+            return Ok(productDto);
         }
 
         [HttpGet]

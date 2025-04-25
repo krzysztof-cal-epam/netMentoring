@@ -1,5 +1,6 @@
 using CatalogService.Application.Dto;
 using CatalogService.Application.Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Routing;
 using Moq;
@@ -124,22 +125,31 @@ namespace RestApiTests
                 .Returns((UrlActionContext context) =>
                 {
                     var id = context.Values.GetType().GetProperty("id")?.GetValue(context.Values, null);
-
                     return $"/api/products/{id}";
                 });
             _productController.Url = mockUrlHelper.Object;
+            _productController.ControllerContext = new ControllerContext
+            {
+                HttpContext = new DefaultHttpContext()
+            };
 
             // Act
             var res = await _productController.GetById(1) as OkObjectResult;
 
             // Assert
             Assert.IsType<OkObjectResult>(res);
-            var product = res?.Value as ProductWithLinksDto;
+            var product = res?.Value as ProductDto;
             Assert.NotNull(product);
             Assert.Equal(expectedProduct.Name, product?.Name);
-            
-            Assert.NotNull(product.Links);
-            Assert.Equal($"/api/products/1", product.Links.Self.Href);
+
+            var responseHeaders = _productController.Response.Headers;
+
+            Assert.Contains(responseHeaders, h => h.Key == "Link");
+            var links = responseHeaders["Link"];
+
+            Assert.Contains<string>($"</api/products/1>; rel=\"self\"; method=\"GET\"", links);
+            Assert.Contains<string>($"</api/products/1>; rel=\"update\"; method=\"PUT\"", links);
+            Assert.Contains<string>($"</api/products/1>; rel=\"delete\"; method=\"DELETE\"", links);
         }
     }
 }
