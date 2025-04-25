@@ -7,9 +7,9 @@ namespace CatalogService.Application.Services
 {
     public class CategoryService : ICategoryService
     {
-        private readonly IRepository<Category> _categoryRepository;
+        private readonly ICategoryRepository _categoryRepository;
 
-        public CategoryService(IRepository<Category> categoryRepository)
+        public CategoryService(ICategoryRepository categoryRepository)
         {
             _categoryRepository = categoryRepository;
         }
@@ -36,7 +36,18 @@ namespace CatalogService.Application.Services
 
         public async Task DeleteAsync(int id)
         {
-            await _categoryRepository.DeleteAsync(id);
+            try
+            {
+                await _categoryRepository.DeleteWithProductsAsync(id);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                throw new Exception($"Error: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"An unexpected error occurred while deleting category: {ex.Message}");
+            }
         }
 
         public async Task<CategoryDto> GetByIdAsync(int id)

@@ -54,8 +54,15 @@ namespace RestApi.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            await _categoryService.DeleteAsync(id);
-            return NoContent();
+            try
+            {
+                await _categoryService.DeleteAsync(id);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }
