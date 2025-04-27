@@ -1,7 +1,6 @@
 ﻿using CartServiceConsoleApp.DAL.Interfaces;
 using CartServiceConsoleApp.Entities;
 using LiteDB;
-using Microsoft.Extensions.Configuration;
 
 namespace CartServiceConsoleApp.DAL.Databases
 {
@@ -9,9 +8,8 @@ namespace CartServiceConsoleApp.DAL.Databases
     {
         private readonly LiteDatabase _db;
 
-        public LiteDbCartDatabase(IConfiguration configuration)
+        public LiteDbCartDatabase(string connection)
         {
-            var connection = configuration["LiteDb:DatabasePath"];
             var connectionString = new ConnectionString(connection) { Connection = ConnectionType.Shared };
             _db = new LiteDatabase(connectionString);
         }

@@ -17,6 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\CatalogService.Application\CatalogService.Application.csproj" />
     <ProjectReference Include="..\CatalogService.DataAccess\CatalogService.DataAccess.csproj" />
+    <ProjectReference Include="..\ECommerceApp\CartServiceConsoleApp.csproj" />
   </ItemGroup>
 
 </Project>

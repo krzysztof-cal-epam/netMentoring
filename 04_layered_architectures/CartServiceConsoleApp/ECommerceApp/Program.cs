@@ -9,7 +9,9 @@ var config = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
     .Build();
 
-var liteDbCartDatabase = new LiteDbCartDatabase(config);
+var connection = config["LiteDb:DatabasePath"];
+
+var liteDbCartDatabase = new LiteDbCartDatabase(connection);
 var cartRepository = new CartRepository(liteDbCartDatabase);
 var cartService = new CartService(cartRepository);
 

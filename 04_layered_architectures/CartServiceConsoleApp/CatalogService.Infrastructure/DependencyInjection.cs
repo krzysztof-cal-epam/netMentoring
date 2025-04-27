@@ -1,4 +1,10 @@
-﻿using CatalogService.Application.Interfaces;
+﻿using CartServiceConsoleApp.BLL.Interfaces;
+using CartServiceConsoleApp.BLL.Services;
+using CartServiceConsoleApp.DAL.Databases;
+using CartServiceConsoleApp.DAL.Interfaces;
+using CartServiceConsoleApp.DAL.Repositories;
+using CartServiceConsoleApp.Entities;
+using CatalogService.Application.Interfaces;
 using CatalogService.Application.Services;
 using CatalogService.DataAccess.Data;
 using CatalogService.DataAccess.Repositories;
@@ -12,7 +18,8 @@ namespace CatalogService.Infrastructure
     {
         public static IServiceCollection AddInfrastructure(
             this IServiceCollection services,
-            string connectionString)
+            string connectionString,
+            string cartConnectionString)
         {
             services.AddDbContext<CatalogDbContext>(options =>
                 options.UseSqlServer(connectionString));
@@ -23,6 +30,13 @@ namespace CatalogService.Infrastructure
 
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IProductService, ProductService>();
+
+            services.AddScoped<ICartService, CartService>();
+            services.AddScoped<ICartRepository, CartRepository>();
+            services.AddScoped<ICartDatabase<Cart>>(provider =>
+            {
+                return new LiteDbCartDatabase(cartConnectionString);
+            });
 
             return services;
         }
