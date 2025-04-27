@@ -1,4 +1,5 @@
-﻿using CartServiceConsoleApp.DAL.Interfaces;
+﻿using CartServiceConsoleApp.DAL.Exceptions;
+using CartServiceConsoleApp.DAL.Interfaces;
 using CartServiceConsoleApp.Entities;
 using LiteDB;
 
@@ -16,26 +17,60 @@ namespace CartServiceConsoleApp.DAL.Databases
 
         public Cart FindById(Guid id)
         {
-            var collection = _db.GetCollection<Cart>("Carts");
-            return collection.FindById(id);
+            try
+            {
+                var collection = _db.GetCollection<Cart>("Carts");
+                return collection.FindById(id);
+            }
+            catch (LiteException ex)
+            {
+                throw new DatabaseReadException($"Failed to find cart with id <{id}>", ex);
+            }
         }
 
         public IEnumerable<Cart> GetAll()
         {
-            var collection = _db.GetCollection<Cart>("Carts");
-            return collection.FindAll();
+            try
+            {
+                var collection = _db.GetCollection<Cart>("Carts");
+                return collection.FindAll();
+            }
+            catch (LiteException ex)
+            {
+                throw new DatabaseReadException("Failed to get all carts", ex);
+            }
         }
 
         public void Upsert(Cart item)
         {
-            var collection = _db.GetCollection<Cart>("Carts");
-            collection.Upsert(item);
+            try
+            {
+                var collection = _db.GetCollection<Cart>("Carts");
+                collection.Upsert(item);
+            }
+            catch (LiteException ex)
+            {
+                throw new DatabaseWriteException($"Failed to upsert cart with id <{item.Id}>", ex);
+            }
         }
 
         public void Delete(Guid id)
         {
-            var collection = _db.GetCollection<Cart>("Carts");
-            collection.Delete(id);
+            try
+            {
+                var collection = _db.GetCollection<Cart>("Carts");
+
+                if (collection.FindById(id) == null)
+                {
+                    throw new CartNotFoundException(id);
+                }
+
+                collection.Delete(id);
+            }
+            catch (Exception ex)
+            {
+                throw new DatabaseWriteException($"Failed to delete cart with id <{id}>", ex);
+            }
         }
 
         public void Dispose()

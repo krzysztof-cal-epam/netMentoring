@@ -1,4 +1,5 @@
-﻿using CartServiceConsoleApp.DAL.Interfaces;
+﻿using CartServiceConsoleApp.DAL.Exceptions;
+using CartServiceConsoleApp.DAL.Interfaces;
 using CartServiceConsoleApp.Entities;
 
 namespace CartServiceConsoleApp.DAL.Repositories
@@ -14,22 +15,61 @@ namespace CartServiceConsoleApp.DAL.Repositories
 
         public Cart GetCartById(Guid cartId)
         {
-            return _database.FindById(cartId);
+            try
+            {
+
+                var cart = _database.FindById(cartId);
+                if (cart == null)
+                {
+                    throw new CartNotFoundException(cartId);
+                }
+
+                return cart;
+            }
+            catch (DatabaseReadException ex)
+            {
+                throw new RepositoryException("Repository failed to get the cart.", ex);
+            }
         }
 
         public void SaveCart(Cart cart)
         {
-            _database.Upsert(cart);
+            try
+            {
+                _database.Upsert(cart);
+            }
+            catch (DatabaseWriteException ex)
+            {
+                throw new RepositoryException("Repository failed to save cart", ex);
+            }
         }
 
         public void DeleteCart(Guid cartId)
         {
-            _database.Delete(cartId);
+            try
+            {
+                _database.Delete(cartId);
+            }
+            catch (CartNotFoundException ex)
+            {
+                throw;
+            }
+            catch (DatabaseWriteException ex)
+            {
+                throw new RepositoryException("Repository failed to delete cart", ex);
+            }
         }
 
         public IEnumerable<Cart> GetAllCarts()
         {
-            return _database.GetAll();
+            try
+            {
+                return _database.GetAll();
+            }
+            catch (DatabaseReadException ex)
+            {
+                throw new RepositoryException("Repository failed to get all carts", ex);
+            }
         }
 
         public void Dispose()

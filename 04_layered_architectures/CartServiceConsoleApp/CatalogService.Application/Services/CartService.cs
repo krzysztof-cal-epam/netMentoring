@@ -1,7 +1,10 @@
-﻿using CartServiceConsoleApp.DAL.Interfaces;
+﻿using CartServiceConsoleApp.DAL.Exceptions;
+using CartServiceConsoleApp.DAL.Interfaces;
 using CartServiceConsoleApp.Entities;
 using CatalogService.Application.Dto;
+using CatalogService.Application.Exceptions;
 using CatalogService.Application.Interfaces;
+using System.ComponentModel.DataAnnotations;
 
 namespace CatalogService.Application.Services
 {
@@ -16,87 +19,156 @@ namespace CatalogService.Application.Services
 
         public CartDto GetCartInfo(Guid cartId)
         {
-            var cart = _cartRepository.GetCartById(cartId);
-
-            if (cart == null)
-                return null;
-
-            return new CartDto
+            if (cartId == Guid.Empty)
             {
-                CartId = cart.Id,
-                Items = cart.Items.Select(item => new CartItemDto
+                throw new CartValidationException("Invalid cart ID: must not be empty.");
+            }
+
+            try
+            {
+                var cart = _cartRepository.GetCartById(cartId);
+                return new CartDto
                 {
-                    Id = item.Id,
-                    Name = item.Name,
-                    Price = item.Price,
-                    Quantity = item.Quantity,
-                    Image = item.Image != null
-                        ? new ImageItemDto
-                        {
-                            ImageUrl = item.Image.ImageUrl,
-                            AltText = item.Image.AltText
-                        }
-                        : null
-                }).ToList()
-            };
+                    CartId = cart.Id,
+                    Items = cart.Items.Select(item => new CartItemDto
+                    {
+                        Id = item.Id,
+                        Name = item.Name,
+                        Price = item.Price,
+                        Quantity = item.Quantity,
+                        Image = item.Image != null
+                            ? new ImageItemDto
+                            {
+                                ImageUrl = item.Image.ImageUrl,
+                                AltText = item.Image.AltText
+                            }
+                            : null
+                    }).ToList()
+                };
+            }
+            catch (CartNotFoundException ex)
+            {
+                throw;
+            }
+            catch (RepositoryException ex)
+            {
+                throw new ApplicationException("An unexpected error occurred in the application layer GetCartInfo", ex);
+            }
         }
 
-        public void AddItemToCart(Guid cartId, CartItemDto dto)
+        public void AddItemToCart(Guid cartId, CartItemDto cartItemDto)
         {
-            var cart = _cartRepository.GetCartById(cartId) ?? new Cart(cartId);
-
-            var item = cart.Items.FirstOrDefault(i => i.Id == dto.Id);
-
-            if (item != null)
+            if (cartId == Guid.Empty)
             {
-                item.Quantity += dto.Quantity;
+                throw new CartValidationException("CartId should not be empty");
             }
-            else
+
+            if (cartItemDto == null || string.IsNullOrEmpty(cartItemDto.Name))
             {
-                cart.Items.Add(new CartItem
+                throw new CartValidationException("Item must have a name");
+            }
+
+            try
+            {
+                Cart? cart = null;
+                try
                 {
-                    Id = dto.Id,
-                    Name = dto.Name,
-                    Price = dto.Price,
-                    Quantity = dto.Quantity,
-                    Image = dto.Image != null
-                        ? new ImageItem
-                        {
-                            ImageUrl = dto.Image.ImageUrl,
-                            AltText = dto.Image.AltText
-                        }
-                        : null
-                });
-            }
+                    cart = _cartRepository.GetCartById(cartId);
+                }
+                catch(CartNotFoundException ex)
+                {
+                    cart = new Cart(cartId);
+                }
 
-            _cartRepository.SaveCart(cart);
+                var item = cart.Items.FirstOrDefault(i => i.Id == cartItemDto.Id);
+
+                if (item != null)
+                {
+                    item.Quantity += cartItemDto.Quantity;
+                }
+                else
+                {
+                    cart.Items.Add(new CartItem
+                    {
+                        Id = cartItemDto.Id,
+                        Name = cartItemDto.Name,
+                        Price = cartItemDto.Price,
+                        Quantity = cartItemDto.Quantity,
+                        Image = cartItemDto.Image != null
+                            ? new ImageItem
+                            {
+                                ImageUrl = cartItemDto.Image.ImageUrl,
+                                AltText = cartItemDto.Image.AltText
+                            }
+                            : null
+                    });
+                }
+
+                _cartRepository.SaveCart(cart);
+            }
+            catch (RepositoryException ex)
+            {
+                throw new ApplicationException("An unexpected error occurred in the application layer AddItemToCart", ex);
+            }
         }
 
         public void RemoveItemFromCart(Guid cartId, int itemId)
         {
-            var cart = _cartRepository.GetCartById(cartId);
-            if (cart != null)
+            if (cartId == Guid.Empty)
             {
-                cart.Items.RemoveAll(i => i.Id == itemId);
-                _cartRepository.SaveCart(cart);
+                throw new CartValidationException("CartId should not be empty");
+            }
+
+            if (itemId <= 0)
+            {
+                throw new CartValidationException("Item id must be greater than zero.");
+            }
+
+            try
+            {
+                var cart = _cartRepository.GetCartById(cartId);
+                if (cart != null)
+                {
+                    if (!cart.Items.Any(i => i.Id == itemId))
+                    {
+                        throw new ItemNotFoundException(itemId, cartId);
+                    }
+                    cart.Items.RemoveAll(i => i.Id == itemId);
+                    _cartRepository.SaveCart(cart);
+                }
+            }
+            catch (CartNotFoundException ex)
+            {
+                throw;
+            }
+            catch (RepositoryException ex)
+            {
+                throw new ApplicationException("An unexpected error occurred in the application layer RemoveItemFromCart", ex);
             }
         }
 
         public IEnumerable<CartDto> GetAllCarts()
         {
-            var allCarts = _cartRepository.GetAllCarts();
-
-            return allCarts.Select(cart => new CartDto
+            try
             {
-                CartId = cart.Id,
-                Items = cart.Items.Select(item => new CartItemDto
+                var allCarts = _cartRepository.GetAllCarts();
+
+                return allCarts.Select(cart => new CartDto
                 {
-                    Id = item.Id,
-                    Name = item.Name,
-                    Price = item.Price,
-                    Quantity = item.Quantity
-                }).ToList()
-            });
+                    CartId = cart.Id,
+                    Items = cart.Items.Select(item => new CartItemDto
+                    {
+                        Id = item.Id,
+                        Name = item.Name,
+                        Price = item.Price,
+                        Quantity = item.Quantity
+                    }).ToList()
+                });
+            }
+            catch (RepositoryException ex)
+            {
+                throw new ApplicationException("An unexpected error occurred in the application layer GetAllCarts", ex);
+            }
         }
     }
 }

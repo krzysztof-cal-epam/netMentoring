@@ -1,7 +1,10 @@
-﻿using CartServiceConsoleApp.Entities;
+﻿using CartServiceConsoleApp.DAL.Exceptions;
+using CartServiceConsoleApp.Entities;
 using CatalogService.Application.Dto;
+using CatalogService.Application.Exceptions;
 using CatalogService.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace RestApi.Controllers
 {
@@ -20,16 +23,34 @@ namespace RestApi.Controllers
         }
 
         /// <summary>
-        /// Gets CartInfo
+        /// Gets full CartInfo
         /// </summary>
         /// <param name="cartId">Unique Guid of a cart</param>
         /// <returns>Status 200 ok</returns>
         [HttpGet("{cartId}")]
         public IActionResult GetCartInfo(Guid cartId)
         {
-            var cart = _cartService.GetCartInfo(cartId);
-            if (cart == null) return NotFound();
-            return Ok(cart);
+            try
+            {
+                var cart = _cartService.GetCartInfo(cartId);
+                return Ok(cart);
+            }
+            catch (CartValidationException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (CartNotFoundException ex)
+            {
+                return NotFound();
+            }
+            catch (RepositoryException ex)
+            {
+                return StatusCode(500, new { message = $"An error occurred while processing your request. Please try again later. Error details: {ex.Message}" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An unexpected error occurred. Error details: {ex.Message}");
+            }
         }
 
         /// <summary>
@@ -41,8 +62,23 @@ namespace RestApi.Controllers
         [HttpPost("{cartId}/items")]
         public IActionResult AddToCart(Guid cartId, [FromBody] CartItemDto item)
         {
-            _cartService.AddItemToCart(cartId, item);
-            return Ok();
+            try
+            {
+                _cartService.AddItemToCart(cartId, item);
+                return Ok();
+            }
+            catch (CartValidationException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (RepositoryException ex)
+            {
+                return StatusCode(500, new { message = $"An error occurred while processing your request. Please try again later. Error details: {ex.Message}" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An unexpected error occurred. Error details: {ex.Message}");
+            }
         }
 
         /// <summary>
@@ -54,8 +90,31 @@ namespace RestApi.Controllers
         [HttpDelete("{cartId}/items/{itemId}")]
         public IActionResult RemoveItem(Guid cartId, int itemId)
         {
-            _cartService.RemoveItemFromCart(cartId, itemId);
-            return Ok();
+            try
+            {
+                _cartService.RemoveItemFromCart(cartId, itemId);
+                return Ok();
+            }
+            catch (ValidationException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+            catch (CartNotFoundException ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
+            catch (ItemNotFoundException ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
+            catch (RepositoryException ex)
+            {
+                return StatusCode(500, new { message = $"An error occurred while processing your request. Please try again later. Error details: {ex.Message}" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = $"Internal Server Error. Error details: {ex.Message}" });
+            }
         }
 
         /// <summary>
@@ -65,8 +124,23 @@ namespace RestApi.Controllers
         [HttpGet("all")]
         public ActionResult<IEnumerable<Cart>> GetAllCarts()
         {
-            var carts = _cartService.GetAllCarts();
-            return Ok(carts);
+            try
+            {
+                var carts = _cartService.GetAllCarts();
+                return Ok(carts);
+            }
+            catch (ValidationException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+            catch (RepositoryException ex)
+            {
+                return StatusCode(500, new { message = $"An error occurred while processing your request. Please try again later. Error details: {ex.Message}" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = $"Internal Server Error. Error details: {ex.Message}" });
+            }
         }
     }
 }
