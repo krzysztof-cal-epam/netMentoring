@@ -48,8 +48,8 @@ namespace RestApi.Controllers
         /// <summary>
         /// Removes item from a given cart 
         /// </summary>
-        /// <param name="cartId"></param>
-        /// <param name="itemId"></param>
+        /// <param name="cartId">Unique Guid of a cart</param>
+        /// <param name="itemId">Id of an item to be removed</param>
         /// <returns>Status 200 ok</returns>
         [HttpDelete("{cartId}/items/{itemId}")]
         public IActionResult RemoveItem(Guid cartId, int itemId)
