@@ -30,8 +30,9 @@ namespace CatalogService.Infrastructure
 
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<CatalogService.Application.Interfaces.ICartService, CatalogService.Application.Services.CartService>();
 
-            services.AddScoped<ICartService, CartService>();
+            services.AddScoped<CartServiceConsoleApp.BLL.Interfaces.ICartService, CartServiceConsoleApp.BLL.Services.CartService>();
             services.AddScoped<ICartRepository, CartRepository>();
             services.AddScoped<ICartDatabase<Cart>>(provider =>
             {

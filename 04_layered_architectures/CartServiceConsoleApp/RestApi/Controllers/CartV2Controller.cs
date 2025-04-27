@@ -6,22 +6,23 @@ using Microsoft.AspNetCore.Mvc;
 namespace RestApi.Controllers
 {
     [ApiController]
-    [Route("api/v1/cart")]
-    public class CartV1Controller : ControllerBase
+    [Route("api/v2/cart")]
+    public class CartV2Controller : ControllerBase
     {
         private readonly ICartService _cartService;
 
-        public CartV1Controller(ICartService cartService)
+        public CartV2Controller(ICartService cartService) 
         {
             _cartService = cartService;
+
         }
 
         [HttpGet("{cartId}")]
-        public IActionResult GetCartInfo(Guid cartId)
+        public new IActionResult GetCartInfo(Guid cartId)
         {
             var cart = _cartService.GetCartInfo(cartId);
             if (cart == null) return NotFound();
-            return Ok(cart);
+            return Ok(cart.Items);
         }
 
         [HttpPost("{cartId}/items")]
