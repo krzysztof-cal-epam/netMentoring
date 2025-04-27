@@ -5,6 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace RestApi.Controllers
 {
+    /// <summary>
+    /// Cart Api V1
+    /// </summary>
     [ApiController]
     [Route("api/v1/cart")]
     public class CartV1Controller : ControllerBase
@@ -16,6 +19,11 @@ namespace RestApi.Controllers
             _cartService = cartService;
         }
 
+        /// <summary>
+        /// Gets CartInfo
+        /// </summary>
+        /// <param name="cartId">Unique Guid of a cart</param>
+        /// <returns>Status 200 ok</returns>
         [HttpGet("{cartId}")]
         public IActionResult GetCartInfo(Guid cartId)
         {
@@ -24,6 +32,12 @@ namespace RestApi.Controllers
             return Ok(cart);
         }
 
+        /// <summary>
+        /// Adds an item to the cart
+        /// </summary>
+        /// <param name="cartId">Unique Guid of a cart</param>
+        /// <param name="item">Item do be added</param>
+        /// <returns>Status 200 ok</returns>
         [HttpPost("{cartId}/items")]
         public IActionResult AddToCart(Guid cartId, [FromBody] CartItemDto item)
         {
@@ -31,6 +45,12 @@ namespace RestApi.Controllers
             return Ok();
         }
 
+        /// <summary>
+        /// Removes item from a given cart 
+        /// </summary>
+        /// <param name="cartId"></param>
+        /// <param name="itemId"></param>
+        /// <returns>Status 200 ok</returns>
         [HttpDelete("{cartId}/items/{itemId}")]
         public IActionResult RemoveItem(Guid cartId, int itemId)
         {
@@ -38,6 +58,10 @@ namespace RestApi.Controllers
             return Ok();
         }
 
+        /// <summary>
+        /// Returns all carts
+        /// </summary>
+        /// <returns>Status 200 ok</returns>
         [HttpGet("all")]
         public ActionResult<IEnumerable<Cart>> GetAllCarts()
         {
