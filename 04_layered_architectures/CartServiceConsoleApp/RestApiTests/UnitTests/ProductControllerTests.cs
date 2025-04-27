@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc.Routing;
 using Moq;
 using RestApi.Controllers;
 
-namespace RestApiTests
+namespace RestApiTests.UnitTests
 {
     public class ProductControllerTests
     {
@@ -108,13 +108,13 @@ namespace RestApiTests
             // Arrange
             var expectedProduct = new ProductDto
             {
-                Id = 1, 
+                Id = 1,
                 Name = "Product A",
                 Description = "Product A description",
                 Image = new Uri("http://ecommerceapp.com/images/producta.jpg"),
                 Price = 100.0m,
                 Amount = 10,
-                CategoryId = 1 
+                CategoryId = 1
             };
             _mockProductService
                 .Setup(service => service.GetByIdAsync(It.IsAny<int>()))

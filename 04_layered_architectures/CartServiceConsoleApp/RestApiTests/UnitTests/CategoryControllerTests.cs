@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Moq;
 using RestApi.Controllers;
 
-namespace RestApiTests
+namespace RestApiTests.UnitTests
 {
     public class CategoryControllerTests
     {
