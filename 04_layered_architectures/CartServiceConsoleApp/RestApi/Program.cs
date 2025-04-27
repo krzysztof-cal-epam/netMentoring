@@ -1,5 +1,3 @@
-using CatalogService.Application.Interfaces;
-using CatalogService.Application.Services;
 using CatalogService.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,9 +6,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddInfrastructure(connectionString);
-
-builder.Services.AddScoped<ICategoryService, CategoryService>();
-builder.Services.AddScoped<IProductService, ProductService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
