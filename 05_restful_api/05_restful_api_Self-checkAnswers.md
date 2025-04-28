@@ -146,13 +146,36 @@ Stateless makes service less complex, there is no server side state logic at all
 
 ## 4. How can caching be organized in RESTful services?
 
-todo
+There are several ways to organize caching in Restful seervices. We can distinguish the following:
+### Expires
+Specifies the date/time at which the response absolute expires.
 
+### Cache-Control
+Determines whether the response is cacheable, who can use cache and for how long.
+
+### ETag (Entity Tag)
+Used for checking whether the resource has changed. If teh content has not changed, the server response is 304 Not Modified.  
+
+### Last-Modified
+Returns the last modification date/time of the resource. 
 
 ## 5. How can versioning be organized in RESTful services?
 
-todo
+### Uri versioning
+Called also path-based versioning. The api version is included in the URI. Example:
+GET /v1/cart/{id}
+GET /v2/cart/{id}
 
+### Versioning using custom Request Header
+The Api version is specified in a custom HTTP header. Example:
+GET /cart/{id}
+Headers:
+Accept-Version: v1
+
+### Versioning specified in query parameters
+Version is being specified in the query as parameter. Example:
+GET /cart/{id}?version=1
+GET /cart/{id}?version=2
 
 ## 6. What are the best practices of resource naming?
 
