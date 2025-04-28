@@ -68,31 +68,81 @@ Provides information about the request that is being processed, i.e. "100 contin
 
 #### 2xx : Success
 
-todo
+Informs client that the request was successfully processed. We can distinguish 
+##### 200 ok 
+Request was successful, the response contains the requested data.
+
+##### 201 created
+Request was successful, new resource has been created.
+
+##### 204 no content
+Request was successful, no data is returned in the response. 
 
 #### 3xx : Redirection
 
-todo
+Indicates that client needs to do additional action, i.e. follow the redirection url. We can distinguish:
+
+##### 301 Moved pernamently
+Resource has been relocated to a new location.
+
+##### 302 Found
+The resource is temporarly available under a new url.
+
+##### 304 Not Modified
+The resource has not been changed.
 
 #### 4xx : Client error
+Indicates that the client request was not correct and cannot be processed. We can distunguish:
 
-todo
+##### 400 Bad request
+The request is not correct
+
+##### 401 Unauthorized
+The client needs to authenticate
+
+##### 403 Forbidden
+The client does need permission to access the resource
+
+##### 404 Not found
+The requested resource could not be found
+
+##### 405 Mothod not allowed
+The HTTP method used in this request is not supported for this resource
 
 #### 5xx : Server error
+Indicates an error happend on a server-side when processing the request. We can distinguish:
 
-todo
+##### 500 Internal Server Error
+Generic error message
+
+##### 502 Bad Gateway
+Server acting as a gateway received an invalid response from the other server
+
+##### 503 Service unavailable
+The server is temporarly unavailable due to i.e. overload traffic etc.
+
+##### 504 Gateway timeout
+The server acting as gateway timeouted when waiting for the response from other server
 
 ### Idempotency
-
-todo
+Reffers to the oprerations that return the same data when repeated, without causing changes. For HTTP idempotent methods are GET, PUT, DELETE, HEAD.
 
 ### Other protocols supported by REST
-
-todo
+Other protocols supported by REST are HTTPS (secure HTTP), WebSockets or SOAP. However the most common one is HTTP.
 
 ## 3. What are the advantages of statelessness in RESTful services?
 
-todo
+We can distinguish some advantages of statelessness in Restful:
+
+### Scalability
+Since servers do not have to store session information for clients, any available server can handle the client request. Therefore, distribute request accross many servers is easy.
+
+### Reliability
+In case of server crash, other servers can be used to handle requests. Moreover, since session information for clients do not have to be saved on server side, memory management is beinf avoided. 
+
+### Simplicity
+Stateless makes service less complex, there is no server side state logic at all.
+
 
 ## 4. How can caching be organized in RESTful services?
 
