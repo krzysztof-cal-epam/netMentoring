@@ -77,7 +77,6 @@ In case of server crash, other servers can be used to handle requests. Moreover,
 ### Simplicity
 Stateless makes service less complex, there is no server side state logic at all.
 
-
 ## 4. How can caching be organized in RESTful services?
 
 There are several ways to organize caching in Restful seervices. We can distinguish the following:
@@ -150,17 +149,40 @@ Manually generated documentation will be best suited for the:
 ## 8. What is OData? When will you choose to follow it and when not?
 OData (Open Data Protocol) is a open protocol for building and consuming REST api developed by Microsoft. 
 It is worth to follow it for the given scenarios:
-//todo
+- dynamic querying,
+- rapidly changing apis,
+- large entities with relations data.
 
 It is not worth to follow it for:
-- todo
+- performance critical api,
+- simple api.
 
 ## 9. What is Richardson Maturity Model? Is it always a good idea to reach the 3rd level of maturity?
+The RMM is a concept for evaluation of RESTful api based on its adherence to REST principles. There are 4 levels, each level enhances the previous one. We can distinguish:
+- Level 0: The swamp of POX - api operates within one endpoint and the api does not leverage RESTful principles.
+- Level 1: Resources - api uses several endpoints, however action methods are still not using all HTTP (i.e. only POST).
+- Level 2: HTTP Verbs (Methods) - api uses several endpoints and fully utilizes HTTP methods. Api also uses HTTP response codes correctly.
+- Level 3: Hypermedia as the Engine of Application State (HATEOAS) - relation between resources is enhanced by hypermedia (links). Api responses includes hypermedia for each endpoint.
 
-todo
-
+In some scenarios it might not be neccessary to acheive level 3 of RMM. Some scenarion are described below:
+- performance - some apis might need to have great performance and HATEOAS can slow down them.
+- lack of such requirenment - client might not want/need this level. i.e. api for simple CRUD operations.
 
 ## 10. What does pros and cons REST have in comparison with other web API types?
 
-todo
+Rest api pros:
+- simple - rather simple to implement.
+- statelessness - servers do not need keep sesion related data, easy to scale.
+- cacheable - improve data payload.
+- human readable
 
+Rest api cons:
+- limited real-rime capability - real time updates might need other architecture i.e. websockets.
+- quering not standardized - quering might differ based on framework used.
+- low performance for complex data - REST does not support nested resources
+
+REST can be compared with other web api types. In the given scenarion those web apis will be better-suited:
+- GraphQL - will be better for managing complex interrelated data structures that must be quiried.
+- gRPC - will be better for high performance and real-time streaming.
+- SOAP - will be better for applications that requires high secure operations.
+- WebSockets - will be better for real-time communication like chat bots, dashboard etc.
