@@ -1,0 +1,77 @@
+﻿using CartServiceConsoleApp.Entities;
+using CatalogService.Application.Dto;
+using CatalogService.Application.Interfaces;
+using Microsoft.AspNetCore.Mvc;
+using RestApi.Controllers;
+
+namespace RestApi.V2
+{
+    /// <summary>
+    /// Cart Api V2
+    /// </summary>
+    [ApiController]
+    [Route("api/v2/cart")]
+    public class CartV2Controller : BaseCartController
+    {
+        public CartV2Controller(ICartService cartService) : base(cartService) { }
+
+        /// <summary>
+        /// Gets Items of a given Cart
+        /// </summary>
+        /// <param name="cartId">Unique Guid of a cart</param>
+        /// <returns>Status 200 ok</returns>
+        [HttpGet("{cartId}")]
+        public IActionResult GetCartInfo(Guid cartId)
+        {
+            //todo move try catch to middleware for all action methods in both controllers - consider retry mechanism in business layer
+            return HandleOperation(() =>
+            {
+                var cart = _cartService.GetCartInfo(cartId);
+                return cart.Items;
+            });
+        }
+
+        /// <summary>
+        /// Adds an item to the cart
+        /// </summary>
+        /// <param name="cartId">Unique Guid of a cart</param>
+        /// <param name="item">Item do be added</param>
+        /// <returns>Status 200 ok</returns>
+        [HttpPost("{cartId}/items")]
+        public IActionResult AddToCart(Guid cartId, [FromBody] CartItemDto item)
+        {
+            return HandleOperation(() =>
+            {
+                _cartService.AddItemToCart(cartId, item);
+            });
+        }
+
+        /// <summary>
+        /// Removes item from a given cart 
+        /// </summary>
+        /// <param name="cartId">Unique Guid of a cart</param>
+        /// <param name="itemId">Id of an item to be removed</param>
+        /// <returns>Status 200 ok</returns>
+        [HttpDelete("{cartId}/items/{itemId}")]
+        public IActionResult RemoveItem(Guid cartId, int itemId)
+        {
+            return HandleOperation(() =>
+            {
+                _cartService.RemoveItemFromCart(cartId, itemId);
+            });
+        }
+
+        /// <summary>
+        /// Returns all carts
+        /// </summary>
+        /// <returns>Status 200 ok</returns>
+        [HttpGet("all")]
+        public ActionResult<IEnumerable<Cart>> GetAllCarts()
+        {
+            return HandleOperation(() =>
+            {
+                return _cartService.GetAllCarts();
+            });
+        }
+    }
+}
