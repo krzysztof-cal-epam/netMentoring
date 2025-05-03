@@ -11,10 +11,14 @@ namespace RestApi.V2
     /// </summary>
     [ApiController]
     [Route("api/v2/cart")]
-    public class CartV2Controller : BaseCartController
+    public class CartV2Controller : ControllerBase
     {
-        public CartV2Controller(ICartService cartService) : base(cartService) { }
+        private readonly ICartService _cartService;
 
+        public CartV2Controller(ICartService cartService)
+        {
+            _cartService = cartService;
+        }
         /// <summary>
         /// Gets Items of a given Cart
         /// </summary>
@@ -24,11 +28,8 @@ namespace RestApi.V2
         public IActionResult GetCartInfo(Guid cartId)
         {
             //todo move try catch to middleware for all action methods in both controllers - consider retry mechanism in business layer
-            return HandleOperation(() =>
-            {
-                var cart = _cartService.GetCartInfo(cartId);
-                return cart.Items;
-            });
+            var cart = _cartService.GetCartInfo(cartId);
+            return Ok(cart.Items);
         }
 
         /// <summary>
@@ -40,10 +41,8 @@ namespace RestApi.V2
         [HttpPost("{cartId}/items")]
         public IActionResult AddToCart(Guid cartId, [FromBody] CartItemDto item)
         {
-            return HandleOperation(() =>
-            {
-                _cartService.AddItemToCart(cartId, item);
-            });
+            _cartService.AddItemToCart(cartId, item);
+            return Ok();
         }
 
         /// <summary>
@@ -55,10 +54,8 @@ namespace RestApi.V2
         [HttpDelete("{cartId}/items/{itemId}")]
         public IActionResult RemoveItem(Guid cartId, int itemId)
         {
-            return HandleOperation(() =>
-            {
-                _cartService.RemoveItemFromCart(cartId, itemId);
-            });
+            _cartService.RemoveItemFromCart(cartId, itemId);
+            return Ok();
         }
 
         /// <summary>
@@ -68,10 +65,8 @@ namespace RestApi.V2
         [HttpGet("all")]
         public ActionResult<IEnumerable<Cart>> GetAllCarts()
         {
-            return HandleOperation(() =>
-            {
-                return _cartService.GetAllCarts();
-            });
+            var carts = _cartService.GetAllCarts();
+            return Ok(carts);
         }
     }
 }

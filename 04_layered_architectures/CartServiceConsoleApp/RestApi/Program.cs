@@ -1,5 +1,6 @@
 using CatalogService.Infrastructure;
 using Microsoft.OpenApi.Models;
+using RestApi.Middleware;
 using System.Reflection;
 
 public partial class Program
@@ -42,6 +43,8 @@ public partial class Program
         });
 
         var app = builder.Build();
+
+        app.UseMiddleware<GlobalExceptionHandlingMiddleware>();
 
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())

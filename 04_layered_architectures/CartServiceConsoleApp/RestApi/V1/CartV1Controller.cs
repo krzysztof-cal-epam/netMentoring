@@ -10,10 +10,14 @@ namespace RestApi.Controllers
     /// </summary>
     [ApiController]
     [Route("api/v1/cart")]
-    public class CartV1Controller : BaseCartController
+    public class CartV1Controller : ControllerBase
     {
-        public CartV1Controller(ICartService cartService) : base(cartService) { }
+        private readonly ICartService _cartService;
 
+        public CartV1Controller(ICartService cartService)
+        {
+            _cartService = cartService;
+        }
         /// <summary>
         /// Gets full CartInfo
         /// </summary>
@@ -22,11 +26,8 @@ namespace RestApi.Controllers
         [HttpGet("{cartId}")]
         public IActionResult GetCartInfo(Guid cartId)
         {
-            return HandleOperation(() =>
-            {
-                var cart = _cartService.GetCartInfo(cartId);
-                return cart;
-            });
+            var cart = _cartService.GetCartInfo(cartId);
+            return Ok(cart);
         }
 
         /// <summary>
@@ -38,10 +39,8 @@ namespace RestApi.Controllers
         [HttpPost("{cartId}/items")]
         public IActionResult AddToCart(Guid cartId, [FromBody] CartItemDto item)
         {
-            return HandleOperation(() =>
-            {
-                _cartService.AddItemToCart(cartId, item);
-            });
+            _cartService.AddItemToCart(cartId, item);
+            return Ok();
         }
 
         /// <summary>
@@ -53,10 +52,8 @@ namespace RestApi.Controllers
         [HttpDelete("{cartId}/items/{itemId}")]
         public IActionResult RemoveItem(Guid cartId, int itemId)
         {
-            return HandleOperation(() =>
-            {
-                _cartService.RemoveItemFromCart(cartId, itemId);
-            });
+            _cartService.RemoveItemFromCart(cartId, itemId);
+            return Ok();
         }
 
         /// <summary>
@@ -66,11 +63,8 @@ namespace RestApi.Controllers
         [HttpGet("all")]
         public ActionResult<IEnumerable<Cart>> GetAllCarts()
         {
-            return HandleOperation(() =>
-            {
-                var carts = _cartService.GetAllCarts();
-                return carts;
-            });
+            var carts = _cartService.GetAllCarts();
+            return Ok(carts);
         }
     }
 }
