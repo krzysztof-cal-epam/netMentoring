@@ -27,7 +27,6 @@ namespace RestApi.V2
         [HttpGet("{cartId}")]
         public IActionResult GetCartInfo(Guid cartId)
         {
-            //todo move try catch to middleware for all action methods in both controllers - consider retry mechanism in business layer
             var cart = _cartService.GetCartInfo(cartId);
             return Ok(cart.Items);
         }
