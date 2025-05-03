@@ -2,25 +2,26 @@
 using CatalogService.Application.Dto;
 using CatalogService.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using RestApi.Controllers;
 
-namespace RestApi.V2
+namespace RestApi.Controllers.V1
 {
     /// <summary>
-    /// Cart Api V2
+    /// Cart Api V1
     /// </summary>
     [ApiController]
-    [Route("api/v2/cart")]
-    public class CartV2Controller : ControllerBase
+    [Route("api/v{version:apiVersion}/cart")]
+    [ApiVersion("1.0")]
+    public class CartV1Controller : ControllerBase
     {
         private readonly ICartService _cartService;
 
-        public CartV2Controller(ICartService cartService)
+        public CartV1Controller(ICartService cartService)
         {
             _cartService = cartService;
         }
+
         /// <summary>
-        /// Gets Items of a given Cart
+        /// Gets full CartInfo
         /// </summary>
         /// <param name="cartId">Unique Guid of a cart</param>
         /// <returns>Status 200 ok</returns>
@@ -28,7 +29,7 @@ namespace RestApi.V2
         public IActionResult GetCartInfo(Guid cartId)
         {
             var cart = _cartService.GetCartInfo(cartId);
-            return Ok(cart.Items);
+            return Ok(cart);
         }
 
         /// <summary>

@@ -2,7 +2,7 @@ using CatalogService.Application.Dto;
 using CatalogService.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
-using RestApi.Controllers;
+using RestApi.Controllers.V0;
 
 namespace RestApiTests.UnitTests
 {

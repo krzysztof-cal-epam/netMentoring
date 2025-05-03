@@ -2,10 +2,11 @@
 using CatalogService.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace RestApi.Controllers
+namespace RestApi.Controllers.V0
 {
     [ApiController]
-    [Route("api/products")]
+    [Route("api/v{version:apiVersion}/[controller]")]
+    [ApiVersion("0.0")]
     public class ProductController : ControllerBase
     {
         private readonly IProductService _productService;
@@ -56,7 +57,7 @@ namespace RestApi.Controllers
         [HttpPost]
         public async Task<IActionResult> Add(ProductDto productDto)
         {
-            if(!ModelState.IsValid) 
+            if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
             var res = await _productService.AddAsync(productDto);

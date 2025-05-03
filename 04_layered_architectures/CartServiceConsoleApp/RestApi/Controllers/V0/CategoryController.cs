@@ -2,10 +2,11 @@
 using CatalogService.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace RestApi.Controllers
+namespace RestApi.Controllers.V0
 {
     [ApiController]
-    [Route("api/categories")]
+    [Route("api/v{version:apiVersion}/[controller]")]
+    [ApiVersion("0.0")]
     public class CategoryController : ControllerBase
     {
         private readonly ICategoryService _categoryService;
