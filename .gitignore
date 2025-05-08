@@ -9,3 +9,4 @@
 # Ignore user-specific files
 .vs/
 /04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/ECommerceDb.db
+/04_layered_architectures/CartServiceConsoleApp/RestApi/ECommerceDb.db

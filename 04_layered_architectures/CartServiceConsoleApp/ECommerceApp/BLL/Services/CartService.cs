@@ -1,4 +1,5 @@
 ﻿using CartServiceConsoleApp.BLL.Interfaces;
+using CartServiceConsoleApp.DAL.Exceptions;
 using CartServiceConsoleApp.DAL.Interfaces;
 using CartServiceConsoleApp.Entities;
 
@@ -15,7 +16,15 @@ namespace CartServiceConsoleApp.BLL.Services
 
         public void AddItem(Guid cartId, CartItem cartItem)
         {
-            var cart = _cartRepository.GetCartById(cartId) ?? new Cart(cartId);
+            Cart? cart = null;
+            try
+            {
+                cart = _cartRepository.GetCartById(cartId);
+            }
+            catch (CartNotFoundException ex)
+            { 
+                cart = new Cart(cartId);
+            }
 
             var existingCartItem = cart.Items.FirstOrDefault(i => i.Id == cartItem.Id);
 

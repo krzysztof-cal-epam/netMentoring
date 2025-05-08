@@ -7,16 +7,16 @@ namespace CatalogService.Application.Services
 {
     public class ProductService : IProductService
     {
-        private readonly IRepository<Product> _productRepository;
+        private readonly IProductRepository _productRepository;
         private readonly IRepository<Category> _categoryRepository;
 
-        public ProductService(IRepository<Product> productRepository, IRepository<Category> categoryRepository)
+        public ProductService(IProductRepository productRepository, IRepository<Category> categoryRepository)
         {
             _productRepository = productRepository;
             _categoryRepository = categoryRepository;
         }
 
-        public async Task AddAsync(ProductDto productDto)
+        public async Task<ProductDto> AddAsync(ProductDto productDto)
         {
             var category = await _categoryRepository.GetByIdAsync(productDto.CategoryId);
             if (category == null)
@@ -32,7 +32,22 @@ namespace CatalogService.Application.Services
                 CategoryId = productDto.CategoryId
             };
 
-            await _productRepository.AddAsync(product);
+            var res = await _productRepository.AddAsync(product);
+
+            if (res == null)
+            {
+                throw new Exception("Failed to save product");
+            }
+
+            return new ProductDto
+            {
+                Id = res.Id,
+                Name = res.Name,
+                Description = res.Description,
+                Price = res.Price,
+                Amount = res.Amount,
+                CategoryId = res.CategoryId
+            };
         }
 
         public async Task DeleteAsync(int id)
@@ -58,9 +73,25 @@ namespace CatalogService.Application.Services
             };
         }
 
+        public async Task<IEnumerable<ProductDto>> ListAsync(int? categoryId, int page, int pageSize)
+        {
+            var products = await _productRepository.ListAsync(categoryId, page, pageSize);
+
+            return products.Select(p => new ProductDto
+            {
+                Id = p.Id,
+                Name = p.Name,
+                Description = p.Description,
+                Price = p.Price,
+                Amount = p.Amount,
+                CategoryId = p.CategoryId,
+            }).ToList();
+        }
+
         public async Task<IEnumerable<ProductDto>> ListAsync()
         {
             var products = await _productRepository.ListAsync();
+
             return products.Select(p => new ProductDto
             {
                 Id = p.Id,

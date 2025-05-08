@@ -7,14 +7,14 @@ namespace CatalogService.Application.Services
 {
     public class CategoryService : ICategoryService
     {
-        private readonly IRepository<Category> _categoryRepository;
+        private readonly ICategoryRepository _categoryRepository;
 
-        public CategoryService(IRepository<Category> categoryRepository)
+        public CategoryService(ICategoryRepository categoryRepository)
         {
             _categoryRepository = categoryRepository;
         }
 
-        public async Task AddAsync(CategoryDto categoryDto)
+        public async Task<CategoryDto> AddAsync(CategoryDto categoryDto)
         {
             var category = new Category
             {
@@ -24,11 +24,30 @@ namespace CatalogService.Application.Services
             };
 
             await _categoryRepository.AddAsync(category);
+
+            return new CategoryDto
+            {
+                Id = category.Id,
+                Name = category.Name,
+                ImageUrl = category.ImageUrl,
+                ParentCategoryId = category.ParentCategoryId
+            };
         }
 
         public async Task DeleteAsync(int id)
         {
-            await _categoryRepository.DeleteAsync(id);
+            try
+            {
+                await _categoryRepository.DeleteWithProductsAsync(id);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                throw new Exception($"Error: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"An unexpected error occurred while deleting category: {ex.Message}");
+            }
         }
 
         public async Task<CategoryDto> GetByIdAsync(int id)

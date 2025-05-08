@@ -13,7 +13,9 @@ builder.Services.AddScoped<ICartRepository, CartRepository>();
 builder.Services.AddScoped<ICartDatabase<Cart>>(provider =>
 {
     var configuration = provider.GetRequiredService<IConfiguration>();
-    return new LiteDbCartDatabase(configuration);
+    var connection = configuration["LiteDb:DatabasePath"];
+
+    return new LiteDbCartDatabase(connection);
 });
 
 builder.Services.AddControllers();

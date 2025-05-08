@@ -1,6 +1,5 @@
 ﻿using CatalogService.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CatalogService.DataAccess.Data
 {
@@ -54,7 +53,8 @@ namespace CatalogService.DataAccess.Data
                 entity.HasOne(p => p.Category)
                     .WithMany()
                     .HasForeignKey(p => p.CategoryId)
-                    .IsRequired();
+                    .IsRequired()
+                    .OnDelete(DeleteBehavior.Cascade);
             });
         }
     }

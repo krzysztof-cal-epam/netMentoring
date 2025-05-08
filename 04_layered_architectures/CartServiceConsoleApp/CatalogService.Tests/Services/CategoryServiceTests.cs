@@ -17,7 +17,7 @@ namespace CatalogService.Tests.Services
                 new Category { Id = 1, Name = "Electronics", ImageUrl = new Uri("https://example.com/electronics.jpg"), ParentCategoryId = null },
                 new Category { Id = 2, Name = "Laptops", ImageUrl = null, ParentCategoryId = 1 }
             };
-            var mockCategoryRepository = new Mock<IRepository<Category>>();
+            var mockCategoryRepository = new Mock<ICategoryRepository>();
             mockCategoryRepository
                 .Setup(repo => repo.ListAsync())
                 .ReturnsAsync(categories);
