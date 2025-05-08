@@ -1,6 +1,7 @@
 ﻿using CartServiceConsoleApp.Entities;
 using CatalogService.Application.Dto;
 using CatalogService.Application.Interfaces;
+using CatalogService.Infrastructure.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace RestApi.Controllers.V1
@@ -14,10 +15,12 @@ namespace RestApi.Controllers.V1
     public class CartV1Controller : ControllerBase
     {
         private readonly ICartService _cartService;
+        private readonly IRabbitMqProducer _mqProducer;
 
-        public CartV1Controller(ICartService cartService)
+        public CartV1Controller(ICartService cartService, IRabbitMqProducer mqProducer)
         {
             _cartService = cartService;
+            _mqProducer = mqProducer;
         }
 
         /// <summary>
@@ -39,9 +42,12 @@ namespace RestApi.Controllers.V1
         /// <param name="item">Item do be added</param>
         /// <returns>Status 200 ok</returns>
         [HttpPost("{cartId}/items")]
-        public IActionResult AddToCart(Guid cartId, [FromBody] CartItemDto item)
+        public async Task<IActionResult> AddToCart(Guid cartId, [FromBody] CartItemDto item, CancellationToken cancellationToken)
         {
             _cartService.AddItemToCart(cartId, item);
+
+            await _mqProducer.PublishAsync($"Item added to cart. CartId: {cartId}, ItemId: {item.Id}", cancellationToken);
+
             return Ok();
         }
 
