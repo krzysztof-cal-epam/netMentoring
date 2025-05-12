@@ -46,6 +46,7 @@ namespace RestApi.Controllers.V1
         {
             _cartService.AddItemToCart(cartId, item);
 
+            //todo this might cause problems if message broker stops working - check dual writting problem
             await _mqProducer.PublishAsync($"Item added to cart. CartId: {cartId}, ItemId: {item.Id}", cancellationToken);
 
             return Ok();

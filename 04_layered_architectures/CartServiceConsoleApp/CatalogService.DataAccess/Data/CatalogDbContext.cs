@@ -12,6 +12,7 @@ namespace CatalogService.DataAccess.Data
 
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Outbox> Outbox { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -55,6 +56,15 @@ namespace CatalogService.DataAccess.Data
                     .HasForeignKey(p => p.CategoryId)
                     .IsRequired()
                     .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            modelBuilder.Entity<Outbox>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.EventType).IsRequired().HasMaxLength(255);
+                entity.Property(e => e.Payload).IsRequired();
+                entity.Property(e => e.IsProcessed).HasDefaultValue(false);
+                entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETUTCDATE()");
             });
         }
     }
