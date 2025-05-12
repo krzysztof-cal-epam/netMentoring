@@ -7,7 +7,7 @@ namespace CatalogService.DataAccess.Repositories
 {
     public class ProductRepository : GenericRepository<Product>, IProductRepository
     {
-        private readonly DbContext _context;
+        private readonly CatalogDbContext _context;
 
         public ProductRepository(CatalogDbContext context) : base(context)
         {
@@ -26,6 +26,27 @@ namespace CatalogService.DataAccess.Repositories
             query = query.Skip((page - 1) * pageSize).Take(pageSize);
 
             return await query.ToListAsync();
+        }
+
+        public async Task UpdateProductWithOutboxAsync(Product product, string eventType, object payload)
+        {
+            using var transaction = await _context.Database.BeginTransactionAsync();
+
+            try
+            {
+                _context.Set<Product>().Update(product);
+
+                await AddOutboxEventAsync(eventType, payload);
+
+                await _context.SaveChangesAsync();
+
+                await transaction.CommitAsync();
+            }
+            catch
+            {
+                await transaction.RollbackAsync();
+                throw;
+            }
         }
     }
 }

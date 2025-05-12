@@ -121,7 +121,17 @@ namespace CatalogService.Application.Services
             product.Amount = productDto.Amount;
             product.CategoryId = productDto.CategoryId;
 
-            await _productRepository.UpdateAsync(product);
+            var eventPayload = new
+            {
+                ItemId = product.Id,
+                Name = product.Name,
+                Description = product.Description,
+                Image = product.Image,
+                Price = product.Price,
+                CategoryId = product.CategoryId
+            };
+
+            await _productRepository.UpdateProductWithOutboxAsync(product, "ProductUpdated", eventPayload);
         }
     }
 }
