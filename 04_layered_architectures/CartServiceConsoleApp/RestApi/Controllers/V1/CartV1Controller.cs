@@ -15,12 +15,10 @@ namespace RestApi.Controllers.V1
     public class CartV1Controller : ControllerBase
     {
         private readonly ICartService _cartService;
-        private readonly IRabbitMqProducer _mqProducer;
 
-        public CartV1Controller(ICartService cartService, IRabbitMqProducer mqProducer)
+        public CartV1Controller(ICartService cartService)
         {
             _cartService = cartService;
-            _mqProducer = mqProducer;
         }
 
         /// <summary>
@@ -45,9 +43,6 @@ namespace RestApi.Controllers.V1
         public async Task<IActionResult> AddToCart(Guid cartId, [FromBody] CartItemDto item, CancellationToken cancellationToken)
         {
             _cartService.AddItemToCart(cartId, item);
-
-            //todo this might cause problems if message broker stops working - check dual writting problem
-            await _mqProducer.PublishAsync($"Item added to cart. CartId: {cartId}, ItemId: {item.Id}", cancellationToken);
 
             return Ok();
         }

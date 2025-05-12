@@ -1,3 +1,4 @@
+using CatalogService.DataAccess.RabbitMQ;
 using CatalogService.Infrastructure;
 using CatalogService.Infrastructure.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -40,8 +41,7 @@ public partial class Program
 
         //RabbitMQ
         builder.Services.Configure<RabbitMqSettings>(builder.Configuration.GetSection("RabbitMQ"));
-        builder.Services.AddSingleton<IRabbitMqProducer, RabbitMqProducer>();
-        builder.Services.AddSingleton<RabbitMqConsumer>();
+        builder.Services.AddHostedService<CartMessageListener>();
 
         builder.Services.AddControllers();
 

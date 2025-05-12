@@ -71,13 +71,5 @@ namespace CartServiceConsoleApp.DAL.Repositories
                 throw new RepositoryException("Repository failed to get all carts", ex);
             }
         }
-
-        public void Dispose()
-        {
-            if (_database is IDisposable disposableDb)
-            {
-                disposableDb.Dispose();
-            }
-        }
     }
 }

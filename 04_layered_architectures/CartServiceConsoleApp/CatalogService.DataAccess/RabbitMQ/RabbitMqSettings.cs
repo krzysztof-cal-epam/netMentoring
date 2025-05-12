@@ -1,4 +1,4 @@
-﻿namespace RestApi.Messaging
+﻿namespace CatalogService.DataAccess.RabbitMQ
 {
     public class RabbitMqSettings
     {

@@ -4,6 +4,7 @@ using CartServiceConsoleApp.DAL.Databases;
 using CartServiceConsoleApp.DAL.Interfaces;
 using CartServiceConsoleApp.DAL.Repositories;
 using CartServiceConsoleApp.Entities;
+using CatalogService.Application.BackgroundServices;
 using CatalogService.Application.Interfaces;
 using CatalogService.Application.Services;
 using CatalogService.DataAccess.Data;
@@ -34,10 +35,12 @@ namespace CatalogService.Infrastructure
 
             services.AddScoped<CartServiceConsoleApp.BLL.Interfaces.ICartService, CartServiceConsoleApp.BLL.Services.CartService>();
             services.AddScoped<ICartRepository, CartRepository>();
-            services.AddScoped<ICartDatabase<Cart>>(provider =>
+            services.AddSingleton<ICartDatabase<Cart>>(provider =>
             {
                 return new LiteDbCartDatabase(cartConnectionString);
             });
+
+            services.AddHostedService<OutboxProcessor>();
 
             return services;
         }

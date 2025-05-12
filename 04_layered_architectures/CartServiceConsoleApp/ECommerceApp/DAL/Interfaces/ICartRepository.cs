@@ -2,7 +2,7 @@
 
 namespace CartServiceConsoleApp.DAL.Interfaces
 {
-    public interface ICartRepository : IDisposable
+    public interface ICartRepository
     {
         Cart GetCartById(Guid cartId);
         void SaveCart(Cart cart);

@@ -8,5 +8,6 @@ namespace CatalogService.Application.Interfaces
         void AddItemToCart(Guid cartId, CartItemDto item);
         void RemoveItemFromCart(Guid cartId, int itemId);
         IEnumerable<CartDto> GetAllCarts();
+        void UpdateCartItems(int productId, string? updatedName, decimal? updatedPrice);
     }
 }
