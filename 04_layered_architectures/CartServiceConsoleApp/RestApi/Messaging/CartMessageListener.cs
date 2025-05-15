@@ -103,10 +103,6 @@ namespace RestApi.Messaging
                 _consumerTag = await _channel.BasicConsumeAsync(queue: "cart-service-queue",
                                      autoAck: false,
                                      consumer: consumer);
-
-                Console.WriteLine("[Cart Service] Listening for messages...");
-
-                await Task.Delay(Timeout.Infinite, stoppingToken);
             }
             catch (OperationCanceledException)
             {
