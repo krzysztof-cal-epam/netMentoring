@@ -3,7 +3,7 @@ using CatalogService.Domain.Interfaces;
 using CatalogService.Domain.Repositories;
 using Moq;
 
-namespace CatalogService.Tests.UnitTests
+namespace CatalogService.Tests.Repositories
 {
     public class CartRepositoryTests
     {

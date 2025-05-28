@@ -5,7 +5,6 @@ using LiteDB;
 
 namespace CatalogService.Domain.Databases
 {
-    //todo consider refactoring this to get rid of semaphore, maybe move it to CatalogService.DataAccess
     public class LiteDbCartDatabase : ICartDatabase<Cart>, IDisposable
     {
         private readonly LiteDatabase _db;

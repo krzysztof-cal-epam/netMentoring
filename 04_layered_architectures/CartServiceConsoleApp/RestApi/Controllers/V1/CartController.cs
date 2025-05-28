@@ -3,25 +3,25 @@ using CatalogService.Application.Interfaces;
 using CatalogService.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
-namespace RestApi.Controllers.V2
+namespace RestApi.Controllers.V1
 {
     /// <summary>
-    /// Cart Api V2
+    /// Cart Api V1
     /// </summary>
     [ApiController]
     [Route("api/v{version:apiVersion}/cart")]
-    [ApiVersion("2.0")]
-    public class CartV2Controller : ControllerBase
+    [ApiVersion("1.0")]
+    public class CartController : ControllerBase
     {
         private readonly ICartService _cartService;
 
-        public CartV2Controller(ICartService cartService)
+        public CartController(ICartService cartService)
         {
             _cartService = cartService;
         }
 
         /// <summary>
-        /// Gets Items of a given Cart
+        /// Gets full CartInfo
         /// </summary>
         /// <param name="cartId">Unique Guid of a cart</param>
         /// <returns>Status 200 ok</returns>
@@ -29,7 +29,7 @@ namespace RestApi.Controllers.V2
         public IActionResult GetCartInfo(Guid cartId)
         {
             var cart = _cartService.GetCartInfo(cartId);
-            return Ok(cart.Items);
+            return Ok(cart);
         }
 
         /// <summary>
@@ -39,9 +39,10 @@ namespace RestApi.Controllers.V2
         /// <param name="item">Item do be added</param>
         /// <returns>Status 200 ok</returns>
         [HttpPost("{cartId}/items")]
-        public IActionResult AddToCart(Guid cartId, [FromBody] CartItemDto item)
+        public async Task<IActionResult> AddToCart(Guid cartId, [FromBody] CartItemDto item, CancellationToken cancellationToken)
         {
             _cartService.AddItemToCart(cartId, item);
+
             return Ok();
         }
 

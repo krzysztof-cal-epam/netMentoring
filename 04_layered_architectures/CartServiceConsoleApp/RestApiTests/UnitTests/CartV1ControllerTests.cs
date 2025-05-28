@@ -10,12 +10,12 @@ namespace RestApiTests.UnitTests
     public class CartV1ControllerTests
     {
         private readonly Mock<ICartService> _cartServiceMock;
-        private readonly CartV1Controller _controller;
+        private readonly CartController _controller;
 
         public CartV1ControllerTests()
         {
             _cartServiceMock = new Mock<ICartService>();
-            _controller = new CartV1Controller(_cartServiceMock.Object);
+            _controller = new CartController(_cartServiceMock.Object);
         }
 
         [Fact]

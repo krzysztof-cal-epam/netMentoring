@@ -2,11 +2,11 @@
 using CatalogService.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace RestApi.Controllers.V0
+namespace RestApi.Controllers.V1
 {
     [ApiController]
     [Route("api/v{version:apiVersion}/[controller]")]
-    [ApiVersion("0.0")]
+    [ApiVersion("1.0")]
     public class ProductController : ControllerBase
     {
         private readonly IProductService _productService;
