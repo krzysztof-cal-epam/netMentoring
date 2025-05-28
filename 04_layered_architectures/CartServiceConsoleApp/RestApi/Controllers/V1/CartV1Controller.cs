@@ -12,6 +12,7 @@ namespace RestApi.Controllers.V1
     [ApiController]
     [Route("api/v{version:apiVersion}/cart")]
     [ApiVersion("1.0")]
+    //todo remove V1 from the controller name
     public class CartV1Controller : ControllerBase
     {
         private readonly ICartService _cartService;

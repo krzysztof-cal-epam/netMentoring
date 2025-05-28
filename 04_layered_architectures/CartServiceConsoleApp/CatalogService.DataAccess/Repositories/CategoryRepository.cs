@@ -28,6 +28,8 @@ namespace CatalogService.DataAccess.Repositories
 
                 var productsToDelete = await _context.Products.Where(p => p.CategoryId == id).ToListAsync();
 
+                //todo add delition of child categories
+
                 if (productsToDelete.Any())
                 {
                     _context.Products.RemoveRange(productsToDelete);
