@@ -4,7 +4,7 @@ using CartServiceConsoleApp.Entities;
 using CatalogService.Application.Dto;
 using CatalogService.Application.Exceptions;
 using CatalogService.Application.Interfaces;
-using System.ComponentModel.DataAnnotations;
+using LiteDB;
 
 namespace CatalogService.Application.Services
 {
@@ -168,6 +168,68 @@ namespace CatalogService.Application.Services
             catch (RepositoryException ex)
             {
                 throw new ApplicationException("An unexpected error occurred in the application layer GetAllCarts", ex);
+            }
+        }
+
+        public void UpdateCartItems(int productId, string? updatedName, decimal? updatedPrice)
+        {
+            if (productId <= 0)
+            {
+                throw new CartValidationException("ProductId must be greater than zero.");
+            }
+
+            try
+            {
+                var allCarts = _cartRepository.GetAllCarts().ToList();
+                var cartsToUpdate = new List<Cart>();
+
+                foreach (var cart in allCarts)
+                {
+                    bool isUpdated = false;
+                    foreach (var item in cart.Items)
+                    {
+                        if (item.Id == productId)
+                        {
+                            if (!string.IsNullOrEmpty(updatedName))
+                            {
+                                item.Name = updatedName;
+                            }
+                            if (updatedPrice.HasValue)
+                            {
+                                item.Price = updatedPrice.Value;
+                            }
+                            isUpdated = true;
+                        }
+                    }
+                    if (isUpdated)
+                    {
+                        cartsToUpdate.Add(cart);
+                    }
+                }
+
+                foreach (var cart in cartsToUpdate)
+                {
+                    _cartRepository.SaveCart(cart);
+                }
+            }
+            catch (ObjectDisposedException ex)
+            {
+                Console.WriteLine($"[CartService] Database disposed during UpdateCartItems: {ex.Message}");
+                throw new ApplicationException("Database is no longer available.", ex);
+            }
+            catch (OperationCanceledException ex)
+            {
+                Console.WriteLine($"[CartService] Operation canceled in UpdateCartItems: {ex.Message}");
+                throw new ApplicationException("Operation was canceled.", ex);
+            }
+            catch (LiteException ex)
+            {
+                Console.WriteLine($"[CartService] LiteDB error in UpdateCartItems: {ex.Message}");
+                throw new ApplicationException("Failed to update cart items due to database error.", ex);
+            }
+            catch (RepositoryException ex)
+            {
+                throw new ApplicationException("An unexpected error occurred while updating cart items.", ex);
             }
         }
     }

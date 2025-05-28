@@ -1,5 +1,6 @@
 ﻿using CatalogService.Application.Dto;
 using CatalogService.Application.Interfaces;
+using CatalogService.Infrastructure.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using RestApi.Controllers.V1;

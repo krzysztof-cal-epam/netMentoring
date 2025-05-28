@@ -1,8 +1,11 @@
+using CatalogService.DataAccess.RabbitMQ;
 using CatalogService.Infrastructure;
+using CatalogService.Infrastructure.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.Extensions.Options;
+using RestApi.Messaging;
 using RestApi.Middleware;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System.Reflection;
@@ -35,6 +38,10 @@ public partial class Program
 
         builder.Services.AddInfrastructure(connectionString, cartConnection);
         builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
+
+        //RabbitMQ
+        builder.Services.Configure<RabbitMqSettings>(builder.Configuration.GetSection("RabbitMQ"));
+        builder.Services.AddHostedService<CartMessageListener>();
 
         builder.Services.AddControllers();
 

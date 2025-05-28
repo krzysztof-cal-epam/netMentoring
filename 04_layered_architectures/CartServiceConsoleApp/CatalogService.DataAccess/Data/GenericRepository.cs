@@ -1,5 +1,7 @@
-﻿using CatalogService.Domain.Interfaces;
+﻿using CatalogService.Domain.Entities;
+using CatalogService.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json;
 
 namespace CatalogService.DataAccess.Data
 {
@@ -45,6 +47,21 @@ namespace CatalogService.DataAccess.Data
         {
             _dbSet.Update(entity);
             await _context.SaveChangesAsync();
+        }
+
+        public virtual async Task AddOutboxEventAsync(string eventType, object payload)
+        {
+            string payloadJson = JsonSerializer.Serialize(payload);
+
+            var outboxRecord = new Outbox
+            {
+                EventType = eventType,
+                Payload = payloadJson,
+                IsProcessed = false,
+                CreatedAt = DateTime.UtcNow
+            };
+
+            await _context.Set<Outbox>().AddAsync(outboxRecord);
         }
     }
 }

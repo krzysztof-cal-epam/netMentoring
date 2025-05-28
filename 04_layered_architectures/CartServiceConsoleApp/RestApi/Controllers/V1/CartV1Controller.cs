@@ -1,6 +1,7 @@
 ﻿using CartServiceConsoleApp.Entities;
 using CatalogService.Application.Dto;
 using CatalogService.Application.Interfaces;
+using CatalogService.Infrastructure.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace RestApi.Controllers.V1
@@ -11,6 +12,7 @@ namespace RestApi.Controllers.V1
     [ApiController]
     [Route("api/v{version:apiVersion}/cart")]
     [ApiVersion("1.0")]
+    //todo remove V1 from the controller name
     public class CartV1Controller : ControllerBase
     {
         private readonly ICartService _cartService;
@@ -39,9 +41,10 @@ namespace RestApi.Controllers.V1
         /// <param name="item">Item do be added</param>
         /// <returns>Status 200 ok</returns>
         [HttpPost("{cartId}/items")]
-        public IActionResult AddToCart(Guid cartId, [FromBody] CartItemDto item)
+        public async Task<IActionResult> AddToCart(Guid cartId, [FromBody] CartItemDto item, CancellationToken cancellationToken)
         {
             _cartService.AddItemToCart(cartId, item);
+
             return Ok();
         }
 
