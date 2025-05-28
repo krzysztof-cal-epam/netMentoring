@@ -1,6 +1,6 @@
-﻿using CartServiceConsoleApp.Entities;
-using CatalogService.Application.Dto;
+﻿using CatalogService.Application.Dto;
 using CatalogService.Application.Interfaces;
+using CatalogService.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace RestApi.Controllers.V2

@@ -1,6 +1,6 @@
-﻿using CartServiceConsoleApp.Entities;
-using CatalogService.Application.Dto;
+﻿using CatalogService.Application.Dto;
 using CatalogService.Application.Interfaces;
+using CatalogService.Domain.Entities;
 using CatalogService.Infrastructure.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 

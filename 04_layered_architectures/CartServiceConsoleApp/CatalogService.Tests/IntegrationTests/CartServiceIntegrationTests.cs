@@ -1,9 +1,9 @@
-﻿using CartServiceConsoleApp.BLL.Services;
-using CartServiceConsoleApp.DAL.Databases;
-using CartServiceConsoleApp.DAL.Repositories;
-using CartServiceConsoleApp.Entities;
+﻿using CatalogService.DataAccess.Databases;
+using CatalogService.DataAccess.Services;
+using CatalogService.Domain.Entities;
+using CatalogService.Domain.Repositories;
 
-namespace CartServiceConsoleAppTests.IntegrationTests
+namespace CatalogService.Tests.IntegrationTests
 {
     public class CartServiceIntegrationTests
     {

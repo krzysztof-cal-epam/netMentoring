@@ -1,9 +1,9 @@
-using CartServiceConsoleApp.BLL.Interfaces;
-using CartServiceConsoleApp.BLL.Services;
-using CartServiceConsoleApp.DAL.Databases;
-using CartServiceConsoleApp.DAL.Interfaces;
-using CartServiceConsoleApp.DAL.Repositories;
-using CartServiceConsoleApp.Entities;
+using CatalogService.DataAccess.Interfaces;
+using CatalogService.DataAccess.Services;
+using CatalogService.Domain.Databases;
+using CatalogService.Domain.Entities;
+using CatalogService.Domain.Interfaces;
+using CatalogService.Domain.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 

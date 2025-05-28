@@ -1,64 +1,64 @@
-﻿using CartServiceConsoleApp.BLL.Interfaces;
-using CartServiceConsoleApp.DAL.Exceptions;
-using CartServiceConsoleApp.DAL.Interfaces;
-using CartServiceConsoleApp.Entities;
+﻿//using CartServiceConsoleApp.BLL.Interfaces;
+//using CartServiceConsoleApp.DAL.Exceptions;
+//using CartServiceConsoleApp.DAL.Interfaces;
+//using CartServiceConsoleApp.Entities;
 
-namespace CartServiceConsoleApp.BLL.Services
-{
-    public class CartService : ICartService
-    {
-        private readonly ICartRepository _cartRepository;
+//namespace CartServiceConsoleApp.BLL.Services
+//{
+//    public class CartService : ICartService
+//    {
+//        private readonly ICartRepository _cartRepository;
 
-        public CartService(ICartRepository cartRepository)
-        {
-            _cartRepository = cartRepository;
-        }
+//        public CartService(ICartRepository cartRepository)
+//        {
+//            _cartRepository = cartRepository;
+//        }
 
-        public void AddItem(Guid cartId, CartItem cartItem)
-        {
-            Cart? cart = null;
-            try
-            {
-                cart = _cartRepository.GetCartById(cartId);
-            }
-            catch (CartNotFoundException ex)
-            { 
-                cart = new Cart(cartId);
-            }
+//        public void AddItem(Guid cartId, CartItem cartItem)
+//        {
+//            Cart? cart = null;
+//            try
+//            {
+//                cart = _cartRepository.GetCartById(cartId);
+//            }
+//            catch (CartNotFoundException ex)
+//            { 
+//                cart = new Cart(cartId);
+//            }
 
-            var existingCartItem = cart.Items.FirstOrDefault(i => i.Id == cartItem.Id);
+//            var existingCartItem = cart.Items.FirstOrDefault(i => i.Id == cartItem.Id);
 
-            if (existingCartItem == null)
-            {
-                cart.Items.Add(cartItem);
-            }
-            else
-            {
-                existingCartItem.Quantity += cartItem.Quantity;
-            }
+//            if (existingCartItem == null)
+//            {
+//                cart.Items.Add(cartItem);
+//            }
+//            else
+//            {
+//                existingCartItem.Quantity += cartItem.Quantity;
+//            }
 
-            _cartRepository.SaveCart(cart);
-        }
+//            _cartRepository.SaveCart(cart);
+//        }
 
-        public IEnumerable<Cart> GetAllCarts()
-        {
-            return _cartRepository.GetAllCarts();
-        }
+//        public IEnumerable<Cart> GetAllCarts()
+//        {
+//            return _cartRepository.GetAllCarts();
+//        }
 
-        public List<CartItem> GetItems(Guid cartId)
-        {
-            var cart = _cartRepository.GetCartById(cartId);
-            return cart?.Items ?? new List<CartItem>();
-        }
+//        public List<CartItem> GetItems(Guid cartId)
+//        {
+//            var cart = _cartRepository.GetCartById(cartId);
+//            return cart?.Items ?? new List<CartItem>();
+//        }
 
-        public void RemoveItem(Guid cartId, int itemId)
-        {
-            var cart = _cartRepository.GetCartById(cartId);
-            if (cart?.Items != null)
-            {
-                cart.Items.RemoveAll(i => i.Id == itemId);
-                _cartRepository.SaveCart(cart);
-            }
-        }
-    }
-}
+//        public void RemoveItem(Guid cartId, int itemId)
+//        {
+//            var cart = _cartRepository.GetCartById(cartId);
+//            if (cart?.Items != null)
+//            {
+//                cart.Items.RemoveAll(i => i.Id == itemId);
+//                _cartRepository.SaveCart(cart);
+//            }
+//        }
+//    }
+//}

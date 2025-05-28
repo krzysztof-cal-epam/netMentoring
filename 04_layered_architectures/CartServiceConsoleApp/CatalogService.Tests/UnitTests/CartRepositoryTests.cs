@@ -1,9 +1,9 @@
-﻿using CartServiceConsoleApp.DAL.Interfaces;
-using CartServiceConsoleApp.DAL.Repositories;
-using CartServiceConsoleApp.Entities;
+﻿using CatalogService.Domain.Entities;
+using CatalogService.Domain.Interfaces;
+using CatalogService.Domain.Repositories;
 using Moq;
 
-namespace CartServiceConsoleAppTests.UnitTests
+namespace CatalogService.Tests.UnitTests
 {
     public class CartRepositoryTests
     {

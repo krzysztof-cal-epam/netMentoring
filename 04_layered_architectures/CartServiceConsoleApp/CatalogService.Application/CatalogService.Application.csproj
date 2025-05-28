@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CatalogService.Domain\CatalogService.Domain.csproj" />
-    <ProjectReference Include="..\ECommerceApp\CartServiceConsoleApp.csproj" />
   </ItemGroup>
 
 </Project>
