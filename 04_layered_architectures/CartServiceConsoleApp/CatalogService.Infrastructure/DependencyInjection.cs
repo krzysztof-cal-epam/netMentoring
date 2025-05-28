@@ -1,15 +1,12 @@
-﻿using CartServiceConsoleApp.BLL.Interfaces;
-using CartServiceConsoleApp.BLL.Services;
-using CartServiceConsoleApp.DAL.Databases;
-using CartServiceConsoleApp.DAL.Interfaces;
-using CartServiceConsoleApp.DAL.Repositories;
-using CartServiceConsoleApp.Entities;
-using CatalogService.Application.BackgroundServices;
+﻿using CatalogService.Application.BackgroundServices;
 using CatalogService.Application.Interfaces;
 using CatalogService.Application.Services;
 using CatalogService.DataAccess.Data;
 using CatalogService.DataAccess.Repositories;
+using CatalogService.Domain.Databases;
+using CatalogService.Domain.Entities;
 using CatalogService.Domain.Interfaces;
+using CatalogService.Domain.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -33,7 +30,7 @@ namespace CatalogService.Infrastructure
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<CatalogService.Application.Interfaces.ICartService, CatalogService.Application.Services.CartService>();
 
-            services.AddScoped<CartServiceConsoleApp.BLL.Interfaces.ICartService, CartServiceConsoleApp.BLL.Services.CartService>();
+            services.AddScoped<DataAccess.Interfaces.ICartService, DataAccess.Services.CartService>();
             services.AddScoped<ICartRepository, CartRepository>();
             services.AddSingleton<ICartDatabase<Cart>>(provider =>
             {

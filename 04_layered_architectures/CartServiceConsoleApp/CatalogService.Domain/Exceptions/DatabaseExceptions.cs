@@ -1,4 +1,4 @@
-﻿namespace CartServiceConsoleApp.DAL.Exceptions
+﻿namespace CatalogService.Domain.Exceptions
 {
     public class DatabaseReadException : Exception
     {

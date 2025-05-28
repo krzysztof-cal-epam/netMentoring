@@ -1,7 +1,7 @@
-﻿using CartServiceConsoleApp.DAL.Interfaces;
-using CartServiceConsoleApp.Entities;
+﻿using CatalogService.Domain.Entities;
+using CatalogService.Domain.Interfaces;
 
-namespace CartServiceConsoleApp.DAL.Databases
+namespace CatalogService.DataAccess.Databases
 {
     public class InMemoryCartDatabase : ICartDatabase<Cart>
     {

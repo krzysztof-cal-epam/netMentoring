@@ -1,11 +1,10 @@
-﻿using CartServiceConsoleApp.DAL.Exceptions;
-using CartServiceConsoleApp.DAL.Interfaces;
-using CartServiceConsoleApp.Entities;
+﻿using CatalogService.Domain.Entities;
+using CatalogService.Domain.Exceptions;
+using CatalogService.Domain.Interfaces;
 using LiteDB;
 
-namespace CartServiceConsoleApp.DAL.Databases
+namespace CatalogService.Domain.Databases
 {
-    //todo consider refactoring this to get rid of semaphore, maybe move it to CatalogService.DataAccess
     public class LiteDbCartDatabase : ICartDatabase<Cart>, IDisposable
     {
         private readonly LiteDatabase _db;

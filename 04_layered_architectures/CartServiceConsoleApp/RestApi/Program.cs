@@ -1,6 +1,5 @@
 using CatalogService.DataAccess.RabbitMQ;
 using CatalogService.Infrastructure;
-using CatalogService.Infrastructure.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.AspNetCore.Mvc.Versioning;
@@ -18,7 +17,7 @@ public partial class Program
 
         builder.Services.AddApiVersioning(options =>
         {
-            options.DefaultApiVersion = new ApiVersion(0, 0);
+            options.DefaultApiVersion = new ApiVersion(1, 0);
             options.AssumeDefaultVersionWhenUnspecified = true;
             options.ReportApiVersions = true;
             options.ApiVersionReader = ApiVersionReader.Combine(new UrlSegmentApiVersionReader(),

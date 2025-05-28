@@ -1,4 +1,4 @@
-﻿namespace CartServiceConsoleApp.Entities
+﻿namespace CatalogService.Domain.Entities
 {
     public class CartItem
     {
@@ -7,7 +7,7 @@
         public string Name { get; set; }
 
         public ImageItem? Image { get; set; }
-        
+
         public decimal Price { get; set; }
 
         public uint Quantity { get; set; }

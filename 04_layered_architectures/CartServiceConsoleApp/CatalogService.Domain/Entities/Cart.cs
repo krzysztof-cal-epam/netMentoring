@@ -1,4 +1,4 @@
-﻿namespace CartServiceConsoleApp.Entities
+﻿namespace CatalogService.Domain.Entities
 {
     public class Cart
     {

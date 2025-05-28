@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Routing;
 using Moq;
-using RestApi.Controllers.V0;
+using RestApi.Controllers.V1;
 
 namespace RestApiTests.UnitTests
 {

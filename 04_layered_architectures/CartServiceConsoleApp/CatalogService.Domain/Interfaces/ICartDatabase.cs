@@ -1,4 +1,4 @@
-﻿namespace CartServiceConsoleApp.DAL.Interfaces
+﻿namespace CatalogService.Domain.Interfaces
 {
     public interface ICartDatabase<T>
     {

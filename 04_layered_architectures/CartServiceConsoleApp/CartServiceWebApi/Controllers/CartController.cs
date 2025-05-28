@@ -1,5 +1,5 @@
-﻿using CartServiceConsoleApp.BLL.Interfaces;
-using CartServiceConsoleApp.Entities;
+﻿using CatalogService.DataAccess.Interfaces;
+using CatalogService.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CartServiceWebApi.Controllers

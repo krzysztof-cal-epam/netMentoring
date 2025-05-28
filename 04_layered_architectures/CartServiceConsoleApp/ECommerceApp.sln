@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CartServiceConsoleApp", "ECommerceApp\CartServiceConsoleApp.csproj", "{EC0EC743-7104-4894-AD21-F7A1D0302A11}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CartServiceConsoleAppTests", "CartServiceConsoleAppTests\CartServiceConsoleAppTests.csproj", "{4E76F698-AC8F-43E4-9FED-307F01180DB6}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CartServiceWebApi", "CartServiceWebApi\CartServiceWebApi.csproj", "{AEDF4BE8-63D9-42EE-8508-73999243655A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CatalogService", "CatalogService", "{10A2F077-039D-4D43-8D21-74FD39502DEF}"
@@ -25,9 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogService.Infrastructu
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05_restful_api", "05_restful_api", "{06CB5C9B-838A-46E4-BC3E-C1FB95C9E063}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi", "RestApi\RestApi.csproj", "{4A925461-7005-44CA-A155-B15C73CAD38C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApi", "RestApi\RestApi.csproj", "{4A925461-7005-44CA-A155-B15C73CAD38C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApiTests", "RestApiTests\RestApiTests.csproj", "{FCE90B4C-B5D2-455A-8871-CD9BA3EFFFE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApiTests", "RestApiTests\RestApiTests.csproj", "{FCE90B4C-B5D2-455A-8871-CD9BA3EFFFE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,14 +31,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EC0EC743-7104-4894-AD21-F7A1D0302A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC0EC743-7104-4894-AD21-F7A1D0302A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC0EC743-7104-4894-AD21-F7A1D0302A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC0EC743-7104-4894-AD21-F7A1D0302A11}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4E76F698-AC8F-43E4-9FED-307F01180DB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E76F698-AC8F-43E4-9FED-307F01180DB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4E76F698-AC8F-43E4-9FED-307F01180DB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4E76F698-AC8F-43E4-9FED-307F01180DB6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AEDF4BE8-63D9-42EE-8508-73999243655A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AEDF4BE8-63D9-42EE-8508-73999243655A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEDF4BE8-63D9-42EE-8508-73999243655A}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -1,6 +1,6 @@
-﻿using CartServiceConsoleApp.Entities;
+﻿using CatalogService.Domain.Entities;
 
-namespace CartServiceConsoleApp.BLL.Interfaces
+namespace CatalogService.DataAccess.Interfaces
 {
     public interface ICartService
     {

@@ -1,6 +1,6 @@
-﻿using CartServiceConsoleApp.Entities;
-using CatalogService.Application.Dto;
+﻿using CatalogService.Application.Dto;
 using CatalogService.Application.Interfaces;
+using CatalogService.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace RestApi.Controllers.V2
@@ -11,11 +11,11 @@ namespace RestApi.Controllers.V2
     [ApiController]
     [Route("api/v{version:apiVersion}/cart")]
     [ApiVersion("2.0")]
-    public class CartV2Controller : ControllerBase
+    public class CartController : ControllerBase
     {
         private readonly ICartService _cartService;
 
-        public CartV2Controller(ICartService cartService)
+        public CartController(ICartService cartService)
         {
             _cartService = cartService;
         }

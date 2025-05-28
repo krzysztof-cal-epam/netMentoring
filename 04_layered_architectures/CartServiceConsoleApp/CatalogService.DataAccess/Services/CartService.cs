@@ -1,9 +1,9 @@
-﻿using CartServiceConsoleApp.BLL.Interfaces;
-using CartServiceConsoleApp.DAL.Exceptions;
-using CartServiceConsoleApp.DAL.Interfaces;
-using CartServiceConsoleApp.Entities;
+﻿using CatalogService.DataAccess.Interfaces;
+using CatalogService.Domain.Entities;
+using CatalogService.Domain.Exceptions;
+using CatalogService.Domain.Interfaces;
 
-namespace CartServiceConsoleApp.BLL.Services
+namespace CatalogService.DataAccess.Services
 {
     public class CartService : ICartService
     {
@@ -22,7 +22,7 @@ namespace CartServiceConsoleApp.BLL.Services
                 cart = _cartRepository.GetCartById(cartId);
             }
             catch (CartNotFoundException ex)
-            { 
+            {
                 cart = new Cart(cartId);
             }
 

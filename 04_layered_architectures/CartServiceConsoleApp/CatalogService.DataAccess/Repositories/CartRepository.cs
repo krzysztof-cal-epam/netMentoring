@@ -1,8 +1,8 @@
-﻿using CartServiceConsoleApp.DAL.Exceptions;
-using CartServiceConsoleApp.DAL.Interfaces;
-using CartServiceConsoleApp.Entities;
+﻿using CatalogService.Domain.Entities;
+using CatalogService.Domain.Exceptions;
+using CatalogService.Domain.Interfaces;
 
-namespace CartServiceConsoleApp.DAL.Repositories
+namespace CatalogService.Domain.Repositories
 {
     public class CartRepository : ICartRepository
     {

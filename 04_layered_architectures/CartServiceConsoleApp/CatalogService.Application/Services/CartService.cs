@@ -1,10 +1,9 @@
-﻿using CartServiceConsoleApp.DAL.Exceptions;
-using CartServiceConsoleApp.DAL.Interfaces;
-using CartServiceConsoleApp.Entities;
-using CatalogService.Application.Dto;
+﻿using CatalogService.Application.Dto;
 using CatalogService.Application.Exceptions;
 using CatalogService.Application.Interfaces;
-using LiteDB;
+using CatalogService.Domain.Entities;
+using CatalogService.Domain.Exceptions;
+using CatalogService.Domain.Interfaces;
 
 namespace CatalogService.Application.Services
 {
@@ -221,11 +220,6 @@ namespace CatalogService.Application.Services
             {
                 Console.WriteLine($"[CartService] Operation canceled in UpdateCartItems: {ex.Message}");
                 throw new ApplicationException("Operation was canceled.", ex);
-            }
-            catch (LiteException ex)
-            {
-                Console.WriteLine($"[CartService] LiteDB error in UpdateCartItems: {ex.Message}");
-                throw new ApplicationException("Failed to update cart items due to database error.", ex);
             }
             catch (RepositoryException ex)
             {

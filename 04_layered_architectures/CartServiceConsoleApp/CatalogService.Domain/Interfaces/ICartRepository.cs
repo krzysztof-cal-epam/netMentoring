@@ -1,6 +1,6 @@
-﻿using CartServiceConsoleApp.Entities;
+﻿using CatalogService.Domain.Entities;
 
-namespace CartServiceConsoleApp.DAL.Interfaces
+namespace CatalogService.Domain.Interfaces
 {
     public interface ICartRepository
     {

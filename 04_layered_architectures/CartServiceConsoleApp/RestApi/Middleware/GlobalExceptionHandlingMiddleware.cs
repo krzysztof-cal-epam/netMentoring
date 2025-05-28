@@ -1,5 +1,5 @@
-﻿using CartServiceConsoleApp.DAL.Exceptions;
-using CatalogService.Application.Exceptions;
+﻿using CatalogService.Application.Exceptions;
+using CatalogService.Domain.Exceptions;
 
 namespace RestApi.Middleware
 {
