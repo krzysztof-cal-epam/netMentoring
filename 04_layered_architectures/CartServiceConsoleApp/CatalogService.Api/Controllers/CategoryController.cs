@@ -1,11 +1,13 @@
 ﻿using CatalogService.Application.Dto;
 using CatalogService.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CatalogService.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class CategoryController : ControllerBase
     {
         private readonly ICategoryService _categoryService;
@@ -17,6 +19,7 @@ namespace CatalogService.Api.Controllers
 
         // GET: api/Category/list
         [HttpGet("list")]
+        [Authorize(Policy = "Read")]
         public async Task<IActionResult> GetAll()
         {
             var categories = await _categoryService.ListAsync();
@@ -25,6 +28,7 @@ namespace CatalogService.Api.Controllers
 
         // GET: api/Category/{id}
         [HttpGet("{id}")]
+        [Authorize(Policy = "Read")]
         public async Task<IActionResult> GetById(int id)
         {
             var category = await _categoryService.GetByIdAsync(id);
@@ -35,6 +39,7 @@ namespace CatalogService.Api.Controllers
 
         // POST: api/Category
         [HttpPost]
+        [Authorize(Policy = "Create")]
         public async Task<IActionResult> Add([FromBody] CategoryDto categoryDto)
         {
             if (!ModelState.IsValid)
@@ -46,6 +51,7 @@ namespace CatalogService.Api.Controllers
 
         // PUT: api/Category/{id}
         [HttpPut("{id}")]
+        [Authorize(Policy = "Update")]
         public async Task<IActionResult> Update(int id, [FromBody] CategoryDto categoryDto)
         {
             if (!ModelState.IsValid)
@@ -63,6 +69,7 @@ namespace CatalogService.Api.Controllers
 
         // DELETE: api/Category/{id}
         [HttpDelete("{id}")]
+        [Authorize(Policy = "Delete")]
         public async Task<IActionResult> Delete(int id)
         {
             await _categoryService.DeleteAsync(id);
