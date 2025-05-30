@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApi", "RestApi\RestApi.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApiTests", "RestApiTests\RestApiTests.csproj", "{FCE90B4C-B5D2-455A-8871-CD9BA3EFFFE8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServerApi", "IdentityServerApi\IdentityServerApi.csproj", "{13830B11-D733-4376-955A-A339CAE282F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{FCE90B4C-B5D2-455A-8871-CD9BA3EFFFE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCE90B4C-B5D2-455A-8871-CD9BA3EFFFE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCE90B4C-B5D2-455A-8871-CD9BA3EFFFE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13830B11-D733-4376-955A-A339CAE282F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13830B11-D733-4376-955A-A339CAE282F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13830B11-D733-4376-955A-A339CAE282F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13830B11-D733-4376-955A-A339CAE282F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
