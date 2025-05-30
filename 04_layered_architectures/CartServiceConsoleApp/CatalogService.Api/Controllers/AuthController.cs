@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace CatalogService.Api.Controllers
 {
+    //todo this should be moved to indentity servis
     [Route("api/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase

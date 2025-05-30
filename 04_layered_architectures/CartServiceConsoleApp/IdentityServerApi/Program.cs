@@ -8,7 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services
 builder.Services.AddControllers();
 builder.Services.AddDbContext<IdentityDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("IdentityDb")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("IdentityDb"))
+        .EnableSensitiveDataLogging()
+        .EnableDetailedErrors());
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddEntityFrameworkStores<IdentityDbContext>()
