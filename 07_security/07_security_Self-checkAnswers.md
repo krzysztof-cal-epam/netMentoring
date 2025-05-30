@@ -55,13 +55,24 @@ We can distinguish the following other approaches to use with security token:
 Sign-On (SSO) is an authentication mechanism where a user logs in once and gains access to multiple independent applications without need to log in again. 
 
 ### Name the steps to implement SSO.
-todo
+Steps to implement SSO are the following:
+1. Choose an Identity Provider (IDP) to manage user identities,
+2. Set up application - configure application to work with the chosen identity provider,
+3. Integrate SSO protocol to enable secure communication between IDP and the application,
+4. Create a login page - page where user enters credentials,
+5. Enable token generation - configure IDP to issue tokens when user successfully logs in,
+6. Configure app to accept tokens - modify the app to access security tokens. When user tries to access the application, app will check whether the provided token is valid. If it is, the user gets logged automatically.
 
 ### What are the benefits of SSO?
-todo
+Benefits of Single Sign On are the following:
+1. Improved user experience - user has to login only once for multiple applications,
+2. Improved security - centralized authentication will improve overal security. Also fewer password to be remmembered - user needs to remmember only one strong password,
+3. Increased productivity - faster access to applications without repeated logins.
 
 ## 7. What is the difference between Two-Factor Authentication and Multi-Factor Authentication?
-todo
+Two-Factor Authentication requires exactly wto distinct authentication factories i.e. password and sms code.
+Multi-Factor Authentication tequires two or more authentication factories. In this case i.e. password, mobile phone sms code and biometrics. Multi-Factor Authentication includes Two-Factor Authentication, it is a broader security approach.
 
 ## 8. Which of the OAuth flows can be used for user (customer) and which for client (server) authentication?
-todo
+OAuth flows for User (customer) Authentication can be used for authorization web applications, where user authenticates via web browser. 
+OAuth flows for Clients (server) Authentication can be used for server to server communication, where the server authenticates to access resourcess without user involvement.
