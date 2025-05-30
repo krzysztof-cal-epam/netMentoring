@@ -10,10 +10,12 @@ namespace CatalogService.Api.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IHttpClientFactory _httpClientFactory;
+        private readonly ILogger<AuthController> _logger;
 
-        public AuthController(IHttpClientFactory httpClientFactory)
+        public AuthController(IHttpClientFactory httpClientFactory, ILogger<AuthController> logger)
         {
             _httpClientFactory = httpClientFactory;
+            _logger = logger;
         }
 
         [HttpPost("login")]
@@ -21,11 +23,17 @@ namespace CatalogService.Api.Controllers
         {
             try
             {
+                if (request == null || string.IsNullOrWhiteSpace(request.Username) || string.IsNullOrWhiteSpace(request.Password))
+                {
+                    _logger.LogWarning("Invalid login request: Username or Password is empty.");
+                    return BadRequest("Username and Password are required.");
+                }
+
                 var client = _httpClientFactory.CreateClient();
                 var discoveryDoc = await client.GetDiscoveryDocumentAsync("https://localhost:7191");
                 if (discoveryDoc.IsError)
                 {
-                    Console.WriteLine("Discovery document error: {Error}", discoveryDoc.Error);
+                    _logger.LogError("Discovery document error: {Error}", discoveryDoc.Error);
                     return StatusCode(500, "Authentication service unavailable.");
                 }
 
@@ -41,11 +49,11 @@ namespace CatalogService.Api.Controllers
 
                 if (tokenResponse.IsError)
                 {
-                    Console.WriteLine("Token request error: {Error}", tokenResponse.Error);
+                    _logger.LogError("Token request error: {Error}", tokenResponse.Error);
                     return BadRequest("Invalid credentials.");
                 }
 
-                Console.WriteLine("Generated token for user {Username}", request.Username);
+                _logger.LogInformation("Generated token for user: {0}", request.Username); 
                 return Ok(new
                 {
                     tokenResponse.AccessToken,
@@ -56,7 +64,7 @@ namespace CatalogService.Api.Controllers
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error <{ex}> generating token for user {request.Username}");
+                _logger.LogError(ex, "Error generating token for user: {0}", request.Username ?? "null");
                 return StatusCode(500, "Authentication error.");
             }
         }
@@ -66,11 +74,17 @@ namespace CatalogService.Api.Controllers
         {
             try
             {
+                if (request == null || string.IsNullOrWhiteSpace(request.RefreshToken))
+                {
+                    _logger.LogWarning("Invalid refresh request: RefreshToken is empty.");
+                    return BadRequest("RefreshToken is required.");
+                }
+
                 var client = _httpClientFactory.CreateClient();
                 var discoveryDoc = await client.GetDiscoveryDocumentAsync("https://localhost:5002");
                 if (discoveryDoc.IsError)
                 {
-                    Console.WriteLine("Discovery document error: {Error}", discoveryDoc.Error);
+                    _logger.LogError("Discovery document error: {Error}", discoveryDoc.Error);
                     return StatusCode(500, "Authentication service unavailable.");
                 }
 
@@ -84,11 +98,11 @@ namespace CatalogService.Api.Controllers
 
                 if (tokenResponse.IsError)
                 {
-                    Console.WriteLine("Refresh token error: {Error}", tokenResponse.Error);
+                    _logger.LogError("Refresh token error: {Error}", tokenResponse.Error);
                     return BadRequest("Invalid refresh token.");
                 }
 
-                Console.WriteLine("Refreshed token for client");
+                _logger.LogInformation("Refreshed token for client");
                 return Ok(new
                 {
                     tokenResponse.AccessToken,
@@ -99,7 +113,7 @@ namespace CatalogService.Api.Controllers
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error refreshing token <{ex}>");
+                _logger.LogError(ex, "Error refreshing token");
                 return StatusCode(500, "Authentication error.");
             }
         }

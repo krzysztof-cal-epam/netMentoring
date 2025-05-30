@@ -2,6 +2,7 @@
 using CatalogService.Application.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Data;
 
 namespace CatalogService.Api.Controllers
 {
@@ -21,7 +22,11 @@ namespace CatalogService.Api.Controllers
         [Authorize(Policy = "Read")]
         public async Task<IActionResult> GetAll()
         {
+            var user = User.Identity.Name ?? "Anonymous";
+            var roles = User.Claims.Where(c => c.Type == "role").Select(c => c.Value).ToList();
+            Console.WriteLine("GetProducts called by {User}. Roles: {Roles}", user, string.Join(", ", roles));
             var products = await _productService.ListAsync();
+
             return Ok(products);
         }
 
@@ -70,6 +75,23 @@ namespace CatalogService.Api.Controllers
         {
             await _productService.DeleteAsync(id);
             return NoContent();
+        }
+
+        [HttpGet("debug-claims")]
+        [Authorize]
+        public IActionResult DebugClaims()
+        {
+            var claims = User.Claims.Select(c => new { c.Type, c.Value });
+            Console.WriteLine("User claims: {Claims}", System.Text.Json.JsonSerializer.Serialize(claims));
+            return Ok(claims);
+        }
+
+        [HttpGet("test-auth")]
+        [Authorize]
+        public IActionResult TestAuth()
+        {
+            Console.WriteLine("TestAuth called by {User}", User.Identity.Name ?? "Anonymous");
+            return Ok("Authenticated");
         }
     }
 
