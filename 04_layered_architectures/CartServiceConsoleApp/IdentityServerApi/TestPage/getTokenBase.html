@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Token</title>
+</head>
+<body>
+    <h2>Get Token from IdentityServerApi</h2>
+    <form action="https://localhost:7191/connect/token" method="POST">
+        <input type="hidden" name="grant_type" value="password">
+        <input type="hidden" name="client_id" value="catalog-client">
+        <input type="hidden" name="client_secret" value="secret">
+        <input type="hidden" name="username" value="manager1">
+        <input type="hidden" name="password" value="Manager@123">
+        <input type="hidden" name="scope" value="CatalogApi openid profile roles">
+        <button type="submit">Get Token</button>
+    </form>
+</body>
+</html>

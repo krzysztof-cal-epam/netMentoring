@@ -1,53 +1,48 @@
 ﻿using Duende.IdentityServer.Models;
-using System.Collections.Generic;
+using IdentityModel;
 
-namespace IdentityServerApi
+namespace IdentityServerApi;
+
+public static class Config
 {
-    public static class Config
-    {
-        public static IEnumerable<IdentityResource> IdentityResources =>
-            new IdentityResource[]
-            {
-                new IdentityResources.OpenId(),
-                new IdentityResources.Profile(),
-                new IdentityResource
-                {
-                    Name = "roles",
-                    DisplayName = "User Roles",
-                    UserClaims = { "role" }
-                }
-            };
+    public static IEnumerable<IdentityResource> IdentityResources =>
+        new IdentityResource[]
+        {
+            new IdentityResources.OpenId(),
+            new IdentityResources.Profile(),
+            new IdentityResource("roles", new[] { "role" })
+        };
 
-        public static IEnumerable<ApiScope> ApiScopes =>
-            new ApiScope[]
-            {
-                new ApiScope("CatalogApi", "Catalog Service API")
-            };
+    public static IEnumerable<ApiScope> ApiScopes =>
+        new[]
+        {
+            new ApiScope("CatalogApi", "Catalog API")
+        };
 
-        public static IEnumerable<ApiResource> ApiResources =>
-            new ApiResource[]
+    public static IEnumerable<ApiResource> ApiResources =>
+        new[]
+        {
+            new ApiResource("CatalogApi", "Catalog API")
             {
-                new ApiResource("CatalogApi", "Catalog Service API")
-                {
-                    Scopes = { "CatalogApi" },
-                    UserClaims = { "role" }
-                }
-            };
+                Scopes = { "CatalogApi" },
+                UserClaims = { "role" }
+            }
+        };
 
-        public static IEnumerable<Client> Clients =>
-            new Client[]
+    public static IEnumerable<Client> Clients =>
+        new[]
+        {
+            new Client
             {
-                new Client
-                {
-                    ClientId = "catalog-client",
-                    ClientSecrets = { new Secret("secret".Sha256()) },
-                    AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
-                    AllowedScopes = { "CatalogApi", "openid", "profile", "roles" },
-                    AllowOfflineAccess = true,
-                    RefreshTokenUsage = TokenUsage.OneTimeOnly,
-                    RefreshTokenExpiration = TokenExpiration.Sliding,
-                    SlidingRefreshTokenLifetime = 3600 // 1 hour
-                }
-            };
-    }
+                ClientId = "catalog-client",
+                ClientSecrets = { new Secret("secret".Sha256()) },
+                AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
+                AllowedScopes = { "CatalogApi", "openid", "profile", "roles" },
+                AllowOfflineAccess = true,
+                RefreshTokenUsage = TokenUsage.ReUse,
+                RefreshTokenExpiration = TokenExpiration.Sliding,
+                SlidingRefreshTokenLifetime = 1296000,
+                AccessTokenLifetime = 3600
+            }
+        };
 }

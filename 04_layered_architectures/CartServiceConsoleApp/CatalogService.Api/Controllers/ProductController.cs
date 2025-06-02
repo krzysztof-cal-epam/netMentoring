@@ -11,11 +11,14 @@ namespace CatalogService.Api.Controllers
     [Authorize]
     public class ProductController : ControllerBase
     {
+        private readonly ILogger _logger;
         private readonly IProductService _productService;
 
-        public ProductController(IProductService productService)
+        public ProductController(IProductService productService, ILogger<ProductController> logger)
         {
             _productService = productService;
+            _logger = logger;
+
         }
 
         [HttpGet("list")]
@@ -24,7 +27,8 @@ namespace CatalogService.Api.Controllers
         {
             var user = User.Identity.Name ?? "Anonymous";
             var roles = User.Claims.Where(c => c.Type == "role").Select(c => c.Value).ToList();
-            Console.WriteLine("GetProducts called by {User}. Roles: {Roles}", user, string.Join(", ", roles));
+            _logger.LogInformation("GetProducts called by {0}. Roles: {1}", user, string.Join(", ", roles));
+
             var products = await _productService.ListAsync();
 
             return Ok(products);
@@ -76,24 +80,5 @@ namespace CatalogService.Api.Controllers
             await _productService.DeleteAsync(id);
             return NoContent();
         }
-
-        [HttpGet("debug-claims")]
-        [Authorize]
-        public IActionResult DebugClaims()
-        {
-            var claims = User.Claims.Select(c => new { c.Type, c.Value });
-            Console.WriteLine("User claims: {Claims}", System.Text.Json.JsonSerializer.Serialize(claims));
-            return Ok(claims);
-        }
-
-        [HttpGet("test-auth")]
-        [Authorize]
-        public IActionResult TestAuth()
-        {
-            Console.WriteLine("TestAuth called by {User}", User.Identity.Name ?? "Anonymous");
-            return Ok("Authenticated");
-        }
     }
-
-
 }
