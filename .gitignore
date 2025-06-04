@@ -10,3 +10,4 @@
 .vs/
 /04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/ECommerceDb.db
 /04_layered_architectures/CartServiceConsoleApp/RestApi/ECommerceDb.db
+/04_layered_architectures/CartServiceConsoleApp/IdentityServerApi/keys/is-signing-key-510005CA5C459BD6494D266B949C65BA.json
