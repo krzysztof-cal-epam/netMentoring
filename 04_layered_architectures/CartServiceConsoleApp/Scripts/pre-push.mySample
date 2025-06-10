@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# In order to use this git hook, copy this file to .git/hooks/
+
+# Run dotnet format to check for code style violations
+dotnet format --verify-no-changes --severity error
+
+# Capture the exit code
+exit_code=$?
+
+if [ $exit_code -ne 0 ]; then
+    echo "Code style violations detected. Please run 'dotnet format' to fix issues before pushing."
+    exit 1
+fi
+
+exit 0
