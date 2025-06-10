@@ -4,7 +4,6 @@
     using CatalogService.Application.Interfaces;
     using CatalogService.Domain.Entities;
     using Microsoft.AspNetCore.Mvc;
-    using System;
 
     /// <summary>
     /// Cart Api V1
