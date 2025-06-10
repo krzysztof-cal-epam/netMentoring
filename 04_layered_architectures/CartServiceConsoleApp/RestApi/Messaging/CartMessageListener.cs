@@ -1,13 +1,16 @@
-﻿using CatalogService.Application.Interfaces;
-using CatalogService.DataAccess.RabbitMQ;
-using Microsoft.Extensions.Options;
-using RabbitMQ.Client;
-using RabbitMQ.Client.Events;
-using System.Text;
-using System.Text.Json;
-
-namespace RestApi.Messaging
+﻿namespace RestApi.Messaging
 {
+    using System.Text;
+    using System.Text.Json;
+
+    using CatalogService.Application.Interfaces;
+    using CatalogService.DataAccess.RabbitMQ;
+
+    using Microsoft.Extensions.Options;
+
+    using RabbitMQ.Client;
+    using RabbitMQ.Client.Events;
+
     public class CartMessageListener : BackgroundService
     {
         private readonly IServiceScopeFactory _scopeFactory;
