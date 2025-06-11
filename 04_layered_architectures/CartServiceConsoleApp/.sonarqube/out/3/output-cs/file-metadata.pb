@@ -7,9 +7,9 @@ zC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
 {C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Repositories\CategoryRepository.csutf-8Ä
 wC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Repositories\CartRepository.csutf-8~
 uC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\RabbitMQ\RabbitMqSettings.csutf-8ê
-ÑC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Migrations\CatalogDbContextModelSnapshot.csutf-8ô
-çC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Migrations\20250512104332_AddOutboxTable.Designer.csutf-8é
-ÑC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Migrations\20250512104332_AddOutboxTable.csutf-8û
+ÑC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Migrations\CatalogDbContextModelSnapshot.csutf-8é
+ÑC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Migrations\20250512104332_AddOutboxTable.csutf-8ô
+çC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Migrations\20250512104332_AddOutboxTable.Designer.csutf-8û
 íC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Migrations\20250424222729_EnableCascadeDelete.Designer.csutf-8ì
 âC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Migrations\20250424222729_EnableCascadeDelete.csutf-8†
 îC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Migrations\20250416220805_RenameImageToImageUrl.Designer.csutf-8ï

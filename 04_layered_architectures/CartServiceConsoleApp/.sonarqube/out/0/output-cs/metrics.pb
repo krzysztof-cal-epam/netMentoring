@@ -14,16 +14,16 @@ wC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
 uC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Exceptions\DatabaseExceptions.cs 8r	
 ã
 hC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Product.cs 8r	
-Ç}
+Ç|
+jC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\ImageItem.cs 8r	}
 gC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Outbox.cs 8r	
-|
-jC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\ImageItem.cs 8r	Ö
+Ö
 iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Category.cs 
 8
 r	
-Ç~
+ÇÅ
+eC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Cart.cs 8r
+Ç~
 iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\CartItem.cs 
 8
-r	Å
-eC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Cart.cs 8r
-Ç
+r	

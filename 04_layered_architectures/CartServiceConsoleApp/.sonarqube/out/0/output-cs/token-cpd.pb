@@ -696,7 +696,42 @@ CategoryId 
 ;+ ,
 }- .
 } 
-} Œ
+} ¡
+jC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\ImageItem.cs
+	namespace 	
+CatalogService
+ 
+. 
+Domain 
+.  
+Entities  (
+{ 
+public 
+
+class 
+	ImageItem 
+{ 
+public 
+string 
+ImageUrl 
+{  
+get! $
+;$ %
+set& )
+;) *
+}+ ,
+public 
+string 
+? 
+AltText 
+{  
+get! $
+;$ %
+set& )
+;) *
+}+ ,
+} 
+}		 Œ
 
 gC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Outbox.cs
 	namespace 	
@@ -786,42 +821,7 @@ gC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
 ;/ 0
 }1 2
 } 
-} ¡
-jC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\ImageItem.cs
-	namespace 	
-CatalogService
- 
-. 
-Domain 
-.  
-Entities  (
-{ 
-public 
-
-class 
-	ImageItem 
-{ 
-public 
-string 
-ImageUrl 
-{  
-get! $
-;$ %
-set& )
-;) *
-}+ ,
-public 
-string 
-? 
-AltText 
-{  
-get! $
-;$ %
-set& )
-;) *
-}+ ,
-} 
-}		 ü
+} ü
 
 iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Category.cs
 	namespace 	

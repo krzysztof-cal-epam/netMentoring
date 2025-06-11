@@ -153,7 +153,14 @@ hC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
 
  
 
-  Ω
+  ê
+jC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\ImageItem.cs
+
+ 
+
+ 
+
+ Ω
 gC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Outbox.cs
 
  
@@ -170,14 +177,7 @@ gC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
 
  !
 
- $ê
-jC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\ImageItem.cs
-
- 
-
- 
-
- Ω
+ $Ω
 iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Category.cs
   
 
@@ -189,7 +189,16 @@ iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
 
  $
 
- '≥
+ '´
+eC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Cart.cs
+
+ 
+  
+
+
+  
+
+ #≥
 iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\CartItem.cs
 
  
@@ -202,13 +211,4 @@ iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
 
  
 
- ´
-eC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Cart.cs
-
- 
-  
-
-
-  
-
- #
+ 
