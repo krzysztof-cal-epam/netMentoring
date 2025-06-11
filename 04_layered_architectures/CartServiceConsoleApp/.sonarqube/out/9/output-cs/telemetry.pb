@@ -1,0 +1,1 @@
+uR_C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApiTests\RestApiTests.csproj¢net8.0òCSharp12

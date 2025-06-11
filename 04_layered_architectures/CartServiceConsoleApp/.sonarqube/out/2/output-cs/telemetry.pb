@@ -1,0 +1,1 @@
+èRyC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\CatalogService.DataAccess.csproj¢net8.0ÚCSharp12

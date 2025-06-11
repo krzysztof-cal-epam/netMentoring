@@ -1,0 +1,11 @@
+﻿C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CartServiceWebApi\Controllers\CartController.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CartServiceWebApi\Program.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CartServiceWebApi\obj\Debug\net8.0\CartServiceWebApi.GlobalUsings.g.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CartServiceWebApi\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CartServiceWebApi\obj\Debug\net8.0\CartServiceWebApi.AssemblyInfo.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CartServiceWebApi\obj\Debug\net8.0\CartServiceWebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CartServiceWebApi\appsettings.Development.json
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CartServiceWebApi\appsettings.json
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CartServiceWebApi\CartServiceWebApi.http
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CartServiceWebApi\ECommerceDb.db
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CartServiceWebApi\Properties\launchSettings.json

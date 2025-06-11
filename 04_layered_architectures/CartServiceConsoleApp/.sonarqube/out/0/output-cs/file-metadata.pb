@@ -1,0 +1,17 @@
+ó
+ãC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\obj\Debug\net8.0\CatalogService.Domain.AssemblyInfo.csutf-8†
+îC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8ô
+çC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\obj\Debug\net8.0\CatalogService.Domain.GlobalUsings.g.csutf-8w
+nC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Interfaces\IRepository.csutf-8~
+uC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Interfaces\IProductRepository.csutf-8
+vC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Interfaces\ICategoryRepository.csutf-8{
+rC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Interfaces\ICartRepository.csutf-8y
+pC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Interfaces\ICartDatabase.csutf-8Ä
+wC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Exceptions\RepositoryExceptions.csutf-8~
+uC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Exceptions\DatabaseExceptions.csutf-8q
+hC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Product.csutf-8s
+jC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\ImageItem.csutf-8p
+gC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Outbox.csutf-8r
+iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Category.csutf-8r
+iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\CartItem.csutf-8n
+eC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Cart.csutf-8

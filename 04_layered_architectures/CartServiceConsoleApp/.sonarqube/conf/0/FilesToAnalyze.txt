@@ -1,0 +1,13 @@
+﻿C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Cart.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\CartItem.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Category.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\ImageItem.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Outbox.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Product.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Exceptions\DatabaseExceptions.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Exceptions\RepositoryExceptions.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Interfaces\ICartDatabase.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Interfaces\ICartRepository.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Interfaces\ICategoryRepository.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Interfaces\IProductRepository.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Interfaces\IRepository.cs

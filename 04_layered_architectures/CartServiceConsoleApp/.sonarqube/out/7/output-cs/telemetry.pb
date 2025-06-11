@@ -1,0 +1,1 @@
+kRUC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\RestApi.csproj¢net8.0òCSharp12

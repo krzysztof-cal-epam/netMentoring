@@ -1,0 +1,2 @@
+﻿C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Infrastructure\DependencyInjection.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Infrastructure\Interfaces\IRabbitMqProducer.cs
