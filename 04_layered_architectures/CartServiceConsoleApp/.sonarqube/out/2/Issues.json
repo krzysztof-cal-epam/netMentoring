@@ -353,246 +353,6 @@
           }
         },
         {
-          "ruleId": "SA1516",
-          "level": "warning",
-          "message": "Elements should be separated by blank line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Dto/CartDto.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 1,
-                  "endLine": 7,
-                  "endColumn": 9
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
-          }
-        },
-        {
-          "ruleId": "SA1200",
-          "level": "warning",
-          "message": "Using directive should appear within a namespace declaration",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Dto/ProductDto.cs",
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 45
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2227",
-          "level": "warning",
-          "message": "Change 'Items' to be read-only by removing the property setter",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Dto/CartDto.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 34,
-                  "endLine": 7,
-                  "endColumn": 39
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1002",
-          "level": "warning",
-          "message": "Change 'List<CartItemDto>' in 'CartDto.Items' to use 'Collection<T>', 'ReadOnlyCollection<T>' or 'KeyedCollection<K,V>'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Dto/CartDto.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 34,
-                  "endLine": 7,
-                  "endColumn": 39
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1200",
-          "level": "warning",
-          "message": "Using directive should appear within a namespace declaration",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Exceptions/CartValidationException.cs",
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 45
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1200",
-          "level": "warning",
-          "message": "Using directive should appear within a namespace declaration",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/ICartService.cs",
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1200",
-          "level": "warning",
-          "message": "Using directive should appear within a namespace declaration",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/ICategoryService.cs",
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1200",
-          "level": "warning",
-          "message": "Using directive should appear within a namespace declaration",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/IProductService.cs",
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1200",
-          "level": "warning",
-          "message": "Using directive should appear within a namespace declaration",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/IProductService.cs",
-                "region": {
-                  "startLine": 2,
-                  "startColumn": 1,
-                  "endLine": 2,
-                  "endColumn": 40
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1032",
-          "level": "warning",
-          "message": "Add the following constructor to CartValidationException: public CartValidationException()",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Exceptions/CartValidationException.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 18,
-                  "endLine": 5,
-                  "endColumn": 41
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "Signature": "CtorWithNoParameter"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1032",
-          "level": "warning",
-          "message": "Add the following constructor to CartValidationException: public CartValidationException(string message, Exception innerException)",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Exceptions/CartValidationException.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 18,
-                  "endLine": 5,
-                  "endColumn": 41
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "Signature": "CtorWithStringAndExceptionParameters"
-            }
-          }
-        },
-        {
           "ruleId": "SA1633",
           "level": "warning",
           "message": "The file header is missing or not located at the top of the file.",
@@ -626,6 +386,48 @@
                   "startColumn": 1,
                   "endLine": 2,
                   "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Dto/ProductDto.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Exceptions/CartValidationException.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 45
                 }
               }
             }
@@ -782,18 +584,39 @@
           }
         },
         {
-          "ruleId": "CA1056",
+          "ruleId": "SA1200",
           "level": "warning",
-          "message": "Change the type of property 'ImageItemDto.ImageUrl' from 'string' to 'System.Uri'",
+          "message": "Using directive should appear within a namespace declaration",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Dto/ImageItemDto.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/ICartService.cs",
                 "region": {
-                  "startLine": 6,
-                  "startColumn": 23,
-                  "endLine": 6,
-                  "endColumn": 31
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/ICategoryService.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 38
                 }
               }
             }
@@ -908,123 +731,45 @@
           }
         },
         {
-          "ruleId": "SA1516",
+          "ruleId": "SA1200",
           "level": "warning",
-          "message": "Elements should be separated by blank line",
+          "message": "Using directive should appear within a namespace declaration",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Dto/CartItemDto.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/IProductService.cs",
                 "region": {
-                  "startLine": 7,
+                  "startLine": 1,
                   "startColumn": 1,
-                  "endLine": 7,
-                  "endColumn": 9
+                  "endLine": 1,
+                  "endColumn": 38
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
+            "warningLevel": 1
           }
         },
         {
-          "ruleId": "SA1516",
+          "ruleId": "SA1200",
           "level": "warning",
-          "message": "Elements should be separated by blank line",
+          "message": "Using directive should appear within a namespace declaration",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Dto/ImageItemDto.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/IProductService.cs",
                 "region": {
-                  "startLine": 7,
+                  "startLine": 2,
                   "startColumn": 1,
-                  "endLine": 7,
-                  "endColumn": 9
+                  "endLine": 2,
+                  "endColumn": 40
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
-          }
-        },
-        {
-          "ruleId": "SA1516",
-          "level": "warning",
-          "message": "Elements should be separated by blank line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Dto/CartItemDto.cs",
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 1,
-                  "endLine": 8,
-                  "endColumn": 9
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
-          }
-        },
-        {
-          "ruleId": "SA1516",
-          "level": "warning",
-          "message": "Elements should be separated by blank line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Dto/CartItemDto.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 1,
-                  "endLine": 9,
-                  "endColumn": 9
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
-          }
-        },
-        {
-          "ruleId": "SA1516",
-          "level": "warning",
-          "message": "Elements should be separated by blank line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Dto/CartItemDto.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 1,
-                  "endLine": 10,
-                  "endColumn": 9
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
+            "warningLevel": 1
           }
         },
         {
@@ -1217,195 +962,129 @@
           }
         },
         {
-          "ruleId": "SA1516",
+          "ruleId": "SA1200",
           "level": "warning",
-          "message": "Elements should be separated by blank line",
+          "message": "Using directive should appear within a namespace declaration",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/ICartService.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
                 "region": {
-                  "startLine": 8,
+                  "startLine": 1,
                   "startColumn": 1,
-                  "endLine": 8,
-                  "endColumn": 9
+                  "endLine": 1,
+                  "endColumn": 38
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
+            "warningLevel": 1
           }
         },
         {
-          "ruleId": "SA1516",
+          "ruleId": "SA1200",
           "level": "warning",
-          "message": "Elements should be separated by blank line",
+          "message": "Using directive should appear within a namespace declaration",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/ICartService.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
                 "region": {
-                  "startLine": 9,
+                  "startLine": 2,
                   "startColumn": 1,
-                  "endLine": 9,
-                  "endColumn": 9
+                  "endLine": 2,
+                  "endColumn": 45
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
+            "warningLevel": 1
           }
         },
         {
-          "ruleId": "SA1516",
+          "ruleId": "SA1200",
           "level": "warning",
-          "message": "Elements should be separated by blank line",
+          "message": "Using directive should appear within a namespace declaration",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/ICartService.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
                 "region": {
-                  "startLine": 10,
+                  "startLine": 3,
                   "startColumn": 1,
-                  "endLine": 10,
-                  "endColumn": 9
+                  "endLine": 3,
+                  "endColumn": 45
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
+            "warningLevel": 1
           }
         },
         {
-          "ruleId": "SA1516",
+          "ruleId": "SA1200",
           "level": "warning",
-          "message": "Elements should be separated by blank line",
+          "message": "Using directive should appear within a namespace declaration",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/ICartService.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
                 "region": {
-                  "startLine": 11,
+                  "startLine": 4,
                   "startColumn": 1,
-                  "endLine": 11,
-                  "endColumn": 9
+                  "endLine": 4,
+                  "endColumn": 38
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
+            "warningLevel": 1
           }
         },
         {
-          "ruleId": "SA1516",
+          "ruleId": "SA1200",
           "level": "warning",
-          "message": "Elements should be separated by blank line",
+          "message": "Using directive should appear within a namespace declaration",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/ICategoryService.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
                 "region": {
-                  "startLine": 8,
+                  "startLine": 5,
                   "startColumn": 1,
-                  "endLine": 8,
-                  "endColumn": 9
+                  "endLine": 5,
+                  "endColumn": 40
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
+            "warningLevel": 1
           }
         },
         {
-          "ruleId": "SA1516",
+          "ruleId": "SA1200",
           "level": "warning",
-          "message": "Elements should be separated by blank line",
+          "message": "Using directive should appear within a namespace declaration",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/ICategoryService.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
                 "region": {
-                  "startLine": 9,
+                  "startLine": 6,
                   "startColumn": 1,
-                  "endLine": 9,
-                  "endColumn": 9
+                  "endLine": 6,
+                  "endColumn": 40
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
-          }
-        },
-        {
-          "ruleId": "SA1516",
-          "level": "warning",
-          "message": "Elements should be separated by blank line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/ICategoryService.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 1,
-                  "endLine": 10,
-                  "endColumn": 9
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
-          }
-        },
-        {
-          "ruleId": "SA1516",
-          "level": "warning",
-          "message": "Elements should be separated by blank line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/ICategoryService.cs",
-                "region": {
-                  "startLine": 11,
-                  "startColumn": 1,
-                  "endLine": 11,
-                  "endColumn": 9
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
+            "warningLevel": 1
           }
         },
         {
@@ -1829,191 +1508,13 @@
           }
         },
         {
-          "ruleId": "S4136",
-          "level": "warning",
-          "message": "All 'ListAsync' method overloads should be adjacent.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/IProductService.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 39,
-                  "endLine": 9,
-                  "endColumn": 48
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/IProductService.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 39,
-                  "endLine": 13,
-                  "endColumn": 48
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": "Non-adjacent overload"
-            }
-          }
-        },
-        {
-          "ruleId": "SA1516",
-          "level": "warning",
-          "message": "Elements should be separated by blank line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/IProductService.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 1,
-                  "endLine": 9,
-                  "endColumn": 9
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
-          }
-        },
-        {
-          "ruleId": "SA1516",
-          "level": "warning",
-          "message": "Elements should be separated by blank line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/IProductService.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 1,
-                  "endLine": 10,
-                  "endColumn": 9
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
-          }
-        },
-        {
-          "ruleId": "SA1516",
-          "level": "warning",
-          "message": "Elements should be separated by blank line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/IProductService.cs",
-                "region": {
-                  "startLine": 11,
-                  "startColumn": 1,
-                  "endLine": 11,
-                  "endColumn": 9
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
-          }
-        },
-        {
-          "ruleId": "SA1516",
-          "level": "warning",
-          "message": "Elements should be separated by blank line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/IProductService.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 1,
-                  "endLine": 12,
-                  "endColumn": 9
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
-          }
-        },
-        {
-          "ruleId": "SA1516",
-          "level": "warning",
-          "message": "Elements should be separated by blank line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/IProductService.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 1,
-                  "endLine": 13,
-                  "endColumn": 9
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
-          }
-        },
-        {
-          "ruleId": "SA1309",
-          "level": "warning",
-          "message": "Field '_categoryRepository' should not begin with an underscore",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 46,
-                  "endLine": 10,
-                  "endColumn": 65
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "SA1200",
           "level": "warning",
           "message": "Using directive should appear within a namespace declaration",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
                 "region": {
                   "startLine": 1,
                   "startColumn": 1,
@@ -2034,7 +1535,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
                 "region": {
                   "startLine": 2,
                   "startColumn": 1,
@@ -2055,32 +1556,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
                 "region": {
                   "startLine": 3,
                   "startColumn": 1,
                   "endLine": 3,
-                  "endColumn": 45
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1200",
-          "level": "warning",
-          "message": "Using directive should appear within a namespace declaration",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 4,
-                  "startColumn": 1,
-                  "endLine": 4,
                   "endColumn": 38
                 }
               }
@@ -2097,11 +1577,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
                 "region": {
-                  "startLine": 5,
+                  "startLine": 4,
                   "startColumn": 1,
-                  "endLine": 5,
+                  "endLine": 4,
                   "endColumn": 40
                 }
               }
@@ -2118,242 +1598,257 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "endLine": 2,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 1,
+                  "endLine": 4,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1516",
+          "level": "warning",
+          "message": "Elements should be separated by blank line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Dto/CartDto.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 1,
+                  "endLine": 7,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
+          "ruleId": "CA2227",
+          "level": "warning",
+          "message": "Change 'Items' to be read-only by removing the property setter",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Dto/CartDto.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 34,
+                  "endLine": 7,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1002",
+          "level": "warning",
+          "message": "Change 'List<CartItemDto>' in 'CartDto.Items' to use 'Collection<T>', 'ReadOnlyCollection<T>' or 'KeyedCollection<K,V>'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Dto/CartDto.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 34,
+                  "endLine": 7,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1516",
+          "level": "warning",
+          "message": "Elements should be separated by blank line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Dto/CartItemDto.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 1,
+                  "endLine": 7,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1516",
+          "level": "warning",
+          "message": "Elements should be separated by blank line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Dto/CartItemDto.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 1,
+                  "endLine": 8,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1516",
+          "level": "warning",
+          "message": "Elements should be separated by blank line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Dto/CartItemDto.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 1,
+                  "endLine": 9,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1516",
+          "level": "warning",
+          "message": "Elements should be separated by blank line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Dto/CartItemDto.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 1,
+                  "endLine": 10,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1056",
+          "level": "warning",
+          "message": "Change the type of property 'ImageItemDto.ImageUrl' from 'string' to 'System.Uri'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Dto/ImageItemDto.cs",
                 "region": {
                   "startLine": 6,
-                  "startColumn": 1,
+                  "startColumn": 23,
                   "endLine": 6,
-                  "endColumn": 40
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1309",
-          "level": "warning",
-          "message": "Field '_productRepository' should not begin with an underscore",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 45,
-                  "endLine": 10,
-                  "endColumn": 63
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1200",
-          "level": "warning",
-          "message": "Using directive should appear within a namespace declaration",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1200",
-          "level": "warning",
-          "message": "Using directive should appear within a namespace declaration",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 2,
-                  "startColumn": 1,
-                  "endLine": 2,
-                  "endColumn": 45
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1200",
-          "level": "warning",
-          "message": "Using directive should appear within a namespace declaration",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 1,
-                  "endLine": 3,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1200",
-          "level": "warning",
-          "message": "Using directive should appear within a namespace declaration",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 4,
-                  "startColumn": 1,
-                  "endLine": 4,
-                  "endColumn": 40
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1309",
-          "level": "warning",
-          "message": "Field '_categoryRepository' should not begin with an underscore",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 11,
-                  "startColumn": 48,
-                  "endLine": 11,
-                  "endColumn": 67
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1200",
-          "level": "warning",
-          "message": "Using directive should appear within a namespace declaration",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1200",
-          "level": "warning",
-          "message": "Using directive should appear within a namespace declaration",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 2,
-                  "startColumn": 1,
-                  "endLine": 2,
-                  "endColumn": 45
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1200",
-          "level": "warning",
-          "message": "Using directive should appear within a namespace declaration",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 1,
-                  "endLine": 3,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1200",
-          "level": "warning",
-          "message": "Using directive should appear within a namespace declaration",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 4,
-                  "startColumn": 1,
-                  "endLine": 4,
-                  "endColumn": 40
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 13,
-                  "endLine": 15,
                   "endColumn": 31
                 }
               }
@@ -2364,24 +1859,75 @@
           }
         },
         {
-          "ruleId": "SA1101",
+          "ruleId": "SA1516",
           "level": "warning",
-          "message": "Prefix local calls with this",
+          "message": "Elements should be separated by blank line",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Dto/ImageItemDto.cs",
                 "region": {
-                  "startLine": 16,
-                  "startColumn": 13,
-                  "endLine": 16,
-                  "endColumn": 32
+                  "startLine": 7,
+                  "startColumn": 1,
+                  "endLine": 7,
+                  "endColumn": 9
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1032",
+          "level": "warning",
+          "message": "Add the following constructor to CartValidationException: public CartValidationException()",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Exceptions/CartValidationException.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 18,
+                  "endLine": 5,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "Signature": "CtorWithNoParameter"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1032",
+          "level": "warning",
+          "message": "Add the following constructor to CartValidationException: public CartValidationException(string message, Exception innerException)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Exceptions/CartValidationException.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 18,
+                  "endLine": 5,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "Signature": "CtorWithStringAndExceptionParameters"
+            }
           }
         },
         {
@@ -4590,6 +4136,102 @@
           }
         },
         {
+          "ruleId": "SA1516",
+          "level": "warning",
+          "message": "Elements should be separated by blank line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/ICategoryService.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 1,
+                  "endLine": 8,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1516",
+          "level": "warning",
+          "message": "Elements should be separated by blank line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/ICategoryService.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 1,
+                  "endLine": 9,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1516",
+          "level": "warning",
+          "message": "Elements should be separated by blank line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/ICategoryService.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 1,
+                  "endLine": 10,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1516",
+          "level": "warning",
+          "message": "Elements should be separated by blank line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/ICategoryService.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 1,
+                  "endLine": 11,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
           "ruleId": "SA1513",
           "level": "warning",
           "message": "Closing brace should be followed by blank line",
@@ -4632,102 +4274,31 @@
           }
         },
         {
-          "ruleId": "SA1502",
+          "ruleId": "S4136",
           "level": "warning",
-          "message": "Element should not be on a single line",
+          "message": "All 'ListAsync' method overloads should be adjacent.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Exceptions/CartValidationException.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/IProductService.cs",
                 "region": {
-                  "startLine": 7,
-                  "startColumn": 72,
-                  "endLine": 7,
-                  "endColumn": 73
+                  "startLine": 9,
+                  "startColumn": 39,
+                  "endLine": 9,
+                  "endColumn": 48
                 }
               }
             }
           ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1128",
-          "level": "warning",
-          "message": "Put constructor initializers on their own line",
-          "locations": [
+          "relatedLocations": [
             {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Exceptions/CartValidationException.cs",
+              "physicalLocation": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/IProductService.cs",
                 "region": {
-                  "startLine": 7,
-                  "startColumn": 56,
-                  "endLine": 7,
-                  "endColumn": 71
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 13,
-                  "endLine": 16,
-                  "endColumn": 28
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 13,
-                  "endLine": 14,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1725",
-          "level": "warning",
-          "message": "In member Task<ProductDto> ProductService.AddAsync(ProductDto productDto), change parameter name productDto to entity in order to match the identifier as it has been declared in Task<ProductDto> IProductService.AddAsync(ProductDto entity)",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 19,
-                  "startColumn": 59,
-                  "endLine": 19,
-                  "endColumn": 69
+                  "startLine": 13,
+                  "startColumn": 39,
+                  "endLine": 13,
+                  "endColumn": 48
                 }
               }
             }
@@ -4735,8 +4306,308 @@
           "properties": {
             "warningLevel": 1,
             "customProperties": {
-              "NewName": "entity"
+              "0": "Non-adjacent overload"
             }
+          }
+        },
+        {
+          "ruleId": "SA1516",
+          "level": "warning",
+          "message": "Elements should be separated by blank line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/IProductService.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 1,
+                  "endLine": 9,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1516",
+          "level": "warning",
+          "message": "Elements should be separated by blank line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/IProductService.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 1,
+                  "endLine": 10,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1516",
+          "level": "warning",
+          "message": "Elements should be separated by blank line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/IProductService.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 1,
+                  "endLine": 11,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1516",
+          "level": "warning",
+          "message": "Elements should be separated by blank line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/IProductService.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 1,
+                  "endLine": 12,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1516",
+          "level": "warning",
+          "message": "Elements should be separated by blank line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/IProductService.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 1,
+                  "endLine": 13,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1309",
+          "level": "warning",
+          "message": "Field '_cartRepository' should not begin with an underscore",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 42,
+                  "endLine": 12,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1516",
+          "level": "warning",
+          "message": "Elements should be separated by blank line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/ICartService.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 1,
+                  "endLine": 8,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1516",
+          "level": "warning",
+          "message": "Elements should be separated by blank line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/ICartService.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 1,
+                  "endLine": 9,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1516",
+          "level": "warning",
+          "message": "Elements should be separated by blank line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/ICartService.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 1,
+                  "endLine": 10,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1516",
+          "level": "warning",
+          "message": "Elements should be separated by blank line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Interfaces/ICartService.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 1,
+                  "endLine": 11,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1309",
+          "level": "warning",
+          "message": "Field '_categoryRepository' should not begin with an underscore",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 46,
+                  "endLine": 10,
+                  "endColumn": 65
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1309",
+          "level": "warning",
+          "message": "Field '_productRepository' should not begin with an underscore",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 45,
+                  "endLine": 10,
+                  "endColumn": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1309",
+          "level": "warning",
+          "message": "Field '_categoryRepository' should not begin with an underscore",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 48,
+                  "endLine": 11,
+                  "endColumn": 67
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
           }
         },
         {
@@ -5399,31 +5270,10 @@
               "resultFile": {
                 "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
                 "region": {
-                  "startLine": 55,
-                  "startColumn": 19,
-                  "endLine": 55,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2737",
-          "level": "warning",
-          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 48,
+                  "startLine": 15,
                   "startColumn": 13,
-                  "endLine": 51,
-                  "endColumn": 14
+                  "endLine": 15,
+                  "endColumn": 31
                 }
               }
             }
@@ -5433,312 +5283,18 @@
           }
         },
         {
-          "ruleId": "CA2007",
+          "ruleId": "SA1101",
           "level": "warning",
-          "message": "Consider calling ConfigureAwait on the awaited task",
+          "message": "Prefix local calls with this",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
                 "region": {
-                  "startLine": 55,
-                  "startColumn": 19,
-                  "endLine": 55,
-                  "endColumn": 53
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1413",
-          "level": "warning",
-          "message": "Use trailing comma in multi-line initializers",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 23,
-                  "startColumn": 17,
-                  "endLine": 23,
-                  "endColumn": 64
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1413",
-          "level": "warning",
-          "message": "Use trailing comma in multi-line initializers",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 33,
-                  "startColumn": 17,
-                  "endLine": 33,
-                  "endColumn": 61
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 26,
-                  "startColumn": 19,
-                  "endLine": 26,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1309",
-          "level": "warning",
-          "message": "Field '_cartRepository' should not begin with an underscore",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 42,
-                  "endLine": 12,
-                  "endColumn": 57
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2007",
-          "level": "warning",
-          "message": "Consider calling ConfigureAwait on the awaited task",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 26,
-                  "startColumn": 19,
-                  "endLine": 26,
-                  "endColumn": 57
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1062",
-          "level": "note",
-          "message": "In externally visible method 'Task<CategoryDto> CategoryService.AddAsync(CategoryDto categoryDto)', validate parameter 'categoryDto' is non-null before using it. If appropriate, throw an 'ArgumentNullException' when the argument is 'null'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 24,
-                  "endLine": 21,
-                  "endColumn": 35
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 57,
-                  "startColumn": 23,
-                  "endLine": 57,
-                  "endColumn": 73
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1503",
-          "level": "warning",
-          "message": "Braces should not be omitted",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 57,
-                  "startColumn": 17,
-                  "endLine": 57,
-                  "endColumn": 74
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1413",
-          "level": "warning",
-          "message": "Use trailing comma in multi-line initializers",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 64,
-                  "startColumn": 17,
-                  "endLine": 64,
-                  "endColumn": 61
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 55,
-                  "startColumn": 34,
-                  "endLine": 55,
-                  "endColumn": 53
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1413",
-          "level": "warning",
-          "message": "Use trailing comma in multi-line initializers",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 76,
-                  "startColumn": 17,
-                  "endLine": 76,
-                  "endColumn": 54
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 70,
-                  "startColumn": 36,
-                  "endLine": 70,
-                  "endColumn": 55
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2201",
-          "level": "warning",
-          "message": "Exception type System.Exception is not sufficiently specific",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 57,
-                  "startColumn": 23,
-                  "endLine": 57,
-                  "endColumn": 73
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 62,
-                  "startColumn": 23,
-                  "endLine": 62,
-                  "endColumn": 72
+                  "startLine": 16,
+                  "startColumn": 13,
+                  "endLine": 16,
+                  "endColumn": 32
                 }
               }
             }
@@ -5820,9 +5376,9 @@
                 "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
                 "region": {
                   "startLine": 19,
-                  "startColumn": 69,
+                  "startColumn": 65,
                   "endLine": 19,
-                  "endColumn": 69
+                  "endColumn": 65
                 }
               }
             }
@@ -5862,9 +5418,9 @@
                 "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
                 "region": {
                   "startLine": 21,
-                  "startColumn": 88,
+                  "startColumn": 84,
                   "endLine": 21,
-                  "endColumn": 88
+                  "endColumn": 84
                 }
               }
             }
@@ -5904,9 +5460,9 @@
                 "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
                 "region": {
                   "startLine": 23,
-                  "startColumn": 96,
+                  "startColumn": 92,
                   "endLine": 23,
-                  "endColumn": 96
+                  "endColumn": 92
                 }
               }
             }
@@ -6651,18 +6207,375 @@
           }
         },
         {
+          "ruleId": "SA1502",
+          "level": "warning",
+          "message": "Element should not be on a single line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Exceptions/CartValidationException.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 72,
+                  "endLine": 7,
+                  "endColumn": 73
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1128",
+          "level": "warning",
+          "message": "Put constructor initializers on their own line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Exceptions/CartValidationException.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 56,
+                  "endLine": 7,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 23,
+                  "endLine": 23,
+                  "endColumn": 93
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 23,
+                  "endLine": 39,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1503",
+          "level": "warning",
+          "message": "Braces should not be omitted",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 17,
+                  "endLine": 23,
+                  "endColumn": 94
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1413",
+          "level": "warning",
+          "message": "Use trailing comma in multi-line initializers",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 17,
+                  "endLine": 32,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1413",
+          "level": "warning",
+          "message": "Use trailing comma in multi-line initializers",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 17,
+                  "endLine": 49,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 34,
+                  "endLine": 21,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 29,
+                  "endLine": 35,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2201",
+          "level": "warning",
+          "message": "Exception type System.Exception is not sufficiently specific",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 23,
+                  "endLine": 23,
+                  "endColumn": 93
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2201",
+          "level": "warning",
+          "message": "Exception type System.Exception is not sufficiently specific",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 23,
+                  "endLine": 39,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 13,
+                  "endLine": 16,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2737",
+          "level": "warning",
+          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 13,
+                  "endLine": 51,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 19,
+                  "endLine": 55,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "CA2007",
           "level": "warning",
           "message": "Consider calling ConfigureAwait on the awaited task",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 34,
+                  "endLine": 21,
+                  "endColumn": 85
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2007",
+          "level": "warning",
+          "message": "Consider calling ConfigureAwait on the awaited task",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 29,
+                  "endLine": 35,
+                  "endColumn": 65
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2007",
+          "level": "warning",
+          "message": "Consider calling ConfigureAwait on the awaited task",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
                 "region": {
                   "startLine": 55,
-                  "startColumn": 34,
+                  "startColumn": 19,
                   "endLine": 55,
-                  "endColumn": 70
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 23,
+                  "endLine": 62,
+                  "endColumn": 72
                 }
               }
             }
@@ -6693,27 +6606,6 @@
           }
         },
         {
-          "ruleId": "CA2007",
-          "level": "warning",
-          "message": "Consider calling ConfigureAwait on the awaited task",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 70,
-                  "startColumn": 36,
-                  "endLine": 70,
-                  "endColumn": 67
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "SA1413",
           "level": "warning",
           "message": "Use trailing comma in multi-line initializers",
@@ -6726,6 +6618,27 @@
                   "startColumn": 17,
                   "endLine": 72,
                   "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2737",
+          "level": "warning",
+          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 139,
+                  "startColumn": 13,
+                  "endLine": 142,
+                  "endColumn": 14
                 }
               }
             }
@@ -6798,408 +6711,6 @@
           }
         },
         {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 78,
-                  "startColumn": 34,
-                  "endLine": 78,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2737",
-          "level": "warning",
-          "message": "Add logic to this catch clause or eliminate it and rethrow the exception automatically.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 139,
-                  "startColumn": 13,
-                  "endLine": 142,
-                  "endColumn": 14
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S927",
-          "level": "warning",
-          "message": "Rename parameter 'productDto' to 'entity' to match the interface declaration.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 19,
-                  "startColumn": 59,
-                  "endLine": 19,
-                  "endColumn": 69
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 45,
-                  "startColumn": 23,
-                  "endLine": 45,
-                  "endColumn": 60
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 49,
-                  "startColumn": 23,
-                  "endLine": 49,
-                  "endColumn": 107
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.ApplicationException' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 54,
-                  "startColumn": 23,
-                  "endLine": 54,
-                  "endColumn": 120
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2007",
-          "level": "warning",
-          "message": "Consider calling ConfigureAwait on the awaited task",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 78,
-                  "startColumn": 34,
-                  "endLine": 78,
-                  "endColumn": 90
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.ApplicationException' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 110,
-                  "startColumn": 23,
-                  "endLine": 110,
-                  "endColumn": 122
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 23,
-                  "startColumn": 23,
-                  "endLine": 23,
-                  "endColumn": 97
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 39,
-                  "startColumn": 23,
-                  "endLine": 39,
-                  "endColumn": 62
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 41,
-                  "startColumn": 23,
-                  "endLine": 41,
-                  "endColumn": 42
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2201",
-          "level": "warning",
-          "message": "Exception type System.Exception is not sufficiently specific",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 45,
-                  "startColumn": 23,
-                  "endLine": 45,
-                  "endColumn": 60
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2201",
-          "level": "warning",
-          "message": "Exception type System.Exception is not sufficiently specific",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 49,
-                  "startColumn": 23,
-                  "endLine": 49,
-                  "endColumn": 107
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 28,
-                  "startColumn": 28,
-                  "endLine": 28,
-                  "endColumn": 43
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2007",
-          "level": "warning",
-          "message": "Consider calling ConfigureAwait on the awaited task",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 41,
-                  "startColumn": 23,
-                  "endLine": 41,
-                  "endColumn": 70
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1503",
-          "level": "warning",
-          "message": "Braces should not be omitted",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 23,
-                  "startColumn": 17,
-                  "endLine": 23,
-                  "endColumn": 98
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1413",
-          "level": "warning",
-          "message": "Use trailing comma in multi-line initializers",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 32,
-                  "startColumn": 17,
-                  "endLine": 32,
-                  "endColumn": 51
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1413",
-          "level": "warning",
-          "message": "Use trailing comma in multi-line initializers",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 49,
-                  "startColumn": 17,
-                  "endLine": 49,
-                  "endColumn": 44
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1725",
-          "level": "warning",
-          "message": "In member Task ProductService.UpdateAsync(ProductDto productDto), change parameter name productDto to entity in order to match the identifier as it has been declared in Task IProductService.UpdateAsync(ProductDto entity)",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 107,
-                  "startColumn": 50,
-                  "endLine": 107,
-                  "endColumn": 60
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "NewName": "entity"
-            }
-          }
-        },
-        {
           "ruleId": "SA1413",
           "level": "warning",
           "message": "Use trailing comma in multi-line initializers",
@@ -7212,27 +6723,6 @@
                   "startColumn": 17,
                   "endLine": 103,
                   "endColumn": 42
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 34,
-                  "endLine": 21,
-                  "endColumn": 53
                 }
               }
             }
@@ -7263,72 +6753,9 @@
           }
         },
         {
-          "ruleId": "SA1101",
+          "ruleId": "S112",
           "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 35,
-                  "startColumn": 29,
-                  "endLine": 35,
-                  "endColumn": 47
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 75,
-                  "startColumn": 28,
-                  "endLine": 75,
-                  "endColumn": 43
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 106,
-                  "startColumn": 17,
-                  "endLine": 106,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2201",
-          "level": "warning",
-          "message": "Exception type System.ApplicationException is not sufficiently specific",
+          "message": "'System.ApplicationException' should not be thrown by user code.",
           "locations": [
             {
               "resultFile": {
@@ -7338,6 +6765,27 @@
                   "startColumn": 23,
                   "endLine": 54,
                   "endColumn": 120
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 34,
+                  "endLine": 78,
+                  "endColumn": 52
                 }
               }
             }
@@ -7368,81 +6816,18 @@
           }
         },
         {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
+          "ruleId": "CA1062",
+          "level": "note",
+          "message": "In externally visible method 'Task<ProductDto> ProductService.AddAsync(ProductDto entity)', validate parameter 'entity' is non-null before using it. If appropriate, throw an 'ArgumentNullException' when the argument is 'null'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
                 "region": {
-                  "startLine": 84,
-                  "startColumn": 23,
-                  "endLine": 84,
-                  "endColumn": 85
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2201",
-          "level": "warning",
-          "message": "Exception type System.ApplicationException is not sufficiently specific",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 110,
-                  "startColumn": 23,
-                  "endLine": 110,
-                  "endColumn": 122
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1503",
-          "level": "warning",
-          "message": "Braces should not be omitted",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 84,
-                  "startColumn": 17,
-                  "endLine": 84,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 82,
-                  "startColumn": 34,
-                  "endLine": 82,
-                  "endColumn": 53
+                  "startLine": 21,
+                  "startColumn": 67,
+                  "endLine": 21,
+                  "endColumn": 73
                 }
               }
             }
@@ -7479,75 +6864,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
                 "region": {
-                  "startLine": 90,
-                  "startColumn": 19,
-                  "endLine": 90,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2201",
-          "level": "warning",
-          "message": "Exception type System.Exception is not sufficiently specific",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 84,
-                  "startColumn": 23,
-                  "endLine": 84,
-                  "endColumn": 85
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2201",
-          "level": "warning",
-          "message": "Exception type System.Exception is not sufficiently specific",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 23,
-                  "startColumn": 23,
-                  "endLine": 23,
-                  "endColumn": 97
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2201",
-          "level": "warning",
-          "message": "Exception type System.Exception is not sufficiently specific",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 39,
-                  "startColumn": 23,
-                  "endLine": 39,
-                  "endColumn": 62
+                  "startLine": 28,
+                  "startColumn": 28,
+                  "endLine": 28,
+                  "endColumn": 43
                 }
               }
             }
@@ -7563,12 +6885,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
                 "region": {
-                  "startLine": 82,
+                  "startLine": 78,
                   "startColumn": 34,
-                  "endLine": 82,
-                  "endColumn": 82
+                  "endLine": 78,
+                  "endColumn": 90
                 }
               }
             }
@@ -7578,123 +6900,60 @@
           }
         },
         {
-          "ruleId": "CA2007",
+          "ruleId": "SA1101",
           "level": "warning",
-          "message": "Consider calling ConfigureAwait on the awaited task",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 90,
-                  "startColumn": 19,
-                  "endLine": 90,
-                  "endColumn": 60
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2007",
-          "level": "warning",
-          "message": "Consider calling ConfigureAwait on the awaited task",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 34,
-                  "endLine": 21,
-                  "endColumn": 89
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2007",
-          "level": "warning",
-          "message": "Consider calling ConfigureAwait on the awaited task",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 35,
-                  "startColumn": 29,
-                  "endLine": 35,
-                  "endColumn": 65
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1062",
-          "level": "note",
-          "message": "In externally visible method 'Task CategoryService.UpdateAsync(CategoryDto categoryDto)', validate parameter 'categoryDto' is non-null before using it. If appropriate, throw an 'ArgumentNullException' when the argument is 'null'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
-                "region": {
-                  "startLine": 82,
-                  "startColumn": 67,
-                  "endLine": 82,
-                  "endColumn": 78
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1062",
-          "level": "note",
-          "message": "In externally visible method 'Task<ProductDto> ProductService.AddAsync(ProductDto productDto)', validate parameter 'productDto' is non-null before using it. If appropriate, throw an 'ArgumentNullException' when the argument is 'null'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 67,
-                  "endLine": 21,
-                  "endColumn": 77
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.ApplicationException' should not be thrown by user code.",
+          "message": "Prefix local calls with this",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
                 "region": {
-                  "startLine": 169,
+                  "startLine": 128,
+                  "startColumn": 28,
+                  "endLine": 128,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2201",
+          "level": "warning",
+          "message": "Exception type System.ApplicationException is not sufficiently specific",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 54,
                   "startColumn": 23,
-                  "endLine": 169,
+                  "endLine": 54,
                   "endColumn": 120
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 136,
+                  "startColumn": 21,
+                  "endLine": 136,
+                  "endColumn": 36
                 }
               }
             }
@@ -7725,18 +6984,202 @@
           }
         },
         {
-          "ruleId": "S927",
+          "ruleId": "CA2201",
           "level": "warning",
-          "message": "Rename parameter 'productDto' to 'entity' to match the interface declaration.",
+          "message": "Exception type System.ApplicationException is not sufficiently specific",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
                 "region": {
-                  "startLine": 107,
-                  "startColumn": 50,
-                  "endLine": 107,
-                  "endColumn": 60
+                  "startLine": 145,
+                  "startColumn": 23,
+                  "endLine": 145,
+                  "endColumn": 127
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.ApplicationException' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 192,
+                  "startColumn": 23,
+                  "endLine": 192,
+                  "endColumn": 110
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3267",
+          "level": "warning",
+          "message": "Loops should be simplified using the \"Where\" LINQ method",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 209,
+                  "startColumn": 34,
+                  "endLine": 209,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 211,
+                  "startColumn": 21,
+                  "endLine": 211,
+                  "endColumn": 80
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null
+            }
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 175,
+                  "startColumn": 13,
+                  "endLine": 175,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 179,
+                  "startColumn": 37,
+                  "endLine": 179,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 180,
+                  "startColumn": 17,
+                  "endLine": 180,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 184,
+                  "startColumn": 17,
+                  "endLine": 184,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 188,
+                  "startColumn": 17,
+                  "endLine": 188,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.ApplicationException' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 169,
+                  "startColumn": 23,
+                  "endLine": 169,
+                  "endColumn": 120
                 }
               }
             }
@@ -7809,358 +7252,6 @@
           }
         },
         {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 111,
-                  "startColumn": 23,
-                  "endLine": 111,
-                  "endColumn": 83
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
-                "region": {
-                  "startLine": 115,
-                  "startColumn": 23,
-                  "endLine": 115,
-                  "endColumn": 97
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2201",
-          "level": "warning",
-          "message": "Exception type System.ApplicationException is not sufficiently specific",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 169,
-                  "startColumn": 23,
-                  "endLine": 169,
-                  "endColumn": 120
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.ApplicationException' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 192,
-                  "startColumn": 23,
-                  "endLine": 192,
-                  "endColumn": 110
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 128,
-                  "startColumn": 28,
-                  "endLine": 128,
-                  "endColumn": 43
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 136,
-                  "startColumn": 21,
-                  "endLine": 136,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2201",
-          "level": "warning",
-          "message": "Exception type System.ApplicationException is not sufficiently specific",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 145,
-                  "startColumn": 23,
-                  "endLine": 145,
-                  "endColumn": 127
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 175,
-                  "startColumn": 13,
-                  "endLine": 175,
-                  "endColumn": 30
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 179,
-                  "startColumn": 37,
-                  "endLine": 179,
-                  "endColumn": 54
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 180,
-                  "startColumn": 17,
-                  "endLine": 180,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3267",
-          "level": "warning",
-          "message": "Loops should be simplified using the \"Where\" LINQ method",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 209,
-                  "startColumn": 34,
-                  "endLine": 209,
-                  "endColumn": 42
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 211,
-                  "startColumn": 21,
-                  "endLine": 211,
-                  "endColumn": 80
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null
-            }
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 184,
-                  "startColumn": 17,
-                  "endLine": 184,
-                  "endColumn": 41
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 188,
-                  "startColumn": 17,
-                  "endLine": 188,
-                  "endColumn": 45
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 228,
-                  "startColumn": 21,
-                  "endLine": 228,
-                  "endColumn": 31
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2201",
-          "level": "warning",
-          "message": "Exception type System.ApplicationException is not sufficiently specific",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 192,
-                  "startColumn": 23,
-                  "endLine": 192,
-                  "endColumn": 110
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
-                "region": {
-                  "startLine": 252,
-                  "startColumn": 17,
-                  "endLine": 252,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "SA1101",
           "level": "warning",
           "message": "Prefix local calls with this",
@@ -8203,6 +7294,69 @@
           }
         },
         {
+          "ruleId": "CA2201",
+          "level": "warning",
+          "message": "Exception type System.ApplicationException is not sufficiently specific",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 169,
+                  "startColumn": 23,
+                  "endLine": 169,
+                  "endColumn": 120
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.ApplicationException' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 110,
+                  "startColumn": 23,
+                  "endLine": 110,
+                  "endColumn": 122
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 228,
+                  "startColumn": 21,
+                  "endLine": 228,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "S2325",
           "level": "warning",
           "message": "Make 'UpdateItem' a static method.",
@@ -8215,6 +7369,114 @@
                   "startColumn": 22,
                   "endLine": 236,
                   "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1725",
+          "level": "warning",
+          "message": "In member Task ProductService.UpdateAsync(ProductDto productDto), change parameter name productDto to entity in order to match the identifier as it has been declared in Task IProductService.UpdateAsync(ProductDto entity)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 50,
+                  "endLine": 107,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "NewName": "entity"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 252,
+                  "startColumn": 17,
+                  "endLine": 252,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 28,
+                  "endLine": 75,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 17,
+                  "endLine": 106,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2201",
+          "level": "warning",
+          "message": "Exception type System.ApplicationException is not sufficiently specific",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 110,
+                  "startColumn": 23,
+                  "endLine": 110,
+                  "endColumn": 122
                 }
               }
             }
@@ -8299,6 +7561,153 @@
                   "startColumn": 19,
                   "endLine": 265,
                   "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'productDto' to 'entity' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 50,
+                  "endLine": 107,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 13,
+                  "endLine": 14,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2201",
+          "level": "warning",
+          "message": "Exception type System.ApplicationException is not sufficiently specific",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 265,
+                  "startColumn": 19,
+                  "endLine": 265,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2201",
+          "level": "warning",
+          "message": "Exception type System.ApplicationException is not sufficiently specific",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 259,
+                  "startColumn": 19,
+                  "endLine": 259,
+                  "endColumn": 83
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 111,
+                  "startColumn": 23,
+                  "endLine": 111,
+                  "endColumn": 83
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/ProductService.cs",
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 23,
+                  "endLine": 115,
+                  "endColumn": 97
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2201",
+          "level": "warning",
+          "message": "Exception type System.ApplicationException is not sufficiently specific",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 192,
+                  "startColumn": 23,
+                  "endLine": 192,
+                  "endColumn": 110
                 }
               }
             }
@@ -8434,18 +7843,186 @@
           }
         },
         {
-          "ruleId": "CA2201",
+          "ruleId": "SA1413",
           "level": "warning",
-          "message": "Exception type System.ApplicationException is not sufficiently specific",
+          "message": "Use trailing comma in multi-line initializers",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
                 "region": {
-                  "startLine": 259,
+                  "startLine": 23,
+                  "startColumn": 17,
+                  "endLine": 23,
+                  "endColumn": 64
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1413",
+          "level": "warning",
+          "message": "Use trailing comma in multi-line initializers",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 17,
+                  "endLine": 33,
+                  "endColumn": 61
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 26,
                   "startColumn": 19,
-                  "endLine": 259,
-                  "endColumn": 83
+                  "endLine": 26,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1413",
+          "level": "warning",
+          "message": "Use trailing comma in multi-line initializers",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 17,
+                  "endLine": 76,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 36,
+                  "endLine": 70,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2007",
+          "level": "warning",
+          "message": "Consider calling ConfigureAwait on the awaited task",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 19,
+                  "endLine": 26,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2007",
+          "level": "warning",
+          "message": "Consider calling ConfigureAwait on the awaited task",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 36,
+                  "endLine": 70,
+                  "endColumn": 67
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1062",
+          "level": "note",
+          "message": "In externally visible method 'Task<CategoryDto> CategoryService.AddAsync(CategoryDto categoryDto)', validate parameter 'categoryDto' is non-null before using it. If appropriate, throw an 'ArgumentNullException' when the argument is 'null'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 24,
+                  "endLine": 21,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 23,
+                  "endLine": 84,
+                  "endColumn": 85
                 }
               }
             }
@@ -8497,17 +8074,101 @@
           }
         },
         {
-          "ruleId": "CA2201",
+          "ruleId": "SA1503",
           "level": "warning",
-          "message": "Exception type System.ApplicationException is not sufficiently specific",
+          "message": "Braces should not be omitted",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
                 "region": {
-                  "startLine": 265,
+                  "startLine": 84,
+                  "startColumn": 17,
+                  "endLine": 84,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 23,
+                  "endLine": 57,
+                  "endColumn": 73
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 34,
+                  "endLine": 82,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 90,
                   "startColumn": 19,
-                  "endLine": 265,
+                  "endLine": 90,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1503",
+          "level": "warning",
+          "message": "Braces should not be omitted",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 17,
+                  "endLine": 57,
                   "endColumn": 74
                 }
               }
@@ -8518,18 +8179,18 @@
           }
         },
         {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'ValidateProductId' does not access instance data and can be marked as static",
+          "ruleId": "SA1413",
+          "level": "warning",
+          "message": "Use trailing comma in multi-line initializers",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
                 "region": {
-                  "startLine": 196,
-                  "startColumn": 22,
-                  "endLine": 196,
-                  "endColumn": 39
+                  "startLine": 64,
+                  "startColumn": 17,
+                  "endLine": 64,
+                  "endColumn": 61
                 }
               }
             }
@@ -8539,18 +8200,18 @@
           }
         },
         {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'LogAndThrowDatabaseError' does not access instance data and can be marked as static",
+          "ruleId": "CA2201",
+          "level": "warning",
+          "message": "Exception type System.Exception is not sufficiently specific",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
                 "region": {
-                  "startLine": 256,
-                  "startColumn": 22,
-                  "endLine": 256,
-                  "endColumn": 46
+                  "startLine": 84,
+                  "startColumn": 23,
+                  "endLine": 84,
+                  "endColumn": 85
                 }
               }
             }
@@ -8560,18 +8221,18 @@
           }
         },
         {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'UpdateItem' does not access instance data and can be marked as static",
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
                 "region": {
-                  "startLine": 236,
-                  "startColumn": 22,
-                  "endLine": 236,
-                  "endColumn": 32
+                  "startLine": 55,
+                  "startColumn": 34,
+                  "endLine": 55,
+                  "endColumn": 53
                 }
               }
             }
@@ -8581,18 +8242,81 @@
           }
         },
         {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'LogAndThrowOperationCanceled' does not access instance data and can be marked as static",
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
                 "region": {
-                  "startLine": 262,
-                  "startColumn": 22,
-                  "endLine": 262,
-                  "endColumn": 50
+                  "startLine": 45,
+                  "startColumn": 23,
+                  "endLine": 45,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 23,
+                  "endLine": 49,
+                  "endColumn": 107
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2007",
+          "level": "warning",
+          "message": "Consider calling ConfigureAwait on the awaited task",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 34,
+                  "endLine": 82,
+                  "endColumn": 82
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2007",
+          "level": "warning",
+          "message": "Consider calling ConfigureAwait on the awaited task",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 19,
+                  "endLine": 90,
+                  "endColumn": 60
                 }
               }
             }
@@ -8665,6 +8389,153 @@
           }
         },
         {
+          "ruleId": "CA2201",
+          "level": "warning",
+          "message": "Exception type System.Exception is not sufficiently specific",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 23,
+                  "endLine": 57,
+                  "endColumn": 73
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 23,
+                  "endLine": 41,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1062",
+          "level": "note",
+          "message": "In externally visible method 'Task CategoryService.UpdateAsync(CategoryDto categoryDto)', validate parameter 'categoryDto' is non-null before using it. If appropriate, throw an 'ArgumentNullException' when the argument is 'null'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 67,
+                  "endLine": 82,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2201",
+          "level": "warning",
+          "message": "Exception type System.Exception is not sufficiently specific",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 23,
+                  "endLine": 45,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2201",
+          "level": "warning",
+          "message": "Exception type System.Exception is not sufficiently specific",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 23,
+                  "endLine": 49,
+                  "endColumn": 107
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2007",
+          "level": "warning",
+          "message": "Consider calling ConfigureAwait on the awaited task",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 23,
+                  "endLine": 41,
+                  "endColumn": 70
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2007",
+          "level": "warning",
+          "message": "Consider calling ConfigureAwait on the awaited task",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 34,
+                  "endLine": 55,
+                  "endColumn": 70
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "CA1062",
           "level": "note",
           "message": "In externally visible method 'Task ProductService.UpdateAsync(ProductDto productDto)', validate parameter 'productDto' is non-null before using it. If appropriate, throw an 'ArgumentNullException' when the argument is 'null'.",
@@ -8677,6 +8548,90 @@
                   "startColumn": 65,
                   "endLine": 109,
                   "endColumn": 75
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'ValidateProductId' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 196,
+                  "startColumn": 22,
+                  "endLine": 196,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'UpdateItem' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 236,
+                  "startColumn": 22,
+                  "endLine": 236,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'LogAndThrowDatabaseError' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 256,
+                  "startColumn": 22,
+                  "endLine": 256,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'LogAndThrowOperationCanceled' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Application/Services/CartService.cs",
+                "region": {
+                  "startLine": 262,
+                  "startColumn": 22,
+                  "endLine": 262,
+                  "endColumn": 50
                 }
               }
             }

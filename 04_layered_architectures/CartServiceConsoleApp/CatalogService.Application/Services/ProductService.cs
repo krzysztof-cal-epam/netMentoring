@@ -16,20 +16,20 @@ namespace CatalogService.Application.Services
             _categoryRepository = categoryRepository;
         }
 
-        public async Task<ProductDto> AddAsync(ProductDto productDto)
+        public async Task<ProductDto> AddAsync(ProductDto entity)
         {
-            var category = await _categoryRepository.GetByIdAsync(productDto.CategoryId);
+            var category = await _categoryRepository.GetByIdAsync(entity.CategoryId);
             if (category == null)
-                throw new Exception($"Category with ID {productDto.CategoryId} does not exist.");
+                throw new Exception($"Category with ID {entity.CategoryId} does not exist.");
 
             var product = new Product
             {
-                Name = productDto.Name,
-                Description = productDto.Description,
-                Image = productDto.Image,
-                Price = productDto.Price,
-                Amount = productDto.Amount,
-                CategoryId = productDto.CategoryId
+                Name = entity.Name,
+                Description = entity.Description,
+                Image = entity.Image,
+                Price = entity.Price,
+                Amount = entity.Amount,
+                CategoryId = entity.CategoryId
             };
 
             var res = await _productRepository.AddAsync(product);

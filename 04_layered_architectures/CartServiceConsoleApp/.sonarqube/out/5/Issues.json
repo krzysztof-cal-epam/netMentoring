@@ -621,6 +621,69 @@
           }
         },
         {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/Interfaces/IRabbitMqProducer.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 27,
+                  "endLine": 5,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/Interfaces/IRabbitMqProducer.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 78,
+                  "endLine": 5,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1633",
+          "level": "warning",
+          "message": "The file header is missing or not located at the top of the file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/Interfaces/IRabbitMqProducer.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "SA1200",
           "level": "warning",
           "message": "Using directive should appear within a namespace declaration",
@@ -843,69 +906,6 @@
                   "startColumn": 1,
                   "endLine": 11,
                   "endColumn": 48
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "IDE0055",
-          "level": "warning",
-          "message": "Fix formatting",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/Interfaces/IRabbitMqProducer.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 27,
-                  "endLine": 5,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "IDE0055",
-          "level": "warning",
-          "message": "Fix formatting",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/Interfaces/IRabbitMqProducer.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 78,
-                  "endLine": 5,
-                  "endColumn": 78
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1633",
-          "level": "warning",
-          "message": "The file header is missing or not located at the top of the file.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/Interfaces/IRabbitMqProducer.cs",
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
                 }
               }
             }

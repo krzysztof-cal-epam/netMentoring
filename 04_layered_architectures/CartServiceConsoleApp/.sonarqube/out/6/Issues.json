@@ -1307,27 +1307,6 @@
           }
         },
         {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 13,
-                  "endLine": 15,
-                  "endColumn": 25
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "SA1309",
           "level": "warning",
           "message": "Field '_cartService' should not begin with an underscore",
@@ -1340,6 +1319,27 @@
                   "startColumn": 39,
                   "endLine": 11,
                   "endColumn": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 13,
+                  "endLine": 15,
+                  "endColumn": 25
                 }
               }
             }
@@ -1409,6 +1409,106 @@
           ],
           "properties": {
             "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 24,
+                  "endLine": 37,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 13,
+                  "endLine": 40,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 20,
+                  "endLine": 41,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6968",
+          "level": "warning",
+          "message": "Annotate this method with ProducesResponseType containing the return type for successful responses.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 29,
+                  "endLine": 33,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 20,
+                  "endLine": 41,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null
+            }
           }
         },
         {
@@ -1535,106 +1635,6 @@
           ],
           "properties": {
             "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
-                "region": {
-                  "startLine": 37,
-                  "startColumn": 24,
-                  "endLine": 37,
-                  "endColumn": 34
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
-                "region": {
-                  "startLine": 40,
-                  "startColumn": 13,
-                  "endLine": 40,
-                  "endColumn": 25
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
-                "region": {
-                  "startLine": 41,
-                  "startColumn": 20,
-                  "endLine": 41,
-                  "endColumn": 22
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6968",
-          "level": "warning",
-          "message": "Annotate this method with ProducesResponseType containing the return type for successful responses.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
-                "region": {
-                  "startLine": 33,
-                  "startColumn": 29,
-                  "endLine": 33,
-                  "endColumn": 42
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
-                "region": {
-                  "startLine": 41,
-                  "startColumn": 20,
-                  "endLine": 41,
-                  "endColumn": 55
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null
-            }
           }
         },
         {

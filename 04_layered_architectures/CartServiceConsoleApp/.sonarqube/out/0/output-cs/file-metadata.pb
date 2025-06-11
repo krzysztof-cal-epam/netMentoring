@@ -9,9 +9,9 @@ rC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
 pC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Interfaces\ICartDatabase.csutf-8€
 wC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Exceptions\RepositoryExceptions.csutf-8~
 uC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Exceptions\DatabaseExceptions.csutf-8q
-hC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Product.csutf-8s
-jC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\ImageItem.csutf-8p
-gC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Outbox.csutf-8r
-iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Category.csutf-8n
-eC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Cart.csutf-8r
-iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\CartItem.csutf-8
+hC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Product.csutf-8p
+gC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Outbox.csutf-8s
+jC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\ImageItem.csutf-8r
+iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Category.csutf-8r
+iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\CartItem.csutf-8n
+eC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Cart.csutf-8

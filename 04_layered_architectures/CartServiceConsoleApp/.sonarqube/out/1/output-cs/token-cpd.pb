@@ -929,7 +929,84 @@ EnsureRolePP 
 WW† ‡
 }XX 	
 }YY 
-}ZZ ¦O
+}ZZ ô	
+oC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Redirect\Index.cshtml.cs
+	namespace 	
+IdentityServerApi
+ 
+. 
+Pages !
+.! "
+Redirect" *
+;* +
+[
+
+ 
+AllowAnonymous
+
+ 
+]
+
+ 
+public 
+class 
+
+IndexModel 
+: 
+	PageModel #
+{ 
+public 
+
+string 
+? 
+RedirectUri 
+{  
+get! $
+;$ %
+set& )
+;) *
+}+ ,
+public 
+
+IActionResult 
+OnGet 
+( 
+string %
+?% &
+redirectUri' 2
+)2 3
+{ 
+if 
+
+( 
+! 
+Url 
+. 
+
+IsLocalUrl 
+( 
+redirectUri '
+)' (
+)( )
+{ 	
+return 
+RedirectToPage !
+(! "
+$str" 5
+)5 6
+;6 7
+} 	
+RedirectUri 
+= 
+redirectUri !
+;! "
+return 
+Page 
+( 
+) 
+; 
+} 
+} ¦O
 cC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Telemetry.cs
 	namespace 	
 IdentityServerApi
@@ -2092,84 +2169,7 @@ PageResult  
 }55 
 }66 	
 }77 
-}88 ô	
-oC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Redirect\Index.cshtml.cs
-	namespace 	
-IdentityServerApi
- 
-. 
-Pages !
-.! "
-Redirect" *
-;* +
-[
-
- 
-AllowAnonymous
-
- 
-]
-
- 
-public 
-class 
-
-IndexModel 
-: 
-	PageModel #
-{ 
-public 
-
-string 
-? 
-RedirectUri 
-{  
-get! $
-;$ %
-set& )
-;) *
-}+ ,
-public 
-
-IActionResult 
-OnGet 
-( 
-string %
-?% &
-redirectUri' 2
-)2 3
-{ 
-if 
-
-( 
-! 
-Url 
-. 
-
-IsLocalUrl 
-( 
-redirectUri '
-)' (
-)( )
-{ 	
-return 
-RedirectToPage !
-(! "
-$str" 5
-)5 6
-;6 7
-} 	
-RedirectUri 
-= 
-redirectUri !
-;! "
-return 
-Page 
-( 
-) 
-; 
-} 
-} Þ9
+}88 Þ9
 ]C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Log.cs
 	namespace 	
 IdentityServerApi
@@ -2920,7 +2920,362 @@ tC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerAp
 )
  
 ]
- ‘ÿ1
+ ‘Ÿ
+nC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Home\Error\ViewModel.cs
+	namespace 	
+IdentityServerApi
+ 
+. 
+Pages !
+.! "
+Error" '
+;' (
+public 
+class 
+	ViewModel 
+{		 
+public
+
+ 
+
+	ViewModel
+
+ 
+(
+
+ 
+)
+
+ 
+{ 
+} 
+public 
+
+	ViewModel 
+( 
+string 
+error !
+)! "
+{ 
+Error 
+= 
+new 
+ErrorMessage  
+{! "
+Error# (
+=) *
+error+ 0
+}1 2
+;2 3
+} 
+public 
+
+ErrorMessage 
+? 
+Error 
+{  
+get! $
+;$ %
+set& )
+;) *
+}+ ,
+} ‡
+qC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Home\Error\Index.cshtml.cs
+	namespace 	
+IdentityServerApi
+ 
+. 
+Pages !
+.! "
+Error" '
+;' (
+[
+
+ 
+AllowAnonymous
+
+ 
+]
+
+ 
+[ 
+SecurityHeaders 
+] 
+public 
+class 
+Index 
+: 
+	PageModel 
+{ 
+private 
+readonly -
+!IIdentityServerInteractionService 6
+_interaction7 C
+;C D
+private 
+readonly 
+IWebHostEnvironment (
+_environment) 5
+;5 6
+public 
+
+	ViewModel 
+View 
+{ 
+get 
+;  
+set! $
+;$ %
+}& '
+=( )
+new* -
+(- .
+). /
+;/ 0
+public 
+
+Index 
+( -
+!IIdentityServerInteractionService 2
+interaction3 >
+,> ?
+IWebHostEnvironment@ S
+environmentT _
+)_ `
+{ 
+_interaction 
+= 
+interaction "
+;" #
+_environment 
+= 
+environment "
+;" #
+} 
+public 
+
+async 
+Task 
+OnGet 
+( 
+string "
+?" #
+errorId$ +
+)+ ,
+{ 
+var 
+message 
+= 
+await 
+_interaction (
+.( ) 
+GetErrorContextAsync) =
+(= >
+errorId> E
+)E F
+;F G
+if 
+
+( 
+message 
+!= 
+null 
+) 
+{ 	
+View 
+. 
+Error 
+= 
+message  
+;  !
+if!! 
+(!! 
+!!! 
+_environment!! 
+.!! 
+IsDevelopment!! +
+(!!+ ,
+)!!, -
+)!!- .
+{"" 
+message$$ 
+.$$ 
+ErrorDescription$$ (
+=$$) *
+null$$+ /
+;$$/ 0
+}%% 
+}&& 	
+}'' 
+}(( Þ
+jC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Grants\ViewModel.cs
+	namespace 	
+IdentityServerApi
+ 
+. 
+Pages !
+.! "
+Grants" (
+;( )
+public 
+class 
+	ViewModel 
+{ 
+public 
+
+IEnumerable 
+< 
+GrantViewModel %
+>% &
+Grants' -
+{. /
+get0 3
+;3 4
+set5 8
+;8 9
+}: ;
+=< =
+
+Enumerable> H
+.H I
+EmptyI N
+<N O
+GrantViewModelO ]
+>] ^
+(^ _
+)_ `
+;` a
+}		 
+public 
+class 
+GrantViewModel 
+{ 
+public 
+
+string 
+? 
+ClientId 
+{ 
+get !
+;! "
+set# &
+;& '
+}( )
+public 
+
+string 
+? 
+
+ClientName 
+{ 
+get  #
+;# $
+set% (
+;( )
+}* +
+public 
+
+string 
+? 
+	ClientUrl 
+{ 
+get "
+;" #
+set$ '
+;' (
+}) *
+public 
+
+string 
+? 
+ClientLogoUrl  
+{! "
+get# &
+;& '
+set( +
+;+ ,
+}- .
+public 
+
+string 
+? 
+Description 
+{  
+get! $
+;$ %
+set& )
+;) *
+}+ ,
+public 
+
+DateTime 
+Created 
+{ 
+get !
+;! "
+set# &
+;& '
+}( )
+public 
+
+DateTime 
+? 
+Expires 
+{ 
+get "
+;" #
+set$ '
+;' (
+}) *
+public 
+
+IEnumerable 
+< 
+string 
+> 
+IdentityGrantNames 1
+{2 3
+get4 7
+;7 8
+set9 <
+;< =
+}> ?
+=@ A
+
+EnumerableB L
+.L M
+EmptyM R
+<R S
+stringS Y
+>Y Z
+(Z [
+)[ \
+;\ ]
+public 
+
+IEnumerable 
+< 
+string 
+> 
+ApiGrantNames ,
+{- .
+get/ 2
+;2 3
+set4 7
+;7 8
+}9 :
+=; <
+
+Enumerable= G
+.G H
+EmptyH M
+<M N
+stringN T
+>T U
+(U V
+)V W
+;W X
+} ÿ1
 mC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Grants\Index.cshtml.cs
 	namespace 	
 IdentityServerApi
@@ -3433,362 +3788,7 @@ IsLocalUrl 
 )..& '
 ;..' (
 }// 
-}00 Ÿ
-nC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Home\Error\ViewModel.cs
-	namespace 	
-IdentityServerApi
- 
-. 
-Pages !
-.! "
-Error" '
-;' (
-public 
-class 
-	ViewModel 
-{		 
-public
-
- 
-
-	ViewModel
-
- 
-(
-
- 
-)
-
- 
-{ 
-} 
-public 
-
-	ViewModel 
-( 
-string 
-error !
-)! "
-{ 
-Error 
-= 
-new 
-ErrorMessage  
-{! "
-Error# (
-=) *
-error+ 0
-}1 2
-;2 3
-} 
-public 
-
-ErrorMessage 
-? 
-Error 
-{  
-get! $
-;$ %
-set& )
-;) *
-}+ ,
-} ‡
-qC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Home\Error\Index.cshtml.cs
-	namespace 	
-IdentityServerApi
- 
-. 
-Pages !
-.! "
-Error" '
-;' (
-[
-
- 
-AllowAnonymous
-
- 
-]
-
- 
-[ 
-SecurityHeaders 
-] 
-public 
-class 
-Index 
-: 
-	PageModel 
-{ 
-private 
-readonly -
-!IIdentityServerInteractionService 6
-_interaction7 C
-;C D
-private 
-readonly 
-IWebHostEnvironment (
-_environment) 5
-;5 6
-public 
-
-	ViewModel 
-View 
-{ 
-get 
-;  
-set! $
-;$ %
-}& '
-=( )
-new* -
-(- .
-). /
-;/ 0
-public 
-
-Index 
-( -
-!IIdentityServerInteractionService 2
-interaction3 >
-,> ?
-IWebHostEnvironment@ S
-environmentT _
-)_ `
-{ 
-_interaction 
-= 
-interaction "
-;" #
-_environment 
-= 
-environment "
-;" #
-} 
-public 
-
-async 
-Task 
-OnGet 
-( 
-string "
-?" #
-errorId$ +
-)+ ,
-{ 
-var 
-message 
-= 
-await 
-_interaction (
-.( ) 
-GetErrorContextAsync) =
-(= >
-errorId> E
-)E F
-;F G
-if 
-
-( 
-message 
-!= 
-null 
-) 
-{ 	
-View 
-. 
-Error 
-= 
-message  
-;  !
-if!! 
-(!! 
-!!! 
-_environment!! 
-.!! 
-IsDevelopment!! +
-(!!+ ,
-)!!, -
-)!!- .
-{"" 
-message$$ 
-.$$ 
-ErrorDescription$$ (
-=$$) *
-null$$+ /
-;$$/ 0
-}%% 
-}&& 	
-}'' 
-}(( Þ
-jC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Grants\ViewModel.cs
-	namespace 	
-IdentityServerApi
- 
-. 
-Pages !
-.! "
-Grants" (
-;( )
-public 
-class 
-	ViewModel 
-{ 
-public 
-
-IEnumerable 
-< 
-GrantViewModel %
->% &
-Grants' -
-{. /
-get0 3
-;3 4
-set5 8
-;8 9
-}: ;
-=< =
-
-Enumerable> H
-.H I
-EmptyI N
-<N O
-GrantViewModelO ]
->] ^
-(^ _
-)_ `
-;` a
-}		 
-public 
-class 
-GrantViewModel 
-{ 
-public 
-
-string 
-? 
-ClientId 
-{ 
-get !
-;! "
-set# &
-;& '
-}( )
-public 
-
-string 
-? 
-
-ClientName 
-{ 
-get  #
-;# $
-set% (
-;( )
-}* +
-public 
-
-string 
-? 
-	ClientUrl 
-{ 
-get "
-;" #
-set$ '
-;' (
-}) *
-public 
-
-string 
-? 
-ClientLogoUrl  
-{! "
-get# &
-;& '
-set( +
-;+ ,
-}- .
-public 
-
-string 
-? 
-Description 
-{  
-get! $
-;$ %
-set& )
-;) *
-}+ ,
-public 
-
-DateTime 
-Created 
-{ 
-get !
-;! "
-set# &
-;& '
-}( )
-public 
-
-DateTime 
-? 
-Expires 
-{ 
-get "
-;" #
-set$ '
-;' (
-}) *
-public 
-
-IEnumerable 
-< 
-string 
-> 
-IdentityGrantNames 1
-{2 3
-get4 7
-;7 8
-set9 <
-;< =
-}> ?
-=@ A
-
-EnumerableB L
-.L M
-EmptyM R
-<R S
-stringS Y
->Y Z
-(Z [
-)[ \
-;\ ]
-public 
-
-IEnumerable 
-< 
-string 
-> 
-ApiGrantNames ,
-{- .
-get/ 2
-;2 3
-set4 7
-;7 8
-}9 :
-=; <
-
-Enumerable= G
-.G H
-EmptyH M
-<M N
-stringN T
->T U
-(U V
-)V W
-;W X
-} ñ¤
+}00 ñ¤
 wC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\ExternalLogin\Callback.cshtml.cs
 	namespace 	
 IdentityServerApi
@@ -5604,7 +5604,146 @@ StatusCode%%" ,
 )((W X
 ;((X Y
 })) 
-}** ƒ
+}** €
+oC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Diagnostics\ViewModel.cs
+	namespace		 	
+IdentityServerApi		
+ 
+.		 
+Pages		 !
+.		! "
+Diagnostics		" -
+;		- .
+public 
+class 
+	ViewModel 
+{ 
+public 
+
+	ViewModel 
+( 
+AuthenticateResult '
+result( .
+). /
+{ 
+AuthenticateResult 
+= 
+result #
+;# $
+if 
+
+( 
+result 
+? 
+. 
+
+Properties 
+? 
+.  
+Items  %
+.% &
+TryGetValue& 1
+(1 2
+$str2 ?
+,? @
+outA D
+varE H
+encodedI P
+)P Q
+==R T
+trueU Y
+)Y Z
+{ 	
+if 
+( 
+encoded 
+!= 
+null 
+)  
+{ 
+var 
+bytes 
+= 
+	Base64Url %
+.% &
+Decode& ,
+(, -
+encoded- 4
+)4 5
+;5 6
+var 
+value 
+= 
+Encoding $
+.$ %
+UTF8% )
+.) *
+	GetString* 3
+(3 4
+bytes4 9
+)9 :
+;: ;
+Clients 
+= 
+JsonSerializer (
+.( )
+Deserialize) 4
+<4 5
+string5 ;
+[; <
+]< =
+>= >
+(> ?
+value? D
+)D E
+??F H
+
+EnumerableI S
+.S T
+EmptyT Y
+<Y Z
+stringZ `
+>` a
+(a b
+)b c
+;c d
+return 
+; 
+} 
+} 	
+Clients 
+= 
+
+Enumerable 
+. 
+Empty "
+<" #
+string# )
+>) *
+(* +
+)+ ,
+;, -
+} 
+public 
+
+AuthenticateResult 
+AuthenticateResult 0
+{1 2
+get3 6
+;6 7
+}8 9
+public 
+
+IEnumerable 
+< 
+string 
+> 
+Clients &
+{' (
+get) ,
+;, -
+}. /
+}   ƒ
 rC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Diagnostics\Index.cshtml.cs
 	namespace		 	
 IdentityServerApi		
@@ -5746,146 +5885,7 @@ Connection1 ;
 )   
 ;   
 }!! 
-}"" €
-oC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Diagnostics\ViewModel.cs
-	namespace		 	
-IdentityServerApi		
- 
-.		 
-Pages		 !
-.		! "
-Diagnostics		" -
-;		- .
-public 
-class 
-	ViewModel 
-{ 
-public 
-
-	ViewModel 
-( 
-AuthenticateResult '
-result( .
-). /
-{ 
-AuthenticateResult 
-= 
-result #
-;# $
-if 
-
-( 
-result 
-? 
-. 
-
-Properties 
-? 
-.  
-Items  %
-.% &
-TryGetValue& 1
-(1 2
-$str2 ?
-,? @
-outA D
-varE H
-encodedI P
-)P Q
-==R T
-trueU Y
-)Y Z
-{ 	
-if 
-( 
-encoded 
-!= 
-null 
-)  
-{ 
-var 
-bytes 
-= 
-	Base64Url %
-.% &
-Decode& ,
-(, -
-encoded- 4
-)4 5
-;5 6
-var 
-value 
-= 
-Encoding $
-.$ %
-UTF8% )
-.) *
-	GetString* 3
-(3 4
-bytes4 9
-)9 :
-;: ;
-Clients 
-= 
-JsonSerializer (
-.( )
-Deserialize) 4
-<4 5
-string5 ;
-[; <
-]< =
->= >
-(> ?
-value? D
-)D E
-??F H
-
-EnumerableI S
-.S T
-EmptyT Y
-<Y Z
-stringZ `
->` a
-(a b
-)b c
-;c d
-return 
-; 
-} 
-} 	
-Clients 
-= 
-
-Enumerable 
-. 
-Empty "
-<" #
-string# )
->) *
-(* +
-)+ ,
-;, -
-} 
-public 
-
-AuthenticateResult 
-AuthenticateResult 0
-{1 2
-get3 6
-;6 7
-}8 9
-public 
-
-IEnumerable 
-< 
-string 
-> 
-Clients &
-{' (
-get) ,
-;, -
-}. /
-}   Ã
+}"" Ã
 jC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Device\ViewModel.cs
 	namespace 	
 IdentityServerApi

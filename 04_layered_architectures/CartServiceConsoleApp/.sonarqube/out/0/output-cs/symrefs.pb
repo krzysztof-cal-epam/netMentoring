@@ -58,26 +58,24 @@ vC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
 
  $
 
-) 1‘
-rC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Interfaces\ICartRepository.cs
+) 1Ω
+gC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Outbox.cs
 
- $
+ 
 
- 
+ 
 
- $
+ 
 
- 
+ 
 
- 
-
-		 
-
-		 #
+		 
 
 
 
- %¸
+ !
+
+ $¸
 pC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Interfaces\ICartDatabase.cs
 
  "(
@@ -153,7 +151,26 @@ hC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
 
  
 
-  ê
+  ‘
+rC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Interfaces\ICartRepository.cs
+
+ $
+
+ 
+
+ $
+
+ 
+
+ 
+
+		 
+
+		 #
+
+
+
+ %ê
 jC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\ImageItem.cs
 
  
@@ -161,23 +178,6 @@ jC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
  
 
  Ω
-gC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Outbox.cs
-
- 
-
- 
-
- 
-
- 
-
-		 
-
-
-
- !
-
- $Ω
 iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Category.cs
   
 
@@ -189,16 +189,7 @@ iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
 
  $
 
- '´
-eC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Cart.cs
-
- 
-  
-
-
-  
-
- #≥
+ '≥
 iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\CartItem.cs
 
  
@@ -211,4 +202,13 @@ iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
 
  
 
- 
+ ´
+eC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Cart.cs
+
+ 
+  
+
+
+  
+
+ #
