@@ -10480,84 +10480,7 @@ InputModel 
 set& )
 ;) *
 }+ ,
-} ­	
-mC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Ciba\ConsentOptions.cs
-	namespace 	
-IdentityServerApi
- 
-. 
-Pages !
-.! "
-Ciba" &
-;& '
-public 
-static 
-class 
-ConsentOptions "
-{ 
-public 
-
-static 
-readonly 
-bool 
-EnableOfflineAccess  3
-=4 5
-true6 :
-;: ;
-public		 
-
-static		 
-readonly		 
-string		 !$
-OfflineAccessDisplayName		" :
-=		; <
-$str		= M
-;		M N
-public
-
- 
-
-static
-
- 
-readonly
-
- 
-string
-
- !$
-OfflineAccessDescription
-
-" :
-=
-
-; <
-$str	
-
-= ƒ
-;
-
-
-ƒ „
-public 
-
-static 
-readonly 
-string !%
-MustChooseOneErrorMessage" ;
-=< =
-$str> e
-;e f
-public 
-
-static 
-readonly 
-string !(
-InvalidSelectionErrorMessage" >
-=? @
-$strA T
-;T U
-} Û
+} Û
 kC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Ciba\Index.cshtml.cs
 	namespace
 
@@ -10709,7 +10632,84 @@ IndexModel	x ‚
 )(( 
 ;(( 
 })) 
-}** †³
+}** ­	
+mC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Ciba\ConsentOptions.cs
+	namespace 	
+IdentityServerApi
+ 
+. 
+Pages !
+.! "
+Ciba" &
+;& '
+public 
+static 
+class 
+ConsentOptions "
+{ 
+public 
+
+static 
+readonly 
+bool 
+EnableOfflineAccess  3
+=4 5
+true6 :
+;: ;
+public		 
+
+static		 
+readonly		 
+string		 !$
+OfflineAccessDisplayName		" :
+=		; <
+$str		= M
+;		M N
+public
+
+ 
+
+static
+
+ 
+readonly
+
+ 
+string
+
+ !$
+OfflineAccessDescription
+
+" :
+=
+
+; <
+$str	
+
+= ƒ
+;
+
+
+ƒ „
+public 
+
+static 
+readonly 
+string !%
+MustChooseOneErrorMessage" ;
+=< =
+$str> e
+;e f
+public 
+
+static 
+readonly 
+string !(
+InvalidSelectionErrorMessage" >
+=? @
+$strA T
+;T U
+} †³
 mC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Ciba\Consent.cshtml.cs
 	namespace 	
 IdentityServerApi

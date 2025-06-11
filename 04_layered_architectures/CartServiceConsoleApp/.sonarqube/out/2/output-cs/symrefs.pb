@@ -1,339 +1,310 @@
-ì
-pC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Services\CartService.cs
+É
+uC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Services\CategoryService.cs
 
- P
+  P
 
 
-) 8  &(( -- "22 &88 &<< 
-+ 9 ,
+- @  %)) )77! 4FF# 6RR! 4ZZ %
+3 E" 4
 
- 
-! '3 9  &(
-2 :J R!! '%%- 5<
-   # '!! ((% )
-    %%  
-= >B C
+' /(
+< G " &# .<
+ / 7     #!!# +
 
-++! ,
+%% %
+%%* ,))B D
 
-00 &
-00, 2223 9
-22 33 
+55' 3
+558 :77B D998 :<
+77 88 == >> ?? #@@# +
 
-66 
-66$ *883 9
-660 6;;2 8(
-88 99 ;; <<) -
-;;% &;;* +Š
-zC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Repositories\ProductRepository.cs
+DD4 =
+FF GG 2
+GG% &II JJ KK LL# $
 
- "<
+PP %<
+PP2 =RRB MTT8 CVV 'WW  +XX( 3<
+RR SS VV WW XX ZZ2 :³
+
+tC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Services\ProductService.cs
+
+ \
 
 
-* 2   !!* 2%% )) 
-2 9B I 
+, > ## .77 $<<  2NN! 3]]! 3mm  2
+†† $(
+/ B ! 4qq! 4
+1 B! 2
+Z l" 4
 
-0 9
-? I 9 C
-O S  $
-Y a, 4; C<
-      
-$ %) *
+& .Z
+: DB L8 B ! ( " " #   '
+  
+ ##8 ?P
+## %% ,, -- .. !// 00 11  
 
- 6
-? F%%/ 6
-O X''* 3
-a h''5 <
-!! !++ !// !‡
-{C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Repositories\CategoryRepository.cs
+55 %
+55* ,771 3
 
- #x
+::& 2
+::7 9<<@ B>>7 9Z
+<< == BB CC DD %EE FF GG  HH $
+
+LL3 <
+LLB LNN> H
+LLR VNNJ N
+LL\ dNNP X
+NN PP F
+PP# $RR SS TT UU VV WW 
+
+[[3 <
+]] __ P
+__# $aa bb cc dd ee ff gg 
+
+kk %n
+kk1 ;mm@ Joo7 AqqB Lss8 Buu %vv" ,ww &xx &yy 'zz! + 
+mm nn uu vv ww xx yy zz ~~   
+€€ %
+ 
+‚‚ 
+ƒƒ $
+††B I
+qq rr 
+|| 
+††] iŸ
+
+qC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Services\CartService.cs
+
 
 
-* 2 * 2% -!!6 >'' ,, //- 533 66 88 DD. 6
-3 :C J 
+ n
+) 8  *KK *jj 
+€€ *
+ˆˆ #
+™™ .
+¶¶ .
+ÓÓ #
++ 9 ,
 
- 12
-6 8Z \G I7 9//Z \
- !99 !== !
-  66+ 3
-M NR S2
- #; J  ' 6** #,,4 C
-   $""  0
-  > ?  C D
-!! -%% -''2 K
-"" "": ;
-// $11 $332 B
-//E F//J K
-BB ; 6LL 6
-BB@ PEE2 B
-BBa pJJ LLA P
-DD %HH" 7
-EE EE õ
-wC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Repositories\CartRepository.cs
+ "
+( . 7 =
+  !    P
+  . 2"" !## #$$  $%%# '&&  $))+ /*** .
 
- <
-		- 6  $'' 33 CC  
-2 :  
+:: !(
+::' -<< KK7 =OO$ *x
+::; FAA AA< GRRB MVV% 0\\ (]] *^^  +__# .``  +cc+ 6dd* 5<
+HH KK OO RR ZZ jj) -
+RR TT VV 
+RR5 6RR: ;
 
- 
-% +. 44 :
-   
+rr &,
+rr, 2tt 
+€€7 =
+……@ F8
+rr8 >yy 
+ƒƒ5 ;
+……8 >
+‡‡6 <<
 
-## 
-##" &''! %
+€€ 
+ 
+ƒƒ 
+‡‡ 
+ˆˆ- 1
 
-// 
-//$ *33! '
+ƒƒ( )
+ƒƒ- .
 
-??! ,¿
-uC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\RabbitMQ\RabbitMqSettings.cs
+‡‡) *
+‡‡. /
 
- !
+••$ /
 
- 
+™™ 
+›› $
 
- 
+››' +
+ !
+žž  <
 
- 
+žž. 2
+   !
+¡¡ #
+¢¢  $
+££# '
 
- 
+­­ #$
 
-		 Ë
-„C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Migrations\20250512104332_AddOutboxTable.cs
+­­( 1
+¯¯ 
+¾¾' 0$
 
-		 '
+­­; F
+ÀÀ6 A
+ÂÂ, 7$
 
-  "
-4 D F
-    % #" '  %" '
- " 
-2 37 8
+­­Q ]
+ÄÄ  ,
+ÆÆ- 9
 
-!!  $
-!!6 F## œ
-ƒC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Migrations\20250416213849_InitialCreate.cs
+¶¶ 
+¹¹% -$
 
- &
+·· !
+ÍÍ %
+ÑÑ% 2$
 
-  "2
-4 D !! 99 >> 2
-     !' ,
- "  
-6 7; <
-  !% &P
-## %% ''  ((" ')) !** !++ ",,! &
-.. "00 11 
-004 5009 :
-33  !33% &
+»» "
+ÈÈ %
+ËË !¡
+wC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Interfaces\IProductService.cs
 
-EE  $
-EE6 FGG JJ È
-‰C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Migrations\20250424222729_EnableCascadeDelete.cs
+ $
 
- ,
+ %
 
-  "
+* ,
 
-4 D
+		& /
 
-  $
+
+
+ !
 
-6 FÞ
-‹C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Migrations\20250416220805_RenameImageToImageUrl.cs
+
+
+- 3
 
- .
+ 
 
-  "
-4 D 
+$ *
 
-  $
-6 F í
-sC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Interfaces\ICartService.cs
+ 
+
+ 
+
+& /
+
+5 ?
+
+E I
+
+O Wò
+xC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Interfaces\ICategoryService.cs
+
+ %
+
+ &
+
++ -
+
+' 0
+
+		 "
+
+		/ :
+
+
+
+ 
+
+
+
+% 0
+
+ 
+
+ ž
+tC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Interfaces\ICartService.cs
 
  !
 
- 
+ 
 
-% +
+! '
 
- 
+ 
 
-  
+  &
 
-+ /
+4 8
 
-		 
+		 
 
-		 #
+		% +
 
-		) /
-
-
-
- %¸
-rC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Data\GenericRepository.cs
-
- "d
-# $4 5= >  ! " & '$$ ))& '..& '<
-
-
-* 2     11 @@ P
-" (   % && ++ 00 
-2 9  
-
- %
-( ." ( 
-
- %
-* ,0 2
-   $
-
-$$ )
-$$. 0&&* ,
-
-))* 3
-
-.. %
-..( .00  
-
-44" 5
-44= F:: %
-44O V66: A
-66 ;; %
-88 @@2 >Á
-{C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Data\DesignTimeDbContextFactory.cs
-
- +
-
-  /
-
-9 =
-
-
-  ( 6ó
-qC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Data\CatalogDbContext.cs
- !1 A
-C JS Z
-
- )
-
- &
-
- #
-
-  /2
-= I! - '' == 2
-* 0   "" 
- # $
-  !% &
-  !% &
-  . /
-        6 7
-"" ""# $
-$$# $$$( )F
-'') /)) ++ // 22 44 66 
-)) ))# $
-++  !++% &
-//  !//% &
-22  !22% &
-44  !44% &
-66 66# $
-88# $88( )<
-==( .?? @@ AA BB CC 
-?? ??# $
-@@  !@@% &
-AA  !AA% &
-BB  !BB% &
-CC  !CC% &Ò
-xC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Databases\LiteDbCartDatabase.cs
- #
-¯¯9 KH
-
-
-& ) %%% (77% (II% ([[% (
-ºº L
-' 1 ss }} 
-’’ 
-œœ 
-ÃÃ .
- '
-­­ 
-µµ 
-ÓÓ N
-1 5rr ss7 ;
-‘‘ 
-’’7 ;
-¹¹ 
-ÌÌ 
-) 3< F
- $' 7
-
- (
-" $&&/ 1++L N,,P R
-%% "&& %
-
-00! '
-77 "88 %
-
-BB (
-BB  $JJ& *OOJ NPPS W
-II "JJ 
-
-TT <
-TT  "]], .__8 :bb& (ggJ LhhS U
-[[ "]] "bb 
-
-ll !
-ll" #ll ll* +
-ll- 3yy ! 
-
-ŒŒ $FF XX 
-
-ŒŒ, 2
-˜˜ J
-
-«« "$$ !66 !HH !ZZ !nn 
-ŽŽ 
-
-³³ Î
-zC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Databases\InMemoryCartDatabase.cs
-
- %2
-0 6    
+		1 7
 
 
 
- 
+ (
+
+ 
+
+! *
+
+4 ?
+
+J V£
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Exceptions\CartValidationException.cs
+
+ (
+. 5> EÍ
+kC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Dto\ProductDto.cs
+
+ 
+
+ 
+
+ 
+
+ "
+
+ 
+
+ 
+
+ 
+
+ “
+mC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Dto\ImageItemDto.cs
+
+ 
+
+ 
+
+ ª
+lC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Dto\CategoryDto.cs
+
+ 
+
+ 
+
+ 
+
+ 
+
+ $¶
+lC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Dto\CartItemDto.cs
+
+ 
+
+ 
+
+ 
+
+ "
+
+		 
+
 
 
-" $ !
-+ / 
+ Ž
+hC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Dto\CartDto.cs
 
- 
-  $  "
+ 
 
- 
-  " 
+ 
 
-! 'Ú
-~C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\BackgroundServices\OutboxProcessor.cs
-
-  
-. B  & :<
-* 3 ,,# ,-- (..# ,//# ,
-4 G# 6
-d k 
-
-& 2H
-E V )""% 6&&/ @
-55 ’99 )UU5 F
- #$ )(
- !  2 ;MM %UU #
-   )$$ )770 A
-!!  !!% &
-** 221 8
-22 (33. 8
-33 %55 !AA" )
-<<  ,FF& 2
-==  %EE1 6
+! &

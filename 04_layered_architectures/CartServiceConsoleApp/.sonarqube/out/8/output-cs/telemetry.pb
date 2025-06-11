@@ -1,1 +1,1 @@
-ÅRkC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Api\CatalogService.Api.csproj¢net8.0ÚCSharp12
+kRUC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\RestApi.csproj¢net8.0ÚCSharp12
