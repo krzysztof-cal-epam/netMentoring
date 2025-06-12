@@ -474,90 +474,6 @@
           }
         },
         {
-          "ruleId": "SA1200",
-          "level": "warning",
-          "message": "Using directive should appear within a namespace declaration",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 40
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1200",
-          "level": "warning",
-          "message": "Using directive should appear within a namespace declaration",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
-                "region": {
-                  "startLine": 2,
-                  "startColumn": 1,
-                  "endLine": 2,
-                  "endColumn": 28
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1200",
-          "level": "warning",
-          "message": "Using directive should appear within a namespace declaration",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 1,
-                  "endLine": 3,
-                  "endColumn": 18
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1208",
-          "level": "warning",
-          "message": "Using directive for 'System.Net' should appear before directive for 'RestApiTests.Helpers'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 1,
-                  "endLine": 3,
-                  "endColumn": 18
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "IDE0055",
           "level": "warning",
           "message": "Fix formatting",
@@ -879,6 +795,90 @@
           "locations": [
             {
               "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "endLine": 2,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1208",
+          "level": "warning",
+          "message": "Using directive for 'System.Net' should appear before directive for 'RestApiTests.Helpers'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
                 "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CartV1ControllerTests.cs",
                 "region": {
                   "startLine": 1,
@@ -990,195 +990,6 @@
                   "startColumn": 1,
                   "endLine": 6,
                   "endColumn": 30
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1309",
-          "level": "warning",
-          "message": "Field '_cartServiceMock' should not begin with an underscore",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CartV1ControllerTests.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 45,
-                  "endLine": 12,
-                  "endColumn": 61
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1309",
-          "level": "warning",
-          "message": "Field '_controller' should not begin with an underscore",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CartV1ControllerTests.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 41,
-                  "endLine": 13,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1063",
-          "level": "warning",
-          "message": "Provide an overridable implementation of Dispose(bool) on 'CartApiTests' or mark the type as sealed. A call to Dispose(false) should only clean up native resources. A call to Dispose(true) should clean up both managed and native resources.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 18,
-                  "endLine": 7,
-                  "endColumn": 30
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1200",
-          "level": "warning",
-          "message": "Using directive should appear within a namespace declaration",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1200",
-          "level": "warning",
-          "message": "Using directive should appear within a namespace declaration",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
-                "region": {
-                  "startLine": 2,
-                  "startColumn": 1,
-                  "endLine": 2,
-                  "endColumn": 45
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1200",
-          "level": "warning",
-          "message": "Using directive should appear within a namespace declaration",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 1,
-                  "endLine": 3,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1200",
-          "level": "warning",
-          "message": "Using directive should appear within a namespace declaration",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
-                "region": {
-                  "startLine": 4,
-                  "startColumn": 1,
-                  "endLine": 4,
-                  "endColumn": 11
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1200",
-          "level": "warning",
-          "message": "Using directive should appear within a namespace declaration",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 1,
-                  "endLine": 5,
-                  "endColumn": 30
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1309",
-          "level": "warning",
-          "message": "Field '_factory' should not begin with an underscore",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 57,
-                  "endLine": 9,
-                  "endColumn": 65
                 }
               }
             }
@@ -1656,6 +1467,153 @@
           "locations": [
             {
               "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "endLine": 2,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 1,
+                  "endLine": 4,
+                  "endColumn": 11
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1,
+                  "endLine": 5,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1063",
+          "level": "warning",
+          "message": "Provide an overridable implementation of Dispose(bool) on 'CartApiTests' or mark the type as sealed. A call to Dispose(false) should only clean up native resources. A call to Dispose(true) should clean up both managed and native resources.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 18,
+                  "endLine": 7,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1309",
+          "level": "warning",
+          "message": "Field '_factory' should not begin with an underscore",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 57,
+                  "endLine": 9,
+                  "endColumn": 65
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
                 "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
                 "region": {
                   "startLine": 1,
@@ -1799,16 +1757,16 @@
         {
           "ruleId": "SA1309",
           "level": "warning",
-          "message": "Field '_mockCategoryService' should not begin with an underscore",
+          "message": "Field '_cartServiceMock' should not begin with an underscore",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CartV1ControllerTests.cs",
                 "region": {
-                  "startLine": 11,
-                  "startColumn": 49,
-                  "endLine": 11,
-                  "endColumn": 69
+                  "startLine": 12,
+                  "startColumn": 45,
+                  "endLine": 12,
+                  "endColumn": 61
                 }
               }
             }
@@ -1820,16 +1778,37 @@
         {
           "ruleId": "SA1309",
           "level": "warning",
-          "message": "Field '_categoryController' should not begin with an underscore",
+          "message": "Field '_client' should not begin with an underscore",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
                 "region": {
-                  "startLine": 12,
-                  "startColumn": 45,
-                  "endLine": 12,
-                  "endColumn": 64
+                  "startLine": 10,
+                  "startColumn": 37,
+                  "endLine": 10,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1309",
+          "level": "warning",
+          "message": "Field '_controller' should not begin with an underscore",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CartV1ControllerTests.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 41,
+                  "endLine": 13,
+                  "endColumn": 52
                 }
               }
             }
@@ -3393,66 +3372,18 @@
           }
         },
         {
-          "ruleId": "SA1516",
+          "ruleId": "SA1309",
           "level": "warning",
-          "message": "Elements should be separated by blank line",
+          "message": "Field '_mockCategoryService' should not begin with an underscore",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
                 "region": {
-                  "startLine": 13,
-                  "startColumn": 1,
-                  "endLine": 13,
-                  "endColumn": 9
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
-          }
-        },
-        {
-          "ruleId": "SA1516",
-          "level": "warning",
-          "message": "Elements should be separated by blank line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 1,
-                  "endLine": 15,
-                  "endColumn": 9
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
-          }
-        },
-        {
-          "ruleId": "SA1309",
-          "level": "warning",
-          "message": "Field '_productController' should not begin with an underscore",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 44,
-                  "endLine": 14,
-                  "endColumn": 62
+                  "startLine": 11,
+                  "startColumn": 49,
+                  "endLine": 11,
+                  "endColumn": 69
                 }
               }
             }
@@ -3464,16 +3395,16 @@
         {
           "ruleId": "SA1309",
           "level": "warning",
-          "message": "Field '_mockProductService' should not begin with an underscore",
+          "message": "Field '_categoryController' should not begin with an underscore",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
                 "region": {
-                  "startLine": 13,
-                  "startColumn": 48,
-                  "endLine": 13,
-                  "endColumn": 67
+                  "startLine": 12,
+                  "startColumn": 45,
+                  "endLine": 12,
+                  "endColumn": 64
                 }
               }
             }
@@ -3555,510 +3486,6 @@
               "action": "insert",
               "location": "preceding"
             }
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 13,
-                  "endLine": 14,
-                  "endColumn": 21
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 13,
-                  "endLine": 15,
-                  "endColumn": 20
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 23,
-                  "endLine": 15,
-                  "endColumn": 31
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1707",
-          "level": "warning",
-          "message": "Remove the underscores from member name RestApiTests.IntegrationTests.CartApiTests.GetCartInfo_Should_ReturnOk(string)",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
-                "region": {
-                  "startLine": 27,
-                  "startColumn": 27,
-                  "endLine": 27,
-                  "endColumn": 54
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 13,
-                  "endLine": 15,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
-                "region": {
-                  "startLine": 17,
-                  "startColumn": 13,
-                  "endLine": 17,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
-                "region": {
-                  "startLine": 17,
-                  "startColumn": 58,
-                  "endLine": 17,
-                  "endColumn": 78
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1707",
-          "level": "warning",
-          "message": "Remove the underscores from member name RestApiTests.UnitTests.CartV1ControllerTests.GetCartInfo_Should_ReturnOkObjectResult()",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CartV1ControllerTests.cs",
-                "region": {
-                  "startLine": 22,
-                  "startColumn": 21,
-                  "endLine": 22,
-                  "endColumn": 60
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
-                "region": {
-                  "startLine": 17,
-                  "startColumn": 13,
-                  "endLine": 17,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
-                "region": {
-                  "startLine": 19,
-                  "startColumn": 13,
-                  "endLine": 19,
-                  "endColumn": 31
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
-                "region": {
-                  "startLine": 19,
-                  "startColumn": 56,
-                  "endLine": 19,
-                  "endColumn": 75
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1413",
-          "level": "warning",
-          "message": "Use trailing comma in multi-line initializers",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CartV1ControllerTests.cs",
-                "region": {
-                  "startLine": 29,
-                  "startColumn": 17,
-                  "endLine": 32,
-                  "endColumn": 18
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1413",
-          "level": "warning",
-          "message": "Use trailing comma in multi-line initializers",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CartV1ControllerTests.cs",
-                "region": {
-                  "startLine": 31,
-                  "startColumn": 21,
-                  "endLine": 31,
-                  "endColumn": 94
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CartV1ControllerTests.cs",
-                "region": {
-                  "startLine": 35,
-                  "startColumn": 13,
-                  "endLine": 35,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CartV1ControllerTests.cs",
-                "region": {
-                  "startLine": 39,
-                  "startColumn": 26,
-                  "endLine": 39,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1707",
-          "level": "warning",
-          "message": "Remove the underscores from member name RestApiTests.UnitTests.CategoryControllerTests.ListAll_ReturnsOK()",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 27,
-                  "endLine": 21,
-                  "endColumn": 44
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1413",
-          "level": "warning",
-          "message": "Use trailing comma in multi-line initializers",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
-                "region": {
-                  "startLine": 27,
-                  "startColumn": 17,
-                  "endLine": 27,
-                  "endColumn": 148
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
-                "region": {
-                  "startLine": 29,
-                  "startColumn": 13,
-                  "endLine": 29,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
-                "region": {
-                  "startLine": 20,
-                  "startColumn": 13,
-                  "endLine": 20,
-                  "endColumn": 20
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
-                "region": {
-                  "startLine": 34,
-                  "startColumn": 29,
-                  "endLine": 34,
-                  "endColumn": 48
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 13,
-                  "endLine": 21,
-                  "endColumn": 21
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CartV1ControllerTests.cs",
-                "region": {
-                  "startLine": 17,
-                  "startColumn": 13,
-                  "endLine": 17,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CartV1ControllerTests.cs",
-                "region": {
-                  "startLine": 18,
-                  "startColumn": 13,
-                  "endLine": 18,
-                  "endColumn": 24
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CartV1ControllerTests.cs",
-                "region": {
-                  "startLine": 18,
-                  "startColumn": 46,
-                  "endLine": 18,
-                  "endColumn": 62
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
           }
         },
         {
@@ -6540,18 +5967,108 @@
           }
         },
         {
-          "ruleId": "CA1707",
+          "ruleId": "SA1516",
           "level": "warning",
-          "message": "Remove the underscores from member name RestApiTests.UnitTests.ProductControllerTests.ListProductsByCategory_ReturnsOK()",
+          "message": "Elements should be separated by blank line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 1,
+                  "endLine": 13,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1516",
+          "level": "warning",
+          "message": "Elements should be separated by blank line",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
                 "region": {
-                  "startLine": 23,
+                  "startLine": 15,
+                  "startColumn": 1,
+                  "endLine": 15,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1309",
+          "level": "warning",
+          "message": "Field '_mockProductService' should not begin with an underscore",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 48,
+                  "endLine": 13,
+                  "endColumn": 67
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1309",
+          "level": "warning",
+          "message": "Field '_productController' should not begin with an underscore",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 44,
+                  "endLine": 14,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1707",
+          "level": "warning",
+          "message": "Remove the underscores from member name RestApiTests.IntegrationTests.CartApiTests.GetCartInfo_Should_ReturnOk(string)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
+                "region": {
+                  "startLine": 27,
                   "startColumn": 27,
-                  "endLine": 23,
-                  "endColumn": 59
+                  "endLine": 27,
+                  "endColumn": 54
                 }
               }
             }
@@ -6561,18 +6078,18 @@
           }
         },
         {
-          "ruleId": "CA1063",
+          "ruleId": "SA1101",
           "level": "warning",
-          "message": "Modify 'CartApiTests.Dispose' so that it calls Dispose(true), then calls GC.SuppressFinalize on the current object instance ('this' or 'Me' in Visual Basic), and then returns",
+          "message": "Prefix local calls with this",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CartV1ControllerTests.cs",
                 "region": {
-                  "startLine": 18,
-                  "startColumn": 21,
-                  "endLine": 18,
-                  "endColumn": 28
+                  "startLine": 17,
+                  "startColumn": 13,
+                  "endLine": 17,
+                  "endColumn": 29
                 }
               }
             }
@@ -6582,18 +6099,291 @@
           }
         },
         {
-          "ruleId": "CA1816",
+          "ruleId": "SA1101",
           "level": "warning",
-          "message": "Change CartApiTests.Dispose() to call GC.SuppressFinalize(object). This will prevent derived types that introduce a finalizer from needing to re-implement 'IDisposable' to call it.",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 13,
+                  "endLine": 17,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 13,
+                  "endLine": 15,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CartV1ControllerTests.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 13,
+                  "endLine": 18,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 13,
+                  "endLine": 19,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 13,
+                  "endLine": 17,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 56,
+                  "endLine": 19,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CartV1ControllerTests.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 46,
+                  "endLine": 18,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
                 "region": {
-                  "startLine": 18,
+                  "startLine": 20,
+                  "startColumn": 13,
+                  "endLine": 20,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 58,
+                  "endLine": 17,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 13,
+                  "endLine": 21,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1707",
+          "level": "warning",
+          "message": "Remove the underscores from member name RestApiTests.UnitTests.CartV1ControllerTests.GetCartInfo_Should_ReturnOkObjectResult()",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CartV1ControllerTests.cs",
+                "region": {
+                  "startLine": 22,
                   "startColumn": 21,
-                  "endLine": 18,
-                  "endColumn": 28
+                  "endLine": 22,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 13,
+                  "endLine": 14,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 13,
+                  "endLine": 15,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 31
                 }
               }
             }
@@ -6624,6 +6414,216 @@
           }
         },
         {
+          "ruleId": "CA1707",
+          "level": "warning",
+          "message": "Remove the underscores from member name RestApiTests.UnitTests.CategoryControllerTests.ListAll_ReturnsOK()",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 27,
+                  "endLine": 21,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1707",
+          "level": "warning",
+          "message": "Remove the underscores from member name RestApiTests.UnitTests.ProductControllerTests.ListProductsByCategory_ReturnsOK()",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 27,
+                  "endLine": 23,
+                  "endColumn": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1413",
+          "level": "warning",
+          "message": "Use trailing comma in multi-line initializers",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CartV1ControllerTests.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 17,
+                  "endLine": 32,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1413",
+          "level": "warning",
+          "message": "Use trailing comma in multi-line initializers",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CartV1ControllerTests.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 21,
+                  "endLine": 31,
+                  "endColumn": 94
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 34,
+                  "endLine": 33,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CartV1ControllerTests.cs",
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 13,
+                  "endLine": 35,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1063",
+          "level": "warning",
+          "message": "Modify 'CartApiTests.Dispose' so that it calls Dispose(true), then calls GC.SuppressFinalize on the current object instance ('this' or 'Me' in Visual Basic), and then returns",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 21,
+                  "endLine": 18,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CartV1ControllerTests.cs",
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 26,
+                  "endLine": 39,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1816",
+          "level": "warning",
+          "message": "Change CartApiTests.Dispose() to call GC.SuppressFinalize(object). This will prevent derived types that introduce a finalizer from needing to re-implement 'IDisposable' to call it.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 21,
+                  "endLine": 18,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1413",
+          "level": "warning",
+          "message": "Use trailing comma in multi-line initializers",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 17,
+                  "endLine": 27,
+                  "endColumn": 148
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "SA1413",
           "level": "warning",
           "message": "Use trailing comma in multi-line initializers",
@@ -6645,18 +6645,18 @@
           }
         },
         {
-          "ruleId": "CA1062",
-          "level": "note",
-          "message": "In externally visible method 'void CustomWebApplicationFactory.ConfigureWebHost(IWebHostBuilder builder)', validate parameter 'builder' is non-null before using it. If appropriate, throw an 'ArgumentNullException' when the argument is 'null'.",
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/Helpers/CustomWebApplicationFactory.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
                 "region": {
-                  "startLine": 14,
+                  "startLine": 49,
                   "startColumn": 13,
-                  "endLine": 14,
-                  "endColumn": 20
+                  "endLine": 49,
+                  "endColumn": 33
                 }
               }
             }
@@ -6666,18 +6666,81 @@
           }
         },
         {
-          "ruleId": "CA1707",
+          "ruleId": "SA1101",
           "level": "warning",
-          "message": "Remove the underscores from member name RestApiTests.UnitTests.ProductControllerTests.Add_ValidProduct_ReturnsCreated()",
+          "message": "Prefix local calls with this",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
                 "region": {
-                  "startLine": 48,
-                  "startColumn": 27,
-                  "endLine": 48,
-                  "endColumn": 58
+                  "startLine": 54,
+                  "startColumn": 32,
+                  "endLine": 54,
+                  "endColumn": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 13,
+                  "endLine": 29,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 29,
+                  "endLine": 34,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 13,
+                  "endLine": 63,
+                  "endColumn": 33
                 }
               }
             }
@@ -6752,6 +6815,48 @@
         {
           "ruleId": "CA1707",
           "level": "warning",
+          "message": "Remove the underscores from member name RestApiTests.UnitTests.ProductControllerTests.Add_ValidProduct_ReturnsCreated()",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 27,
+                  "endLine": 48,
+                  "endColumn": 58
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2234",
+          "level": "warning",
+          "message": "Modify 'CartApiTests.GetCartInfo_Should_ReturnOk(string)' to call 'HttpClient.GetAsync(Uri)' instead of 'HttpClient.GetAsync(string)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 34,
+                  "endLine": 33,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1707",
+          "level": "warning",
           "message": "Remove the underscores from member name RestApiTests.UnitTests.CategoryControllerTests.Update_UpdatedProduct_ReturnsNoContent()",
           "locations": [
             {
@@ -6762,69 +6867,6 @@
                   "startColumn": 27,
                   "endLine": 67,
                   "endColumn": 65
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
-                "region": {
-                  "startLine": 49,
-                  "startColumn": 13,
-                  "endLine": 49,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
-                "region": {
-                  "startLine": 54,
-                  "startColumn": 32,
-                  "endLine": 54,
-                  "endColumn": 51
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
-                "region": {
-                  "startLine": 63,
-                  "startColumn": 13,
-                  "endLine": 63,
-                  "endColumn": 33
                 }
               }
             }
@@ -6861,12 +6903,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
                 "region": {
-                  "startLine": 33,
-                  "startColumn": 34,
-                  "endLine": 33,
-                  "endColumn": 41
+                  "startLine": 57,
+                  "startColumn": 32,
+                  "endLine": 57,
+                  "endColumn": 50
                 }
               }
             }
@@ -6884,10 +6926,10 @@
               "resultFile": {
                 "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
                 "region": {
-                  "startLine": 57,
-                  "startColumn": 32,
-                  "endLine": 57,
-                  "endColumn": 50
+                  "startLine": 66,
+                  "startColumn": 13,
+                  "endLine": 66,
+                  "endColumn": 32
                 }
               }
             }
@@ -6939,18 +6981,18 @@
           }
         },
         {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
+          "ruleId": "CA1062",
+          "level": "note",
+          "message": "In externally visible method 'void CustomWebApplicationFactory.ConfigureWebHost(IWebHostBuilder builder)', validate parameter 'builder' is non-null before using it. If appropriate, throw an 'ArgumentNullException' when the argument is 'null'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/Helpers/CustomWebApplicationFactory.cs",
                 "region": {
-                  "startLine": 66,
+                  "startLine": 14,
                   "startColumn": 13,
-                  "endLine": 66,
-                  "endColumn": 32
+                  "endLine": 14,
+                  "endColumn": 20
                 }
               }
             }
@@ -6981,39 +7023,18 @@
           }
         },
         {
-          "ruleId": "CA2234",
+          "ruleId": "CA1707",
           "level": "warning",
-          "message": "Modify 'CartApiTests.GetCartInfo_Should_ReturnOk(string)' to call 'HttpClient.GetAsync(Uri)' instead of 'HttpClient.GetAsync(string)'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
-                "region": {
-                  "startLine": 33,
-                  "startColumn": 34,
-                  "endLine": 33,
-                  "endColumn": 50
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2007",
-          "level": "warning",
-          "message": "Consider calling ConfigureAwait on the awaited task",
+          "message": "Remove the underscores from member name RestApiTests.UnitTests.ProductControllerTests.Update_UpdatedProduct_ReturnsNoContent()",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
                 "region": {
-                  "startLine": 36,
-                  "startColumn": 29,
-                  "endLine": 36,
-                  "endColumn": 80
+                  "startLine": 70,
+                  "startColumn": 27,
+                  "endLine": 70,
+                  "endColumn": 65
                 }
               }
             }
@@ -7065,111 +7086,6 @@
           }
         },
         {
-          "ruleId": "CA2007",
-          "level": "warning",
-          "message": "Consider calling ConfigureAwait on the awaited task",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
-                "region": {
-                  "startLine": 76,
-                  "startColumn": 32,
-                  "endLine": 76,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2007",
-          "level": "warning",
-          "message": "Consider calling ConfigureAwait on the awaited task",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
-                "region": {
-                  "startLine": 54,
-                  "startColumn": 32,
-                  "endLine": 54,
-                  "endColumn": 73
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1707",
-          "level": "warning",
-          "message": "Remove the underscores from member name RestApiTests.UnitTests.ProductControllerTests.Update_UpdatedProduct_ReturnsNoContent()",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
-                "region": {
-                  "startLine": 70,
-                  "startColumn": 27,
-                  "endLine": 70,
-                  "endColumn": 65
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1707",
-          "level": "warning",
-          "message": "Remove the underscores from member name RestApiTests.UnitTests.CategoryControllerTests.Delete_DeletesProduct_ReturnsNoContent()",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
-                "region": {
-                  "startLine": 85,
-                  "startColumn": 27,
-                  "endLine": 85,
-                  "endColumn": 65
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1707",
-          "level": "warning",
-          "message": "Remove the underscores from member name RestApiTests.UnitTests.ProductControllerTests.Delete_DeletesProduct_ReturnsNoContent()",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
-                "region": {
-                  "startLine": 88,
-                  "startColumn": 27,
-                  "endLine": 88,
-                  "endColumn": 65
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "SA1101",
           "level": "warning",
           "message": "Prefix local calls with this",
@@ -7181,27 +7097,6 @@
                   "startLine": 74,
                   "startColumn": 13,
                   "endLine": 74,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
-                "region": {
-                  "startLine": 92,
-                  "startColumn": 13,
-                  "endLine": 92,
                   "endColumn": 32
                 }
               }
@@ -7241,48 +7136,6 @@
               "resultFile": {
                 "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
                 "region": {
-                  "startLine": 97,
-                  "startColumn": 32,
-                  "endLine": 97,
-                  "endColumn": 50
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
-                "region": {
-                  "startLine": 89,
-                  "startColumn": 13,
-                  "endLine": 89,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
-                "region": {
                   "startLine": 84,
                   "startColumn": 13,
                   "endLine": 84,
@@ -7296,60 +7149,18 @@
           }
         },
         {
-          "ruleId": "SA1101",
+          "ruleId": "CA2007",
           "level": "warning",
-          "message": "Prefix local calls with this",
+          "message": "Consider calling ConfigureAwait on the awaited task",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
                 "region": {
-                  "startLine": 94,
+                  "startLine": 76,
                   "startColumn": 32,
-                  "endLine": 94,
-                  "endColumn": 51
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
-                "region": {
-                  "startLine": 102,
-                  "startColumn": 13,
-                  "endLine": 102,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
-                "region": {
-                  "startLine": 99,
-                  "startColumn": 13,
-                  "endLine": 99,
-                  "endColumn": 33
+                  "endLine": 76,
+                  "endColumn": 79
                 }
               }
             }
@@ -7361,16 +7172,16 @@
         {
           "ruleId": "CA1707",
           "level": "warning",
-          "message": "Remove the underscores from member name RestApiTests.UnitTests.ProductControllerTests.GetById_ReturnsOKWithLinks()",
+          "message": "Remove the underscores from member name RestApiTests.UnitTests.CategoryControllerTests.Delete_DeletesProduct_ReturnsNoContent()",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
                 "region": {
-                  "startLine": 106,
+                  "startLine": 85,
                   "startColumn": 27,
-                  "endLine": 106,
-                  "endColumn": 53
+                  "endLine": 85,
+                  "endColumn": 65
                 }
               }
             }
@@ -7407,6 +7218,27 @@
           "locations": [
             {
               "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 32,
+                  "endLine": 54,
+                  "endColumn": 73
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2007",
+          "level": "warning",
+          "message": "Consider calling ConfigureAwait on the awaited task",
+          "locations": [
+            {
+              "resultFile": {
                 "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
                 "region": {
                   "startLine": 57,
@@ -7422,18 +7254,186 @@
           }
         },
         {
-          "ruleId": "SA1309",
+          "ruleId": "CA2007",
           "level": "warning",
-          "message": "Field '_client' should not begin with an underscore",
+          "message": "Consider calling ConfigureAwait on the awaited task",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/IntegrationTests/CartApiTests.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
                 "region": {
-                  "startLine": 10,
-                  "startColumn": 37,
-                  "endLine": 10,
-                  "endColumn": 44
+                  "startLine": 36,
+                  "startColumn": 29,
+                  "endLine": 36,
+                  "endColumn": 80
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 13,
+                  "endLine": 89,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 32,
+                  "endLine": 94,
+                  "endColumn": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 13,
+                  "endLine": 99,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1707",
+          "level": "warning",
+          "message": "Remove the underscores from member name RestApiTests.UnitTests.ProductControllerTests.Delete_DeletesProduct_ReturnsNoContent()",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 27,
+                  "endLine": 88,
+                  "endColumn": 65
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1707",
+          "level": "warning",
+          "message": "Remove the underscores from member name RestApiTests.UnitTests.ProductControllerTests.GetById_ReturnsOKWithLinks()",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 27,
+                  "endLine": 106,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2007",
+          "level": "warning",
+          "message": "Consider calling ConfigureAwait on the awaited task",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 32,
+                  "endLine": 79,
+                  "endColumn": 77
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2007",
+          "level": "warning",
+          "message": "Consider calling ConfigureAwait on the awaited task",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 32,
+                  "endLine": 94,
+                  "endColumn": 83
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 13,
+                  "endLine": 92,
+                  "endColumn": 32
                 }
               }
             }
@@ -7464,6 +7464,27 @@
           }
         },
         {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
+                "region": {
+                  "startLine": 97,
+                  "startColumn": 32,
+                  "endLine": 97,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "SA1413",
           "level": "warning",
           "message": "Use trailing comma in multi-line initializers",
@@ -7476,6 +7497,27 @@
                   "startColumn": 17,
                   "endLine": 133,
                   "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 13,
+                  "endLine": 102,
+                  "endColumn": 32
                 }
               }
             }
@@ -7539,48 +7581,6 @@
                   "startColumn": 13,
                   "endLine": 131,
                   "endColumn": 31
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2007",
-          "level": "warning",
-          "message": "Consider calling ConfigureAwait on the awaited task",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/ProductControllerTests.cs",
-                "region": {
-                  "startLine": 79,
-                  "startColumn": 32,
-                  "endLine": 79,
-                  "endColumn": 77
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2007",
-          "level": "warning",
-          "message": "Consider calling ConfigureAwait on the awaited task",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/RestApiTests/UnitTests/CategoryControllerTests.cs",
-                "region": {
-                  "startLine": 94,
-                  "startColumn": 32,
-                  "endLine": 94,
-                  "endColumn": 83
                 }
               }
             }

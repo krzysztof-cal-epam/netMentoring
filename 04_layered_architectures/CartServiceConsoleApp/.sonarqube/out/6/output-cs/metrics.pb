@@ -1,6 +1,4 @@
-š
-[C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CartServiceWebApi\Program.cs8j
-r !#%')x‚ #%')É
-nC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CartServiceWebApi\Controllers\CartController.cs 8
-j,r5	
- !"#$%&()*-./01234678:;<=>?@Ax‚#%()01367=>
+‰
+|C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Infrastructure\Interfaces\IRabbitMqProducer.csr·
+sC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Infrastructure\DependencyInjection.cs 8r'	
+!"#$%&(*+,-‚!"#%(*

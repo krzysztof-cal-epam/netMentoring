@@ -1,11 +1,10 @@
 Product projects
 ---------------------------------------
 C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\CatalogService.Domain.csproj
-C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\IdentityServerApi.csproj
-C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\CatalogService.Application.csproj
 C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\CatalogService.DataAccess.csproj
-C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Infrastructure\CatalogService.Infrastructure.csproj
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\CatalogService.Application.csproj
 C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CartServiceWebApi\CartServiceWebApi.csproj
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Infrastructure\CatalogService.Infrastructure.csproj
 C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\RestApi.csproj
 C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Api\CatalogService.Api.csproj
 

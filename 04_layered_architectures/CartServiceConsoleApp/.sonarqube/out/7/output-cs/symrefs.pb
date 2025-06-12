@@ -1,54 +1,4 @@
-…
-iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\Swagger\ConfigureSwaggerOptions.cs
-
-
-
- $
-4 = $ -
-B J 
-  
-, 3 
-
- 
-
-! %
-9 @ 
-"" ) !
-""@ D'' 
-$$ ** ÷
-jC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\Controllers\V1\ProductController.cs
-
-
-
- "F
-) 8   /55! 0?? +LL !SS !
-1 ? ,
-
-) 0
-5 7= ?x
-  M TN UN U&& '' (( %)) ** ++  ,, $
-   0 8
- !!0 :
- ""0 :
-$$ //  
-
-33) ?
-33Q [55; E
-33m q55G K
-
-33á è55M U
-55 66 
-
-::) ,
-::8 B??5 ?
-?? @@? B@@I L
-
-DD) /
-DD4 6FF 
-DDN XFF  LL. 8
-
-QQ) /
-QQ4 6SS. 0‚
+‚
 QC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\Program.cs
 
  
@@ -79,27 +29,24 @@ vC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\Middlewa
 ''< C)) ** 33 (
 ''O X// #00 #00D M
 ''^ h))* 4.. #
-,, 334 Aì
-gC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\Controllers\V2\CartController.cs
+,, 334 A…
+iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\Swagger\ConfigureSwaggerOptions.cs
 
- <
-& 2  #,, 99 DD $
-+ 6 &
+
+
+ $
+4 = $ -
+B J 
+  
+, 3 
 
- (
-. 40 6
-    
+ 
 
-** &
-**, 2,,' -
-**K O,,/ 3
-
-77 '
-77- 399, 2
-779 ?994 :
-
-BB/ :
-DD EE  
+! %
+9 @ 
+"" ) !
+""@ D'' 
+$$ **  
 gC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\Messaging\CartMessageListener.cs
 
  $
@@ -155,7 +102,60 @@ gC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\Messagin
 
 ±± YY? C
 
-≤≤  ZZ@ E·
+≤≤  ZZ@ Eì
+gC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\Controllers\V2\CartController.cs
+
+ <
+& 2  #,, 99 DD $
++ 6 &
+
+ (
+. 40 6
+    
+
+** &
+**, 2,,' -
+**K O,,/ 3
+
+77 '
+77- 399, 2
+779 ?994 :
+
+BB/ :
+DD EE ÷
+jC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\Controllers\V1\ProductController.cs
+
+
+
+ "F
+) 8   /55! 0?? +LL !SS !
+1 ? ,
+
+) 0
+5 7= ?x
+  M TN UN U&& '' (( %)) ** ++  ,, $
+   0 8
+ !!0 :
+ ""0 :
+$$ //  
+
+33) ?
+33Q [55; E
+33m q55G K
+
+33á è55M U
+55 66 
+
+::) ,
+::8 B??5 ?
+?? @@? B@@I L
+
+DD) /
+DD4 6FF 
+DDN XFF  LL. 8
+
+QQ) /
+QQ4 6SS. 0·
 kC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\Controllers\V1\CategoryController.cs
 
 

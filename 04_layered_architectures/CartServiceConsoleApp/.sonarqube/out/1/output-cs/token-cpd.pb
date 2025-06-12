@@ -5602,201 +5602,7 @@ StatusCode%%" ,
 )((W X
 ;((X Y
 })) 
-}** √
-jC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Device\ViewModel.cs
-	namespace 	
-IdentityServerApi
- 
-. 
-Pages !
-.! "
-Device" (
-;( )
-public 
-class 
-	ViewModel 
-{ 
-public 
-
-string 
-? 
-
-ClientName 
-{ 
-get  #
-;# $
-set% (
-;( )
-}* +
-public		 
-
-string		 
-?		 
-	ClientUrl		 
-{		 
-get		 "
-;		" #
-set		$ '
-;		' (
-}		) *
-public
-
- 
-
-string
-
- 
-?
-
- 
-ClientLogoUrl
-
-  
-{
-
-! "
-get
-
-# &
-;
-
-& '
-set
-
-( +
-;
-
-+ ,
-}
-
-- .
-public 
-
-bool  
-AllowRememberConsent $
-{% &
-get' *
-;* +
-set, /
-;/ 0
-}1 2
-public 
-
-IEnumerable 
-< 
-ScopeViewModel %
->% &
-IdentityScopes' 5
-{6 7
-get8 ;
-;; <
-set= @
-;@ A
-}B C
-=D E
-
-EnumerableF P
-.P Q
-EmptyQ V
-<V W
-ScopeViewModelW e
->e f
-(f g
-)g h
-;h i
-public 
-
-IEnumerable 
-< 
-ScopeViewModel %
->% &
-	ApiScopes' 0
-{1 2
-get3 6
-;6 7
-set8 ;
-;; <
-}= >
-=? @
-
-EnumerableA K
-.K L
-EmptyL Q
-<Q R
-ScopeViewModelR `
->` a
-(a b
-)b c
-;c d
-} 
-public 
-class 
-ScopeViewModel 
-{ 
-public 
-
-string 
-? 
-Value 
-{ 
-get 
-; 
-set  #
-;# $
-}% &
-public 
-
-string 
-? 
-DisplayName 
-{  
-get! $
-;$ %
-set& )
-;) *
-}+ ,
-public 
-
-string 
-? 
-Description 
-{  
-get! $
-;$ %
-set& )
-;) *
-}+ ,
-public 
-
-bool 
-	Emphasize 
-{ 
-get 
-;  
-set! $
-;$ %
-}& '
-public 
-
-bool 
-Required 
-{ 
-get 
-; 
-set  #
-;# $
-}% &
-public 
-
-bool 
-Checked 
-{ 
-get 
-; 
-set "
-;" #
-}$ %
-} Ä
+}** Ä
 oC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Diagnostics\ViewModel.cs
 	namespace		 	
 IdentityServerApi		
@@ -6077,7 +5883,201 @@ Connection1 ;
 )   
 ;   
 }!! 
-}"" Ÿ
+}"" √
+jC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Device\ViewModel.cs
+	namespace 	
+IdentityServerApi
+ 
+. 
+Pages !
+.! "
+Device" (
+;( )
+public 
+class 
+	ViewModel 
+{ 
+public 
+
+string 
+? 
+
+ClientName 
+{ 
+get  #
+;# $
+set% (
+;( )
+}* +
+public		 
+
+string		 
+?		 
+	ClientUrl		 
+{		 
+get		 "
+;		" #
+set		$ '
+;		' (
+}		) *
+public
+
+ 
+
+string
+
+ 
+?
+
+ 
+ClientLogoUrl
+
+  
+{
+
+! "
+get
+
+# &
+;
+
+& '
+set
+
+( +
+;
+
++ ,
+}
+
+- .
+public 
+
+bool  
+AllowRememberConsent $
+{% &
+get' *
+;* +
+set, /
+;/ 0
+}1 2
+public 
+
+IEnumerable 
+< 
+ScopeViewModel %
+>% &
+IdentityScopes' 5
+{6 7
+get8 ;
+;; <
+set= @
+;@ A
+}B C
+=D E
+
+EnumerableF P
+.P Q
+EmptyQ V
+<V W
+ScopeViewModelW e
+>e f
+(f g
+)g h
+;h i
+public 
+
+IEnumerable 
+< 
+ScopeViewModel %
+>% &
+	ApiScopes' 0
+{1 2
+get3 6
+;6 7
+set8 ;
+;; <
+}= >
+=? @
+
+EnumerableA K
+.K L
+EmptyL Q
+<Q R
+ScopeViewModelR `
+>` a
+(a b
+)b c
+;c d
+} 
+public 
+class 
+ScopeViewModel 
+{ 
+public 
+
+string 
+? 
+Value 
+{ 
+get 
+; 
+set  #
+;# $
+}% &
+public 
+
+string 
+? 
+DisplayName 
+{  
+get! $
+;$ %
+set& )
+;) *
+}+ ,
+public 
+
+string 
+? 
+Description 
+{  
+get! $
+;$ %
+set& )
+;) *
+}+ ,
+public 
+
+bool 
+	Emphasize 
+{ 
+get 
+;  
+set! $
+;$ %
+}& '
+public 
+
+bool 
+Required 
+{ 
+get 
+; 
+set  #
+;# $
+}% &
+public 
+
+bool 
+Checked 
+{ 
+get 
+; 
+set "
+;" #
+}$ %
+} Ÿ
 oC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Device\Success.cshtml.cs
 	namespace 	
 IdentityServerApi
@@ -7826,7 +7826,447 @@ nC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerAp
 =? @
 $strA T
 ;T U
-} ıµ
+} ±
+kC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Consent\ViewModel.cs
+	namespace 	
+IdentityServerApi
+ 
+. 
+Pages !
+.! "
+Consent" )
+;) *
+public 
+class 
+	ViewModel 
+{ 
+public 
+
+string 
+? 
+
+ClientName 
+{ 
+get  #
+;# $
+set% (
+;( )
+}* +
+public		 
+
+string		 
+?		 
+	ClientUrl		 
+{		 
+get		 "
+;		" #
+set		$ '
+;		' (
+}		) *
+public
+
+ 
+
+string
+
+ 
+?
+
+ 
+ClientLogoUrl
+
+  
+{
+
+! "
+get
+
+# &
+;
+
+& '
+set
+
+( +
+;
+
++ ,
+}
+
+- .
+public 
+
+bool  
+AllowRememberConsent $
+{% &
+get' *
+;* +
+set, /
+;/ 0
+}1 2
+public 
+
+IEnumerable 
+< 
+ScopeViewModel %
+>% &
+IdentityScopes' 5
+{6 7
+get8 ;
+;; <
+set= @
+;@ A
+}B C
+=D E
+
+EnumerableF P
+.P Q
+EmptyQ V
+<V W
+ScopeViewModelW e
+>e f
+(f g
+)g h
+;h i
+public 
+
+IEnumerable 
+< 
+ScopeViewModel %
+>% &
+	ApiScopes' 0
+{1 2
+get3 6
+;6 7
+set8 ;
+;; <
+}= >
+=? @
+
+EnumerableA K
+.K L
+EmptyL Q
+<Q R
+ScopeViewModelR `
+>` a
+(a b
+)b c
+;c d
+} 
+public 
+class 
+ScopeViewModel 
+{ 
+public 
+
+string 
+? 
+Name 
+{ 
+get 
+; 
+set "
+;" #
+}$ %
+public 
+
+string 
+? 
+Value 
+{ 
+get 
+; 
+set  #
+;# $
+}% &
+public 
+
+string 
+? 
+DisplayName 
+{  
+get! $
+;$ %
+set& )
+;) *
+}+ ,
+public 
+
+string 
+? 
+Description 
+{  
+get! $
+;$ %
+set& )
+;) *
+}+ ,
+public 
+
+bool 
+	Emphasize 
+{ 
+get 
+;  
+set! $
+;$ %
+}& '
+public 
+
+bool 
+Required 
+{ 
+get 
+; 
+set  #
+;# $
+}% &
+public 
+
+bool 
+Checked 
+{ 
+get 
+; 
+set "
+;" #
+}$ %
+public 
+
+IEnumerable 
+< 
+ResourceViewModel (
+>( )
+	Resources* 3
+{4 5
+get6 9
+;9 :
+set; >
+;> ?
+}@ A
+=B C
+
+EnumerableD N
+.N O
+EmptyO T
+<T U
+ResourceViewModelU f
+>f g
+(g h
+)h i
+;i j
+} 
+public 
+class 
+ResourceViewModel 
+{ 
+public 
+
+string 
+? 
+Name 
+{ 
+get 
+; 
+set "
+;" #
+}$ %
+public   
+
+string   
+?   
+DisplayName   
+{    
+get  ! $
+;  $ %
+set  & )
+;  ) *
+}  + ,
+}!! ç
+lC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Consent\InputModel.cs
+	namespace 	
+IdentityServerApi
+ 
+. 
+Pages !
+.! "
+Consent" )
+;) *
+public 
+class 
+
+InputModel 
+{ 
+public 
+
+string 
+? 
+Button 
+{ 
+get 
+;  
+set! $
+;$ %
+}& '
+public		 
+
+IEnumerable		 
+<		 
+string		 
+>		 
+ScopesConsented		 .
+{		/ 0
+get		1 4
+;		4 5
+set		6 9
+;		9 :
+}		; <
+=		= >
+new		? B
+List		C G
+<		G H
+string		H N
+>		N O
+(		O P
+)		P Q
+;		Q R
+public
+
+ 
+
+bool
+
+ 
+RememberConsent
+
+ 
+{
+
+  !
+get
+
+" %
+;
+
+% &
+set
+
+' *
+;
+
+* +
+}
+
+, -
+=
+
+. /
+true
+
+0 4
+;
+
+4 5
+public 
+
+string 
+? 
+	ReturnUrl 
+{ 
+get "
+;" #
+set$ '
+;' (
+}) *
+public 
+
+string 
+? 
+Description 
+{  
+get! $
+;$ %
+set& )
+;) *
+}+ ,
+} ≥	
+pC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Consent\ConsentOptions.cs
+	namespace 	
+IdentityServerApi
+ 
+. 
+Pages !
+.! "
+Consent" )
+;) *
+public 
+static 
+class 
+ConsentOptions "
+{ 
+public 
+
+static 
+readonly 
+bool 
+EnableOfflineAccess  3
+=4 5
+true6 :
+;: ;
+public		 
+
+static		 
+readonly		 
+string		 !$
+OfflineAccessDisplayName		" :
+=		; <
+$str		= M
+;		M N
+public
+
+ 
+
+static
+
+ 
+readonly
+
+ 
+string
+
+ !$
+OfflineAccessDescription
+
+" :
+=
+
+; <
+$str	
+
+= É
+;
+
+
+É Ñ
+public 
+
+static 
+readonly 
+string !%
+MustChooseOneErrorMessage" ;
+=< =
+$str> e
+;e f
+public 
+
+static 
+readonly 
+string !(
+InvalidSelectionErrorMessage" >
+=? @
+$strA T
+;T U
+} ıµ
 nC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Consent\Index.cshtml.cs
 	namespace 	
 IdentityServerApi
@@ -9648,447 +10088,7 @@ ParsedName
 
 }
 ÎÎ 
-}ÏÏ ±
-kC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Consent\ViewModel.cs
-	namespace 	
-IdentityServerApi
- 
-. 
-Pages !
-.! "
-Consent" )
-;) *
-public 
-class 
-	ViewModel 
-{ 
-public 
-
-string 
-? 
-
-ClientName 
-{ 
-get  #
-;# $
-set% (
-;( )
-}* +
-public		 
-
-string		 
-?		 
-	ClientUrl		 
-{		 
-get		 "
-;		" #
-set		$ '
-;		' (
-}		) *
-public
-
- 
-
-string
-
- 
-?
-
- 
-ClientLogoUrl
-
-  
-{
-
-! "
-get
-
-# &
-;
-
-& '
-set
-
-( +
-;
-
-+ ,
-}
-
-- .
-public 
-
-bool  
-AllowRememberConsent $
-{% &
-get' *
-;* +
-set, /
-;/ 0
-}1 2
-public 
-
-IEnumerable 
-< 
-ScopeViewModel %
->% &
-IdentityScopes' 5
-{6 7
-get8 ;
-;; <
-set= @
-;@ A
-}B C
-=D E
-
-EnumerableF P
-.P Q
-EmptyQ V
-<V W
-ScopeViewModelW e
->e f
-(f g
-)g h
-;h i
-public 
-
-IEnumerable 
-< 
-ScopeViewModel %
->% &
-	ApiScopes' 0
-{1 2
-get3 6
-;6 7
-set8 ;
-;; <
-}= >
-=? @
-
-EnumerableA K
-.K L
-EmptyL Q
-<Q R
-ScopeViewModelR `
->` a
-(a b
-)b c
-;c d
-} 
-public 
-class 
-ScopeViewModel 
-{ 
-public 
-
-string 
-? 
-Name 
-{ 
-get 
-; 
-set "
-;" #
-}$ %
-public 
-
-string 
-? 
-Value 
-{ 
-get 
-; 
-set  #
-;# $
-}% &
-public 
-
-string 
-? 
-DisplayName 
-{  
-get! $
-;$ %
-set& )
-;) *
-}+ ,
-public 
-
-string 
-? 
-Description 
-{  
-get! $
-;$ %
-set& )
-;) *
-}+ ,
-public 
-
-bool 
-	Emphasize 
-{ 
-get 
-;  
-set! $
-;$ %
-}& '
-public 
-
-bool 
-Required 
-{ 
-get 
-; 
-set  #
-;# $
-}% &
-public 
-
-bool 
-Checked 
-{ 
-get 
-; 
-set "
-;" #
-}$ %
-public 
-
-IEnumerable 
-< 
-ResourceViewModel (
->( )
-	Resources* 3
-{4 5
-get6 9
-;9 :
-set; >
-;> ?
-}@ A
-=B C
-
-EnumerableD N
-.N O
-EmptyO T
-<T U
-ResourceViewModelU f
->f g
-(g h
-)h i
-;i j
-} 
-public 
-class 
-ResourceViewModel 
-{ 
-public 
-
-string 
-? 
-Name 
-{ 
-get 
-; 
-set "
-;" #
-}$ %
-public   
-
-string   
-?   
-DisplayName   
-{    
-get  ! $
-;  $ %
-set  & )
-;  ) *
-}  + ,
-}!! ç
-lC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Consent\InputModel.cs
-	namespace 	
-IdentityServerApi
- 
-. 
-Pages !
-.! "
-Consent" )
-;) *
-public 
-class 
-
-InputModel 
-{ 
-public 
-
-string 
-? 
-Button 
-{ 
-get 
-;  
-set! $
-;$ %
-}& '
-public		 
-
-IEnumerable		 
-<		 
-string		 
->		 
-ScopesConsented		 .
-{		/ 0
-get		1 4
-;		4 5
-set		6 9
-;		9 :
-}		; <
-=		= >
-new		? B
-List		C G
-<		G H
-string		H N
->		N O
-(		O P
-)		P Q
-;		Q R
-public
-
- 
-
-bool
-
- 
-RememberConsent
-
- 
-{
-
-  !
-get
-
-" %
-;
-
-% &
-set
-
-' *
-;
-
-* +
-}
-
-, -
-=
-
-. /
-true
-
-0 4
-;
-
-4 5
-public 
-
-string 
-? 
-	ReturnUrl 
-{ 
-get "
-;" #
-set$ '
-;' (
-}) *
-public 
-
-string 
-? 
-Description 
-{  
-get! $
-;$ %
-set& )
-;) *
-}+ ,
-} ≥	
-pC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Consent\ConsentOptions.cs
-	namespace 	
-IdentityServerApi
- 
-. 
-Pages !
-.! "
-Consent" )
-;) *
-public 
-static 
-class 
-ConsentOptions "
-{ 
-public 
-
-static 
-readonly 
-bool 
-EnableOfflineAccess  3
-=4 5
-true6 :
-;: ;
-public		 
-
-static		 
-readonly		 
-string		 !$
-OfflineAccessDisplayName		" :
-=		; <
-$str		= M
-;		M N
-public
-
- 
-
-static
-
- 
-readonly
-
- 
-string
-
- !$
-OfflineAccessDescription
-
-" :
-=
-
-; <
-$str	
-
-= É
-;
-
-
-É Ñ
-public 
-
-static 
-readonly 
-string !%
-MustChooseOneErrorMessage" ;
-=< =
-$str> e
-;e f
-public 
-
-static 
-readonly 
-string !(
-InvalidSelectionErrorMessage" >
-=? @
-$strA T
-;T U
-} ∂
+}ÏÏ ∂
 hC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Ciba\ViewModel.cs
 	namespace 	
 IdentityServerApi
@@ -10345,7 +10345,166 @@ EnumerableD N
 set!!& )
 ;!!) *
 }!!+ ,
-}"" Ø	
+}"" ≠	
+mC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Ciba\ConsentOptions.cs
+	namespace 	
+IdentityServerApi
+ 
+. 
+Pages !
+.! "
+Ciba" &
+;& '
+public 
+static 
+class 
+ConsentOptions "
+{ 
+public 
+
+static 
+readonly 
+bool 
+EnableOfflineAccess  3
+=4 5
+true6 :
+;: ;
+public		 
+
+static		 
+readonly		 
+string		 !$
+OfflineAccessDisplayName		" :
+=		; <
+$str		= M
+;		M N
+public
+
+ 
+
+static
+
+ 
+readonly
+
+ 
+string
+
+ !$
+OfflineAccessDescription
+
+" :
+=
+
+; <
+$str	
+
+= É
+;
+
+
+É Ñ
+public 
+
+static 
+readonly 
+string !%
+MustChooseOneErrorMessage" ;
+=< =
+$str> e
+;e f
+public 
+
+static 
+readonly 
+string !(
+InvalidSelectionErrorMessage" >
+=? @
+$strA T
+;T U
+} ◊
+tC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Account\Login\LoginOptions.cs
+	namespace 	
+IdentityServerApi
+ 
+. 
+Pages !
+.! "
+Login" '
+;' (
+public 
+static 
+class 
+LoginOptions  
+{ 
+public 
+
+static 
+readonly 
+bool 
+AllowLocalLogin  /
+=0 1
+true2 6
+;6 7
+public		 
+
+static		 
+readonly		 
+bool		 
+AllowRememberLogin		  2
+=		3 4
+true		5 9
+;		9 :
+public
+
+ 
+
+static
+
+ 
+readonly
+
+ 
+TimeSpan
+
+ ##
+RememberMeLoginDuration
+
+$ ;
+=
+
+< =
+TimeSpan
+
+> F
+.
+
+F G
+FromDays
+
+G O
+(
+
+O P
+$num
+
+P R
+)
+
+R S
+;
+
+S T
+public 
+
+static 
+readonly 
+string !*
+InvalidCredentialsErrorMessage" @
+=A B
+$strC a
+;a b
+} Ø	
 iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Ciba\InputModel.cs
 	namespace 	
 IdentityServerApi
@@ -10587,84 +10746,7 @@ IndexModel	x Ç
 )(( 
 ;(( 
 })) 
-}** ≠	
-mC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Ciba\ConsentOptions.cs
-	namespace 	
-IdentityServerApi
- 
-. 
-Pages !
-.! "
-Ciba" &
-;& '
-public 
-static 
-class 
-ConsentOptions "
-{ 
-public 
-
-static 
-readonly 
-bool 
-EnableOfflineAccess  3
-=4 5
-true6 :
-;: ;
-public		 
-
-static		 
-readonly		 
-string		 !$
-OfflineAccessDisplayName		" :
-=		; <
-$str		= M
-;		M N
-public
-
- 
-
-static
-
- 
-readonly
-
- 
-string
-
- !$
-OfflineAccessDescription
-
-" :
-=
-
-; <
-$str	
-
-= É
-;
-
-
-É Ñ
-public 
-
-static 
-readonly 
-string !%
-MustChooseOneErrorMessage" ;
-=< =
-$str> e
-;e f
-public 
-
-static 
-readonly 
-string !(
-InvalidSelectionErrorMessage" >
-=? @
-$strA T
-;T U
-} Ü≥
+}** Ü≥
 mC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Ciba\Consent.cshtml.cs
 	namespace 	
 IdentityServerApi
@@ -13307,89 +13389,7 @@ EnumerableU _
 ;5 6
 }7 8
 } 
-} ◊
-tC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Account\Login\LoginOptions.cs
-	namespace 	
-IdentityServerApi
- 
-. 
-Pages !
-.! "
-Login" '
-;' (
-public 
-static 
-class 
-LoginOptions  
-{ 
-public 
-
-static 
-readonly 
-bool 
-AllowLocalLogin  /
-=0 1
-true2 6
-;6 7
-public		 
-
-static		 
-readonly		 
-bool		 
-AllowRememberLogin		  2
-=		3 4
-true		5 9
-;		9 :
-public
-
- 
-
-static
-
- 
-readonly
-
- 
-TimeSpan
-
- ##
-RememberMeLoginDuration
-
-$ ;
-=
-
-< =
-TimeSpan
-
-> F
-.
-
-F G
-FromDays
-
-G O
-(
-
-O P
-$num
-
-P R
-)
-
-R S
-;
-
-S T
-public 
-
-static 
-readonly 
-string !*
-InvalidCredentialsErrorMessage" @
-=A B
-$strC a
-;a b
-} Ñ
+} Ñ
 
 rC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Account\Login\InputModel.cs
 	namespace 	
@@ -13471,7 +13471,7 @@ InputModel 
 set! $
 ;$ %
 }& '
-} úç
+} €ù
 tC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Account\Login\Index.cshtml.cs
 	namespace 	
 IdentityServerApi
@@ -13678,1177 +13678,1274 @@ InputModel   
 (??+ ,
 )??, -
 {@@ 
-varBB 
-contextBB 
-=BB 
-awaitBB 
-_interactionBB (
-.BB( )(
-GetAuthorizationContextAsyncBB) E
-(BBE F
-InputBBF K
-.BBK L
-	ReturnUrlBBL U
-)BBU V
-;BBV W
-ifEE 
+varAA 
+contextAA 
+=AA 
+awaitAA 
+_interactionAA (
+.AA( )(
+GetAuthorizationContextAsyncAA) E
+(AAE F
+InputAAF K
+.AAK L
+	ReturnUrlAAL U
+)AAU V
+;AAV W
+ifCC 
 
-(EE 
-InputEE 
-.EE 
-ButtonEE 
-!=EE 
-$strEE #
-)EE# $
-{FF 	
-ifGG 
-(GG 
-contextGG 
-!=GG 
-nullGG 
-)GG  
-{HH !
-ArgumentNullExceptionJJ %
-.JJ% &
-ThrowIfNullJJ& 1
-(JJ1 2
-InputJJ2 7
-.JJ7 8
-	ReturnUrlJJ8 A
-,JJA B
-nameofJJC I
-(JJI J
-InputJJJ O
-.JJO P
-	ReturnUrlJJP Y
-)JJY Z
-)JJZ [
-;JJ[ \
-awaitOO 
-_interactionOO "
-.OO" #"
-DenyAuthorizationAsyncOO# 9
-(OO9 :
-contextOO: A
-,OOA B
-AuthorizationErrorOOC U
-.OOU V
-AccessDeniedOOV b
-)OOb c
-;OOc d
-ifRR 
-(RR 
-contextRR 
-.RR 
-IsNativeClientRR *
-(RR* +
-)RR+ ,
-)RR, -
-{SS 
-returnVV 
-thisVV 
-.VV  
-LoadingPageVV  +
-(VV+ ,
-InputVV, 1
-.VV1 2
-	ReturnUrlVV2 ;
-)VV; <
-;VV< =
-}WW 
-returnYY 
-RedirectYY 
-(YY  
-InputYY  %
-.YY% &
-	ReturnUrlYY& /
-??YY0 2
-$strYY3 7
-)YY7 8
-;YY8 9
-}ZZ 
-else[[ 
-{\\ 
-return^^ 
-Redirect^^ 
-(^^  
-$str^^  $
-)^^$ %
-;^^% &
-}__ 
-}`` 	
-ifbb 
+(CC 
+InputCC 
+.CC 
+ButtonCC 
+!=CC 
+$strCC #
+)CC# $
+{DD 	
+returnEE 
+awaitEE 
+HandleCancelEE %
+(EE% &
+contextEE& -
+)EE- .
+;EE. /
+}FF 	
+ifHH 
 
-(bb 
+(HH 
+!HH 
 
-ModelStatebb 
-.bb 
-IsValidbb 
-)bb 
-{cc 	
-vardd 
-resultdd 
-=dd 
-awaitdd 
-_signInManagerdd -
-.dd- .
-PasswordSignInAsyncdd. A
-(ddA B
-InputddB G
-.ddG H
-UsernameddH P
-!ddP Q
-,ddQ R
-InputddS X
-.ddX Y
-PasswordddY a
-!dda b
-,ddb c
-Inputddd i
-.ddi j
-RememberLoginddj w
-,ddw x
-lockoutOnFailure	ddy â
+ModelStateHH 
+.HH 
+IsValidHH 
+)HH  
+{II 	
+awaitJJ 
+BuildModelAsyncJJ !
+(JJ! "
+InputJJ" '
+.JJ' (
+	ReturnUrlJJ( 1
+)JJ1 2
+;JJ2 3
+returnKK 
+PageKK 
+(KK 
+)KK 
+;KK 
+}LL 	
+returnNN 
+awaitNN 
+HandleLoginNN  
+(NN  !
+contextNN! (
+)NN( )
+;NN) *
+}OO 
+privateQQ 
+asyncQQ 
+TaskQQ 
+<QQ 
+IActionResultQQ $
+>QQ$ %
+HandleCancelQQ& 2
+(QQ2 3 
+AuthorizationRequestQQ3 G
+?QQG H
+contextQQI P
+)QQP Q
+{RR 
+ifSS 
+
+(SS 
+contextSS 
+==SS 
+nullSS 
+)SS 
+{TT 	
+returnUU 
+RedirectUU 
+(UU 
+$strUU  
+)UU  !
+;UU! "
+}VV 	!
+ArgumentNullExceptionXX 
+.XX 
+ThrowIfNullXX )
+(XX) *
+InputXX* /
+.XX/ 0
+	ReturnUrlXX0 9
+,XX9 :
+nameofXX; A
+(XXA B
+InputXXB G
+.XXG H
+	ReturnUrlXXH Q
+)XXQ R
+)XXR S
+;XXS T
+awaitYY 
+_interactionYY 
+.YY "
+DenyAuthorizationAsyncYY 1
+(YY1 2
+contextYY2 9
+,YY9 :
+AuthorizationErrorYY; M
+.YYM N
+AccessDeniedYYN Z
+)YYZ [
+;YY[ \
+return[[ 
+RedirectToReturnUrl[[ "
+([[" #
+context[[# *
+,[[* +
+Input[[, 1
+.[[1 2
+	ReturnUrl[[2 ;
+)[[; <
+;[[< =
+}\\ 
+private^^ 
+async^^ 
+Task^^ 
+<^^ 
+IActionResult^^ $
+>^^$ %
+HandleLogin^^& 1
+(^^1 2 
+AuthorizationRequest^^2 F
+?^^F G
+context^^H O
+)^^O P
+{__ 
+var`` 
+result`` 
+=`` 
+await`` 
+_signInManager`` )
+.``) *
+PasswordSignInAsync``* =
+(``= >
+Input``> C
+.``C D
+Username``D L
+!``L M
+,``M N
+Input``O T
+.``T U
+Password``U ]
+!``] ^
+,``^ _
+Input``` e
+.``e f
+RememberLogin``f s
+,``s t
+lockoutOnFailure	``u Ö
 :
-ddâ ä
+``Ö Ü
 true
-ddã è
+``á ã
 )
-ddè ê
+``ã å
 ;
-ddê ë
-ifee 
-(ee 
-resultee 
-.ee 
-	Succeededee  
-)ee  !
-{ff 
-vargg 
-usergg 
-=gg 
-awaitgg  
-_userManagergg! -
-.gg- .
-FindByNameAsyncgg. =
-(gg= >
-Inputgg> C
-.ggC D
-UsernameggD L
-!ggL M
-)ggM N
-;ggN O
-awaithh 
-_eventshh 
-.hh 
+``å ç
+ifaa 
+
+(aa 
+!aa 
+resultaa 
+.aa 
+	Succeededaa 
+)aa 
+{bb 	
+awaitcc 
+LogLoginFailurecc !
+(cc! "
+contextcc" )
+)cc) *
+;cc* +
+awaitdd 
+BuildModelAsyncdd !
+(dd! "
+Inputdd" '
+.dd' (
+	ReturnUrldd( 1
+)dd1 2
+;dd2 3
+returnee 
+Pageee 
+(ee 
+)ee 
+;ee 
+}ff 	
+varhh 
+userhh 
+=hh 
+awaithh 
+_userManagerhh %
+.hh% &
+FindByNameAsynchh& 5
+(hh5 6
+Inputhh6 ;
+.hh; <
+Usernamehh< D
+!hhD E
+)hhE F
+;hhF G
+awaitii 
+LogLoginSuccessii 
+(ii 
+contextii %
+,ii% &
+userii' +
+!ii+ ,
+)ii, -
+;ii- .
+returnjj 
+awaitjj 
+RedirectAfterLoginjj '
+(jj' (
+contextjj( /
+)jj/ 0
+;jj0 1
+}kk 
+privatemm 
+asyncmm 
+Taskmm 
+LogLoginFailuremm &
+(mm& ' 
+AuthorizationRequestmm' ;
+?mm; <
+contextmm= D
+)mmD E
+{nn 
+constoo 
+stringoo 
+erroroo 
+=oo 
+$stroo 2
+;oo2 3
+awaitpp 
+_eventspp 
+.pp 
 
-RaiseAsynchh (
-(hh( )
-newhh) ,!
-UserLoginSuccessEventhh- B
-(hhB C
-userhhC G
-!hhG H
-.hhH I
-UserNamehhI Q
-,hhQ R
-userhhS W
-.hhW X
-IdhhX Z
-,hhZ [
-userhh\ `
-.hh` a
-UserNamehha i
-,hhi j
-clientIdhhk s
-:hhs t
-contexthhu |
-?hh| }
-.hh} ~
-Client	hh~ Ñ
+RaiseAsyncpp  
+(pp  !
+newpp! $!
+UserLoginFailureEventpp% :
+(pp: ;
+Inputpp; @
+.pp@ A
+UsernameppA I
+,ppI J
+errorppK P
+,ppP Q
+clientIdppR Z
+:ppZ [
+contextpp\ c
+?ppc d
+.ppd e
+Clientppe k
+.ppk l
+ClientIdppl t
+)ppt u
+)ppu v
+;ppv w
+	Telemetryqq 
+.qq 
+Metricsqq 
+.qq 
+UserLoginFailureqq *
+(qq* +
+contextqq+ 2
+?qq2 3
+.qq3 4
+Clientqq4 :
+.qq: ;
+ClientIdqq; C
+,qqC D#
+IdentityServerConstantsqqE \
+.qq\ ]!
+LocalIdentityProviderqq] r
+,qqr s
+errorqqt y
+)qqy z
+;qqz {
+
+ModelStaterr 
+.rr 
+AddModelErrorrr  
+(rr  !
+stringrr! '
+.rr' (
+Emptyrr( -
+,rr- .
+LoginOptionsrr/ ;
+.rr; <*
+InvalidCredentialsErrorMessagerr< Z
+)rrZ [
+;rr[ \
+}ss 
+privateuu 
+asyncuu 
+Taskuu 
+LogLoginSuccessuu &
+(uu& ' 
+AuthorizationRequestuu' ;
+?uu; <
+contextuu= D
+,uuD E
+ApplicationUseruuF U
+useruuV Z
+)uuZ [
+{vv 
+awaitww 
+_eventsww 
+.ww 
+
+RaiseAsyncww  
+(ww  !
+newww! $!
+UserLoginSuccessEventww% :
+(ww: ;
+userww; ?
+.ww? @
+UserNameww@ H
+,wwH I
+userwwJ N
+.wwN O
+IdwwO Q
+,wwQ R
+userwwS W
+.wwW X
+UserNamewwX `
+,ww` a
+clientIdwwb j
+:wwj k
+contextwwl s
+?wws t
+.wwt u
+Clientwwu {
+.ww{ |
+ClientId	ww| Ñ
+)
+wwÑ Ö
+)
+wwÖ Ü
+;
+wwÜ á
+	Telemetryxx 
+.xx 
+Metricsxx 
+.xx 
+	UserLoginxx #
+(xx# $
+contextxx$ +
+?xx+ ,
+.xx, -
+Clientxx- 3
+.xx3 4
+ClientIdxx4 <
+,xx< =#
+IdentityServerConstantsxx> U
+.xxU V!
+LocalIdentityProviderxxV k
+)xxk l
+;xxl m
+}yy 
+private{{ 
+async{{ 
+Task{{ 
+<{{ 
+IActionResult{{ $
+>{{$ %
+RedirectAfterLogin{{& 8
+({{8 9 
+AuthorizationRequest{{9 M
+?{{M N
+context{{O V
+){{V W
+{|| 
+if}} 
+
+(}} 
+context}} 
+!=}} 
+null}} 
+)}} 
+{~~ 	!
+ArgumentNullException !
+.! "
+ThrowIfNull" -
+(- .
+Input. 3
+.3 4
+	ReturnUrl4 =
+,= >
+nameof? E
+(E F
+InputF K
+.K L
+	ReturnUrlL U
+)U V
+)V W
+;W X
+return
+ÄÄ !
+RedirectToReturnUrl
+ÄÄ &
+(
+ÄÄ& '
+context
+ÄÄ' .
+,
+ÄÄ. /
+Input
+ÄÄ0 5
 .
-hhÑ Ö
-ClientId
-hhÖ ç
+ÄÄ5 6
+	ReturnUrl
+ÄÄ6 ?
 )
-hhç é
-)
-hhé è
+ÄÄ? @
 ;
-hhè ê
-	Telemetryii 
-.ii 
-Metricsii !
-.ii! "
-	UserLoginii" +
-(ii+ ,
-contextii, 3
-?ii3 4
-.ii4 5
-Clientii5 ;
-.ii; <
-ClientIdii< D
-,iiD E#
-IdentityServerConstantsiiF ]
-.ii] ^!
-LocalIdentityProviderii^ s
-)iis t
-;iit u
-ifkk 
-(kk 
-contextkk 
-!=kk 
-nullkk #
-)kk# $
-{ll !
-ArgumentNullExceptionnn )
-.nn) *
-ThrowIfNullnn* 5
-(nn5 6
-Inputnn6 ;
-.nn; <
-	ReturnUrlnn< E
-,nnE F
-nameofnnG M
-(nnM N
-InputnnN S
-.nnS T
-	ReturnUrlnnT ]
-)nn] ^
-)nn^ _
-;nn_ `
-ifpp 
-(pp 
-contextpp 
-.pp  
-IsNativeClientpp  .
-(pp. /
-)pp/ 0
-)pp0 1
-{qq 
-returntt 
-thistt #
-.tt# $
-LoadingPagett$ /
-(tt/ 0
-Inputtt0 5
-.tt5 6
-	ReturnUrltt6 ?
-)tt? @
-;tt@ A
-}uu 
-returnxx 
-Redirectxx #
-(xx# $
-Inputxx$ )
-.xx) *
-	ReturnUrlxx* 3
-??xx4 6
-$strxx7 ;
-)xx; <
-;xx< =
-}yy 
-if|| 
-(|| 
-Url|| 
-.|| 
-
-IsLocalUrl|| "
-(||" #
-Input||# (
-.||( )
-	ReturnUrl||) 2
-)||2 3
-)||3 4
-{}} 
-return~~ 
-Redirect~~ #
-(~~# $
-Input~~$ )
-.~~) *
-	ReturnUrl~~* 3
-)~~3 4
-;~~4 5
-} 
-else
-ÄÄ 
+ÄÄ@ A
+}
+ÅÅ 	
 if
-ÄÄ 
+ÉÉ 
+
 (
-ÄÄ 
-string
-ÄÄ 
+ÉÉ 
+Url
+ÉÉ 
 .
-ÄÄ  
-IsNullOrEmpty
-ÄÄ  -
+ÉÉ 
+
+IsLocalUrl
+ÉÉ 
 (
-ÄÄ- .
+ÉÉ 
 Input
-ÄÄ. 3
+ÉÉ  
 .
-ÄÄ3 4
+ÉÉ  !
 	ReturnUrl
-ÄÄ4 =
+ÉÉ! *
 )
-ÄÄ= >
+ÉÉ* +
 )
-ÄÄ> ?
+ÉÉ+ ,
 {
-ÅÅ 
+ÑÑ 	
 return
-ÇÇ 
+ÖÖ 
 Redirect
-ÇÇ #
+ÖÖ 
 (
-ÇÇ# $
-$str
-ÇÇ$ (
-)
-ÇÇ( )
-;
-ÇÇ) *
-}
-ÉÉ 
-else
-ÑÑ 
-{
-ÖÖ 
-throw
-áá 
-new
-áá 
-ArgumentException
-áá /
-(
-áá/ 0
-$str
-áá0 D
-)
-ááD E
-;
-ááE F
-}
-àà 
-}
-ââ 
-const
-ãã 
-string
-ãã 
-error
-ãã 
-=
-ãã  
-$str
-ãã! 6
-;
-ãã6 7
-await
-åå 
-_events
-åå 
-.
-åå 
-
-RaiseAsync
-åå $
-(
-åå$ %
-new
-åå% (#
-UserLoginFailureEvent
-åå) >
-(
-åå> ?
+ÖÖ 
 Input
-åå? D
+ÖÖ !
 .
-ååD E
-Username
-ååE M
-,
-ååM N
-error
-ååO T
-,
-ååT U
-clientId
-ååV ^
-:
-åå^ _
-context
-åå_ f
-?
-ååf g
-.
-ååg h
-Client
-ååh n
-.
-åån o
-ClientId
-ååo w
-)
-ååw x
-)
-ååx y
-;
-ååy z
-	Telemetry
-çç 
-.
-çç 
-Metrics
-çç 
-.
-çç 
-UserLoginFailure
-çç .
-(
-çç. /
-context
-çç/ 6
-?
-çç6 7
-.
-çç7 8
-Client
-çç8 >
-.
-çç> ?
-ClientId
-çç? G
-,
-ççG H%
-IdentityServerConstants
-ççI `
-.
-çç` a#
-LocalIdentityProvider
-çça v
-,
-ççv w
-error
-ççx }
-)
-çç} ~
-;
-çç~ 
-
-ModelState
-éé 
-.
-éé 
-AddModelError
-éé $
-(
-éé$ %
-string
-éé% +
-.
-éé+ ,
-Empty
-éé, 1
-,
-éé1 2
-LoginOptions
-éé3 ?
-.
-éé? @,
-InvalidCredentialsErrorMessage
-éé@ ^
-)
-éé^ _
-;
-éé_ `
-}
-èè 	
-await
-íí 
-BuildModelAsync
-íí 
-(
-íí 
-Input
-íí #
-.
-íí# $
+ÖÖ! "
 	ReturnUrl
-íí$ -
+ÖÖ" +
+!
+ÖÖ+ ,
 )
-íí- .
+ÖÖ, -
 ;
-íí. /
-return
-ìì 
-Page
-ìì 
-(
-ìì 
-)
-ìì 
-;
-ìì 
+ÖÖ- .
 }
-îî 
-private
-ññ 
-async
-ññ 
-Task
-ññ 
-BuildModelAsync
-ññ &
+ÜÜ 	
+if
+àà 
+
 (
-ññ& '
+àà 
 string
-ññ' -
-?
-ññ- .
-	returnUrl
-ññ/ 8
-)
-ññ8 9
-{
-óó 
+àà 
+.
+àà 
+IsNullOrEmpty
+àà  
+(
+àà  !
 Input
-òò 
-=
-òò 
+àà! &
+.
+àà& '
+	ReturnUrl
+àà' 0
+)
+àà0 1
+)
+àà1 2
+{
+ââ 	
+return
+ää 
+Redirect
+ää 
+(
+ää 
+$str
+ää  
+)
+ää  !
+;
+ää! "
+}
+ãã 	
+throw
+çç 
 new
-òò 
+çç 
+ArgumentException
+çç #
+(
+çç# $
+$str
+çç$ 8
+)
+çç8 9
+;
+çç9 :
+}
+éé 
+private
+êê 
+IActionResult
+êê !
+RedirectToReturnUrl
+êê -
+(
+êê- ."
+AuthorizationRequest
+êê. B
+context
+êêC J
+,
+êêJ K
+string
+êêL R
+	returnUrl
+êêS \
+)
+êê\ ]
+{
+ëë 
+if
+íí 
+
+(
+íí 
+context
+íí 
+.
+íí 
+IsNativeClient
+íí "
+(
+íí" #
+)
+íí# $
+)
+íí$ %
+{
+ìì 	
+return
+îî 
+this
+îî 
+.
+îî 
+LoadingPage
+îî #
+(
+îî# $
+	returnUrl
+îî$ -
+)
+îî- .
+;
+îî. /
+}
+ïï 	
+return
+óó 
+Redirect
+óó 
+(
+óó 
+	returnUrl
+óó !
+)
+óó! "
+;
+óó" #
+}
+òò 
+private
+öö 
+async
+öö 
+Task
+öö 
+BuildModelAsync
+öö &
+(
+öö& '
+string
+öö' -
+?
+öö- .
+	returnUrl
+öö/ 8
+)
+öö8 9
+{
+õõ 
+Input
+úú 
+=
+úú 
+new
+úú 
 
 InputModel
-òò 
+úú 
 {
-ôô 	
+ùù 	
 	ReturnUrl
-öö 
+ûû 
 =
-öö 
+ûû 
 	returnUrl
-öö !
+ûû !
 }
-õõ 	
+üü 	
 ;
-õõ	 
+üü	 
 
 var
-ùù 
+°° 
 context
-ùù 
+°° 
 =
-ùù 
+°° 
 await
-ùù 
+°° 
 _interaction
-ùù (
+°° (
 .
-ùù( )*
+°°( )*
 GetAuthorizationContextAsync
-ùù) E
+°°) E
 (
-ùùE F
+°°E F
 	returnUrl
-ùùF O
+°°F O
 )
-ùùO P
+°°O P
 ;
-ùùP Q
+°°P Q
 if
-ûû 
+¢¢ 
 
 (
-ûû 
+¢¢ 
 context
-ûû 
+¢¢ 
 ?
-ûû 
+¢¢ 
 .
-ûû 
+¢¢ 
 IdP
-ûû 
+¢¢ 
 !=
-ûû 
+¢¢ 
 null
-ûû  
+¢¢  
 &&
-ûû! #
+¢¢! #
 await
-ûû$ )
+¢¢$ )
 _schemeProvider
-ûû* 9
+¢¢* 9
 .
-ûû9 :
+¢¢9 :
 GetSchemeAsync
-ûû: H
+¢¢: H
 (
-ûûH I
+¢¢H I
 context
-ûûI P
+¢¢I P
 .
-ûûP Q
+¢¢P Q
 IdP
-ûûQ T
+¢¢Q T
 )
-ûûT U
+¢¢T U
 !=
-ûûV X
+¢¢V X
 null
-ûûY ]
+¢¢Y ]
 )
-ûû] ^
+¢¢] ^
 {
-üü 	
+££ 	
 var
-†† 
+§§ 
 local
-†† 
+§§ 
 =
-†† 
+§§ 
 context
-†† 
+§§ 
 .
-††  
+§§  
 IdP
-††  #
+§§  #
 ==
-††$ &
+§§$ &
 Duende
-††' -
+§§' -
 .
-††- .
+§§- .
 IdentityServer
-††. <
+§§. <
 .
-††< =%
+§§< =%
 IdentityServerConstants
-††= T
+§§= T
 .
-††T U#
+§§T U#
 LocalIdentityProvider
-††U j
+§§U j
 ;
-††j k
+§§j k
 View
-££ 
+ßß 
 =
-££ 
+ßß 
 new
-££ 
+ßß 
 	ViewModel
-££  
+ßß  
 {
-§§ 
+®® 
 EnableLocalLogin
-••  
+©©  
 =
-••! "
+©©! "
 local
-••# (
+©©# (
 ,
-••( )
+©©( )
 }
-¶¶ 
+™™ 
 ;
-¶¶ 
+™™ 
 Input
-®® 
+¨¨ 
 .
-®® 
+¨¨ 
 Username
-®® 
+¨¨ 
 =
-®® 
+¨¨ 
 context
-®® $
+¨¨ $
 .
-®®$ %
+¨¨$ %
 	LoginHint
-®®% .
+¨¨% .
 ;
-®®. /
+¨¨. /
 if
-™™ 
+ÆÆ 
 (
-™™ 
+ÆÆ 
 !
-™™ 
+ÆÆ 
 local
-™™ 
+ÆÆ 
 )
-™™ 
+ÆÆ 
 {
-´´ 
+ØØ 
 View
-¨¨ 
+∞∞ 
 .
-¨¨ 
+∞∞ 
 ExternalProviders
-¨¨ &
+∞∞ &
 =
-¨¨' (
+∞∞' (
 new
-¨¨) ,
+∞∞) ,
 [
-¨¨, -
+∞∞, -
 ]
-¨¨- .
+∞∞- .
 {
-¨¨/ 0
+∞∞/ 0
 new
-¨¨1 4
+∞∞1 4
 	ViewModel
-¨¨5 >
+∞∞5 >
 .
-¨¨> ?
+∞∞> ?
 ExternalProvider
-¨¨? O
+∞∞? O
 (
-¨¨P Q"
+∞∞O P"
 authenticationScheme
-¨¨R f
+∞∞P d
 :
-¨¨f g
+∞∞d e
 context
-¨¨h o
+∞∞f m
 .
-¨¨o p
+∞∞m n
 IdP
-¨¨p s
+∞∞n q
 )
-¨¨t u
+∞∞q r
 }
-¨¨v w
+∞∞s t
 ;
-¨¨w x
+∞∞t u
 }
-≠≠ 
+±± 
 return
-ØØ 
+≥≥ 
 ;
-ØØ 
+≥≥ 
 }
-∞∞ 	
+¥¥ 	
 var
-≤≤ 
+∂∂ 
 schemes
-≤≤ 
+∂∂ 
 =
-≤≤ 
+∂∂ 
 await
-≤≤ 
+∂∂ 
 _schemeProvider
-≤≤ +
+∂∂ +
 .
-≤≤+ , 
+∂∂+ , 
 GetAllSchemesAsync
-≤≤, >
+∂∂, >
 (
-≤≤> ?
+∂∂> ?
 )
-≤≤? @
+∂∂? @
 ;
-≤≤@ A
+∂∂@ A
 var
-¥¥ 
+∏∏ 
 	providers
-¥¥ 
+∏∏ 
 =
-¥¥ 
+∏∏ 
 schemes
-¥¥ 
+∏∏ 
 .
-µµ 
+ππ 
 Where
-µµ 
+ππ 
 (
-µµ 
+ππ 
 x
-µµ 
+ππ 
 =>
-µµ 
+ππ 
 x
-µµ 
+ππ 
 .
-µµ 
+ππ 
 DisplayName
-µµ %
+ππ %
 !=
-µµ& (
+ππ& (
 null
-µµ) -
+ππ) -
 )
-µµ- .
+ππ- .
 .
-∂∂ 
+∫∫ 
 Select
-∂∂ 
+∫∫ 
 (
-∂∂ 
+∫∫ 
 x
-∂∂ 
+∫∫ 
 =>
-∂∂ 
+∫∫ 
 new
-∂∂ 
+∫∫ 
 	ViewModel
-∂∂ &
+∫∫ &
 .
-∂∂& '
+∫∫& '
 ExternalProvider
-∂∂' 7
+∫∫' 7
 (
-∑∑ "
+ªª "
 authenticationScheme
-∏∏ $
+ºº $
 :
-∏∏$ %
+ºº$ %
 x
-∏∏& '
+ºº& '
 .
-∏∏' (
+ºº' (
 Name
-∏∏( ,
+ºº( ,
 ,
-∏∏, -
+ºº, -
 displayName
-ππ 
+ΩΩ 
 :
-ππ 
+ΩΩ 
 x
-ππ 
+ΩΩ 
 .
-ππ 
+ΩΩ 
 DisplayName
-ππ *
+ΩΩ *
 ??
-ππ+ -
+ΩΩ+ -
 x
-ππ. /
+ΩΩ. /
 .
-ππ/ 0
+ΩΩ/ 0
 Name
-ππ0 4
+ΩΩ0 4
 )
-∫∫ 
+ææ 
 )
-∫∫ 
+ææ 
 .
-∫∫ 
+ææ 
 ToList
-∫∫ 
+ææ 
 (
-∫∫ 
+ææ 
 )
-∫∫ 
+ææ 
 ;
-∫∫ 
+ææ 
 var
-ºº 
+¿¿ 
 dynamicSchemes
-ºº 
+¿¿ 
 =
-ºº 
+¿¿ 
 (
-ºº 
+¿¿ 
 await
-ºº #$
+¿¿ #$
 _identityProviderStore
-ºº$ :
+¿¿$ :
 .
-ºº: ;$
+¿¿: ;$
 GetAllSchemeNamesAsync
-ºº; Q
+¿¿; Q
 (
-ººQ R
+¿¿Q R
 )
-ººR S
+¿¿R S
 )
-ººS T
+¿¿S T
 .
-ΩΩ 
+¡¡ 
 Where
-ΩΩ 
+¡¡ 
 (
-ΩΩ 
+¡¡ 
 x
-ΩΩ 
+¡¡ 
 =>
-ΩΩ 
+¡¡ 
 x
-ΩΩ 
+¡¡ 
 .
-ΩΩ 
+¡¡ 
 Enabled
-ΩΩ !
+¡¡ !
 )
-ΩΩ! "
+¡¡! "
 .
-ææ 
+¬¬ 
 Select
-ææ 
+¬¬ 
 (
-ææ 
+¬¬ 
 x
-ææ 
+¬¬ 
 =>
-ææ 
+¬¬ 
 new
-ææ 
+¬¬ 
 	ViewModel
-ææ &
+¬¬ &
 .
-ææ& '
+¬¬& '
 ExternalProvider
-ææ' 7
+¬¬' 7
 (
-øø "
+√√ "
 authenticationScheme
-¿¿ $
+ƒƒ $
 :
-¿¿$ %
+ƒƒ$ %
 x
-¿¿& '
+ƒƒ& '
 .
-¿¿' (
+ƒƒ' (
 Scheme
-¿¿( .
+ƒƒ( .
 ,
-¿¿. /
+ƒƒ. /
 displayName
-¡¡ 
+≈≈ 
 :
-¡¡ 
+≈≈ 
 x
-¡¡ 
+≈≈ 
 .
-¡¡ 
+≈≈ 
 DisplayName
-¡¡ *
+≈≈ *
 ??
-¡¡+ -
+≈≈+ -
 x
-¡¡. /
+≈≈. /
 .
-¡¡/ 0
+≈≈/ 0
 Scheme
-¡¡0 6
+≈≈0 6
 )
-¬¬ 
+∆∆ 
 )
-¬¬ 
+∆∆ 
 ;
-¬¬ 
+∆∆ 
 	providers
-√√ 
+«« 
 .
-√√ 
+«« 
 AddRange
-√√ 
+«« 
 (
-√√ 
+«« 
 dynamicSchemes
-√√ )
+«« )
 )
-√√) *
+««) *
 ;
-√√* +
+««* +
 var
-∆∆ 
+…… 
 
 allowLocal
-∆∆ 
+…… 
 =
-∆∆ 
+…… 
 true
-∆∆ 
+…… 
 ;
-∆∆ 
+…… 
 var
-«« 
+   
 client
-«« 
+   
 =
-«« 
+   
 context
-«« 
+   
 ?
-«« 
+   
 .
-«« 
+   
 Client
-«« $
+   $
 ;
-««$ %
+  $ %
 if
-»» 
+ÀÀ 
 
 (
-»» 
+ÀÀ 
 client
-»» 
+ÀÀ 
 !=
-»» 
+ÀÀ 
 null
-»» 
+ÀÀ 
 )
-»» 
+ÀÀ 
 {
-…… 	
+ÃÃ 	
 
 allowLocal
-   
+ÕÕ 
 =
-   
+ÕÕ 
 client
-   
+ÕÕ 
 .
-    
+ÕÕ  
 EnableLocalLogin
-    0
+ÕÕ  0
 ;
-  0 1
+ÕÕ0 1
 if
-ÀÀ 
+ŒŒ 
 (
-ÀÀ 
+ŒŒ 
 client
-ÀÀ 
+ŒŒ 
 .
-ÀÀ *
+ŒŒ *
 IdentityProviderRestrictions
-ÀÀ 3
+ŒŒ 3
 !=
-ÀÀ4 6
+ŒŒ4 6
 null
-ÀÀ7 ;
+ŒŒ7 ;
 &&
-ÀÀ< >
+ŒŒ< >
 client
-ÀÀ? E
+ŒŒ? E
 .
-ÀÀE F*
+ŒŒE F*
 IdentityProviderRestrictions
-ÀÀF b
+ŒŒF b
 .
-ÀÀb c
+ŒŒb c
 Count
-ÀÀc h
+ŒŒc h
 !=
-ÀÀi k
+ŒŒi k
 $num
-ÀÀl m
+ŒŒl m
 )
-ÀÀm n
+ŒŒm n
 {
-ÃÃ 
+œœ 
 	providers
-ÕÕ 
+–– 
 =
-ÕÕ 
+–– 
 	providers
-ÕÕ %
+–– %
 .
-ÕÕ% &
+––% &
 Where
-ÕÕ& +
+––& +
 (
-ÕÕ+ ,
+––+ ,
 provider
-ÕÕ, 4
+––, 4
 =>
-ÕÕ5 7
+––5 7
 client
-ÕÕ8 >
+––8 >
 .
-ÕÕ> ?*
+––> ?*
 IdentityProviderRestrictions
-ÕÕ? [
+––? [
 .
-ÕÕ[ \
+––[ \
 Contains
-ÕÕ\ d
+––\ d
 (
-ÕÕd e
+––d e
 provider
-ÕÕe m
+––e m
 .
-ÕÕm n#
-AuthenticationSchemeÕÕn Ç
-)ÕÕÇ É
-)ÕÕÉ Ñ
-.ÕÕÑ Ö
-ToListÕÕÖ ã
-(ÕÕã å
-)ÕÕå ç
-;ÕÕç é
+––m n#
+AuthenticationScheme––n Ç
+)––Ç É
+)––É Ñ
+.––Ñ Ö
+ToList––Ö ã
+(––ã å
+)––å ç
+;––ç é
 }
-ŒŒ 
+—— 
 }
-œœ 	
+““ 	
 View
-—— 
+‘‘ 
 =
-—— 
+‘‘ 
 new
-—— 
+‘‘ 
 	ViewModel
-—— 
+‘‘ 
 {
-““ 	 
+’’ 	 
 AllowRememberLogin
-”” 
+÷÷ 
 =
-””  
+÷÷  
 LoginOptions
-””! -
+÷÷! -
 .
-””- . 
+÷÷- . 
 AllowRememberLogin
-””. @
+÷÷. @
 ,
-””@ A
+÷÷@ A
 EnableLocalLogin
-‘‘ 
+◊◊ 
 =
-‘‘ 
+◊◊ 
 
 allowLocal
-‘‘ )
+◊◊ )
 &&
-‘‘* ,
+◊◊* ,
 LoginOptions
-‘‘- 9
+◊◊- 9
 .
-‘‘9 :
+◊◊9 :
 AllowLocalLogin
-‘‘: I
+◊◊: I
 ,
-‘‘I J
+◊◊I J
 ExternalProviders
-’’ 
+ÿÿ 
 =
-’’ 
+ÿÿ 
 	providers
-’’  )
+ÿÿ  )
 .
-’’) *
+ÿÿ) *
 ToArray
-’’* 1
+ÿÿ* 1
 (
-’’1 2
+ÿÿ1 2
 )
-’’2 3
+ÿÿ2 3
 }
-÷÷ 	
+ŸŸ 	
 ;
-÷÷	 
+ŸŸ	 
 
 }
-◊◊ 
-}ÿÿ ˘
+⁄⁄ 
+}€€ ˘
 uC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Account\AccessDenied.cshtml.cs
 	namespace 	
 IdentityServerApi

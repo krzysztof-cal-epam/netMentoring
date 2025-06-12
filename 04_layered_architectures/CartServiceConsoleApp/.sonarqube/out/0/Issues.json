@@ -20,6 +20,27 @@
               "resultFile": {
                 "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/DatabaseExceptions.cs",
                 "region": {
+                  "startLine": 10,
+                  "startColumn": 82,
+                  "endLine": 10,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "Cannot convert null literal to non-nullable reference type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/DatabaseExceptions.cs",
+                "region": {
                   "startLine": 5,
                   "startColumn": 81,
                   "endLine": 5,
@@ -54,18 +75,65 @@
           }
         },
         {
-          "ruleId": "CS8625",
+          "ruleId": "CS8618",
           "level": "warning",
-          "message": "Cannot convert null literal to non-nullable reference type.",
+          "message": "Non-nullable property 'Name' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/DatabaseExceptions.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/CartItem.cs",
                 "region": {
-                  "startLine": 10,
-                  "startColumn": 82,
-                  "endLine": 10,
-                  "endColumn": 86
+                  "startLine": 7,
+                  "startColumn": 23,
+                  "endLine": 7,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/CartItem.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 23,
+                  "endLine": 7,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'ImageUrl' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/ImageItem.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/ImageItem.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 31
                 }
               }
             }
@@ -168,74 +236,6 @@
                   "startColumn": 25,
                   "endLine": 27,
                   "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'ImageUrl' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/ImageItem.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 23,
-                  "endLine": 5,
-                  "endColumn": 31
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/ImageItem.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 23,
-                  "endLine": 5,
-                  "endColumn": 31
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Name' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/CartItem.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 23,
-                  "endLine": 7,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/CartItem.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 23,
-                  "endLine": 7,
-                  "endColumn": 27
                 }
               }
             }
@@ -350,18 +350,18 @@
           }
         },
         {
-          "ruleId": "CA1032",
+          "ruleId": "SA1516",
           "level": "warning",
-          "message": "Add the following constructor to DatabaseWriteException: public DatabaseWriteException()",
+          "message": "Elements should be separated by blank line",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/DatabaseExceptions.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/Outbox.cs",
                 "region": {
                   "startLine": 8,
-                  "startColumn": 18,
+                  "startColumn": 1,
                   "endLine": 8,
-                  "endColumn": 40
+                  "endColumn": 9
                 }
               }
             }
@@ -369,23 +369,23 @@
           "properties": {
             "warningLevel": 1,
             "customProperties": {
-              "Signature": "CtorWithNoParameter"
+              "CodeFixAction": "InsertBlankLine"
             }
           }
         },
         {
-          "ruleId": "CA1032",
+          "ruleId": "SA1516",
           "level": "warning",
-          "message": "Add the following constructor to DatabaseWriteException: public DatabaseWriteException(string message)",
+          "message": "Elements should be separated by blank line",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/DatabaseExceptions.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/Outbox.cs",
                 "region": {
-                  "startLine": 8,
-                  "startColumn": 18,
-                  "endLine": 8,
-                  "endColumn": 40
+                  "startLine": 9,
+                  "startColumn": 1,
+                  "endLine": 9,
+                  "endColumn": 9
                 }
               }
             }
@@ -393,23 +393,23 @@
           "properties": {
             "warningLevel": 1,
             "customProperties": {
-              "Signature": "CtorWithStringParameter"
+              "CodeFixAction": "InsertBlankLine"
             }
           }
         },
         {
-          "ruleId": "CA1032",
+          "ruleId": "SA1516",
           "level": "warning",
-          "message": "Add the following constructor to CartNotFoundException: public CartNotFoundException()",
+          "message": "Elements should be separated by blank line",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/Outbox.cs",
                 "region": {
-                  "startLine": 3,
-                  "startColumn": 18,
-                  "endLine": 3,
-                  "endColumn": 39
+                  "startLine": 10,
+                  "startColumn": 1,
+                  "endLine": 10,
+                  "endColumn": 9
                 }
               }
             }
@@ -417,23 +417,23 @@
           "properties": {
             "warningLevel": 1,
             "customProperties": {
-              "Signature": "CtorWithNoParameter"
+              "CodeFixAction": "InsertBlankLine"
             }
           }
         },
         {
-          "ruleId": "CA1032",
+          "ruleId": "SA1516",
           "level": "warning",
-          "message": "Add the following constructor to CartNotFoundException: public CartNotFoundException(string message)",
+          "message": "Elements should be separated by blank line",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/Outbox.cs",
                 "region": {
-                  "startLine": 3,
-                  "startColumn": 18,
-                  "endLine": 3,
-                  "endColumn": 39
+                  "startLine": 11,
+                  "startColumn": 1,
+                  "endLine": 11,
+                  "endColumn": 9
                 }
               }
             }
@@ -441,23 +441,44 @@
           "properties": {
             "warningLevel": 1,
             "customProperties": {
-              "Signature": "CtorWithStringParameter"
+              "CodeFixAction": "InsertBlankLine"
             }
           }
         },
         {
-          "ruleId": "CA1032",
+          "ruleId": "CA1056",
           "level": "warning",
-          "message": "Add the following constructor to CartNotFoundException: public CartNotFoundException(string message, Exception innerException)",
+          "message": "Change the type of property 'ImageItem.ImageUrl' from 'string' to 'System.Uri'",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/ImageItem.cs",
                 "region": {
-                  "startLine": 3,
-                  "startColumn": 18,
-                  "endLine": 3,
-                  "endColumn": 39
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1516",
+          "level": "warning",
+          "message": "Elements should be separated by blank line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/Cart.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 1,
+                  "endLine": 11,
+                  "endColumn": 9
                 }
               }
             }
@@ -465,7 +486,7 @@
           "properties": {
             "warningLevel": 1,
             "customProperties": {
-              "Signature": "CtorWithStringAndExceptionParameters"
+              "CodeFixAction": "InsertBlankLine"
             }
           }
         },
@@ -614,45 +635,51 @@
           }
         },
         {
-          "ruleId": "CA2227",
+          "ruleId": "CA1032",
           "level": "warning",
-          "message": "Change 'Items' to be read-only by removing the property setter",
+          "message": "Add the following constructor to DatabaseWriteException: public DatabaseWriteException()",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/Cart.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/DatabaseExceptions.cs",
                 "region": {
-                  "startLine": 11,
-                  "startColumn": 31,
-                  "endLine": 11,
-                  "endColumn": 36
+                  "startLine": 8,
+                  "startColumn": 18,
+                  "endLine": 8,
+                  "endColumn": 40
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1
+            "warningLevel": 1,
+            "customProperties": {
+              "Signature": "CtorWithNoParameter"
+            }
           }
         },
         {
-          "ruleId": "CA1002",
+          "ruleId": "CA1032",
           "level": "warning",
-          "message": "Change 'List<CartItem>' in 'Cart.Items' to use 'Collection<T>', 'ReadOnlyCollection<T>' or 'KeyedCollection<K,V>'",
+          "message": "Add the following constructor to DatabaseWriteException: public DatabaseWriteException(string message)",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/Cart.cs",
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/DatabaseExceptions.cs",
                 "region": {
-                  "startLine": 11,
-                  "startColumn": 31,
-                  "endLine": 11,
-                  "endColumn": 36
+                  "startLine": 8,
+                  "startColumn": 18,
+                  "endLine": 8,
+                  "endColumn": 40
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1
+            "warningLevel": 1,
+            "customProperties": {
+              "Signature": "CtorWithStringParameter"
+            }
           }
         },
         {
@@ -701,6 +728,306 @@
             "customProperties": {
               "Signature": "CtorWithStringParameter"
             }
+          }
+        },
+        {
+          "ruleId": "CA2227",
+          "level": "warning",
+          "message": "Change 'Items' to be read-only by removing the property setter",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/Cart.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 31,
+                  "endLine": 11,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1002",
+          "level": "warning",
+          "message": "Change 'List<CartItem>' in 'Cart.Items' to use 'Collection<T>', 'ReadOnlyCollection<T>' or 'KeyedCollection<K,V>'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/Cart.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 31,
+                  "endLine": 11,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1032",
+          "level": "warning",
+          "message": "Add the following constructor to CartNotFoundException: public CartNotFoundException()",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 18,
+                  "endLine": 3,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "Signature": "CtorWithNoParameter"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1032",
+          "level": "warning",
+          "message": "Add the following constructor to CartNotFoundException: public CartNotFoundException(string message)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 18,
+                  "endLine": 3,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "Signature": "CtorWithStringParameter"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1032",
+          "level": "warning",
+          "message": "Add the following constructor to CartNotFoundException: public CartNotFoundException(string message, Exception innerException)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 18,
+                  "endLine": 3,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "Signature": "CtorWithStringAndExceptionParameters"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1032",
+          "level": "warning",
+          "message": "Add the following constructor to RepositoryException: public RepositoryException()",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 18,
+                  "endLine": 14,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "Signature": "CtorWithNoParameter"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1032",
+          "level": "warning",
+          "message": "Add the following constructor to RepositoryException: public RepositoryException(string message)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 18,
+                  "endLine": 14,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "Signature": "CtorWithStringParameter"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1032",
+          "level": "warning",
+          "message": "Add the following constructor to ItemNotFoundException: public ItemNotFoundException()",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 18,
+                  "endLine": 8,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "Signature": "CtorWithNoParameter"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1032",
+          "level": "warning",
+          "message": "Add the following constructor to ItemNotFoundException: public ItemNotFoundException(string message)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 18,
+                  "endLine": 8,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "Signature": "CtorWithStringParameter"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1032",
+          "level": "warning",
+          "message": "Add the following constructor to ItemNotFoundException: public ItemNotFoundException(string message, Exception innerException)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 18,
+                  "endLine": 8,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "Signature": "CtorWithStringAndExceptionParameters"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1508",
+          "level": "warning",
+          "message": "A closing brace should not be preceded by a blank line.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Interfaces/IProductRepository.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 5,
+                  "endLine": 10,
+                  "endColumn": 6
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1516",
+          "level": "warning",
+          "message": "Elements should be separated by blank line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Interfaces/IProductRepository.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 1,
+                  "endLine": 8,
+                  "endColumn": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1508",
+          "level": "warning",
+          "message": "A closing brace should not be preceded by a blank line.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 5,
+                  "endLine": 12,
+                  "endColumn": 6
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
           }
         },
         {
@@ -866,333 +1193,6 @@
           }
         },
         {
-          "ruleId": "SA1516",
-          "level": "warning",
-          "message": "Elements should be separated by blank line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/Outbox.cs",
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 1,
-                  "endLine": 8,
-                  "endColumn": 9
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
-          }
-        },
-        {
-          "ruleId": "SA1516",
-          "level": "warning",
-          "message": "Elements should be separated by blank line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/Outbox.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 1,
-                  "endLine": 9,
-                  "endColumn": 9
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
-          }
-        },
-        {
-          "ruleId": "SA1516",
-          "level": "warning",
-          "message": "Elements should be separated by blank line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/Outbox.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 1,
-                  "endLine": 10,
-                  "endColumn": 9
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
-          }
-        },
-        {
-          "ruleId": "SA1516",
-          "level": "warning",
-          "message": "Elements should be separated by blank line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/Outbox.cs",
-                "region": {
-                  "startLine": 11,
-                  "startColumn": 1,
-                  "endLine": 11,
-                  "endColumn": 9
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1056",
-          "level": "warning",
-          "message": "Change the type of property 'ImageItem.ImageUrl' from 'string' to 'System.Uri'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/ImageItem.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 23,
-                  "endLine": 5,
-                  "endColumn": 31
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1032",
-          "level": "warning",
-          "message": "Add the following constructor to RepositoryException: public RepositoryException()",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 18,
-                  "endLine": 14,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "Signature": "CtorWithNoParameter"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1032",
-          "level": "warning",
-          "message": "Add the following constructor to ItemNotFoundException: public ItemNotFoundException()",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 18,
-                  "endLine": 8,
-                  "endColumn": 39
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "Signature": "CtorWithNoParameter"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1032",
-          "level": "warning",
-          "message": "Add the following constructor to ItemNotFoundException: public ItemNotFoundException(string message)",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 18,
-                  "endLine": 8,
-                  "endColumn": 39
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "Signature": "CtorWithStringParameter"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1032",
-          "level": "warning",
-          "message": "Add the following constructor to RepositoryException: public RepositoryException(string message)",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 18,
-                  "endLine": 14,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "Signature": "CtorWithStringParameter"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1032",
-          "level": "warning",
-          "message": "Add the following constructor to ItemNotFoundException: public ItemNotFoundException(string message, Exception innerException)",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 18,
-                  "endLine": 8,
-                  "endColumn": 39
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "Signature": "CtorWithStringAndExceptionParameters"
-            }
-          }
-        },
-        {
-          "ruleId": "SA1508",
-          "level": "warning",
-          "message": "A closing brace should not be preceded by a blank line.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 5,
-                  "endLine": 12,
-                  "endColumn": 6
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1508",
-          "level": "warning",
-          "message": "A closing brace should not be preceded by a blank line.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Interfaces/IProductRepository.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 5,
-                  "endLine": 10,
-                  "endColumn": 6
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1516",
-          "level": "warning",
-          "message": "Elements should be separated by blank line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Interfaces/IProductRepository.cs",
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 1,
-                  "endLine": 8,
-                  "endColumn": 9
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
-          }
-        },
-        {
-          "ruleId": "SA1516",
-          "level": "warning",
-          "message": "Elements should be separated by blank line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/Cart.cs",
-                "region": {
-                  "startLine": 11,
-                  "startColumn": 1,
-                  "endLine": 11,
-                  "endColumn": 9
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "CodeFixAction": "InsertBlankLine"
-            }
-          }
-        },
-        {
           "ruleId": "IDE0055",
           "level": "warning",
           "message": "Fix formatting",
@@ -1247,237 +1247,6 @@
                   "startColumn": 1,
                   "endLine": 1,
                   "endColumn": 1
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1502",
-          "level": "warning",
-          "message": "Element should not be on a single line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/DatabaseExceptions.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 119,
-                  "endLine": 5,
-                  "endColumn": 120
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1502",
-          "level": "warning",
-          "message": "Element should not be on a single line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/DatabaseExceptions.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 120,
-                  "endLine": 10,
-                  "endColumn": 121
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1502",
-          "level": "warning",
-          "message": "Element should not be on a single line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 117,
-                  "endLine": 16,
-                  "endColumn": 118
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1101",
-          "level": "warning",
-          "message": "Prefix local calls with this",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/Cart.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 13,
-                  "endLine": 7,
-                  "endColumn": 15
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1128",
-          "level": "warning",
-          "message": "Put constructor initializers on their own line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/DatabaseExceptions.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 87,
-                  "endLine": 5,
-                  "endColumn": 118
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1128",
-          "level": "warning",
-          "message": "Put constructor initializers on their own line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 85,
-                  "endLine": 16,
-                  "endColumn": 116
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1128",
-          "level": "warning",
-          "message": "Put constructor initializers on their own line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/DatabaseExceptions.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 88,
-                  "endLine": 10,
-                  "endColumn": 119
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1502",
-          "level": "warning",
-          "message": "Element should not be on a single line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 143,
-                  "endLine": 10,
-                  "endColumn": 144
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1502",
-          "level": "warning",
-          "message": "Element should not be on a single line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 104,
-                  "endLine": 5,
-                  "endColumn": 105
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1128",
-          "level": "warning",
-          "message": "Put constructor initializers on their own line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 51,
-                  "endLine": 5,
-                  "endColumn": 103
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "SA1128",
-          "level": "warning",
-          "message": "Put constructor initializers on their own line",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 63,
-                  "endLine": 10,
-                  "endColumn": 142
                 }
               }
             }
@@ -2975,6 +2744,237 @@
                   "startColumn": 1,
                   "endLine": 1,
                   "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1502",
+          "level": "warning",
+          "message": "Element should not be on a single line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/DatabaseExceptions.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 120,
+                  "endLine": 10,
+                  "endColumn": 121
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1502",
+          "level": "warning",
+          "message": "Element should not be on a single line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 117,
+                  "endLine": 16,
+                  "endColumn": 118
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1502",
+          "level": "warning",
+          "message": "Element should not be on a single line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/DatabaseExceptions.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 119,
+                  "endLine": 5,
+                  "endColumn": 120
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Entities/Cart.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 13,
+                  "endLine": 7,
+                  "endColumn": 15
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1128",
+          "level": "warning",
+          "message": "Put constructor initializers on their own line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/DatabaseExceptions.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 88,
+                  "endLine": 10,
+                  "endColumn": 119
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1128",
+          "level": "warning",
+          "message": "Put constructor initializers on their own line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 85,
+                  "endLine": 16,
+                  "endColumn": 116
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1128",
+          "level": "warning",
+          "message": "Put constructor initializers on their own line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/DatabaseExceptions.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 87,
+                  "endLine": 5,
+                  "endColumn": 118
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1502",
+          "level": "warning",
+          "message": "Element should not be on a single line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 143,
+                  "endLine": 10,
+                  "endColumn": 144
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1502",
+          "level": "warning",
+          "message": "Element should not be on a single line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 104,
+                  "endLine": 5,
+                  "endColumn": 105
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1128",
+          "level": "warning",
+          "message": "Put constructor initializers on their own line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 63,
+                  "endLine": 10,
+                  "endColumn": 142
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1128",
+          "level": "warning",
+          "message": "Put constructor initializers on their own line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Domain/Exceptions/RepositoryExceptions.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 51,
+                  "endLine": 5,
+                  "endColumn": 103
                 }
               }
             }
