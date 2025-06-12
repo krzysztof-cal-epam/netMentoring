@@ -36,7 +36,7 @@ tC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.A
 __# $aa bb cc dd ee ff gg 
 
 kk %n
-kk1 ;mm@ Joo7 AqqB Lss8 Buu %vv" ,ww &xx &yy 'zz! +†
+kk1 7mm@ Foo7 =qqB Hss8 >uu !vv" (ww "xx "yy #zz! '†
 mm nn uu vv ww xx yy zz ~~   
 ÄÄ %
 ÅÅ 

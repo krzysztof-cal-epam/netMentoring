@@ -1,8 +1,8 @@
 °
 ïC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\obj\Debug\net8.0\CatalogService.Application.AssemblyInfo.csutf-8•
-ôC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8}
-tC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Services\ProductService.csutf-8£
-óC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\obj\Debug\net8.0\CatalogService.Application.GlobalUsings.g.csutf-8~
+ôC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8£
+óC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\obj\Debug\net8.0\CatalogService.Application.GlobalUsings.g.csutf-8}
+tC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Services\ProductService.csutf-8~
 uC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Services\CategoryService.csutf-8z
 qC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Services\CartService.csutf-8Ä
 wC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Interfaces\IProductService.csutf-8Å

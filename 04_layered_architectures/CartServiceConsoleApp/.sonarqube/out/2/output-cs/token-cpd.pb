@@ -1,4 +1,4 @@
-Š_
+Þ^
 tC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Services\ProductService.cs
 	namespace 	
 CatalogService
@@ -523,10 +523,9 @@ CategoryIdgg )
 UpdateAsynckk %
 (kk% &
 
-ProductDtokk& 0
-
-productDtokk1 ;
-)kk; <
+ProductDtokk& 0
+entitykk1 7
+)kk7 8
 {ll 	
 varmm 
 productmm 
@@ -535,13 +534,12 @@ productDtokk1 ;
 _productRepositorymm  2
 .mm2 3
 GetByIdAsyncmm3 ?
-(mm? @
-
-productDtomm@ J
-.mmJ K
-IdmmK M
-)mmM N
-;mmN O
+(mm? @
+entitymm@ F
+.mmF G
+IdmmG I
+)mmI J
+;mmJ K
 ifnn 
 (nn 
 productnn 
@@ -554,16 +552,15 @@ productDtomm@ J
 (oo# $
 $"oo$ &
 $stroo& 6
-{oo6 7
-
-productDtooo7 A
-.ooA B
-IdooB D
-}ooD E
-$strooE P
-"ooP Q
-)ooQ R
-;ooR S
+{oo6 7
+entityoo7 =
+.oo= >
+Idoo> @
+}oo@ A
+$strooA L
+"ooL M
+)ooM N
+;ooN O
 varqq 
 categoryqq 
 =qq 
@@ -571,14 +568,13 @@ productDtooo7 A
 _categoryRepositoryqq! 4
 .qq4 5
 GetByIdAsyncqq5 A
-(qqA B
+(qqA B
+entityqqB H
+.qqH I
 
-productDtoqqB L
-.qqL M
-
-CategoryIdqqM W
-)qqW X
-;qqX Y
+CategoryIdqqI S
+)qqS T
+;qqT U
 ifrr 
 (rr 
 categoryrr 
@@ -591,73 +587,66 @@ CategoryIdqqM W
 (ss# $
 $"ss$ &
 $strss& 7
-{ss7 8
+{ss7 8
+entityss8 >
+.ss> ?
 
-productDtoss8 B
-.ssB C
-
-CategoryIdssC M
-}ssM N
-$strssN ^
-"ss^ _
-)ss_ `
-;ss` a
+CategoryIdss? I
+}ssI J
+$strssJ Z
+"ssZ [
+)ss[ \
+;ss\ ]
 productuu 
 .uu 
 Nameuu 
-=uu 
-
-productDtouu %
-.uu% &
-Nameuu& *
-;uu* +
+=uu 
+entityuu !
+.uu! "
+Nameuu" &
+;uu& '
 productvv 
 .vv 
 Descriptionvv 
-=vv  !
-
-productDtovv" ,
-.vv, -
-Descriptionvv- 8
-;vv8 9
+=vv  !
+entityvv" (
+.vv( )
+Descriptionvv) 4
+;vv4 5
 productww 
 .ww 
 Imageww 
-=ww 
-
-productDtoww &
-.ww& '
-Imageww' ,
-;ww, -
+=ww 
+entityww "
+.ww" #
+Imageww# (
+;ww( )
 productxx 
 .xx 
 Pricexx 
-=xx 
-
-productDtoxx &
-.xx& '
-Pricexx' ,
-;xx, -
+=xx 
+entityxx "
+.xx" #
+Pricexx# (
+;xx( )
 productyy 
 .yy 
 Amountyy 
-=yy 
-
-productDtoyy '
-.yy' (
-Amountyy( .
-;yy. /
+=yy 
+entityyy #
+.yy# $
+Amountyy$ *
+;yy* +
 productzz 
 .zz 
 
 CategoryIdzz 
-=zz  
+=zz  
+entityzz! '
+.zz' (
 
-productDtozz! +
-.zz+ ,
-
-CategoryIdzz, 6
-;zz6 7
+CategoryIdzz( 2
+;zz2 3
 var|| 
 eventPayload|| 
 =|| 

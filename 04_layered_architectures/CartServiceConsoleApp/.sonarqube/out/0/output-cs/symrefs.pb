@@ -58,24 +58,26 @@ vC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
 
  $
 
-) 1Ω
-gC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Outbox.cs
+) 1‘
+rC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Interfaces\ICartRepository.cs
 
- 
+ $
 
- 
+ 
 
- 
+ $
 
- 
+ 
 
-		 
+ 
+
+		 
+
+		 #
 
 
 
- !
-
- $¸
+ %¸
 pC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Interfaces\ICartDatabase.cs
 
  "(
@@ -151,26 +153,24 @@ hC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
 
  
 
-  ‘
-rC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Interfaces\ICartRepository.cs
+  Ω
+gC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Outbox.cs
 
- $
+ 
 
- 
+ 
 
- $
+ 
 
- 
+ 
 
- 
-
-		 
-
-		 #
+		 
 
 
 
- %ê
+ !
+
+ $ê
 jC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\ImageItem.cs
 
  

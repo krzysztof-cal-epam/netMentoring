@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
-  <ProjectName>CatalogService.Api</ProjectName>
+  <ProjectName>RestApi</ProjectName>
   <ProjectLanguage>C#</ProjectLanguage>
   <ProjectType>Product</ProjectType>
-  <ProjectGuid>fbc9fbdc-4867-42bc-9c31-37e2831c8bb5</ProjectGuid>
-  <FullPath>C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Api\CatalogService.Api.csproj</FullPath>
+  <ProjectGuid>4a925461-7005-44ca-a155-b15c73cad38c</ProjectGuid>
+  <FullPath>C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\RestApi.csproj</FullPath>
   <IsExcluded>false</IsExcluded>
   <AnalysisResults>
     <AnalysisResult Id="FilesToAnalyze" Location="C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\.sonarqube\conf\7\FilesToAnalyze.txt" />

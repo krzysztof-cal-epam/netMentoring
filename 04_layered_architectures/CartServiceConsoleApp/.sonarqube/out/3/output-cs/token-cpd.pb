@@ -1,4 +1,4 @@
-≈"
+µ"
 pC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Services\CartService.cs
 	namespace 	
 CatalogService
@@ -50,9 +50,9 @@ DataAccess #
 Guid  
 cartId! '
 ,' (
-CartItem) 1
-cartItem2 :
-): ;
+CartItem) 1
+item2 6
+)6 7
 { 	
 Cart 
 ? 
@@ -101,12 +101,12 @@ DataAccess #
 iB C
 .C D
 IdD F
-==G I
-cartItemJ R
-.R S
-IdS U
-)U V
-;V W
+==G I
+itemJ N
+.N O
+IdO Q
+)Q R
+;R S
 if 
 ( 
 existingCartItem  
@@ -119,21 +119,21 @@ DataAccess #
 Items!! 
 .!! 
 Add!! 
-(!! 
-cartItem!! '
-)!!' (
-;!!( )
+(!! 
+item!! #
+)!!# $
+;!!$ %
 }"" 
 else## 
 {$$ 
 existingCartItem%%  
 .%%  !
 Quantity%%! )
-+=%%* ,
-cartItem%%- 5
-.%%5 6
-Quantity%%6 >
-;%%> ?
++=%%* ,
+item%%- 1
+.%%1 2
+Quantity%%2 :
+;%%: ;
 }&& 
 _cartRepository(( 
 .(( 
@@ -483,7 +483,7 @@ categoryId9 C
 }11 
 }22 	
 }33 
-}44 Í3
+}44 à4
 {C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Repositories\CategoryRepository.cs
 	namespace 	
 CatalogService
@@ -543,9 +543,9 @@ DataAccess #
 Task #
 DeleteWithProductsAsync 1
 (1 2
-int2 5
-id6 8
-)8 9
+int2 5
+parentId6 >
+)> ?
 { 	
 using 
 var 
@@ -578,10 +578,10 @@ Categories. 8
 cR S
 .S T
 IdT V
-==W Y
-idZ \
-)\ ]
-;] ^
+==W Y
+parentIdZ b
+)b c
+;c d
 if 
 ( 
 category 
@@ -595,13 +595,13 @@ Categories. 8
 (2 3
 $"3 5
 $str5 F
-{F G
-idG I
-}I J
-$strJ Z
-"Z [
-)[ \
-;\ ]
+{F G
+parentIdG O
+}O P
+$strP `
+"` a
+)a b
+;b c
 } 
 var 
 childCategories #
@@ -616,12 +616,12 @@ Categories. 8
 ;: ;
 await ,
  GetChildCategoriesRecursiveAsync 6
-(6 7
-id7 9
-,9 :
-childCategories; J
-)J K
-;K L
+(6 7
+parentId7 ?
+,? @
+childCategoriesA P
+)P Q
+;Q R
 var   
 childCategoryIds   $
 =  % &
@@ -722,14 +722,14 @@ Categories,, '
 .//K L
 
 CategoryId//L V
-==//W Y
-id//Z \
-)//\ ]
-.//] ^
-ToListAsync//^ i
-(//i j
-)//j k
-;//k l
+==//W Y
+parentId//Z b
+)//b c
+.//c d
+ToListAsync//d o
+(//o p
+)//p q
+;//q r
 if11 
 (11 
 productsToDelete11 $
@@ -854,7 +854,71 @@ CategoriesDD7 A
 }MM 
 }NN 	
 }OO 
-}PP ±
+}PP ˜
+uC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\RabbitMQ\RabbitMqSettings.cs
+	namespace 	
+CatalogService
+ 
+. 
+
+DataAccess #
+.# $
+RabbitMQ$ ,
+{ 
+public 
+
+class 
+RabbitMqSettings !
+{ 
+public 
+string 
+HostName 
+{  
+get! $
+;$ %
+set& )
+;) *
+}+ ,
+public 
+int 
+Port 
+{ 
+get 
+; 
+set "
+;" #
+}$ %
+public 
+string 
+	QueueName 
+{  !
+get" %
+;% &
+set' *
+;* +
+}, -
+public 
+string 
+UserName 
+{  
+get! $
+;$ %
+set& )
+;) *
+}+ ,
+public		 
+string		 
+Password		 
+{		  
+get		! $
+;		$ %
+set		& )
+;		) *
+}		+ ,
+}
+
+ 
+} ±
 wC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Repositories\CartRepository.cs
 	namespace 	
 CatalogService
@@ -1067,71 +1131,7 @@ DeleteCart// 
 }HH 
 }II 	
 }JJ 
-}KK ˜
-uC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\RabbitMQ\RabbitMqSettings.cs
-	namespace 	
-CatalogService
- 
-. 
-
-DataAccess #
-.# $
-RabbitMQ$ ,
-{ 
-public 
-
-class 
-RabbitMqSettings !
-{ 
-public 
-string 
-HostName 
-{  
-get! $
-;$ %
-set& )
-;) *
-}+ ,
-public 
-int 
-Port 
-{ 
-get 
-; 
-set "
-;" #
-}$ %
-public 
-string 
-	QueueName 
-{  !
-get" %
-;% &
-set' *
-;* +
-}, -
-public 
-string 
-UserName 
-{  
-get! $
-;$ %
-set& )
-;) *
-}+ ,
-public		 
-string		 
-Password		 
-{		  
-get		! $
-;		$ %
-set		& )
-;		) *
-}		+ ,
-}
-
- 
-} Á
+}KK Á
 ÑC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Migrations\20250512104332_AddOutboxTable.cs
 	namespace 	
 CatalogService
@@ -4117,7 +4117,7 @@ Dictionary #
 ;) *
 } 	
 } 
-} ˘:
+} ›:
 ~C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\BackgroundServices\OutboxProcessor.cs
 	namespace
 
@@ -4186,19 +4186,19 @@ Dictionary #
 Task! %
 ExecuteAsync& 2
 (2 3
-CancellationToken3 D
-cancellationTokenE V
-)V W
+CancellationToken3 D
+stoppingTokenE R
+)R S
 { 	
 try 
 { 
 while 
 ( 
-! 
-cancellationToken )
-.) *#
-IsCancellationRequested* A
-)A B
+! 
+stoppingToken %
+.% &#
+IsCancellationRequested& =
+)= >
 { 
 using 
 var 
@@ -4243,10 +4243,10 @@ Dictionary #
 )!!2 3
 ."" 
 ToListAsync"" $
-(""$ %
-cancellationToken""% 6
-)""6 7
-;""7 8
+(""$ %
+stoppingToken""% 2
+)""2 3
+;""3 4
 if$$ 
 ($$ 
 unprocessedEvents$$ )
@@ -4262,10 +4262,10 @@ Dictionary #
 Delay&&# (
 (&&( )
 $num&&) -
-,&&- .
-cancellationToken&&/ @
-)&&@ A
-;&&A B
+,&&- .
+stoppingToken&&/ <
+)&&< =
+;&&= >
 continue''  
 ;''  !
 }(( 
@@ -4340,13 +4340,13 @@ connection33. 8
 Direct55f l
 ,55l m
 cancellationToken55n 
-:	55 Ä
-cancellationToken
-55Å í
+:	55 Ä
+stoppingToken
+55Å é
 )
-55í ì
+55é è
 ;
-55ì î
+55è ê
 foreach77 
 (77 
 var77  
@@ -4354,13 +4354,13 @@ connection33. 8
 in77- /
 unprocessedEvents770 A
 )77A B
-{88 
-cancellationToken99 )
-.99) *(
-ThrowIfCancellationRequested99* F
-(99F G
-)99G H
-;99H I
+{88 
+stoppingToken99 %
+.99% &(
+ThrowIfCancellationRequested99& B
+(99B C
+)99C D
+;99D E
 try:: 
 {;; 
 var<< 
@@ -4486,10 +4486,10 @@ routingKeyCC  *
 	dbContextUU #
 .UU# $
 SaveChangesAsyncUU$ 4
-(UU4 5
-cancellationTokenUU5 F
-)UUF G
-;UUG H
+(UU4 5
+stoppingTokenUU5 B
+)UUB C
+;UUC D
 }VV 
 }WW 
 catchXX 

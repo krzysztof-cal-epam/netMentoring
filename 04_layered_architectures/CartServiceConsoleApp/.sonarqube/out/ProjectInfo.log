@@ -6,8 +6,8 @@ C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Ap
 C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\CatalogService.DataAccess.csproj
 C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Infrastructure\CatalogService.Infrastructure.csproj
 C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CartServiceWebApi\CartServiceWebApi.csproj
-C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Api\CatalogService.Api.csproj
 C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\RestApi.csproj
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Api\CatalogService.Api.csproj
 
 
 Test projects

@@ -9,7 +9,7 @@ pC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
 
  
 ! '3 9  &(
-2 :J R!! '%%- 5<
+2 6J N!! #%%- 1<
    # '!! ((% )
     %%  
 = >B C
@@ -54,11 +54,11 @@ zC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
 3 :C J 
 
  12
-6 8Z \G I7 9//Z \
+6 >Z bG O7 ?//Z b
  !99 !== !
   66+ 3
 M NR S2
- #; J  ' 6** #,,4 C
+ #A P  ' 6** #,,4 C
    $""  0
   > ?  C D
 !! -%% -''2 K
@@ -69,7 +69,20 @@ zC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
 BB@ PEE2 B
 BBa pJJ LLA P
 DD %HH" 7
-EE EE õ
+EE EE ¿
+uC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\RabbitMQ\RabbitMqSettings.cs
+
+ !
+
+ 
+
+ 
+
+ 
+
+ 
+
+		 õ
 wC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Repositories\CartRepository.cs
 
  <
@@ -86,20 +99,7 @@ wC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
 // 
 //$ *33! '
 
-??! ,¿
-uC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\RabbitMQ\RabbitMqSettings.cs
-
- !
-
- 
-
- 
-
- 
-
- 
-
-		 Ë
+??! ,Ë
 „C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Migrations\20250512104332_AddOutboxTable.cs
 
 		 '
@@ -326,8 +326,8 @@ zC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
 d k 
 
 & 2H
-E V )""% 6&&/ @
-55 ’99 )UU5 F
+E R %""% 2&&/ <
+55 Ž99 %UU5 B
  #$ )(
  !  2 ;MM %UU #
    )$$ )770 A
