@@ -24,7 +24,7 @@ dotnet_naming_symbols.public_members.requires_accessibility = public
 
 # Using directives
 dotnet_sort_system_directives_first = true
-csharp_using_directive_placement = outside_namespace:error
+csharp_using_directive_placement = outside_namespace:suggestion
 
 # Code style rules
 csharp_new_line_before_open_brace = all
@@ -47,7 +47,7 @@ dotnet_separate_import_directive_groups = true
 csharp_preserve_single_line_statements = false
 csharp_preserve_single_line_blocks = true
 csharp_indent_labels = one_less_than_current
-csharp_prefer_simple_using_statement = true:suggestion
+csharp_prefer_simple_using_statement = true:error
 csharp_prefer_braces = true:silent
 csharp_style_namespace_declarations = block_scoped:silent
 csharp_style_prefer_method_group_conversion = true:silent
