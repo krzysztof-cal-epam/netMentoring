@@ -1,0 +1,10 @@
+„
+yC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApiTests\obj\Debug\net8.0\RestApiTests.AssemblyInfo.csutf-8—
+‹C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApiTests\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8†
+{C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApiTests\obj\Debug\net8.0\RestApiTests.GlobalUsings.g.csutf-8…
+zC:\Users\krzysztof_cal\.nuget\packages\microsoft.net.test.sdk\17.8.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.csutf-8x
+oC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApiTests\UnitTests\ProductControllerTests.csutf-8y
+pC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApiTests\UnitTests\CategoryControllerTests.csutf-8w
+nC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApiTests\UnitTests\CartV1ControllerTests.csutf-8u
+lC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApiTests\IntegrationTests\CartApiTests.csutf-8{
+rC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApiTests\Helpers\CustomWebApplicationFactory.csutf-8

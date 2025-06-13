@@ -20,22 +20,22 @@ namespace CatalogService.Application.BackgroundServices
             _settings = options.Value;
         }
 
-        protected override async Task ExecuteAsync(CancellationToken cancellationToken)
+        protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             try
             {
-                while (!cancellationToken.IsCancellationRequested)
+                while (!stoppingToken.IsCancellationRequested)
                 {
                     using var scope = _serviceScopeFactory.CreateScope();
                     var dbContext = scope.ServiceProvider.GetRequiredService<CatalogDbContext>();
 
                     var unprocessedEvents = await dbContext.Outbox
                         .Where(e => !e.IsProcessed)
-                        .ToListAsync(cancellationToken);
+                        .ToListAsync(stoppingToken);
 
                     if (unprocessedEvents.Count == 0)
                     {
-                        await Task.Delay(5000, cancellationToken);
+                        await Task.Delay(5000, stoppingToken);
                         continue;
                     }
 
@@ -50,11 +50,11 @@ namespace CatalogService.Application.BackgroundServices
                     using var connection = await factory.CreateConnectionAsync();
                     using var channel = await connection.CreateChannelAsync();
 
-                    await channel.ExchangeDeclareAsync(exchange: "catalog-events", type: ExchangeType.Direct, cancellationToken: cancellationToken);
+                    await channel.ExchangeDeclareAsync(exchange: "catalog-events", type: ExchangeType.Direct, cancellationToken: stoppingToken);
 
                     foreach (var outboxEvent in unprocessedEvents)
                     {
-                        cancellationToken.ThrowIfCancellationRequested();
+                        stoppingToken.ThrowIfCancellationRequested();
                         try
                         {
                             var payloadBytes = Encoding.UTF8.GetBytes(outboxEvent.Payload);
@@ -82,7 +82,7 @@ namespace CatalogService.Application.BackgroundServices
                         }
                     }
 
-                    await dbContext.SaveChangesAsync(cancellationToken);
+                    await dbContext.SaveChangesAsync(stoppingToken);
                 }
             }
             catch (OperationCanceledException ex)

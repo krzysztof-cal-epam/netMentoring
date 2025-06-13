@@ -39,10 +39,10 @@ namespace CatalogService.Application.Services
                             ? new ImageItemDto
                             {
                                 ImageUrl = item.Image.ImageUrl,
-                                AltText = item.Image.AltText
+                                AltText = item.Image.AltText,
                             }
-                            : null
-                    }).ToList()
+                            : null,
+                    }).ToList(),
                 };
             }
             catch (CartNotFoundException ex)
@@ -55,14 +55,14 @@ namespace CatalogService.Application.Services
             }
         }
 
-        public void AddItemToCart(Guid cartId, CartItemDto cartItemDto)
+        public void AddItemToCart(Guid cartId, CartItemDto item)
         {
             if (cartId == Guid.Empty)
             {
                 throw new CartValidationException("CartId should not be empty");
             }
 
-            if (cartItemDto == null || string.IsNullOrEmpty(cartItemDto.Name))
+            if (item == null || string.IsNullOrEmpty(item.Name))
             {
                 throw new CartValidationException("Item must have a name");
             }
@@ -74,32 +74,32 @@ namespace CatalogService.Application.Services
                 {
                     cart = _cartRepository.GetCartById(cartId);
                 }
-                catch(CartNotFoundException ex)
+                catch (CartNotFoundException ex)
                 {
                     cart = new Cart(cartId);
                 }
 
-                var item = cart.Items.FirstOrDefault(i => i.Id == cartItemDto.Id);
+                var firstItem = cart.Items.FirstOrDefault(i => i.Id == item.Id);
 
-                if (item != null)
+                if (firstItem != null)
                 {
-                    item.Quantity += cartItemDto.Quantity;
+                    firstItem.Quantity += item.Quantity;
                 }
                 else
                 {
                     cart.Items.Add(new CartItem
                     {
-                        Id = cartItemDto.Id,
-                        Name = cartItemDto.Name,
-                        Price = cartItemDto.Price,
-                        Quantity = cartItemDto.Quantity,
-                        Image = cartItemDto.Image != null
+                        Id = item.Id,
+                        Name = item.Name,
+                        Price = item.Price,
+                        Quantity = item.Quantity,
+                        Image = item.Image != null
                             ? new ImageItem
                             {
-                                ImageUrl = cartItemDto.Image.ImageUrl,
-                                AltText = cartItemDto.Image.AltText
+                                ImageUrl = item.Image.ImageUrl,
+                                AltText = item.Image.AltText,
                             }
-                            : null
+                            : null,
                     });
                 }
 
@@ -172,59 +172,97 @@ namespace CatalogService.Application.Services
 
         public void UpdateCartItems(int productId, string? updatedName, decimal? updatedPrice)
         {
-            if (productId <= 0)
-            {
-                throw new CartValidationException("ProductId must be greater than zero.");
-            }
+            ValidateProductId(productId);
 
             try
             {
-                var allCarts = _cartRepository.GetAllCarts().ToList();
-                var cartsToUpdate = new List<Cart>();
-
-                foreach (var cart in allCarts)
-                {
-                    bool isUpdated = false;
-                    foreach (var item in cart.Items)
-                    {
-                        if (item.Id == productId)
-                        {
-                            if (!string.IsNullOrEmpty(updatedName))
-                            {
-                                item.Name = updatedName;
-                            }
-                            if (updatedPrice.HasValue)
-                            {
-                                item.Price = updatedPrice.Value;
-                            }
-                            isUpdated = true;
-                        }
-                    }
-                    if (isUpdated)
-                    {
-                        cartsToUpdate.Add(cart);
-                    }
-                }
-
-                foreach (var cart in cartsToUpdate)
-                {
-                    _cartRepository.SaveCart(cart);
-                }
+                var cartsToUpdate = FindCartsToUpdate(productId, updatedName, updatedPrice);
+                SaveUpdatedCarts(cartsToUpdate);
             }
             catch (ObjectDisposedException ex)
             {
-                Console.WriteLine($"[CartService] Database disposed during UpdateCartItems: {ex.Message}");
-                throw new ApplicationException("Database is no longer available.", ex);
+                LogAndThrowDatabaseError(ex, "Database disposed during UpdateCartItems");
             }
             catch (OperationCanceledException ex)
             {
-                Console.WriteLine($"[CartService] Operation canceled in UpdateCartItems: {ex.Message}");
-                throw new ApplicationException("Operation was canceled.", ex);
+                LogAndThrowOperationCanceled(ex, "Operation canceled in UpdateCartItems");
             }
             catch (RepositoryException ex)
             {
                 throw new ApplicationException("An unexpected error occurred while updating cart items.", ex);
             }
+        }
+
+        private void ValidateProductId(int productId)
+        {
+            if (productId <= 0)
+            {
+                throw new CartValidationException("ProductId must be greater than zero.");
+            }
+        }
+
+        private List<Cart> FindCartsToUpdate(int productId, string? updatedName, decimal? updatedPrice)
+        {
+            var cartsToUpdate = new List<Cart>();
+            var allCarts = _cartRepository.GetAllCarts().ToList();
+
+            foreach (var cart in allCarts)
+            {
+                if (UpdateCartItems(cart, productId, updatedName, updatedPrice))
+                {
+                    cartsToUpdate.Add(cart);
+                }
+            }
+
+            return cartsToUpdate;
+        }
+
+        private bool UpdateCartItems(Cart cart, int productId, string? updatedName, decimal? updatedPrice)
+        {
+            bool isUpdated = false;
+
+            foreach (var item in cart.Items)
+            {
+                if (item.Id == productId)
+                {
+                    UpdateItem(item, updatedName, updatedPrice);
+                    isUpdated = true;
+                }
+            }
+
+            return isUpdated;
+        }
+
+        private void UpdateItem(CartItem item, string? updatedName, decimal? updatedPrice)
+        {
+            if (!string.IsNullOrEmpty(updatedName))
+            {
+                item.Name = updatedName;
+            }
+            if (updatedPrice.HasValue)
+            {
+                item.Price = updatedPrice.Value;
+            }
+        }
+
+        private void SaveUpdatedCarts(List<Cart> carts)
+        {
+            foreach (var cart in carts)
+            {
+                _cartRepository.SaveCart(cart);
+            }
+        }
+
+        private void LogAndThrowDatabaseError(ObjectDisposedException ex, string message)
+        {
+            Console.WriteLine($"[CartService] {message}: {ex.Message}");
+            throw new ApplicationException("Database is no longer available.", ex);
+        }
+
+        private void LogAndThrowOperationCanceled(OperationCanceledException ex, string message)
+        {
+            Console.WriteLine($"[CartService] {message}: {ex.Message}");
+            throw new ApplicationException("Operation was canceled.", ex);
         }
     }
 }

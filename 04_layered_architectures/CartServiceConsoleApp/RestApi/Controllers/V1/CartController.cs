@@ -1,10 +1,10 @@
-﻿using CatalogService.Application.Dto;
-using CatalogService.Application.Interfaces;
-using CatalogService.Domain.Entities;
-using Microsoft.AspNetCore.Mvc;
-
-namespace RestApi.Controllers.V1
+﻿namespace RestApi.Controllers.V1
 {
+    using CatalogService.Application.Dto;
+    using CatalogService.Application.Interfaces;
+    using CatalogService.Domain.Entities;
+    using Microsoft.AspNetCore.Mvc;
+
     /// <summary>
     /// Cart Api V1
     /// </summary>

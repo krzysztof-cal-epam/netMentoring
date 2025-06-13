@@ -1,0 +1,10 @@
+﻿C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Api\Controllers\CategoryController.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Api\Controllers\ProductController.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Api\Program.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Api\obj\Debug\net8.0\CatalogService.Api.GlobalUsings.g.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Api\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Api\obj\Debug\net8.0\CatalogService.Api.AssemblyInfo.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Api\obj\Debug\net8.0\CatalogService.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Api\appsettings.Development.json
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Api\appsettings.json
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Api\Properties\launchSettings.json

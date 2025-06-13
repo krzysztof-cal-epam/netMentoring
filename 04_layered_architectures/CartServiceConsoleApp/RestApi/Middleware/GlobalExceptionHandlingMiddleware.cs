@@ -1,8 +1,8 @@
-﻿using CatalogService.Application.Exceptions;
-using CatalogService.Domain.Exceptions;
-
-namespace RestApi.Middleware
+﻿namespace RestApi.Middleware
 {
+    using CatalogService.Application.Exceptions;
+    using CatalogService.Domain.Exceptions;
+
     public class GlobalExceptionHandlingMiddleware
     {
         private readonly RequestDelegate _next;

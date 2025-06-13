@@ -12,5 +12,6 @@ public class SuccessModel : PageModel
 {
     public void OnGet()
     {
+        // Empty by default
     }
 }

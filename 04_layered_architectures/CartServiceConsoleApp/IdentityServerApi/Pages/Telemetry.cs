@@ -33,9 +33,9 @@ public static class Telemetry
         public static class Counters
         {
             public const string Consent = "tokenservice.consent";
-            public const string GrantsRevoked = "tokenservice.grants_revoked";
-            public const string UserLogin = "tokenservice.user_login";
-            public const string UserLogout = "tokenservice.user_logout";
+            public const string GrantsRevokedName = "tokenservice.grants_revoked";
+            public const string UserLoginName = "tokenservice.user_login";
+            public const string UserLogoutName = "tokenservice.user_logout";
         }
 
         /// <summary>
@@ -104,36 +104,36 @@ public static class Telemetry
             }
         }
 
-        private static Counter<long> GrantsRevokedCounter = Meter.CreateCounter<long>(Counters.GrantsRevoked);
+        private static Counter<long> GrantsRevokedCounter = Meter.CreateCounter<long>(Counters.GrantsRevokedName);
 
         /// <summary>
-        /// Helper method to increase the <see cref="Counters.GrantsRevoked"/> counter.
+        /// Helper method to increase the <see cref="Counters.GrantsRevokedName"/> counter.
         /// </summary>
         /// <param name="clientId">Client id to revoke for, or null for all.</param>
         public static void GrantsRevoked(string? clientId)
             => GrantsRevokedCounter.Add(1, tag: new(Tags.Client, clientId));
 
-        private static Counter<long> UserLoginCounter = Meter.CreateCounter<long>(Counters.UserLogin);
+        private static Counter<long> UserLoginCounter = Meter.CreateCounter<long>(Counters.UserLoginName);
 
         /// <summary>
-        /// Helper method to increase <see cref="Counters.UserLogin"/> counter.
+        /// Helper method to increase <see cref="Counters.UserLoginName"/> counter.
         /// </summary>
         /// <param name="clientId">Client Id, if available</param>
         public static void UserLogin(string? clientId, string idp)
             => UserLoginCounter.Add(1, new(Tags.Client, clientId), new(Tags.Idp, idp));
 
         /// <summary>
-        /// Helper method to increase <see cref="Counters.UserLogin" counter on failure.
+        /// Helper method to increase <see cref="Counters.UserLoginName" counter on failure.
         /// </summary>
         /// <param name="clientId">Client Id, if available</param>
         /// <param name="error">Error message</param>
         public static void UserLoginFailure(string? clientId, string idp, string error)
             => UserLoginCounter.Add(1, new(Tags.Client, clientId), new(Tags.Idp, idp), new(Tags.Error, error));
 
-        private static Counter<long> UserLogoutCounter = Meter.CreateCounter<long>(Counters.UserLogout);
+        private static Counter<long> UserLogoutCounter = Meter.CreateCounter<long>(Counters.UserLogoutName);
 
         /// <summary>
-        /// Helper method to increase the <see cref="Counters.UserLogout"/> counter.
+        /// Helper method to increase the <see cref="Counters.UserLogoutName"/> counter.
         /// </summary>
         /// <param name="idp">Idp/authentication scheme for external authentication, or "local" for built in.</param>
         public static void UserLogout(string? idp)

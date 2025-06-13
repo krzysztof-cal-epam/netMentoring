@@ -14,20 +14,20 @@ namespace CatalogService.DataAccess.Repositories
             _context = context;
         }
 
-        public async Task DeleteWithProductsAsync(int id)
+        public async Task DeleteWithProductsAsync(int parentId)
         {
             using var transaction = await _context.Database.BeginTransactionAsync();
 
             try
             {
-                var category = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
+                var category = await _context.Categories.FirstOrDefaultAsync(c => c.Id == parentId);
                 if (category == null)
                 {
-                    throw new KeyNotFoundException($"Category with ID {id} does not exist.");
+                    throw new KeyNotFoundException($"Category with ID {parentId} does not exist.");
                 }
 
                 var childCategories = new List<Category>();
-                await GetChildCategoriesRecursiveAsync(id, childCategories);
+                await GetChildCategoriesRecursiveAsync(parentId, childCategories);
 
                 var childCategoryIds = childCategories.Select(c => c.Id).ToList();
                 var productsInChildCategories = await _context.Products
@@ -44,7 +44,7 @@ namespace CatalogService.DataAccess.Repositories
                     _context.Categories.RemoveRange(childCategories);
                 }
 
-                var productsToDelete = await _context.Products.Where(p => p.CategoryId == id).ToListAsync();
+                var productsToDelete = await _context.Products.Where(p => p.CategoryId == parentId).ToListAsync();
 
                 if (productsToDelete.Any())
                 {

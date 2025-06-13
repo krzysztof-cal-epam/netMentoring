@@ -1,0 +1,1 @@
+RiC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CartServiceWebApi\CartServiceWebApi.csproj¢net8.0òCSharp12

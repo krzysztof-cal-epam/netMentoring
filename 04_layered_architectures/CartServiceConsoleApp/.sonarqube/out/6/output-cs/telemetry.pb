@@ -1,0 +1,1 @@
+òRÅC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Infrastructure\CatalogService.Infrastructure.csproj¢net8.0ÚCSharp12

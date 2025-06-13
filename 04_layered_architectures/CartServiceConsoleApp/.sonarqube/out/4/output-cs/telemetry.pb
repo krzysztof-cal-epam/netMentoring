@@ -1,0 +1,1 @@
+…RoC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Tests\CatalogService.Tests.csproj¢net8.0òCSharp12

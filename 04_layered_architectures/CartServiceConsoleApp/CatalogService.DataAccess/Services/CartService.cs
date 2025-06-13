@@ -14,7 +14,7 @@ namespace CatalogService.DataAccess.Services
             _cartRepository = cartRepository;
         }
 
-        public void AddItem(Guid cartId, CartItem cartItem)
+        public void AddItem(Guid cartId, CartItem item)
         {
             Cart? cart = null;
             try
@@ -26,15 +26,15 @@ namespace CatalogService.DataAccess.Services
                 cart = new Cart(cartId);
             }
 
-            var existingCartItem = cart.Items.FirstOrDefault(i => i.Id == cartItem.Id);
+            var existingCartItem = cart.Items.FirstOrDefault(i => i.Id == item.Id);
 
             if (existingCartItem == null)
             {
-                cart.Items.Add(cartItem);
+                cart.Items.Add(item);
             }
             else
             {
-                existingCartItem.Quantity += cartItem.Quantity;
+                existingCartItem.Quantity += item.Quantity;
             }
 
             _cartRepository.SaveCart(cart);

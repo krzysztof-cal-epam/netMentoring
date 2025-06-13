@@ -1,20 +1,25 @@
-﻿using CatalogService.Application.Interfaces;
-using CatalogService.DataAccess.RabbitMQ;
-using Microsoft.Extensions.Options;
-using RabbitMQ.Client;
-using RabbitMQ.Client.Events;
-using System.Text;
-using System.Text.Json;
-
-namespace RestApi.Messaging
+﻿namespace RestApi.Messaging
 {
-    public class CartMessageListener : BackgroundService
+    using System.Text;
+    using System.Text.Json;
+
+    using CatalogService.Application.Interfaces;
+    using CatalogService.DataAccess.RabbitMQ;
+
+    using Microsoft.Extensions.Options;
+
+    using RabbitMQ.Client;
+    using RabbitMQ.Client.Events;
+
+    public class CartMessageListener : BackgroundService, IDisposable
     {
         private readonly IServiceScopeFactory _scopeFactory;
         private readonly RabbitMqSettings _settings;
         private IConnection _connection;
         private IChannel _channel;
         private string _consumerTag;
+        private bool _disposed;
+
 
         public CartMessageListener(IServiceScopeFactory scopeFactory, IOptions<RabbitMqSettings> options)
         {
@@ -138,6 +143,11 @@ namespace RestApi.Messaging
 
         protected void Dispose(bool disposing)
         {
+            if (_disposed)
+            {
+                return;
+            }
+
             if (disposing)
             {
                 try
@@ -150,7 +160,15 @@ namespace RestApi.Messaging
                     Console.WriteLine($"[CartMessageListener] Error disposing RabbitMQ resources: {ex.Message}");
                 }
             }
+
+            _disposed = true;
             base.Dispose();
+        }
+
+        public override void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
         }
 
         private class ProductUpdateMessage
