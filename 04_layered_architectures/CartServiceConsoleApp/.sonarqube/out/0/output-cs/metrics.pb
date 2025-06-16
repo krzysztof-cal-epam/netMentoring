@@ -3,7 +3,9 @@ nC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
 „
 uC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Interfaces\IProductRepository.csr	
 „
-vC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Interfaces\ICategoryRepository.csr	ƒ
+vC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Interfaces\ICategoryRepository.csr	‹
+hC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Product.cs 8r	
+‚ƒ
 rC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Interfaces\ICartRepository.csr	
 €
 pC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Interfaces\ICartDatabase.csr
@@ -12,9 +14,7 @@ pC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
 wC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Exceptions\RepositoryExceptions.cs 8r	
 Š
 uC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Exceptions\DatabaseExceptions.cs 8r	
-‹
-hC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Product.cs 8r	
-‚}
+}
 gC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Outbox.cs 8r	
 |
 jC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\ImageItem.cs 8r	…

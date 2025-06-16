@@ -129,14 +129,14 @@ rC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerAp
 B I* 1: A     && (( ++ -- 22 44 
   
  ((W Z--Y \
-11 44O ^¿
-oC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Redirect\Index.cshtml.cs
+11 44O ^¬
+fC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Index.cshtml.cs
 
- 
-  
+ 
+( / 
 
- 
-' 2 ' !
+ 
+" ) 
 ]C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Log.cs
 
  
@@ -182,14 +182,14 @@ oC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerAp
 QQ "RR. =SS9 H
 RR +
  #
-SS 6(( ,¬
-fC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Index.cshtml.cs
+SS 6(( ,¿
+oC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Redirect\Index.cshtml.cs
 
- 
-( / 
+ 
+  
 
- 
-" ) v
+ 
+' 2 ' !v
 tC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\IdentityServerSuppressions.cs¨
 nC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Home\Error\ViewModel.cs
 
@@ -467,7 +467,22 @@ oC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerAp
 
  
 
- Á
+ ¶
+lC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Consent\InputModel.cs
+
+ 
+
+ 
+
+		 .
+
+
+
+ 
+
+ 
+
+ Á
 kC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Device\InputModel.cs
 
  
@@ -484,7 +499,63 @@ kC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerAp
 
  
 
- á
+ 
+kC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Consent\ViewModel.cs
+
+ 
+
+ 
+
+		 
+
+
+
+  
+
+ $
+
+' 5
+
+' 02
+  %W e %R `
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+* 3
+  (U f
+
+ 
+
+   Ä
+nC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Device\DeviceOptions.cs
+
+ !
+
+  3
+
+		" :
+
+
+
+" :
+
+" 1
+
+" ;
+
+" >á
 mC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Device\Index.cshtml.cs
   4
 3 ? >> (uu 
@@ -601,93 +672,7 @@ mC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerAp
 «« /
 
 ÍÍ= B
-ÕÕ Ä
-nC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Device\DeviceOptions.cs
-
- !
-
-  3
-
-		" :
-
-
-
-" :
-
-" 1
-
-" ;
-
-" >
-kC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Consent\ViewModel.cs
-
- 
-
- 
-
-		 
-
-
-
-  
-
- $
-
-' 5
-
-' 02
-  %W e %R `
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-* 3
-  (U f
-
- 
-
-   ¶
-lC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Consent\InputModel.cs
-
- 
-
- 
-
-		 .
-
-
-
- 
-
- 
-
- º
-pC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Consent\ConsentOptions.cs
-
- "
-
-  3
-
-		" :
-
-
-
-" :
-
-" ;
-
-" >Ç
+ÕÕ Ç
 nC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Consent\Index.cshtml.cs
   " 4
 7 C 99 (oo 
@@ -834,7 +819,22 @@ nC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerAp
 ¸¸ 2
 
 áá@ E
-éé Š
+éé º
+pC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Consent\ConsentOptions.cs
+
+ "
+
+  3
+
+		" :
+
+
+
+" :
+
+" ;
+
+" >Š
 hC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Ciba\ViewModel.cs
 
  
@@ -873,35 +873,7 @@ hC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerAp
 
    
 
-!! ·
-mC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Ciba\ConsentOptions.cs
-
- "
-
-  3
-
-		" :
-
-
-
-" :
-
-" ;
-
-" >²
-tC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Account\Login\LoginOptions.cs
-
-  
-
-  /
-
-		  2
-
-
-
-$ ;
-
-" @§
+!! §
 iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Ciba\InputModel.cs
 
  
@@ -1070,30 +1042,22 @@ mC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerAp
 °° /
 
 ÙÙ= B
-áá ³
-yC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Account\Logout\LoggedOut.cshtml.cs
+áá ·
+mC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Ciba\ConsentOptions.cs
 
- 
-7 J  .
- " 
-7 I 0
+ "
 
- 
-$ ,E M<
- $ *  . 4  D J  W ]!! %¼
-rC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Account\Login\InputModel.cs
+  3
 
- 
+		" :
 
- 
+
+
+" :
 
- 
+" ;
 
- 
-
- 
-
- Ï
+" >Ï
 iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Ciba\All.cshtml.cs
 
  
@@ -1121,7 +1085,17 @@ vC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerAp
 
  #
 
- -º
+ -³
+yC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Account\Logout\LoggedOut.cshtml.cs
+
+ 
+7 J  .
+ " 
+7 I 0
+
+ 
+$ ,E M<
+ $ *  . 4  D J  W ]!! %º
 uC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Account\Logout\Index.cshtml.cs
 
  
@@ -1158,76 +1132,33 @@ qC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerAp
 E P % 
  "
 ‰ ” 
- *f z  ¼
-ƒC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Migrations\20250602211315_InitialIdentityServer.cs
+ *f z  ²
+tC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Account\Login\LoginOptions.cs
 
-		 .
+  
 
-  "¦
-4 D  55 JJ __ ss 
-‹‹ 
-ŸŸ 
-¤¤ 
-«« 
-°° 
-µµ 
-ºº 
-¿¿ 2
-    % *' ,
- " 
-7 8< = 
-    !! $"") .## !$$& +%%% *&&# (''$ )((' ,))" '**+ 0++' ,,,! &--% *..( -
-00 "22 
-227 822< =2
-77 99 ;; "<<  %==! &
-?? "AA BB 
-AA< =AAA B
-DD  !DD% &2
-LL NN PP "QQ  %RR! &
-TT "VV WW 
-VV< =VVA B
-YY  !YY% &2
-aa cc$ )dd" 'ee* /ff "
-hh "jj kk 
-jj< =jjG HjjX Y
-mm  !mm% &
-uu ww "xx "*
-zz "|| }} 
-ƒƒ 
-||; <||F G||P Q
-  !% &
+  /
 
-……  !
-……% &<
+		  2
 
- 
- "
-$ )
-‘‘  
-’’ !$
+
+
+$ ;
 
-”” "
-–– 
-—— 0
+" @¼
+rC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Account\Login\InputModel.cs
 
-––< =
-––G H
-––Q R
-––b c
+ 
 
-™™  !
-™™% &
+ 
 
-ÈÈ  $`
+ 
 
-ÈÈ6 F
-ÊÊ 
-ÍÍ 
-ÐÐ 
-ÓÓ 
-ÖÖ 
-ÙÙ 
-ÜÜ Ó
+ 
+
+ 
+
+ Ó
 tC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Account\Login\Index.cshtml.cs
 
  
@@ -1360,7 +1291,76 @@ jC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerAp
 
 
 
- ¡
+ ¼
+ƒC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Migrations\20250602211315_InitialIdentityServer.cs
+
+		 .
+
+  "¦
+4 D  55 JJ __ ss 
+‹‹ 
+ŸŸ 
+¤¤ 
+«« 
+°° 
+µµ 
+ºº 
+¿¿ 2
+    % *' ,
+ " 
+7 8< = 
+    !! $"") .## !$$& +%%% *&&# (''$ )((' ,))" '**+ 0++' ,,,! &--% *..( -
+00 "22 
+227 822< =2
+77 99 ;; "<<  %==! &
+?? "AA BB 
+AA< =AAA B
+DD  !DD% &2
+LL NN PP "QQ  %RR! &
+TT "VV WW 
+VV< =VVA B
+YY  !YY% &2
+aa cc$ )dd" 'ee* /ff "
+hh "jj kk 
+jj< =jjG HjjX Y
+mm  !mm% &
+uu ww "xx "*
+zz "|| }} 
+ƒƒ 
+||; <||F G||P Q
+  !% &
+
+……  !
+……% &<
+
+ 
+ "
+$ )
+‘‘  
+’’ !$
+
+”” "
+–– 
+—— 0
+
+––< =
+––G H
+––Q R
+––b c
+
+™™  !
+™™% &
+
+ÈÈ  $`
+
+ÈÈ6 F
+ÊÊ 
+ÍÍ 
+ÐÐ 
+ÓÓ 
+ÖÖ 
+ÙÙ 
+ÜÜ ¡
 eC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\HostingExtensions.cs
 
 		 %

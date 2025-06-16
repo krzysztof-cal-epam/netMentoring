@@ -9,8 +9,8 @@ pC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApiTests\Uni
 .RestApiTests.UnitTests.CategoryControllerTestsListAll_ReturnsOKQ
 .RestApiTests.UnitTests.CategoryControllerTestsAdd_ValidProduct_ReturnsCreatedX
 .RestApiTests.UnitTests.CategoryControllerTests&Update_UpdatedProduct_ReturnsNoContentX
-.RestApiTests.UnitTests.CategoryControllerTests&Delete_DeletesProduct_ReturnsNoContent×
-nC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApiTests\UnitTests\CartV1ControllerTests.csRestApiTestsW
-,RestApiTests.UnitTests.CartV1ControllerTests'GetCartInfo_Should_ReturnOkObjectResultÇ
+.RestApiTests.UnitTests.CategoryControllerTests&Delete_DeletesProduct_ReturnsNoContentÇ
 lC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApiTests\IntegrationTests\CartApiTests.csRestApiTestsI
-*RestApiTests.IntegrationTests.CartApiTestsGetCartInfo_Should_ReturnOk
+*RestApiTests.IntegrationTests.CartApiTestsGetCartInfo_Should_ReturnOk×
+nC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApiTests\UnitTests\CartV1ControllerTests.csRestApiTestsW
+,RestApiTests.UnitTests.CartV1ControllerTests'GetCartInfo_Should_ReturnOkObjectResult

@@ -1,7 +1,7 @@
 Ž
-‚C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\obj\Debug\net8.0\RestApi.MvcApplicationPartsAssemblyInfo.csutf-8z
-oC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\obj\Debug\net8.0\RestApi.AssemblyInfo.csutf-8’
-†C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8|
+‚C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\obj\Debug\net8.0\RestApi.MvcApplicationPartsAssemblyInfo.csutf-8’
+†C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8z
+oC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\obj\Debug\net8.0\RestApi.AssemblyInfo.csutf-8|
 qC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\obj\Debug\net8.0\RestApi.GlobalUsings.g.csutf-8r
 iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\Swagger\ConfigureSwaggerOptions.csutf-8Z
 QC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApi\Program.csutf-8

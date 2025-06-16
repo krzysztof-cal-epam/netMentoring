@@ -1,24 +1,37 @@
-Œ
-tC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Services\ProductService.cs! 8r	
- !#%&'(*+,-./01235678:;<=>@ABCDEFGHIJLMNPQRSTUVWXY[\]_`abcdefghiklmnoqrsuvwxyz|}~ÄÅÇÉÑÜáàâxÇJ #%'*,-./017<=>@BCDEFGHNPRSTUVW]_abcdefgmnoqrsuvwxyz~ÄÅÇÉÜ˘
-uC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Services\CategoryService.cs 8rQ	
- !"#%&'()*+,-./012356789;<=>?@ABDEFGHIJKLMNPQRSTVWXZ[\]xÇ" !)-1789;=>?@FGIJKLRSTVWXZÛ
-qC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Services\CartService.csG 8 rÓ	
- !"#$%&'()*+,-./012345678:;<=>?ABCDFGHIJKLMNOPRTUVWXYZ[\]^_`abcdefghjklmnoprstuvwyz{|~ÄÅÇÉÑÖÜáàâäãåçéèêëíìïñóòôõúùûü†°¢£§•¶ß®©™´≠ÆØ±≤≥¥µ∂∑∏π∫ªºΩæø¿¡¬ƒ≈∆«»… ÃÕŒœ—“”‘’÷◊Ÿ⁄‹›ﬁ‡·‚„‰ÂÊÁÈÍÏÌÓÔÒÚÛÙıˆ¯˘˙˚¸˝˛ÄÅÇÉÑÜáàâäãåx#ÇÅ "#$%&)*26<>ACKORTVZ\]^_`cdjntvy{ÄÅÉÖáàçëôõùû†°¢£©Ø≥¥∏º¿∆»œ—”’Ÿ‡‚‰ÂÈÓÚÙ˙¸ÇÉàâã
-wC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Interfaces\IProductService.csr	
-ä
-xC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Interfaces\ICategoryService.csr	
-Ü
-tC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Interfaces\ICartService.csr	
-ë
-C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Exceptions\CartValidationException.cs 8r	é
-kC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Dto\ProductDto.cs 8r	
-Ç
-mC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Dto\ImageItemDto.cs 8r	á
-lC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Dto\CategoryDto.cs 8r	
-ÇÅ
-lC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Dto\CartItemDto.cs 
+«
+pC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Services\CartService.cs 8
+r7	
+ !"#$%&()+,-.012346789:;<=>?@xÇ!%(-2389;<¡
+zC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Repositories\ProductRepository.cs 8r)	
+ !#$%')+,-./01234xÇ!%')+/0Á
+{C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Repositories\CategoryRepository.cs 8rA	
+ !"#%&'(*+,-/1234689:;<=>?@BCDEFHIJLMNOPxÇ !"%'*,/13689=>DEHJLÿ
+wC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Repositories\CartRepository.cs 8rC	 !#$%&'()*+,-/0123456789:;<=?@ABCDEFGHIJKxÇ'+37;CGä
+uC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\RabbitMQ\RabbitMqSettings.cs 
 8
-r	
-z
-hC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Dto\CartDto.cs 8r	
+r	
+ƒ
+ÑC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Migrations\20250512104332_AddOutboxTable.cs 8j r 	
+!"#$%&'Ç#®
+âC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Migrations\20250424222729_EnableCascadeDelete.cs 8j
+r	∑
+ãC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Migrations\20250416220805_RenameImageToImageUrl.cs 8j
+r	Ç˜
+ÉC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Migrations\20250416213849_InitialCreate.cs
+ 8j
+DrC	!"#$%&'()*+,-./012345679:;<>?@ABEFGHJKLMNÇ!#%'()*+,.01369>GJÑ
+sC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Interfaces\ICartService.csr	
+Ã
+rC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Data\GenericRepository.cs 8r9	
+ !"$%&')*+,./01245689:;<=>@ABCxÇ &+016=@“
+qC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Data\CatalogDbContext.cs 8
+r8	 "#$%'()+,-/0246789:;=>?@ABCDEFGxÇ "$')+/2468:=?@ABC®
+zC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Databases\InMemoryCartDatabase.cs 8r
+Çö
+{C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Data\DesignTimeDbContextFactory.cs 8r	
+ÇÜ
+xC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\Databases\LiteDbCartDatabase.csM 	8rü	
+ !"#$%&'()*+,-.0123456789:;<=>?@BCDEFGHIJKLMNOPQRTUVWXYZ[]^_`bcdefghijlmnpqrstuvwxyz{|}~ÄÅÇÉÑÖÜáàâäåçéèêëíìîïñóòôöõúùûü†°¢£§•¶ß®©´¨≠ÆØ∞±≥¥µ∂∑∏π∫ªºΩæø¿¡¬√ƒ≈∆«»… ÀÃÕŒœ–—“”‘’÷◊xÇ]"$%&+,4678=>FHIJOPXZ[]_bghnrsuy}ÇÉáàéëíîòú°¢¶ß≠Øµπ∫ªø√ƒ»ÃÕ—”É
+~C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\BackgroundServices\OutboxProcessor.cs 8rV
+ !"$%&'(*+,-./0235789:;<=>?@ABCDEFHJKMNOPQRSUVWXYZ[\]^_`abcx
+Ç !$&',-./23579<AHJKMQUZ[_

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
-  <ProjectName>CatalogService.DataAccess</ProjectName>
+  <ProjectName>CatalogService.Application</ProjectName>
   <ProjectLanguage>C#</ProjectLanguage>
   <ProjectType>Product</ProjectType>
-  <ProjectGuid>04cbcea9-f4da-42a1-b3ef-cd0bd2062c38</ProjectGuid>
-  <FullPath>C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.DataAccess\CatalogService.DataAccess.csproj</FullPath>
+  <ProjectGuid>f6b1d882-756a-4eb5-9d23-ec40de96adc2</ProjectGuid>
+  <FullPath>C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\CatalogService.Application.csproj</FullPath>
   <IsExcluded>false</IsExcluded>
   <AnalysisResults>
     <AnalysisResult Id="FilesToAnalyze" Location="C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\.sonarqube\conf\2\FilesToAnalyze.txt" />

@@ -6233,7 +6233,263 @@ InputModel 
 set# &
 ;& '
 }( )
-} –ù
+} ±
+kC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Consent\ViewModel.cs
+	namespace 	
+IdentityServerApi
+ 
+. 
+Pages !
+.! "
+Consent" )
+;) *
+public 
+class 
+	ViewModel 
+{ 
+public 
+
+string 
+? 
+
+ClientName 
+{ 
+get  #
+;# $
+set% (
+;( )
+}* +
+public		 
+
+string		 
+?		 
+	ClientUrl		 
+{		 
+get		 "
+;		" #
+set		$ '
+;		' (
+}		) *
+public
+
+ 
+
+string
+
+ 
+?
+
+ 
+ClientLogoUrl
+
+  
+{
+
+! "
+get
+
+# &
+;
+
+& '
+set
+
+( +
+;
+
++ ,
+}
+
+- .
+public 
+
+bool  
+AllowRememberConsent $
+{% &
+get' *
+;* +
+set, /
+;/ 0
+}1 2
+public 
+
+IEnumerable 
+< 
+ScopeViewModel %
+>% &
+IdentityScopes' 5
+{6 7
+get8 ;
+;; <
+set= @
+;@ A
+}B C
+=D E
+
+EnumerableF P
+.P Q
+EmptyQ V
+<V W
+ScopeViewModelW e
+>e f
+(f g
+)g h
+;h i
+public 
+
+IEnumerable 
+< 
+ScopeViewModel %
+>% &
+	ApiScopes' 0
+{1 2
+get3 6
+;6 7
+set8 ;
+;; <
+}= >
+=? @
+
+EnumerableA K
+.K L
+EmptyL Q
+<Q R
+ScopeViewModelR `
+>` a
+(a b
+)b c
+;c d
+} 
+public 
+class 
+ScopeViewModel 
+{ 
+public 
+
+string 
+? 
+Name 
+{ 
+get 
+; 
+set "
+;" #
+}$ %
+public 
+
+string 
+? 
+Value 
+{ 
+get 
+; 
+set  #
+;# $
+}% &
+public 
+
+string 
+? 
+DisplayName 
+{  
+get! $
+;$ %
+set& )
+;) *
+}+ ,
+public 
+
+string 
+? 
+Description 
+{  
+get! $
+;$ %
+set& )
+;) *
+}+ ,
+public 
+
+bool 
+	Emphasize 
+{ 
+get 
+;  
+set! $
+;$ %
+}& '
+public 
+
+bool 
+Required 
+{ 
+get 
+; 
+set  #
+;# $
+}% &
+public 
+
+bool 
+Checked 
+{ 
+get 
+; 
+set "
+;" #
+}$ %
+public 
+
+IEnumerable 
+< 
+ResourceViewModel (
+>( )
+	Resources* 3
+{4 5
+get6 9
+;9 :
+set; >
+;> ?
+}@ A
+=B C
+
+EnumerableD N
+.N O
+EmptyO T
+<T U
+ResourceViewModelU f
+>f g
+(g h
+)h i
+;i j
+} 
+public 
+class 
+ResourceViewModel 
+{ 
+public 
+
+string 
+? 
+Name 
+{ 
+get 
+; 
+set "
+;" #
+}$ %
+public   
+
+string   
+?   
+DisplayName   
+{    
+get  ! $
+;  $ %
+set  & )
+;  ) *
+}  + ,
+}!! –ù
 mC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Device\Index.cshtml.cs
 	namespace 	
 IdentityServerApi
@@ -7826,263 +8082,7 @@ nC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerAp
 =? @
 $strA T
 ;T U
-} ±
-kC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Consent\ViewModel.cs
-	namespace 	
-IdentityServerApi
- 
-. 
-Pages !
-.! "
-Consent" )
-;) *
-public 
-class 
-	ViewModel 
-{ 
-public 
-
-string 
-? 
-
-ClientName 
-{ 
-get  #
-;# $
-set% (
-;( )
-}* +
-public		 
-
-string		 
-?		 
-	ClientUrl		 
-{		 
-get		 "
-;		" #
-set		$ '
-;		' (
-}		) *
-public
-
- 
-
-string
-
- 
-?
-
- 
-ClientLogoUrl
-
-  
-{
-
-! "
-get
-
-# &
-;
-
-& '
-set
-
-( +
-;
-
-+ ,
-}
-
-- .
-public 
-
-bool  
-AllowRememberConsent $
-{% &
-get' *
-;* +
-set, /
-;/ 0
-}1 2
-public 
-
-IEnumerable 
-< 
-ScopeViewModel %
->% &
-IdentityScopes' 5
-{6 7
-get8 ;
-;; <
-set= @
-;@ A
-}B C
-=D E
-
-EnumerableF P
-.P Q
-EmptyQ V
-<V W
-ScopeViewModelW e
->e f
-(f g
-)g h
-;h i
-public 
-
-IEnumerable 
-< 
-ScopeViewModel %
->% &
-	ApiScopes' 0
-{1 2
-get3 6
-;6 7
-set8 ;
-;; <
-}= >
-=? @
-
-EnumerableA K
-.K L
-EmptyL Q
-<Q R
-ScopeViewModelR `
->` a
-(a b
-)b c
-;c d
-} 
-public 
-class 
-ScopeViewModel 
-{ 
-public 
-
-string 
-? 
-Name 
-{ 
-get 
-; 
-set "
-;" #
-}$ %
-public 
-
-string 
-? 
-Value 
-{ 
-get 
-; 
-set  #
-;# $
-}% &
-public 
-
-string 
-? 
-DisplayName 
-{  
-get! $
-;$ %
-set& )
-;) *
-}+ ,
-public 
-
-string 
-? 
-Description 
-{  
-get! $
-;$ %
-set& )
-;) *
-}+ ,
-public 
-
-bool 
-	Emphasize 
-{ 
-get 
-;  
-set! $
-;$ %
-}& '
-public 
-
-bool 
-Required 
-{ 
-get 
-; 
-set  #
-;# $
-}% &
-public 
-
-bool 
-Checked 
-{ 
-get 
-; 
-set "
-;" #
-}$ %
-public 
-
-IEnumerable 
-< 
-ResourceViewModel (
->( )
-	Resources* 3
-{4 5
-get6 9
-;9 :
-set; >
-;> ?
-}@ A
-=B C
-
-EnumerableD N
-.N O
-EmptyO T
-<T U
-ResourceViewModelU f
->f g
-(g h
-)h i
-;i j
-} 
-public 
-class 
-ResourceViewModel 
-{ 
-public 
-
-string 
-? 
-Name 
-{ 
-get 
-; 
-set "
-;" #
-}$ %
-public   
-
-string   
-?   
-DisplayName   
-{    
-get  ! $
-;  $ %
-set  & )
-;  ) *
-}  + ,
-}!! ç
+} ç
 lC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Consent\InputModel.cs
 	namespace 	
 IdentityServerApi
@@ -8189,84 +8189,7 @@ InputModel 
 set& )
 ;) *
 }+ ,
-} ≥	
-pC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Consent\ConsentOptions.cs
-	namespace 	
-IdentityServerApi
- 
-. 
-Pages !
-.! "
-Consent" )
-;) *
-public 
-static 
-class 
-ConsentOptions "
-{ 
-public 
-
-static 
-readonly 
-bool 
-EnableOfflineAccess  3
-=4 5
-true6 :
-;: ;
-public		 
-
-static		 
-readonly		 
-string		 !$
-OfflineAccessDisplayName		" :
-=		; <
-$str		= M
-;		M N
-public
-
- 
-
-static
-
- 
-readonly
-
- 
-string
-
- !$
-OfflineAccessDescription
-
-" :
-=
-
-; <
-$str	
-
-= É
-;
-
-
-É Ñ
-public 
-
-static 
-readonly 
-string !%
-MustChooseOneErrorMessage" ;
-=< =
-$str> e
-;e f
-public 
-
-static 
-readonly 
-string !(
-InvalidSelectionErrorMessage" >
-=? @
-$strA T
-;T U
-} ıµ
+} ıµ
 nC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Consent\Index.cshtml.cs
 	namespace 	
 IdentityServerApi
@@ -10088,7 +10011,84 @@ ParsedName
 
 }
 ÎÎ 
-}ÏÏ ∂
+}ÏÏ ≥	
+pC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Consent\ConsentOptions.cs
+	namespace 	
+IdentityServerApi
+ 
+. 
+Pages !
+.! "
+Consent" )
+;) *
+public 
+static 
+class 
+ConsentOptions "
+{ 
+public 
+
+static 
+readonly 
+bool 
+EnableOfflineAccess  3
+=4 5
+true6 :
+;: ;
+public		 
+
+static		 
+readonly		 
+string		 !$
+OfflineAccessDisplayName		" :
+=		; <
+$str		= M
+;		M N
+public
+
+ 
+
+static
+
+ 
+readonly
+
+ 
+string
+
+ !$
+OfflineAccessDescription
+
+" :
+=
+
+; <
+$str	
+
+= É
+;
+
+
+É Ñ
+public 
+
+static 
+readonly 
+string !%
+MustChooseOneErrorMessage" ;
+=< =
+$str> e
+;e f
+public 
+
+static 
+readonly 
+string !(
+InvalidSelectionErrorMessage" >
+=? @
+$strA T
+;T U
+} ∂
 hC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Ciba\ViewModel.cs
 	namespace 	
 IdentityServerApi
@@ -10345,166 +10345,7 @@ EnumerableD N
 set!!& )
 ;!!) *
 }!!+ ,
-}"" ≠	
-mC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Ciba\ConsentOptions.cs
-	namespace 	
-IdentityServerApi
- 
-. 
-Pages !
-.! "
-Ciba" &
-;& '
-public 
-static 
-class 
-ConsentOptions "
-{ 
-public 
-
-static 
-readonly 
-bool 
-EnableOfflineAccess  3
-=4 5
-true6 :
-;: ;
-public		 
-
-static		 
-readonly		 
-string		 !$
-OfflineAccessDisplayName		" :
-=		; <
-$str		= M
-;		M N
-public
-
- 
-
-static
-
- 
-readonly
-
- 
-string
-
- !$
-OfflineAccessDescription
-
-" :
-=
-
-; <
-$str	
-
-= É
-;
-
-
-É Ñ
-public 
-
-static 
-readonly 
-string !%
-MustChooseOneErrorMessage" ;
-=< =
-$str> e
-;e f
-public 
-
-static 
-readonly 
-string !(
-InvalidSelectionErrorMessage" >
-=? @
-$strA T
-;T U
-} ◊
-tC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Account\Login\LoginOptions.cs
-	namespace 	
-IdentityServerApi
- 
-. 
-Pages !
-.! "
-Login" '
-;' (
-public 
-static 
-class 
-LoginOptions  
-{ 
-public 
-
-static 
-readonly 
-bool 
-AllowLocalLogin  /
-=0 1
-true2 6
-;6 7
-public		 
-
-static		 
-readonly		 
-bool		 
-AllowRememberLogin		  2
-=		3 4
-true		5 9
-;		9 :
-public
-
- 
-
-static
-
- 
-readonly
-
- 
-TimeSpan
-
- ##
-RememberMeLoginDuration
-
-$ ;
-=
-
-< =
-TimeSpan
-
-> F
-.
-
-F G
-FromDays
-
-G O
-(
-
-O P
-$num
-
-P R
-)
-
-R S
-;
-
-S T
-public 
-
-static 
-readonly 
-string !*
-InvalidCredentialsErrorMessage" @
-=A B
-$strC a
-;a b
-} Ø	
+}"" Ø	
 iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Ciba\InputModel.cs
 	namespace 	
 IdentityServerApi
@@ -12540,7 +12381,84 @@ ParsedName
 
 }
 „„ 
-}‰‰ Ô
+}‰‰ ≠	
+mC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Ciba\ConsentOptions.cs
+	namespace 	
+IdentityServerApi
+ 
+. 
+Pages !
+.! "
+Ciba" &
+;& '
+public 
+static 
+class 
+ConsentOptions "
+{ 
+public 
+
+static 
+readonly 
+bool 
+EnableOfflineAccess  3
+=4 5
+true6 :
+;: ;
+public		 
+
+static		 
+readonly		 
+string		 !$
+OfflineAccessDisplayName		" :
+=		; <
+$str		= M
+;		M N
+public
+
+ 
+
+static
+
+ 
+readonly
+
+ 
+string
+
+ !$
+OfflineAccessDescription
+
+" :
+=
+
+; <
+$str	
+
+= É
+;
+
+
+É Ñ
+public 
+
+static 
+readonly 
+string !%
+MustChooseOneErrorMessage" ;
+=< =
+$str> e
+;e f
+public 
+
+static 
+readonly 
+string !(
+InvalidSelectionErrorMessage" >
+=? @
+$strA T
+;T U
+} Ô
 iC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Ciba\All.cshtml.cs
 	namespace		 	
 IdentityServerApi		
@@ -13389,7 +13307,89 @@ EnumerableU _
 ;5 6
 }7 8
 } 
-} Ñ
+} ◊
+tC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Account\Login\LoginOptions.cs
+	namespace 	
+IdentityServerApi
+ 
+. 
+Pages !
+.! "
+Login" '
+;' (
+public 
+static 
+class 
+LoginOptions  
+{ 
+public 
+
+static 
+readonly 
+bool 
+AllowLocalLogin  /
+=0 1
+true2 6
+;6 7
+public		 
+
+static		 
+readonly		 
+bool		 
+AllowRememberLogin		  2
+=		3 4
+true		5 9
+;		9 :
+public
+
+ 
+
+static
+
+ 
+readonly
+
+ 
+TimeSpan
+
+ ##
+RememberMeLoginDuration
+
+$ ;
+=
+
+< =
+TimeSpan
+
+> F
+.
+
+F G
+FromDays
+
+G O
+(
+
+O P
+$num
+
+P R
+)
+
+R S
+;
+
+S T
+public 
+
+static 
+readonly 
+string !*
+InvalidCredentialsErrorMessage" @
+=A B
+$strC a
+;a b
+} Ñ
 
 rC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\Pages\Account\Login\InputModel.cs
 	namespace 	

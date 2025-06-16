@@ -58,7 +58,26 @@ vC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
 
  $
 
-) 1‘
+) 1÷
+hC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Product.cs
+
+ 
+
+ 
+
+ 
+
+ "
+
+ 
+
+ 
+
+ 
+
+ 
+
+  ‘
 rC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Interfaces\ICartRepository.cs
 
  $
@@ -134,26 +153,7 @@ uC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.D
 
 @ N
 
-g u÷
-hC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Product.cs
-
- 
-
- 
-
- 
-
- "
-
- 
-
- 
-
- 
-
- 
-
-  Ω
+g uΩ
 gC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Domain\Entities\Outbox.cs
 
  
