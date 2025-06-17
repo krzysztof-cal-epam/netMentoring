@@ -26,18 +26,19 @@ We can distingush several differences between container and virtual machines (VM
 
 ## 4. Explain the usage flow of Docker & Kubernetes.
 The Docker usage flow is as follows:
-1. Create Dockerfile,
-2. Build a docker image,
-3. Run container,
-4. Push to registry,
+1. Create Dockerfile - a file that lists instructions how to start application with all the required dependencies,
+2. Build a docker image - based on the dockerfile,
+3. Run container - can be run locally or on a dedicated server. Running container lets to test whether the application works correclty,
+4. Push to registry - optionally container can be shared to a storage place,
 5. Manage container,
 
 The Kubernetes usage flow:
-1. Define Kubernetes resources - yaml manifest,
-2. Deploy to cluster,
-3. Expose Application,
-4. Scale and update,
-5. Monitor and manage.
+1. Setup a Kubernetes cluster - group of nodes which are being hosted on a cloud service,
+2. Define Kubernetes resources - write yaml manifest, which describes the application i.e. how many instances of the application should be run,
+3. Deploy to cluster - Kubernetes starts the container on the cluster accross the nodes,
+4. Expose Application - define how users can access the application, Kubernetes will set up the connection service,
+5. Scale and update - Kubernetes can run more containers for heavy traffic, and update the application by pushing new container image,
+6. Monitor and manage - Kubernetes will handle containers failure, if the container crashes, it will start a new one automatically.
 
 ## 5. What are the best practices for containerization?
 The best practices for contenerization are the following:
