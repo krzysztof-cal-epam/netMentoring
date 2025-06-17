@@ -1,0 +1,1849 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.11.0.0",
+        "fileVersion": "4.11.0-3.24554.2 (bc1c3011)",
+        "semanticVersion": "4.11.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "CS8604",
+          "level": "warning",
+          "message": "Possible null reference argument for parameter 'connection' in 'LiteDbCartDatabase.LiteDbCartDatabase(string connection)'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Program.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 35,
+                  "endLine": 18,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "endLine": 2,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1516",
+          "level": "warning",
+          "message": "Elements should be separated by blank line",
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1516",
+          "level": "warning",
+          "message": "Elements should be separated by blank line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Program.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 1,
+                  "endLine": 22,
+                  "endColumn": 89
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "CodeFixAction": "InsertBlankLine"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Program.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Program.cs",
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "endLine": 2,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Program.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Program.cs",
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 1,
+                  "endLine": 4,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Program.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1,
+                  "endLine": 5,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Program.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 1,
+                  "endLine": 6,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 12,
+                  "endLine": 7,
+                  "endColumn": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 30,
+                  "endLine": 7,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 31,
+                  "endLine": 13,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 55,
+                  "endLine": 13,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 18,
+                  "endLine": 19,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 28,
+                  "endLine": 19,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 58,
+                  "endLine": 20,
+                  "endColumn": 58
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 69,
+                  "endLine": 20,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 51,
+                  "endLine": 22,
+                  "endColumn": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 57,
+                  "endLine": 22,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 33,
+                  "endLine": 25,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 80,
+                  "endLine": 25,
+                  "endColumn": 80
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 23,
+                  "endLine": 28,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 32,
+                  "endLine": 28,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 19,
+                  "endLine": 32,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 35,
+                  "endLine": 32,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 43,
+                  "endLine": 33,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 84,
+                  "endLine": 33,
+                  "endColumn": 84
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 35,
+                  "endLine": 37,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 61,
+                  "endLine": 37,
+                  "endColumn": 61
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 34,
+                  "endLine": 40,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 50,
+                  "endLine": 40,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 23,
+                  "endLine": 41,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 54,
+                  "endLine": 41,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 21,
+                  "endLine": 45,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 46,
+                  "endLine": 45,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 48,
+                  "endLine": 46,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 71,
+                  "endLine": 46,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 46,
+                  "endLine": 48,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 52,
+                  "endLine": 48,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 33,
+                  "endLine": 51,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 80,
+                  "endLine": 51,
+                  "endColumn": 80
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 37,
+                  "endLine": 54,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 51,
+                  "endLine": 54,
+                  "endColumn": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 23,
+                  "endLine": 55,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 67,
+                  "endLine": 55,
+                  "endColumn": 67
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 18,
+                  "endLine": 58,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 23,
+                  "endLine": 58,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 23,
+                  "endLine": 62,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 28,
+                  "endLine": 62,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1633",
+          "level": "warning",
+          "message": "The file header is missing or not located at the top of the file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Program.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 44,
+                  "endLine": 8,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Program.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 48,
+                  "endLine": 8,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Program.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 49,
+                  "endLine": 13,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Program.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 35,
+                  "endLine": 18,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Program.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 45,
+                  "endLine": 18,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Program.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 2,
+                  "endLine": 19,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1633",
+          "level": "warning",
+          "message": "The file header is missing or not located at the top of the file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Program.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1515",
+          "level": "warning",
+          "message": "Single-line comment should be preceded by blank line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Program.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 1,
+                  "endLine": 22,
+                  "endColumn": 3
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 13,
+                  "endLine": 15,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1309",
+          "level": "warning",
+          "message": "Field '_cartService' should not begin with an underscore",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 39,
+                  "endLine": 11,
+                  "endColumn": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 24,
+                  "endLine": 37,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 13,
+                  "endLine": 40,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 20,
+                  "endLine": 41,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 29,
+                  "endLine": 22,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 24,
+                  "endLine": 25,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 24,
+                  "endLine": 48,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 20,
+                  "endLine": 28,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 24,
+                  "endLine": 51,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 13,
+                  "endLine": 54,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 20,
+                  "endLine": 55,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 25,
+                  "endLine": 61,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1101",
+          "level": "warning",
+          "message": "Prefix local calls with this",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 20,
+                  "endLine": 62,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6968",
+          "level": "warning",
+          "message": "Annotate this method with ProducesResponseType containing the return type for successful responses.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 29,
+                  "endLine": 46,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 20,
+                  "endLine": 55,
+                  "endColumn": 68
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null
+            }
+          }
+        },
+        {
+          "ruleId": "S6968",
+          "level": "warning",
+          "message": "Annotate this method with ProducesResponseType containing the return type for successful responses.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 29,
+                  "endLine": 33,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Controllers/CartController.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 20,
+                  "endLine": 41,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null
+            }
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RunAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CartServiceWebApi/Program.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 1,
+                  "endLine": 41,
+                  "endColumn": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA0001",
+          "level": "warning",
+          "message": "XML comment analysis is disabled due to project configuration",
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CS8604": {
+          "id": "CS8604",
+          "shortDescription": "Possible null reference argument.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8604)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "IDE0055": {
+          "id": "IDE0055",
+          "shortDescription": "Fix formatting",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/style-rules/ide0055",
+          "properties": {
+            "category": "Style",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnforceOnBuild_HighlyRecommended"
+            ]
+          }
+        },
+        "S6966": {
+          "id": "S6966",
+          "shortDescription": "Awaitable method should be used",
+          "fullDescription": "In an async method, any blocking operations should be avoided.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6966",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6968": {
+          "id": "S6968",
+          "shortDescription": "Actions that return a value should be annotated with ProducesResponseTypeAttribute containing the return type",
+          "fullDescription": "In an ASP.NET Core Web API, controller actions can optionally return a result value. If a controller action returns a value in the happy path, for example ControllerBase.Ok(Object), annotating the action with one of the [ProducesResponseType] overloads that describe the type is recommended.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6968",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "SA0001": {
+          "id": "SA0001",
+          "shortDescription": "XML comment analysis disabled",
+          "fullDescription": "XML comment analysis can only be performed when the project is configured to parse documentation comments. To enable this functionality, update the project to produce an XML documentation file as part of the build.",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA0001.md",
+          "properties": {
+            "category": "StyleCop.CSharp.SpecialRules",
+            "isEnabledByDefault": true
+          }
+        },
+        "SA1101": {
+          "id": "SA1101",
+          "shortDescription": "Prefix local calls with this",
+          "fullDescription": "A call to an instance member of the local class or a base class is not prefixed with 'this.', within a C# code file.",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1101.md",
+          "properties": {
+            "category": "StyleCop.CSharp.ReadabilityRules",
+            "isEnabledByDefault": true
+          }
+        },
+        "SA1200": {
+          "id": "SA1200",
+          "shortDescription": "Using directives should be placed correctly",
+          "fullDescription": "A C# using directive is placed outside of a namespace element.",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1200.md",
+          "properties": {
+            "category": "StyleCop.CSharp.OrderingRules",
+            "isEnabledByDefault": true
+          }
+        },
+        "SA1309": {
+          "id": "SA1309",
+          "shortDescription": "Field names should not begin with underscore",
+          "fullDescription": "A field name in C# begins with an underscore.",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1309.md",
+          "properties": {
+            "category": "StyleCop.CSharp.NamingRules",
+            "isEnabledByDefault": true
+          }
+        },
+        "SA1515": {
+          "id": "SA1515",
+          "shortDescription": "Single-line comment should be preceded by blank line",
+          "fullDescription": "A single-line comment within C# code is not preceded by a blank line.",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1515.md",
+          "properties": {
+            "category": "StyleCop.CSharp.LayoutRules",
+            "isEnabledByDefault": true
+          }
+        },
+        "SA1516": {
+          "id": "SA1516",
+          "shortDescription": "Elements should be separated by blank line",
+          "fullDescription": "Adjacent C# elements are not separated by a blank line.",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1516.md",
+          "properties": {
+            "category": "StyleCop.CSharp.LayoutRules",
+            "isEnabledByDefault": true
+          }
+        },
+        "SA1633": {
+          "id": "SA1633",
+          "shortDescription": "File should have header",
+          "fullDescription": "A C# code file is missing a standard file header.",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1633.md",
+          "properties": {
+            "category": "StyleCop.CSharp.DocumentationRules",
+            "isEnabledByDefault": true
+          }
+        }
+      }
+    }
+  ]
+}

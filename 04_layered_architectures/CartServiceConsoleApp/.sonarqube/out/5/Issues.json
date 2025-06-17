@@ -1,0 +1,1015 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.11.0.0",
+        "fileVersion": "4.11.0-3.24554.2 (bc1c3011)",
+        "semanticVersion": "4.11.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 1,
+                  "endLine": 10,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 40,
+                  "endLine": 20,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 53,
+                  "endLine": 22,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 38,
+                  "endLine": 23,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 54,
+                  "endLine": 23,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 55,
+                  "endLine": 23,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 32,
+                  "endLine": 25,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 39,
+                  "endLine": 25,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 52,
+                  "endLine": 25,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 62,
+                  "endLine": 25,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 81,
+                  "endLine": 25,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 82,
+                  "endLine": 25,
+                  "endColumn": 82
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 32,
+                  "endLine": 26,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 39,
+                  "endLine": 26,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 57,
+                  "endLine": 26,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 67,
+                  "endLine": 26,
+                  "endColumn": 67
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 84,
+                  "endLine": 26,
+                  "endColumn": 84
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 85,
+                  "endLine": 26,
+                  "endColumn": 85
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 32,
+                  "endLine": 27,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 39,
+                  "endLine": 27,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 58,
+                  "endLine": 27,
+                  "endColumn": 58
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 68,
+                  "endLine": 27,
+                  "endColumn": 68
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 86,
+                  "endLine": 27,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 87,
+                  "endLine": 27,
+                  "endColumn": 87
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 56,
+                  "endLine": 35,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 47,
+                  "endLine": 37,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 67,
+                  "endLine": 37,
+                  "endColumn": 67
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 14,
+                  "endLine": 38,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1633",
+          "level": "warning",
+          "message": "The file header is missing or not located at the top of the file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "endLine": 2,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 1,
+                  "endLine": 4,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1,
+                  "endLine": 5,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 1,
+                  "endLine": 6,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 1,
+                  "endLine": 7,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 1,
+                  "endLine": 8,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 1,
+                  "endLine": 9,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 1,
+                  "endLine": 10,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1200",
+          "level": "warning",
+          "message": "Using directive should appear within a namespace declaration",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 1,
+                  "endLine": 11,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/Interfaces/IRabbitMqProducer.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 27,
+                  "endLine": 5,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "IDE0055",
+          "level": "warning",
+          "message": "Fix formatting",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/Interfaces/IRabbitMqProducer.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 78,
+                  "endLine": 5,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1633",
+          "level": "warning",
+          "message": "The file header is missing or not located at the top of the file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/Interfaces/IRabbitMqProducer.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1724",
+          "level": "warning",
+          "message": "The type name DependencyInjection conflicts in whole or in part with the namespace name 'Microsoft.Extensions.DependencyInjection'. Change either name to eliminate the conflict.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/netMentoring/04_layered_architectures/CartServiceConsoleApp/CatalogService.Infrastructure/DependencyInjection.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 25,
+                  "endLine": 15,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA0001",
+          "level": "warning",
+          "message": "XML comment analysis is disabled due to project configuration",
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CA1724": {
+          "id": "CA1724",
+          "shortDescription": "Type names should not match namespaces",
+          "fullDescription": "Type names should not match the names of namespaces that are defined in the .NET Framework class library. Violating this rule can reduce the usability of the library.",
+          "defaultLevel": "warning",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1724",
+          "properties": {
+            "category": "Naming",
+            "isEnabledByDefault": false,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode",
+              "CompilationEnd"
+            ]
+          }
+        },
+        "IDE0055": {
+          "id": "IDE0055",
+          "shortDescription": "Fix formatting",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/style-rules/ide0055",
+          "properties": {
+            "category": "Style",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnforceOnBuild_HighlyRecommended"
+            ]
+          }
+        },
+        "SA0001": {
+          "id": "SA0001",
+          "shortDescription": "XML comment analysis disabled",
+          "fullDescription": "XML comment analysis can only be performed when the project is configured to parse documentation comments. To enable this functionality, update the project to produce an XML documentation file as part of the build.",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA0001.md",
+          "properties": {
+            "category": "StyleCop.CSharp.SpecialRules",
+            "isEnabledByDefault": true
+          }
+        },
+        "SA1200": {
+          "id": "SA1200",
+          "shortDescription": "Using directives should be placed correctly",
+          "fullDescription": "A C# using directive is placed outside of a namespace element.",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1200.md",
+          "properties": {
+            "category": "StyleCop.CSharp.OrderingRules",
+            "isEnabledByDefault": true
+          }
+        },
+        "SA1633": {
+          "id": "SA1633",
+          "shortDescription": "File should have header",
+          "fullDescription": "A C# code file is missing a standard file header.",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1633.md",
+          "properties": {
+            "category": "StyleCop.CSharp.DocumentationRules",
+            "isEnabledByDefault": true
+          }
+        }
+      }
+    }
+  ]
+}

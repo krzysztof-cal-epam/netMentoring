@@ -1,0 +1,10 @@
+ï
+âC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Tests\obj\Debug\net8.0\CatalogService.Tests.AssemblyInfo.csutf-8ü
+ìC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Tests\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8ó
+ãC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Tests\obj\Debug\net8.0\CatalogService.Tests.GlobalUsings.g.csutf-8Ö
+zC:\Users\krzysztof_cal\.nuget\packages\microsoft.net.test.sdk\17.8.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.csutf-8|
+sC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Tests\Services\ProductServiceTests.csutf-8}
+tC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Tests\Services\CategoryServiceTests.csutf-8Ñ
+{C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Tests\Repositories\CategoryRepositoryTests.csutf-8Ä
+wC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Tests\Repositories\CartRepositoryTests.csutf-8ç
+ÉC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Tests\IntegrationTests\CartServiceIntegrationTests.csutf-8

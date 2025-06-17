@@ -9,5 +9,6 @@ public class AccessDeniedModel : PageModel
 {
     public void OnGet()
     {
+        // Empty by default
     }
 }

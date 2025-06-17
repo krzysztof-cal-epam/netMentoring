@@ -1,0 +1,1 @@
+‘R{C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\CatalogService.Application.csproj¢net8.0òCSharp12

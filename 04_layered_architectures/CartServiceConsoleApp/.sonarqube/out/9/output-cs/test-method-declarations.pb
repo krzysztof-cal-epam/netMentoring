@@ -1,0 +1,16 @@
+£
+oC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApiTests\UnitTests\ProductControllerTests.csRestApiTestsQ
+-RestApiTests.UnitTests.ProductControllerTests ListProductsByCategory_ReturnsOKP
+-RestApiTests.UnitTests.ProductControllerTestsAdd_ValidProduct_ReturnsCreatedW
+-RestApiTests.UnitTests.ProductControllerTests&Update_UpdatedProduct_ReturnsNoContentW
+-RestApiTests.UnitTests.ProductControllerTests&Delete_DeletesProduct_ReturnsNoContentK
+-RestApiTests.UnitTests.ProductControllerTestsGetById_ReturnsOKWithLinksÌ
+pC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApiTests\UnitTests\CategoryControllerTests.csRestApiTestsC
+.RestApiTests.UnitTests.CategoryControllerTestsListAll_ReturnsOKQ
+.RestApiTests.UnitTests.CategoryControllerTestsAdd_ValidProduct_ReturnsCreatedX
+.RestApiTests.UnitTests.CategoryControllerTests&Update_UpdatedProduct_ReturnsNoContentX
+.RestApiTests.UnitTests.CategoryControllerTests&Delete_DeletesProduct_ReturnsNoContentÇ
+lC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApiTests\IntegrationTests\CartApiTests.csRestApiTestsI
+*RestApiTests.IntegrationTests.CartApiTestsGetCartInfo_Should_ReturnOk×
+nC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\RestApiTests\UnitTests\CartV1ControllerTests.csRestApiTestsW
+,RestApiTests.UnitTests.CartV1ControllerTests'GetCartInfo_Should_ReturnOkObjectResult

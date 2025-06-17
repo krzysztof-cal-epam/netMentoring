@@ -1,0 +1,1 @@
+RiC:\netMentoring\04_layered_architectures\CartServiceConsoleApp\IdentityServerApi\IdentityServerApi.csproj¢net8.0òCSharp12

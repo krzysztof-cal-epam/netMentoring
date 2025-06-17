@@ -1,0 +1,12 @@
+﻿C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Dto\CartDto.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Dto\CartItemDto.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Dto\CategoryDto.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Dto\ImageItemDto.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Dto\ProductDto.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Exceptions\CartValidationException.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Interfaces\ICartService.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Interfaces\ICategoryService.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Interfaces\IProductService.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Services\CartService.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Services\CategoryService.cs
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\CatalogService.Application\Services\ProductService.cs

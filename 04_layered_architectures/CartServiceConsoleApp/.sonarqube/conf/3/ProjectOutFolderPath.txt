@@ -1,0 +1,1 @@
+C:\netMentoring\04_layered_architectures\CartServiceConsoleApp\.sonarqube\out\3
