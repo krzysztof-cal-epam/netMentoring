@@ -9,7 +9,7 @@ Pros od contenerization:
 1. Portability - containers run accross different environment like OS (Windows, Linux, Mac),
 2. Efficency - containers uses fewer resources than Virtual Machines,
 3. Scalability - containers can be scaler up to handle increased workload,
-4. Isolation - containers run in tehir own environment, therefore do not affecting other applications.
+4. Isolation - containers run in their own environment, therefore do not affecting other applications.
 
 Cons of contenerization:
 1. Security - containers share the host core, therefore compromised container could potentially affect the host and other containers,
@@ -44,7 +44,11 @@ The Kubernetes usage flow:
 The best practices for contenerization are the following:
 1. Avoid modifying running containers - better to stop, rebuild and redeploy image,
 2. Manage secrets securely - avoid hardcoding secrets in images - use env variables or other secret vaults,
-
+3. Keep container small - avoid using heavy images, rather use lighweighted distribution i.e. Linux Alpine,
+4. Use orchestration - use Kubernetes or similar tools for large scale container system.
 
 ## 6. How is Docker CI different from classic CI pipeline?
 Clasic CI pipeline runs tasks direcltly on the dedicated server without contenerization, while Docker CI uses containers for building, testing and deploying applications. 
+Docker CI is more consistent than classic CI, due to isolation and identical environment.
+Docker CI might also be faster than classic CI. Containers can be setup within seconds, while Classic Ci might require more time to setup environment configuration.
+However, Docker CI require Docker specific knowledge, therefore it is more complicated to manage than classic CI.
