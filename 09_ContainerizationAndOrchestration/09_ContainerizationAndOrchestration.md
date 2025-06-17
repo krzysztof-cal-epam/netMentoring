@@ -17,13 +17,33 @@ Cons of contenerization:
 3. Limited isolation - containers are less isolated than Virtual Machines. 
 
 ## 3. What is the difference between containerization and virtualization?
-todo
+We can distingush several differences between container and virtual machines (VM):
+1. Containers package application with the dependencies into single container that share host OS kernel, while VM runs entire OS on virtual hardware,
+2. Containers are isolated but shares host OS kernel, while VMs are creating whole OS with separated kernels,
+3. Containers use minimal CPU, memory and storage, while VMs require more resources to run the whole OS kernel,
+4. Containers have better performance, while VS performance is significantly worse due to need of emulation OS,
+5. Containers sturtup time is fast, while VMs needs more time to boot OS. 
 
 ## 4. Explain the usage flow of Docker & Kubernetes.
-todo
+The Docker usage flow is as follows:
+1. Create Dockerfile,
+2. Build a docker image,
+3. Run container,
+4. Push to registry,
+5. Manage container,
+
+The Kubernetes usage flow:
+1. Define Kubernetes resources - yaml manifest,
+2. Deploy to cluster,
+3. Expose Application,
+4. Scale and update,
+5. Monitor and manage.
 
 ## 5. What are the best practices for containerization?
-todo
+The best practices for contenerization are the following:
+1. Avoid modifying running containers - better to stop, rebuild and redeploy image,
+2. Manage secrets securely - avoid hardcoding secrets in images - use env variables or other secret vaults,
+
 
 ## 6. How is Docker CI different from classic CI pipeline?
-todo
+Clasic CI pipeline runs tasks direcltly on the dedicated server without contenerization, while Docker CI uses containers for building, testing and deploying applications. 
