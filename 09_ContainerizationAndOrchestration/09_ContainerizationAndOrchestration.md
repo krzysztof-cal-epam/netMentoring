@@ -42,10 +42,16 @@ The Kubernetes usage flow:
 
 ## 5. What are the best practices for containerization?
 The best practices for contenerization are the following:
-1. Avoid modifying running containers - better to stop, rebuild and redeploy image,
-2. Manage secrets securely - avoid hardcoding secrets in images - use env variables or other secret vaults,
-3. Keep container small - avoid using heavy images, rather use lighweighted distribution i.e. Linux Alpine,
-4. Use orchestration - use Kubernetes or similar tools for large scale container system.
+1. Plan long-term vision - analyse applications to have clear goal, focus on apps that can benefit from containers,
+2. Choose the right migration strategy - Consider whether to move apps to container as-is, break applications into smaller parts for easier contenerization or redesign app for microservices,
+3. Start with stateless applications - apps that don't store dat locally are easier to contenerize,
+4. Run one app per container - keep containers lightweighted,
+5. Use smart image tagging - avoid using 'latest', rather tag images with the specific versions, 
+6. Avoid modifying running containers - better to stop, rebuild and redeploy image,
+7. Manage secrets securely - avoid hardcoding secrets in images - use env variables or other secret vaults,
+8. Keep container small - avoid using heavy images, rather use lighweighted distribution i.e. Linux Alpine,
+9. Use orchestration - use Kubernetes or similar tools for large scale container system,
+10. Monitor containers from the start - track container performnce, availability and security.
 
 ## 6. How is Docker CI different from classic CI pipeline?
 Clasic CI pipeline runs tasks direcltly on the dedicated server without contenerization, while Docker CI uses containers for building, testing and deploying applications. 
