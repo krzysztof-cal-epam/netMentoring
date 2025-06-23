@@ -1,5 +1,82 @@
 version: '3.8'
+
 services:
+  migrate:
+    build:
+      context: .
+      dockerfile: Dockerfile.migrate
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=CatalogServiceDb;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=True;
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    networks:
+      - app-network
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5300:80"
+      - "5301:443"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=
+      - ASPNETCORE_HTTPS_PORT=5301
+    volumes:
+      - ./RestApi/https:/https
+      - ./RestApi/ECommerceDb.db:/app/ECommerceDb.db
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      sqlserver:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - app-network
+
+  rabbitmq:
+    image: rabbitmq:3.13-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 60s
+    networks:
+      - app-network
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=YourStrong@Passw0rd
+      - MSSQL_PID=Express
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver-data:/var/opt/mssql
+    healthcheck:
+      test: ["CMD-SHELL", "ps aux | grep -i sqlservr || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+      start_period: 180s
+    mem_limit: 2g
+    networks:
+      - app-network
+
   sonarqube:
     image: sonarqube:community
     ports:
@@ -10,7 +87,15 @@ services:
       - sonarqube_extensions:/opt/sonarqube/extensions
     environment:
       - SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
 volumes:
+  sqlserver-data:
   sonarqube_data:
   sonarqube_logs:
   sonarqube_extensions:

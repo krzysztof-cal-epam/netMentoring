@@ -8,8 +8,8 @@ namespace CatalogService.DataAccess.Data
         public CatalogDbContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<CatalogDbContext>();
-
-            optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=CatalogServiceDb;Trusted_Connection=True;");
+            var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__DefaultConnection");
+            optionsBuilder.UseSqlServer(connectionString);
 
             return new CatalogDbContext(optionsBuilder.Options);
         }
