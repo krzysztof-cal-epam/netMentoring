@@ -49,6 +49,8 @@ namespace CatalogService.DataAccess.Data
 
                 entity.Property(e => e.Price).IsRequired();
 
+                entity.Property(e => e.Price).HasPrecision(18, 2);
+
                 entity.Property(e => e.Amount).IsRequired();
 
                 entity.HasOne(p => p.Category)

@@ -1,0 +1,16 @@
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /src
+COPY ["RestApi/RestApi.csproj", "RestApi/"]
+COPY ["CatalogService.DataAccess/CatalogService.DataAccess.csproj", "CatalogService.DataAccess/"]
+RUN dotnet restore "RestApi/RestApi.csproj"
+COPY . .
+WORKDIR "/src"
+RUN dotnet build "RestApi/RestApi.csproj" -c Release -o /app/build
+
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS final
+WORKDIR /src
+COPY --from=build /src .
+# Install dotnet-ef global tool
+RUN dotnet tool install --global dotnet-ef --version 9.0.4
+ENV PATH="${PATH}:/root/.dotnet/tools"
+ENTRYPOINT ["dotnet-ef", "database", "update", "--project", "CatalogService.DataAccess/CatalogService.DataAccess.csproj", "--startup-project", "RestApi/RestApi.csproj"]

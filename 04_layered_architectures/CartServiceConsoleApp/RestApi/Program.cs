@@ -3,6 +3,7 @@ using CatalogService.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.AspNetCore.Mvc.Versioning;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 using RestApi.Messaging;
 using RestApi.Middleware;
@@ -41,6 +42,26 @@ public partial class Program
         //RabbitMQ
         builder.Services.Configure<RabbitMqSettings>(builder.Configuration.GetSection("RabbitMQ"));
         builder.Services.AddHostedService<CartMessageListener>();
+
+        builder.Services.Configure<HostOptions>(options =>
+        {
+            options.BackgroundServiceExceptionBehavior = BackgroundServiceExceptionBehavior.Ignore;
+        });
+        if (args.Any(a => a.Contains("ef")))
+        {
+            builder.WebHost.UseKestrel(options =>
+            {
+                options.ListenAnyIP(80); // HTTP only for migrations
+            });
+        }
+        else
+        {
+            builder.WebHost.UseKestrel(options =>
+            {
+                options.ListenAnyIP(80);
+                options.ListenAnyIP(443, listenOptions => listenOptions.UseHttps());
+            });
+        }
 
         builder.Services.AddControllers();
 
@@ -82,6 +103,12 @@ public partial class Program
         app.UseAuthorization();
 
         app.MapControllers();
+
+        // Add root endpoint
+        app.MapGet("/", async context => await context.Response.WriteAsync("Welcome to CartService API!"));
+
+        // Add health check endpoint
+        app.MapGet("/api/health", async context => await context.Response.WriteAsync("Healthy"));
 
         app.Run();
     }
